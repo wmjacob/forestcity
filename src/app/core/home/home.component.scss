@@ -1,0 +1,31 @@
+.fclHomeWelcome {
+    background: url(../../../assets/images/fcl_ddgm_2021.jpg) no-repeat center;
+    background-size: cover;
+    height: 715px;
+    position: relative;
+}
+
+.fclAgeBanner {
+    background-color: darkblue;
+    height: fit-content;
+    width: fit-content;
+    opacity: 70%;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 7px;
+}
+
+.fclAgeText {
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.centered {
+    text-align: center;
+}
+
+.textColorBlue {
+    color: #323779
+}

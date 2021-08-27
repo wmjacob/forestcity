@@ -1,22 +1,59 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-
-import { BulletinComponent } from './bulletin/bulletin.component';
-import { FutureEventsComponent } from './future-events/future-events.component';
-import { HistoryComponent } from './history/history.component';
-import { HomeComponent } from './home/home.component';
-import { RecruitingComponent } from './recruiting/recruiting.component';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './core/home/home.component';
+import { LayoutComponent } from './core/layout/layout.component';
+import { LoginComponent } from './authentication/login.component';
+import { RegisterComponent } from './authentication/register.component';
+import { HistoryComponent } from './forest-city/our-history/history.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'future-events', component: FutureEventsComponent},
-  {path: 'how-to-join', component: RecruitingComponent},
-  {path: 'bulletin', component: BulletinComponent},
-  {path: 'history', component: HistoryComponent},
-  {path: '**', component: HomeComponent}
+  {
+    path: '', 
+    component: LayoutComponent,
+    // children go here, including those that need auths.  for those, use activationguard
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'home'
+      },
+      {
+        path: 'home',
+        component: HomeComponent,
+        // loadChildren: () => import('./core/core.module').then(m => m.CoreModule)
+      },
+      {
+        path: 'history',
+        component: HistoryComponent
+      }
+    ]
+  },
+  // routes without header or footer
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+  {
+    // MUST BE LAST
+    path: '**',
+    pathMatch: 'full',
+    redirectTo: 'home'
+  }
 ];
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(
+    routes,
+    {
+      onSameUrlNavigation: 'reload',
+      preloadingStrategy: PreloadAllModules
+    }
+  )
+],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

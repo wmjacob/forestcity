@@ -33,7 +33,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/uswds/dist/js/uswds-init.min.js",
+              "node_modules/uswds/dist/js/uswds.min.js"
+            ]
           },
           "configurations": {
             "production": {
