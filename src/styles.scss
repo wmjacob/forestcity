@@ -6,3 +6,17 @@
 .centered {
     text-align: center;
 }
+
+@font-face {
+    font-family: "Fredericka";
+    src: local("Fredericka"), url(./assets/fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf) format("truetype");
+}
+
+
+h1,h2,h3 {
+    font-family: Fredericka;
+}
+h1,h2,h3 {
+    padding:0;
+    margin:0;
+}

@@ -1,0 +1,30 @@
+.centered {
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .timeline {
+        position: relative;
+        &-time {
+            z-index: 1;
+        }
+        &:before,&:after {
+            content: "";
+            border-left: 4px dotted #775540;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .timeline {
+        width: 100%;
+    }
+}
+
