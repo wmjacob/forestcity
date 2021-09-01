@@ -9,10 +9,13 @@ img {
 }
 
 .forestCityHeader {
-    background-color: lightskyblue;
     width: 100% !important;
+}
 
-    .usa-nav {
-        background-color: lightskyblue;
+.primary-title {
+    font-size: 36px;
+
+    &-small {
+        font-size: 20px;
     }
 }
