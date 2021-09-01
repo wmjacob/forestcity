@@ -5,6 +5,7 @@ import { LayoutComponent } from './core/layout/layout.component';
 import { LoginComponent } from './authentication/login.component';
 import { RegisterComponent } from './authentication/register.component';
 import { HistoryComponent } from './forest-city/our-history/history.component';
+import { PastMastersComponent } from './forest-city/past-masters/past-masters.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
       {
         path: 'history',
         component: HistoryComponent
+      },
+      {
+        path: 'past-masters',
+        component: PastMastersComponent
       }
     ]
   },
