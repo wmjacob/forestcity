@@ -5,10 +5,11 @@ import { LayoutComponent } from './core/layout/layout.component';
 import { LoginComponent } from './authentication/login.component';
 import { RegisterComponent } from './authentication/register.component';
 import { HistoryComponent } from './forest-city/our-history/history.component';
+import { BulletinComponent } from './forest-city/bulletin/bulletin.component';
 
 const routes: Routes = [
   {
-    path: '', 
+    path: '',
     component: LayoutComponent,
     // children go here, including those that need auths.  for those, use activationguard
     children: [
@@ -24,7 +25,11 @@ const routes: Routes = [
       },
       {
         path: 'history',
-        component: HistoryComponent
+        component: HistoryComponent,
+      },
+      {
+        path: 'bulletin',
+        component: BulletinComponent,
       }
     ]
   },
