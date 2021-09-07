@@ -1,9 +1,9 @@
 export class GetPastMastersResponse {
-    pastMastersList!: PastMaster[];
+    pastMastersList: PastMaster[] = [];
 }
 
-export class PastMaster {
-    number!: number;
-    name!: string;
-    term!: string;
+export interface PastMaster {
+    number: number;
+    name: string;
+    term: string;
 }

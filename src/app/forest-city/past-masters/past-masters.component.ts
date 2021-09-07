@@ -8,12 +8,13 @@ import { PastMastersService } from './service/past-masters.service';
   styleUrls: ['./past-masters.component.scss']
 })
 export class PastMastersComponent implements OnInit {
-  pastMastersList: GetPastMastersResponse = new GetPastMastersResponse;
+  getPastMastersResponse: GetPastMastersResponse;
 
-  constructor(private pastMastersService: PastMastersService) { }
+  constructor(private pastMastersService: PastMastersService) {
+    this.getPastMastersResponse = this.pastMastersService.getPastMasters();
+  }
 
   ngOnInit(): void {
-    this.pastMastersList = this.pastMastersService.getPastMasters();
-    console.log("in past masters component, list= " + this.pastMastersList);
+    console.log("in past masters component, list= " + this.getPastMastersResponse.pastMastersList.toString());
   }
 }
