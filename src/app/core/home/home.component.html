@@ -1,14 +1,14 @@
-<div class="bg-primary-lighter">
-    <div class="row fclHomeWelcome"><
-        <div class="fclAgeBanner d-flex align-items-center justify-content-center">
-            <div class="text-center text-white fclAgeText">Celebrating {{ fclAge }} years of Masonic Pride</div>
-        </div>
+<div class="row fcl-home-welcome"><
+    <div class="fcl-age-banner bg-primary-vivid d-flex align-items-center justify-content-center">
+        <div class="text-center text-white fcl-age-text">Celebrating {{ fclAge }} years of Masonic Pride</div>
     </div>
-    <div class="grid-container padding-y-5">
-        <div class="grid-row">
+</div>
+<div class="primary-content-container">
+    <div class="primary-content bg-secondary-lightest">
+        <div class="grid-row bg-primary-lighter py-4 px-4">
             <div class="grid-col-12 centered padding-x-12">
-                <h2 class="textColorBlue">What is Freemasonry?</h2>
-                <hr class="textColorBlue"/>
+                <h2 class="text-color-blue">What is Freemasonry?</h2>
+                <hr class="text-color-blue"/>
                 <p class="usa-prose">
                     Freemasonry is the leading fraternal organization in the world.
                     Its origins are lost in the unrecorded history of medieval times, but it formally organized in London, England, in 1717.
@@ -20,5 +20,12 @@
                 </p>
             </div>
         </div>
+    </div>
+</div>
+<div *ngIf="event">
+    <div class="d-flex align-items-center justify-content-end flex-column" style="background-image: url('{{event.spotlightImage}}');background-size: cover;background-repeat: no-repeat;min-height: 50vw">
+        <div class="event-highlight-name text-white">{{event.name}}</div>
+        <div class="event-highlight-date fs-4 text-white">Wed December 7, 7:30 PM</div>
+        <a class="fs-4 mb-3 text-white" href="#">Make your reservation today!</a>
     </div>
 </div>

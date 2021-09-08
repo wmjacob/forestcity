@@ -1,20 +1,19 @@
-.fclHomeWelcome {
-    background: url(../../../assets/images/officer2021.png) no-repeat center;
+.fcl-home-welcome {
+    background: url(../../../assets/images/officer2021.jpg) no-repeat center;
     background-size: cover;
     height: 715px;
     position: relative;
 }
 
-.fclAgeBanner {
-    background-color: darkblue;
+.fcl-age-banner {
     width: fit-content;
-    opacity: 70%;
+    opacity: 75%;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-.fclAgeText {
+.fcl-age-text {
     font-size: x-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -23,6 +22,14 @@
     text-align: center;
 }
 
-.textColorBlue {
+.text-color-blue {
     color: #323779
+}
+
+.event-highlight-name {
+    font-size: xxx-large;
+}
+
+.event-highlight-date {
+    margin-bottom: 10%;
 }

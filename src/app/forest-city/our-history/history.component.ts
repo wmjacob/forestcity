@@ -44,7 +44,7 @@ const events: EventOptions[] = [
         This is where we remained until the site was sold to make way for the new Federal Reserve Bank of Cleveland building.
         For seven months thereafter, we met at the Newburgh Masonic Temple.
         `,
-        imageSrc: "../../../assets/images/newburgh.png",
+        imageSrc: "../../../assets/images/newburgh.jpg",
         imageCaption: "Newburgh Masonic Temple, 2019. Abandoned since 1984",
     },
     {
@@ -64,7 +64,7 @@ const events: EventOptions[] = [
         On October 16th, 1942, Worshipful Master Julius A. Negin called a special meeting of the Lodge for the purpose of celebrating the 75th Anniversary of Forest City Lodge.
         Wor. Bro. Negin later became the Chairman of the first blood bank established by any Masonic Lodge in the state of Ohio.
         `,
-        imageSrc: "../../../assets/images/timecapsule.png",
+        imageSrc: "../../../assets/images/timecapsule.jpg",
         imageCaption: "Julias Negin's grandchildren open time capsule",
     },
     {
@@ -73,7 +73,7 @@ const events: EventOptions[] = [
         In October of 1955, Forest City Lodge, together with Golden Square Lodge, purchased land at the corner of Warrensville Center and Farnsleigh Roads in Shaker Heights for the purpose of constructing a new Masonic Temple.
         Ground breaking ceremonies were held on February 12th, 1958.
         `,
-        imageSrc: "../../../assets/images/groundbreaking.png",
+        imageSrc: "../../../assets/images/groundbreaking.jpg",
         imageCaption: "Newspaper article on groundbreaking",
     },
     {
@@ -100,7 +100,7 @@ const events: EventOptions[] = [
         year: 1973,
         content: `
         To underscore the true meaning of the religious season, around Christmas and Hanukkah, Forest City Lodge holds an annual Brotherhood Night.
-        This event was started in December of 1973 by Worshipful Brother Bert M. Tobin, 33&deg;.
+        This event was started in December of 1973 by Worshipful Brother Bert M. Tobin, 33°.
         This event has received statewide recognition.
         `,
         imageSrc: "../../../assets/images/brotherhood-night.jpg",
@@ -175,6 +175,4 @@ export class HistoryComponent implements OnInit {
         this.fclAge = calculateFCLAge();
         this.events = events;
     }
-
-
 }

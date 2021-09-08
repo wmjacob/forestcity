@@ -1,0 +1,18 @@
+.future-events {
+    a {
+        text-decoration: none;
+    }
+
+    @media screen and (min-width: 1024px) {
+        &-title,&-content {
+            padding-left: 12vw;
+            padding-right: 12vw;
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        &-title,&-content {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}

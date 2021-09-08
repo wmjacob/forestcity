@@ -1,24 +1,28 @@
-<div class="bg-primary-lighter pt-2 pb-2">
-    <div class="grid-col-12 centered">
-        <h2>A Brief History of Forest City Lodge #388</h2>
-        <h3>Free & Accepted Masons, Ohio</h3>
-    </div>
-</div>
-<div *ngFor="let event of events, let i = index" [ngClass]="{'bg-accent-warm-lighter': i % 2, 'bg-secondary-lighter': !(i % 2)}">
-    <div class="grid-container">
-        <div class="grid-col-12 grid-row">
-            <div class="timeline col-xs-12 col-sm-12 col-md-2 d-flex align-items-center justify-content-center">
-                <h3 class="timeline-time p-2" [ngClass]="{'bg-accent-warm-lighter': i % 2, 'bg-secondary-lighter': !(i % 2)}">{{event.year}}</h3>
+<div class="primary-content-container">
+    <div class="bg-secondary-lighter primary-content">
+        <div class="bg-primary-lighter pt-2 pb-2">
+            <div class="grid-col-12 centered">
+                <h2>A Brief History of Forest City Lodge #388</h2>
+                <h3>Free & Accepted Masons, Ohio</h3>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-10 grid-row">
-                <div class="col-xs-12 col-md-6 p-2 d-flex align-items-center justify-content-center">
-                    <figure>
-                        <img src={{event.imageSrc}}/>
-                        <figcaption class="centered">{{event.imageCaption}}</figcaption>
-                    </figure>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 p-2">
-                    <p class="usa-prose">{{event.content}}</p>
+        </div>
+        <div *ngFor="let event of events, let i = index" [ngClass]="{'bg-accent-warm-lighter': i % 2, 'bg-secondary-lighter': !(i % 2)}">
+            <div class="grid-container">
+                <div class="grid-col-12 grid-row">
+                    <div class="timeline col-xs-12 col-sm-12 col-md-2 d-flex align-items-center justify-content-center">
+                        <h3 class="timeline-time p-2" [ngClass]="{'bg-accent-warm-lighter': i % 2, 'bg-secondary-lighter': !(i % 2)}">{{event.year}}</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-10 grid-row">
+                        <div class="col-xs-12 col-md-6 p-2 d-flex align-items-center justify-content-center">
+                            <figure>
+                                <img src={{event.imageSrc}}/>
+                                <figcaption class="centered">{{event.imageCaption}}</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 p-2">
+                            <p class="usa-prose">{{event.content}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

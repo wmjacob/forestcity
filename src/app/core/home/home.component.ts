@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import events from '@data/events.json';
 
 @Component({
     selector: 'home-component',
@@ -7,9 +8,14 @@ import { Component } from "@angular/core";
 })
 export class HomeComponent {
     fclAge: number = 0;
+    event: any;
 
     ngOnInit() {
         this.calculateFCLAge();
+        const event = events.find(ev => ev.spotlight && new Date(ev.date) < new Date())
+        if (event) {
+            this.event = { ...event, spotlightImage: `../../../assets/images/${event.spotlightImage}` };
+        }
     }
 
     private calculateFCLAge() {
