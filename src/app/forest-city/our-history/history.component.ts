@@ -65,7 +65,7 @@ const events: EventOptions[] = [
         Wor. Bro. Negin later became the Chairman of the first blood bank established by any Masonic Lodge in the state of Ohio.
         `,
         imageSrc: "../../../assets/images/timecapsule.jpg",
-        imageCaption: "Julias Negin's grandchildren open time capsule",
+        imageCaption: "Julius Negin's grandchildren open time capsule",
     },
     {
         year: 1955,
@@ -133,7 +133,7 @@ const events: EventOptions[] = [
         After lengthy negotiations, the sale was approved and Forest City Lodge moved as a tenant to the Lyndhurst Masonic Center, located at 5516 Mayfield Road, Lyndhurst, Ohio 44124.
         `,
         imageSrc: "../../../assets/images/alter.jpg",
-        imageCaption: "Lodge Room Alter, Lyndhurst Masonic Temple",
+        imageCaption: "Lodge Room Altar, Lyndhurst Masonic Temple",
     },
     {
         year: 2018,

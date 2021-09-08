@@ -1,11 +1,91 @@
 [
-    {
-      "date": "2011-10-05 14:48",
+  {
+    "date": "2021-9-1 19:30",
+    "name": "Stated Meeting | Memorial Night",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "spotlight": false,
+    "spotlightImage": ""
+  },
+  {
+    "date": "2021-9-8 19:30",
+    "name": "Wednesday Night Light",
+    "location": "Virtual",
+    "address": "Zoom",
+    "addressLink": "",
+    "rsvpOptions": false,
+    "spotlight": false,
+    "spotlightImage": ""
+  },
+  {
+    "date": "2021-9-15 19:30",
+    "name": "Stated Meeting | Birthday Night for June, July, Aug & Sept",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "spotlight": false,
+    "spotlightImage": ""
+  },
+  {
+    "date": "2021-10-6 19:30",
+    "name": "Stated Meeting | Past Masters' Night | MM Degree",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "spotlight": false,
+    "spotlightImage": ""
+  },
+  {
+    "date": "2021-10-13 19:30",
+    "name": "Wednesday Night Light",
+    "location": "Virtual",
+    "address": "Zoom",
+    "addressLink": "",
+    "rsvpOptions": false,
+    "spotlight": false,
+    "spotlightImage": ""
+  },
+  {
+    "date": "2021-10-20 19:30",
+    "name": "Stated Meeting",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "spotlight": false,
+    "spotlightImage": ""
+  },
+  {
+    "date": "2021-11-3 19:30",
+    "name": "Annual Meeting | Birthday Night for Oct & Nov",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "spotlight": false,
+    "spotlightImage": ""
+  },
+  {
+    "date": "2021-11-10 19:30",
+    "name": "Wednesday Night Light",
+    "location": "Virtual",
+    "address": "Zoom",
+    "addressLink": "",
+    "rsvpOptions": false,
+    "spotlight": false,
+    "spotlightImage": ""
+  },
+  {
+      "date": "2021-12-15 19:30",
       "name": "Brotherhood Night",
       "location": "Forest City Lodge",
       "address": "Lyndhurst Masonic Temple",
       "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-      "rsvpOptions": false,
+      "rsvpOptions": true,
       "spotlight": true,
       "spotlightImage": "brotherhood-night.jpg"
     }

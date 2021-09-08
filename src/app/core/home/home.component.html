@@ -18,6 +18,8 @@
                 <p class="usa-prose">
                     As a fraternal organization, Freemasonry unites men of good character who, though of different religious, ethnic or social backgrounds, share a belief in the fatherhood of God and the brotherhood of mankind.
                 </p>
+                <hr class="text-color-blue"/>
+                <h3><a target="_blank" href="https://www.freemason.com/this-is-ohio-freemasonry/" class="text-no-underline hover:text-underline">This Is Ohio Freemasonry</a></h3>
             </div>
         </div>
     </div>
@@ -25,7 +27,7 @@
 <div *ngIf="event">
     <div class="d-flex align-items-center justify-content-end flex-column" style="background-image: url('{{event.spotlightImage}}');background-size: cover;background-repeat: no-repeat;min-height: 50vw">
         <div class="event-highlight-name text-white">{{event.name}}</div>
-        <div class="event-highlight-date fs-4 text-white">Wed December 7, 7:30 PM</div>
+        <div class="event-highlight-date fs-4 text-white"> {{ event.date | date:'fullDate' }} {{ event.date | date:'shortTime' }} </div>
         <a class="fs-4 mb-3 text-white" href="#">Make your reservation today!</a>
     </div>
 </div>

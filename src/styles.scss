@@ -2,6 +2,11 @@
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~uswds/dist/css/uswds.min.css';/* You can add global styles to this file, and also import other style files */
+
+.centered {
+    text-align: center;
+}
+
 @font-face {
     font-family: "Fredericka";
     src: local("Fredericka"), url(./assets/fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf) format("truetype");
@@ -9,7 +14,7 @@
 
 
 h1,h2,h3 {
-    font-family: Fredericka;
+    font-family: Fredericka !important;
 }
 h1,h2,h3 {
     padding:0;

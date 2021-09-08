@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12 col-lg-8 mb-2">
                 <div *ngFor="let event of events" class="border-rounded mb-2">
-                    <div class="d-flex flex-direction-row">
+                    <div *ngIf="!hasEventPassed(event.date)" class="d-flex flex-direction-row">
                         <div class="bg-gray-5 px-3 py-4 flex-shrink-0">
                             <div class="fs-5">{{getDate(event.date)}}</div>
                             <div class="fs-6">{{getTime(event.date)}}</div>
@@ -22,7 +22,7 @@
                                     <div>{{event.location}}&nbsp;|&nbsp;</div><div><a class="text-base" [href]="event.addressLink" target="_blank">{{event.address}}</a></div>
                                 </div>
                             </div>
-                            <a *ngIf="event.rsvpOptions" target="_blank" href="#" class="usa-button usa-button--secondary centered mb-2">
+                            <a *ngIf="event.rsvpOptions" target="_blank" href="#" class="usa-button usa-button--accent-cool centered mb-2">
                                 <span class="text-white">RSVP</span>
                             </a>
                         </div>
@@ -31,8 +31,9 @@
             </div>
             <div class="col-md-12 col-lg-4">
                 <div class="border-rounded p-3 bg-gray-5 mb-3">
-                    <div class="fs-6 text-align-center mb-2">Early Bird Dinners are at 6:30pm Stated Meetings are at 7:30pm.</div>
-                    <div class="fs-6 text-align-center">Please note reservations are required for all meals</div>
+                    <div class="fs-6 text-align-center mb-2">Early Bird Dinners are at 6:30pm</div>
+                    <div class="fs-6 text-align-center mb-2">Stated Meetings are at 7:30pm</div>
+                    <div class="fs-6 text-align-center">Please note: Reservations are required for all meals</div>
                 </div>
                 <div div class="border-rounded p-3 bg-gray-5">
                     <div div class="d-flex align-items-center justify-content-center">

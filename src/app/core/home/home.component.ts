@@ -12,7 +12,7 @@ export class HomeComponent {
 
     ngOnInit() {
         this.calculateFCLAge();
-        const event = events.find(ev => ev.spotlight && new Date(ev.date) < new Date())
+        const event = events.find(ev => ev.spotlight && new Date(ev.date) > new Date())
         if (event) {
             this.event = { ...event, spotlightImage: `../../../assets/images/${event.spotlightImage}` };
         }
