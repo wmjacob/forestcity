@@ -38,4 +38,11 @@ export class FutureEventsComponent {
   getTime(date: string) {
     return timeFormatter.format(new Date(date))
   }
+
+  hasEventPassed(date: string): boolean {
+    let today = new Date();
+    let eventDate = new Date(date);
+
+    return today > eventDate ? true : false;
+  }
 }
