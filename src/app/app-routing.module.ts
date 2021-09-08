@@ -6,10 +6,12 @@ import { LoginComponent } from './authentication/login.component';
 import { RegisterComponent } from './authentication/register.component';
 import { HistoryComponent } from './forest-city/our-history/history.component';
 import { PastMastersComponent } from './forest-city/past-masters/past-masters.component';
+import { BulletinComponent } from './forest-city/bulletin/bulletin.component';
+import { FutureEventsComponent } from './forest-city/future-events/future-events.component';
 
 const routes: Routes = [
   {
-    path: '', 
+    path: '',
     component: LayoutComponent,
     // children go here, including those that need auths.  for those, use activationguard
     children: [
@@ -30,8 +32,16 @@ const routes: Routes = [
       {
         path: 'past-masters',
         component: PastMastersComponent
-      }
-    ]
+      },
+      {
+        path: 'bulletin',
+        component: BulletinComponent,
+      },
+      {
+        path: 'future-events',
+        component: FutureEventsComponent,
+      },
+    ],
   },
   // routes without header or footer
   {

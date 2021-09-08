@@ -20,3 +20,27 @@ h1,h2,h3 {
     padding:0;
     margin:0;
 }
+
+.bg-secondary-lightest {
+    background-color: lighten(#f8dfe2, 5%);
+}
+
+@media screen and (min-width: 1024px) {
+    .primary-content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .primary-content {
+            margin: 70px;
+            max-width: 1024px;
+            border: 2px #005ea2 solid;
+            border-radius: 4px;
+
+        }
+    }
+}
+
+.border-rounded {
+    border-radius: 4px;
+}

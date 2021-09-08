@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FutureEventsComponent } from './future-events.component';
 
+
 describe('FutureEventsComponent', () => {
   let component: FutureEventsComponent;
   let fixture: ComponentFixture<FutureEventsComponent>;
