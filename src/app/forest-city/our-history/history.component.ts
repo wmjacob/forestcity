@@ -175,6 +175,4 @@ export class HistoryComponent implements OnInit {
         this.fclAge = calculateFCLAge();
         this.events = events;
     }
-
-
 }

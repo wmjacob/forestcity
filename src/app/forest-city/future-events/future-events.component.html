@@ -1,1 +1,48 @@
-<p>future-events works!</p>
+<div class="future-events">
+    <div class="future-events-title bg-white pt-4 pb-3">
+        <h2 >Forest City Lodge Events</h2>
+        <div class="fs-6">5516 Mayfield Rd, Cleveland, OH 44124</div>
+    </div>
+    <div class="future-events-content bg-gray-10 py-3">
+        <h4 class="mb-3">Upcoming Events</h4>
+        <div class="row">
+            <div class="col-md-12 col-lg-8 mb-2">
+                <div *ngFor="let event of events" class="border-rounded mb-2">
+                    <div class="d-flex flex-direction-row">
+                        <div class="bg-gray-5 px-3 py-4 flex-shrink-0">
+                            <div class="fs-5">{{getDate(event.date)}}</div>
+                            <div class="fs-6">{{getTime(event.date)}}</div>
+                        </div>
+                        <div class="d-flex bg-white p-3 pb-1 flex-grow-1 align-items-center justify-content-between flex-wrap">
+                            <div class="mb-2">
+                                <div class="fw-bold fs-4">
+                                    {{event.name}}
+                                </div>
+                                <div class="future-events-list-item-location text-base d-flex flex-wrap">
+                                    <div>{{event.location}}&nbsp;|&nbsp;</div><div><a class="text-base" [href]="event.addressLink" target="_blank">{{event.address}}</a></div>
+                                </div>
+                            </div>
+                            <a *ngIf="event.rsvpOptions" target="_blank" href="#" class="usa-button usa-button--secondary centered mb-2">
+                                <span class="text-white">RSVP</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="border-rounded p-3 bg-gray-5 mb-3">
+                    <div class="fs-6 text-align-center mb-2">Early Bird Dinners are at 6:30pm Stated Meetings are at 7:30pm.</div>
+                    <div class="fs-6 text-align-center">Please note reservations are required for all meals</div>
+                </div>
+                <div div class="border-rounded p-3 bg-gray-5">
+                    <div div class="d-flex align-items-center justify-content-center">
+                        <iframe class="border border-2 border-rounded mb-3" width="100%" height="200px" id="gmap_canvas" src="https://maps.google.com/maps?q=Lyndhurst%20Masonic%20Temple&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                    <div class="fs-5 fw-bold mb-2">Lyndhurst Masonic Temple Info</div>
+                    <div class="fs-6 mb-2">Lyndhurst Masonic Temple is convieniently located on Mayfield Rd, between Brainard Rd and Richmond Rd.</div>
+                    <div class="fs-6">Ample parking can be found onsite, and the building is handicap accessible.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

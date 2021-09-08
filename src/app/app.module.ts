@@ -10,6 +10,8 @@ import { LayoutComponent } from './core/layout/layout.component';
 import { HomeComponent } from './core/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { JoinComponent } from './core/join/how-to-join/join.component';
+import { BulletinComponent } from './forest-city/bulletin/bulletin.component';
+import { FutureEventsComponent } from './forest-city/future-events/future-events.component';
 import { HistoryComponent } from './forest-city/our-history/history.component';
 
 @NgModule({
@@ -20,12 +22,14 @@ import { HistoryComponent } from './forest-city/our-history/history.component';
     LayoutComponent,
     HomeComponent,
     HistoryComponent,
-    JoinComponent
+    JoinComponent,
+    BulletinComponent,
+    FutureEventsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
