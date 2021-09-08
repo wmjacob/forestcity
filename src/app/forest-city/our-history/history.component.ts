@@ -65,7 +65,7 @@ const events: EventOptions[] = [
         Wor. Bro. Negin later became the Chairman of the first blood bank established by any Masonic Lodge in the state of Ohio.
         `,
         imageSrc: "../../../assets/images/timecapsule.jpg",
-        imageCaption: "Julias Negin's grandchildren open time capsule",
+        imageCaption: "Julius Negin's grandchildren open time capsule",
     },
     {
         year: 1955,
