@@ -133,7 +133,7 @@ const events: EventOptions[] = [
         After lengthy negotiations, the sale was approved and Forest City Lodge moved as a tenant to the Lyndhurst Masonic Center, located at 5516 Mayfield Road, Lyndhurst, Ohio 44124.
         `,
         imageSrc: "../../../assets/images/alter.jpg",
-        imageCaption: "Lodge Room Alter, Lyndhurst Masonic Temple",
+        imageCaption: "Lodge Room Altar, Lyndhurst Masonic Temple",
     },
     {
         year: 2018,
