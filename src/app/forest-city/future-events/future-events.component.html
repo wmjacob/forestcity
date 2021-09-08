@@ -1,5 +1,5 @@
 <div class="future-events">
-    <div class="future-events-title bg-white pt-4 pb-3">
+    <div class="future-events-title bg-white pt-4 pb-3 centered">
         <h2 >Forest City Lodge Events</h2>
         <div class="fs-6">5516 Mayfield Rd, Cleveland, OH 44124</div>
     </div>
@@ -7,7 +7,7 @@
         <h4 class="mb-3">Upcoming Events</h4>
         <div class="row">
             <div class="col-md-12 col-lg-8 mb-2">
-                <div *ngFor="let event of events" class="border-rounded mb-2">
+                <div *ngFor="let event of events, let i = index" class="border-rounded mb-2">
                     <div *ngIf="!hasEventPassed(event.date)" class="d-flex flex-direction-row">
                         <div class="bg-gray-5 px-3 py-4 flex-shrink-0">
                             <div class="fs-5">{{getDate(event.date)}}</div>
@@ -22,9 +22,17 @@
                                     <div>{{event.location}}&nbsp;|&nbsp;</div><div><a class="text-base" [href]="event.addressLink" target="_blank">{{event.address}}</a></div>
                                 </div>
                             </div>
-                            <a *ngIf="event.rsvpOptions" target="_blank" href="#" class="usa-button usa-button--accent-cool centered mb-2">
-                                <span class="text-white">RSVP</span>
-                            </a>
+                            <div>
+                                <button *ngIf="event.rsvpOptions"
+                                    href="#rsvpModal"
+                                    aria-controls="rsvpModal"
+                                    class="usa-button usa-button--outline centered mb-2"
+                                    (click)="setDateForRsvp(event.date)"
+                                    data-open-modal>
+                                    RSVP
+                                </button>
+                                <fcl-rsvp [rsvpDate]="rsvpDate"></fcl-rsvp>
+                            </div>
                         </div>
                     </div>
                 </div>

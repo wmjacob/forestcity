@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import events from '@data/events.json';
 
 // TODO: move to common interfaces
@@ -24,6 +24,7 @@ console.log(events)
   styleUrls: ['./future-events.component.scss']
 })
 export class FutureEventsComponent {
+  rsvpDate: string = '';
 
   ngOnInit(): void {
     this.events = events;
@@ -44,5 +45,9 @@ export class FutureEventsComponent {
     let eventDate = new Date(date);
 
     return today > eventDate ? true : false;
+  }
+
+  setDateForRsvp(selectedDate: string) {
+    this.rsvpDate = selectedDate;
   }
 }
