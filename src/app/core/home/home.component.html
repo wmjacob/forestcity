@@ -22,3 +22,10 @@
         </div>
     </div>
 </div>
+<div *ngIf="event">
+    <div class="d-flex align-items-center justify-content-end flex-column" style="background-image: url('{{event.spotlightImage}}');background-size: cover;background-repeat: no-repeat;min-height: 50vw">
+        <div class="event-highlight-name text-white">{{event.name}}</div>
+        <div class="event-highlight-date fs-4 text-white">Wed December 7, 7:30 PM</div>
+        <a class="fs-4 mb-3 text-white" href="#">Make your reservation today!</a>
+    </div>
+</div>

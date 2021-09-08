@@ -1,28 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import events from '@data/events.json';
 
+// TODO: move to common interfaces
 interface EventOptions {
   date: string,
   name: string,
   location: string,
   address: string,
   addressLink: string,
-  rsvpOptions: object | boolean
+  rsvpOptions: object | boolean,
+  spotlight: boolean,
+  spotlightImage: string,
 }
-
-const events: EventOptions[] = [
-  {
-    date: '2011-10-05 14:48',
-    name: 'Brotherhood Night',
-    location: 'Forest City Lodge',
-    address: 'Lyndhurst Masonic Temple',
-    addressLink: 'https://goo.gl/maps/YLCvNWBDL1XQMRyg6',
-    rsvpOptions: false,
-  },
-]
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' });
 const timeFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'short', hour: 'numeric', minute: 'numeric' });
 
+console.log("events")
+console.log(events)
 @Component({
   selector: 'app-future-events',
   templateUrl: './future-events.component.html',
