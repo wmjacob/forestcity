@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { GetPastMastersResponse } from './model/get-past-masters-response';
+import { GetPastMastersResponse, PastMaster } from './model/get-past-masters-response';
 import { PastMastersService } from './service/past-masters.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { PastMastersService } from './service/past-masters.service';
 })
 export class PastMastersComponent implements OnInit {
   getPastMastersResponse: GetPastMastersResponse;
+  pastMastersList: PastMaster[] = [];
 
   constructor(private pastMastersService: PastMastersService) {
     this.getPastMastersResponse = this.pastMastersService.getPastMasters();
@@ -16,5 +17,6 @@ export class PastMastersComponent implements OnInit {
 
   ngOnInit(): void {
     console.log("in past masters component, list= " + this.getPastMastersResponse.pastMastersList.toString());
+    this.pastMastersList = this.getPastMastersResponse.pastMastersList;
   }
 }

@@ -1,18 +1,26 @@
 <div class="bg-primary-lighter pt-2 pb-2">
     <div class="grid-col-12 centered">
-        <!-- <div class="fclPastMastersBG">
-        </div> -->
         <h2 >Past Masters of Forest City Lodge #388</h2>
     </div>
 </div>
-<div>
-    <table>
-        <tbody>
-            <tr *ngFor="">
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+<br>
+<div class="usa-card-group grid-col pmContainer">
+    <div *ngFor="let master of pastMastersList">
+        <div class="grid-col usa-card">
+            <div class="usa-card__container fclCardContainer">
+                <header class="usa-card__header bg-primary-lighter fclCardHeader">
+                    <h3 class="usa-card__heading centered"> {{ master.name }} </h3>
+                </header>
+                <div class="fclCardHeaderLine"></div>
+                <div class="usa_card__body centered">
+                    <div class="fclImageContainer">
+                        <img src="{{ master.imgUrl }}"/>
+                    </div>
+                    <h4> {{ master.term }} </h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 

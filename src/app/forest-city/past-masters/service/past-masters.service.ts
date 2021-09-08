@@ -19,7 +19,8 @@ export class PastMastersService {
           let pm: PastMaster = {
             number: element.number,
             name: element.name,
-            term: element.term
+            term: element.term,
+            imgUrl: element.imgUrl
           }
           console.log("pm inside loop: " + pm.name);
           responseObj.pastMastersList.push(pm);

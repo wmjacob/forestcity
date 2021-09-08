@@ -6,4 +6,5 @@ export interface PastMaster {
     number: number;
     name: string;
     term: string;
+    imgUrl: string;
 }

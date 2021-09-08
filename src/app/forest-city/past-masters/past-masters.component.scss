@@ -1,5 +1,36 @@
-.fclPastMastersBG {
-    background: url(../../../assets/images/past_master_jewel.svg) no-repeat center;
-    background-size: auto;
-    height: 39rem;
+.fclCardContainer {
+    min-height: 10rem;
+    background: #F1F1F1FF;
+}
+
+.fclCardHeader {
+    min-height: 4.5rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    inline-size: 350px;
+    overflow-wrap: break-word;
+}
+
+.fclCardHeaderLine {
+    height: 0.4rem;
+    background-color: blue;
+}
+
+.fclImageContainer {
+    height: 350px;
+    width: 350px;
+
+    img {
+        height: 350px;
+    }
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.pmContainer {
+    margin-left: auto;
+    margin-right: auto;
 }
