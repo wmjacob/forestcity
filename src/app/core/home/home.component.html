@@ -32,7 +32,13 @@
                 <div class="event-highlight-name text-white centered">{{event.name}}</div>
                 <div *ngIf="event.description" class="event-highlight-description text-white centered">{{event.description}}</div>
                 <div class="event-highlight-date fs-4 text-white centered"> {{ event.date | date:'fullDate' }} {{ event.date | date:'shortTime' }} </div>
-                <a class="fs-4 mb-3 text-white centered" href="#">Make your reservation today!</a>
+                <a class="fs-4 mb-3 text-white centered" 
+                    href="#rsvpModal"
+                    aria-controls="rsvpModal"
+                    data-open-modal>
+                  Make your reservation today!
+                </a>
+                <fcl-rsvp [rsvpDate]="event.date"></fcl-rsvp>
             </div>
           </div>
         </div>
@@ -45,7 +51,4 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
-
-
 </div>

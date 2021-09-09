@@ -1,0 +1,51 @@
+<div class="usa-modal"
+    id="rsvpModal"
+    aria-labelledby="rsvpHeading"
+    aria-describedby="rsvpDesc">
+    <div class="usa-modal__content">
+        <div class="usa-modal__main">
+            <h2 class="usa-modal__heading" id="rsvpHeading">Forest City Lodge #388 RSVP</h2>
+            <div class="usa-prose">
+                <p id="rsvpDesc">RSVP for {{ rsvpDate | date:'fullDate' }}:</p>
+                <form [formGroup]="rsvpForm" class="usa-form">
+                    <label for="first-name" class="usa-label required-field">First Name:</label>
+                    <input id="first-name"
+                        type="text"
+                        class="usa-input form-control"
+                        formControlName="firstName"
+                        [class.is-invalid] = "rsvpForm.get('firstName')?.invalid && rsvpForm.get('firstName')?.dirty"
+                        required>
+                    <label for="last-name" class="usa-label required-field">Last Name:</label>
+                    <input id="last-name"
+                        type="text"
+                        class="usa-input form-control"
+                        formControlName="lastName"
+                        [class.is-invalid] = "rsvpForm.get('lastName')?.invalid && rsvpForm.get('lastName')?.dirty"
+                        required>
+                    <label for="email" class="usa-label required-field">Email:</label>
+                    <input id="email"
+                        type="email"
+                        class="usa-input form-control"
+                        formControlName="email"
+                        [class.is-invalid] = "rsvpForm.get('email')?.invalid && rsvpForm.get('email')?.dirty"
+                        required>
+                </form>
+            </div>
+            <div class="usa-modal__footer">
+                <ul class="usa-button-group">
+                    <li class="usa-button-group__item">
+                        <button type="button" class="usa-button usa-button--primary" (click)="submitRsvp()" [disabled]="!rsvpForm.valid">Submit</button>
+                    </li>
+                    <li class="usa-button-group__item">
+                        <button type="button" class="usa-button usa-button--secondary padding-105 text-center" data-close-modal>Cancel</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="usa-button usa-modal__close"
+            aria-label="Close this window"
+            data-close-modal>
+            Close
+        </button>
+    </div>
+</div>
