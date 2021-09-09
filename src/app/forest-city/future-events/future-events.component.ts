@@ -5,6 +5,7 @@ import events from '@data/events.json';
 interface EventOptions {
   date: string,
   name: string,
+  description: string,
   location: string,
   address: string,
   addressLink: string,
