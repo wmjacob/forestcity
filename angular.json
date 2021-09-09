@@ -35,7 +35,8 @@
             ],
             "scripts": [
               "node_modules/uswds/dist/js/uswds-init.min.js",
-              "node_modules/uswds/dist/js/uswds.min.js"
+              "node_modules/uswds/dist/js/uswds.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {

@@ -8,14 +8,15 @@ import events from '@data/events.json';
 })
 export class HomeComponent {
     fclAge: number = 0;
-    event: any;
+    events: any[] = [];
 
     ngOnInit() {
         this.calculateFCLAge();
-        const event = events.find(ev => ev.spotlight && new Date(ev.date) > new Date())
-        if (event) {
-            this.event = { ...event, spotlightImage: `../../../assets/images/${event.spotlightImage}` };
-        }
+        const now = new Date()
+        this.events = events
+            .filter(ev => ev.spotlight && new Date(ev.date) > now)
+            .map(event => ({ ...event, spotlightImage: `../../../assets/images/${event.spotlightImage}` }))
+            .slice(0, 3);
     }
 
     private calculateFCLAge() {
