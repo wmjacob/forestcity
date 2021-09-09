@@ -9,10 +9,11 @@ import events from '@data/events.json';
 export class HomeComponent {
     fclAge: number = 0;
     events: any[] = [];
+    rsvpDate: string = '';
 
     ngOnInit() {
         this.calculateFCLAge();
-        const now = new Date()
+        const now = new Date();
         this.events = events
             .filter(ev => ev.spotlight && new Date(ev.date) > now)
             .map(event => ({ ...event, spotlightImage: `../../../assets/images/${event.spotlightImage}` }))
@@ -24,4 +25,8 @@ export class HomeComponent {
         let diff = Math.abs(Date.now() - chartered.getTime());
         this.fclAge = Math.floor((diff / (1000 * 3600 * 24)) / 365.25);
     }
+
+    setDateForRsvp(selectedDate: string) {
+        this.rsvpDate = selectedDate;
+      }
 }
