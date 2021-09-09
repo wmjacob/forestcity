@@ -80,6 +80,26 @@
     "spotlightImage": ""
   },
   {
+    "date": "2021-11-17 19:30",
+    "name": "Stated Meeting",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "spotlight": false,
+    "spotlightImage": ""
+  },
+  {
+    "date": "2021-11-27 19:30",
+    "name": "Installation of Officers",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "spotlight": false,
+    "spotlightImage": ""
+  },
+  {
       "date": "2021-12-15 19:30",
       "name": "Brotherhood Night",
       "location": "Forest City Lodge",

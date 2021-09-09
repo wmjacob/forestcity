@@ -28,6 +28,10 @@
     <div class="d-flex align-items-center justify-content-end flex-column" style="background-image: url('{{event.spotlightImage}}');background-size: cover;background-repeat: no-repeat;min-height: 50vw">
         <div class="event-highlight-name text-white">{{event.name}}</div>
         <div class="event-highlight-date fs-4 text-white"> {{ event.date | date:'fullDate' }} {{ event.date | date:'shortTime' }} </div>
-        <a class="fs-4 mb-3 text-white" href="#">Make your reservation today!</a>
+        <a class="fs-4 mb-3 text-white"
+            href="#rsvpModal"
+            aria-controls="rsvpModal"
+            data-open-modal>Make your reservation today!</a>
+        <fcl-rsvp [rsvpDate]="event.date"></fcl-rsvp>
     </div>
 </div>
