@@ -9,7 +9,7 @@
             <div class="col-md-12 col-lg-8 mb-2">
                 <div *ngFor="let event of events" class="border-rounded mb-2">
                     <div *ngIf="!hasEventPassed(event.date)" class="d-flex flex-direction-row">
-                        <div class="bg-gray-5 px-3 py-4 flex-shrink-0">
+                        <div class="bg-gray-5 px-3 py-4 flex-shrink-0" style="width: 135px;">
                             <div class="fs-5">{{getDate(event.date)}}</div>
                             <div class="fs-6">{{getTime(event.date)}}</div>
                         </div>
@@ -18,11 +18,14 @@
                                 <div class="fw-bold fs-4">
                                     {{event.name}}
                                 </div>
+                                <div *ngIf="event.description" class="fs-6">
+                                    {{event.description}}
+                                </div>
                                 <div class="future-events-list-item-location text-base d-flex flex-wrap">
                                     <div>{{event.location}}&nbsp;|&nbsp;</div><div><a class="text-base" [href]="event.addressLink" target="_blank">{{event.address}}</a></div>
                                 </div>
                             </div>
-                            <a *ngIf="event.rsvpOptions" target="_blank" href="#" class="usa-button usa-button--accent-cool centered mb-2">
+                            <a *ngIf="event.rsvpOptions" href="#" class="usa-button usa-button--secondary centered mb-2">
                                 <span class="text-white">RSVP</span>
                             </a>
                         </div>
