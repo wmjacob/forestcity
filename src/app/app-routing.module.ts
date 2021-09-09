@@ -8,6 +8,7 @@ import { HistoryComponent } from './forest-city/our-history/history.component';
 import { PastMastersComponent } from './forest-city/past-masters/past-masters.component';
 import { BulletinComponent } from './forest-city/bulletin/bulletin.component';
 import { FutureEventsComponent } from './forest-city/future-events/future-events.component';
+import { ContactUsComponent } from './core/contact-us/contact-us.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
         path: 'future-events',
         component: FutureEventsComponent,
       },
+      {
+        path: 'contact-us',
+        component: ContactUsComponent
+      }
     ],
   },
   // routes without header or footer
