@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 
+# Dockerized environment
+
+Requires docker and docker-compose
+
+## Development server
+
+Run `make dev` to start up the dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Build development server server
+
+Run `make build` to rebuild your docker image after dependency changes.
+
+# Local environment
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

@@ -1,0 +1,13 @@
+steps:
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/forest-city-325620/forest-city:$COMMIT_SHA', '.']
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/forest-city-325620/forest-city:$COMMIT_SHA']
+# Deploy container image to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args: ['run', 'deploy', 'forest-city', '--image', 'gcr.io/forest-city-325620/forest-city:$COMMIT_SHA', '--region', 'us-east1', '--concurrency', 80, '--max-instances', 5, '--memory', '256Mi']
+images:
+- gcr.io/forest-city-325620/forest-city:$COMMIT_SHA
