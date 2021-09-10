@@ -16,6 +16,7 @@ import { PastMastersComponent } from './forest-city/past-masters/past-masters.co
 import { HttpClientModule } from '@angular/common/http';
 import { PastMastersService } from './forest-city/past-masters/service/past-masters.service';
 import { RsvpComponent } from './forest-city/future-events/rsvp/rsvp.component';
+import { ContactUsComponent } from './core/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { RsvpComponent } from './forest-city/future-events/rsvp/rsvp.component';
     PastMastersComponent,
     BulletinComponent,
     FutureEventsComponent,
-    RsvpComponent
+    RsvpComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
