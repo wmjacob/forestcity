@@ -188,7 +188,7 @@
   },
   {
     "date": "2022-03-02 19:30",
-    "name": "State Meeting",
+    "name": "Stated Meeting",
     "description": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -199,23 +199,12 @@
   },
   {
     "date": "2022-03-16 19:30",
-    "name": "State Meeting",
+    "name": "Stated Meeting",
     "description": "Birthday Night",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
     "rsvpOptions": true,
-    "spotlight": false,
-    "spotlightImage": ""
-  },
-  {
-    "date": "2022-03-27 10:30",
-    "name": "Rehearsal",
-    "description": "Inspection (EA)",
-    "location": "Forest City Lodge",
-    "address": "Lyndhurst Masonic Temple",
-    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
     "spotlight": false,
     "spotlightImage": ""
   },
