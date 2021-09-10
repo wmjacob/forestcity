@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+
+  ng:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    command: ng serve --host 0.0.0.0 --port 3000
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 4200:3000
+
+  express:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 3000:3000
+
+
