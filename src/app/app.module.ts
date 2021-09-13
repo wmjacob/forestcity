@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './authentication/login.component';
 import { HeaderComponent } from './core/header/header.component';
 import { LayoutComponent } from './core/layout/layout.component';
 import { HomeComponent } from './core/home/home.component';
@@ -22,7 +21,6 @@ import { OurOfficersComponent } from './forest-city/our-officers/our-officers.co
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     HeaderComponent,
     LayoutComponent,
     HomeComponent,
