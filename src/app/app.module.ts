@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PastMastersService } from './forest-city/past-masters/service/past-masters.service';
 import { RsvpComponent } from './forest-city/future-events/rsvp/rsvp.component';
 import { ContactUsComponent } from './core/contact-us/contact-us.component';
+import { OurOfficersComponent } from './forest-city/our-officers/our-officers.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ContactUsComponent } from './core/contact-us/contact-us.component';
     BulletinComponent,
     FutureEventsComponent,
     RsvpComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    OurOfficersComponent
   ],
   imports: [
     BrowserModule,

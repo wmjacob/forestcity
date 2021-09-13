@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GetPastMastersResponse, PastMaster } from './model/get-past-masters-response';
 import { PastMastersService } from './service/past-masters.service';
 
@@ -16,7 +16,6 @@ export class PastMastersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log("in past masters component, list= " + this.getPastMastersResponse.pastMastersList.toString());
     this.pastMastersList = this.getPastMastersResponse.pastMastersList;
   }
 }

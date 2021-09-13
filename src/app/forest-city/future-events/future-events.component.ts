@@ -17,8 +17,6 @@ interface EventOptions {
 const dateFormatter = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' });
 const timeFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'short', hour: 'numeric', minute: 'numeric' });
 
-console.log("events")
-console.log(events)
 @Component({
   selector: 'app-future-events',
   templateUrl: './future-events.component.html',
