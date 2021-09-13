@@ -13,7 +13,6 @@ const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-    // children go here, including those that need auths.  for those, use activationguard
     children: [
       {
         path: '',
@@ -23,7 +22,6 @@ const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent,
-        // loadChildren: () => import('./core/core.module').then(m => m.CoreModule)
       },
       {
         path: 'history',
