@@ -16,6 +16,9 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
+    env_file:
+      - ./.env
+    command: nodemon bin/www
     volumes:
       - .:/usr/src/app
     ports:

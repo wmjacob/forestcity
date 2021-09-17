@@ -1,0 +1,93 @@
+[
+    {
+        "name": "Shawn S. Franks",
+        "office": "Worshipful Master",
+        "image": "current-officers/2020-2021_shawn_s_franks.jpg",
+        "bio": "Hi, I'm Shawn",
+        "jewel": "worshipful_master.png"
+    },
+    {
+        "name": "Ryan Stuver",
+        "office": "Senior Warden",
+        "image": "past_masters/square_and_compasses.jpg",
+        "bio": "My name is Ryan",
+        "jewel": "senior_warden.png"
+    },
+    {
+        "name": "Jason Kiner",
+        "office": "Junior Warden",
+        "image": "past_masters/square_and_compasses.jpg",
+        "bio": "My name is Jason",
+        "jewel": "junior_warden.png"
+    },
+    {
+        "name": "Ronald Stuver",
+        "office": "Senior Deacon",
+        "image": "past_masters/square_and_compasses.jpg",
+        "bio": "My name is Ronald",
+        "jewel": "senior_deacon.png"
+    },
+    {
+        "name": "Dylan Marsh",
+        "office": "Junior Deacon",
+        "image": "past_masters/square_and_compasses.jpg",
+        "bio": "My name is Dylan",
+        "jewel": "junior_deacon.png"
+    },
+    {
+        "name": "Alex H. Rothman, P.M.",
+        "office": "Secretary",
+        "image": "past_masters/square_and_compasses.jpg",
+        "bio": "My name is Alan",
+        "jewel": "secretary.png"
+    },
+    {
+        "name": "Alex C. Meske, P.M.",
+        "office": "Treasurer",
+        "image": "current-officers/2016-2017_alex_c_meske.jpg",
+        "bio": "My name is Alex",
+        "jewel": "treasurer.png"
+    },
+    {
+        "name": "Timothy S. Cline, P.M.",
+        "office": "Chaplain",
+        "image": "current-officers/2017-2018_timothy_s_cline.jpg",
+        "bio": "My name is Tim",
+        "jewel": "chaplain.png"
+    },
+    {
+        "name": "Zalman Rzepka, P.M.",
+        "office": "Associate Chaplain",
+        "image": "past_masters/square_and_compasses.jpg",
+        "bio": "My name is Z",
+        "jewel": "chaplain.png"
+    },
+    {
+        "name": "Joshua Jaffe",
+        "office": "Senior Steward",
+        "image": "past_masters/square_and_compasses.jpg",
+        "bio": "My name is Josh",
+        "jewel": "steward.png"
+    },
+    {
+        "name": "James Paluf",
+        "office": "Junior Steward",
+        "image": "past_masters/square_and_compasses.jpg",
+        "bio": "My name is Jim",
+        "jewel": "steward.png"
+    },
+    {
+        "name": "Bruce A. Koval",
+        "office": "Tyler",
+        "image": "past_masters/square_and_compasses.jpg",
+        "bio": "My name is Bruce",
+        "jewel": "tyler.png"
+    },
+    {
+        "name": "David L. Jones",
+        "office": "Marshal",
+        "image": "past_masters/square_and_compasses.jpg",
+        "bio": "My name is Dave",
+        "jewel": "marshal.png"
+    }
+]
