@@ -2,19 +2,17 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './core/home/home.component';
 import { LayoutComponent } from './core/layout/layout.component';
-import { LoginComponent } from './authentication/login.component';
-import { RegisterComponent } from './authentication/register.component';
 import { HistoryComponent } from './forest-city/our-history/history.component';
 import { PastMastersComponent } from './forest-city/past-masters/past-masters.component';
 import { BulletinComponent } from './forest-city/bulletin/bulletin.component';
 import { FutureEventsComponent } from './forest-city/future-events/future-events.component';
 import { ContactUsComponent } from './core/contact-us/contact-us.component';
+import { OurOfficersComponent } from './forest-city/our-officers/our-officers.component';
 
 const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-    // children go here, including those that need auths.  for those, use activationguard
     children: [
       {
         path: '',
@@ -24,7 +22,6 @@ const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent,
-        // loadChildren: () => import('./core/core.module').then(m => m.CoreModule)
       },
       {
         path: 'history',
@@ -45,18 +42,14 @@ const routes: Routes = [
       {
         path: 'contact-us',
         component: ContactUsComponent
+      },
+      {
+        path: 'our-officers',
+        component: OurOfficersComponent
       }
     ],
   },
   // routes without header or footer
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'register',
-    component: RegisterComponent
-  },
   {
     // MUST BE LAST
     path: '**',

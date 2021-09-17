@@ -39,7 +39,7 @@
                                         <a routerLink="/past-masters">Our Past Masters</a>
                                     </li>
                                     <li class="usa-nav__submenu-item">
-                                        <a href="">Our Current Officers</a>
+                                        <a routerLink="/our-officers">Our Current Officers</a>
                                     </li>
                                 </ul>
                             </div>
@@ -56,7 +56,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="usa-col">
+                            <!-- <div class="usa-col">
                                 <ul class="usa-nav__submenu-list">
                                     <li class="usa-nav__submenu-item">
                                         <a href="#">Things 1</a>
@@ -68,7 +68,7 @@
                                         <a href="#">Things 3</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </li>
@@ -139,20 +139,10 @@
                 <li class="usa-nav__primary-item">
                     <a routerLink="/contact-us" class="usa-nav__link">Contact Us</a>
                 </li>
-                <li class="usa-nav__primary-item" *ngIf="isAuthenticated">
-                    <a href="" class="usa-nav__link">Member's Area</a>
-                </li>
             </ul>
             <!-- Top right side of header -->
             <div class="usa-nav__secondary">
                 <ul class="usa-nav__secondary-links">
-                    <li class="usa-nav__secondary-item">
-                        <a href="/login">Login</a>
-                     </li>
-                     <!-- todo after getting login /auth completed, update these to display "Hello Brother <name> | Logout" -->
-                     <li class="usa-nav__secondary-item">
-                        <a href="/register">Register</a>
-                    </li>
                     <li class="usa-nav__secondary-item">
                         <a class="me-1" href="https://www.facebook.com/lodge388/" target="_blank" rel="noopener noreferrer">
                             <img src="../../../assets/images/facebook_icon.svg"/>
