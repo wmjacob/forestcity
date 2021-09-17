@@ -3,11 +3,10 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
 
-// Instantiates a client
 const GOOGLE_EMAIL_SECRET = 'email-credentials'
 
 const getAuth = async () => {
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV !== 'development') {
     const client = new SecretManagerServiceClient();
     const name = `projects/${process.env.GOOGLE_CLOUD_PROJECT}/secrets/${GOOGLE_EMAIL_SECRET}/versions/latest`;
     const [version] = await client.accessSecretVersion({ name });
@@ -46,14 +45,22 @@ router.post('/email', async function (req, res) {
     to: auth.recipient,
     html: `<ul>${data.fields.map(key => `<li><b>${key}</b>: ${data[key]}</li>`).join('')}<ul>`,
   };
-  transporter.sendMail(mailOptions, (error, info) =>{
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Email sent: ' + info.response);
-    }
-  });
-  res.status(200).json({ status: 'OK' });
+  try {
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(mailOptions, (error, info) =>{
+        if (error) {
+          reject(error);
+        } else {
+          console.log('Email sent: ' + info.response);
+          resolve(true);
+        }
+      });
+    });
+    res.status(200).json({ status: 'Ok' });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Internal Error' });
+  }
 });
 
 module.exports = router;
