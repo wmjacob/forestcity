@@ -22,7 +22,7 @@ export class OurOfficersComponent implements OnInit {
 
   ngOnInit(): void {
     this.officers = officers.map(
-      officer => ({ ...officer, image: `../../../assets/images/current-officers/${officer.image}`})
+      officer => ({ ...officer, image: `../../../assets/images/${officer.image}`})
     ).map(officer => ({ ...officer, jewel: `../../../assets/images/officer-jewels/${officer.jewel}`}));
   }
 

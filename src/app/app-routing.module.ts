@@ -47,7 +47,7 @@ const routes: Routes = [
       {
         path: 'our-officers',
         component: OurOfficersComponent
-      }
+      },
       {
         path: 'how-to-join',
         component: RecruitingComponent,
