@@ -4,7 +4,7 @@
             <h2>Contact the Brethren of Forest City Lodge</h2>
         </div>
         <div class="grid-col-12">
-            <form class="padding-bottom-2" [formGroup]="contactUsForm">
+            <form class="padding-bottom-2" [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
                 <label for="firstName" class="usa-label required-field">First Name:</label>
                 <input id="firstName"
                     type="text"
@@ -37,10 +37,11 @@
                     type="text"
                     rows="5"
                     cols="50"
-                    class="form-control"
+                    class="form-control usa-textarea"
                     formControlName="message"
                     [class.is-invalid] = "contactUsForm.get('message')?.invalid && contactUsForm.get('message')?.dirty"
-                    required>
+                    required
+                >
                 </textarea>
                 <br>
                 <button type="submit" class="usa-button usa-button--primary" [disabled]="!contactUsForm.valid">Submit</button>
