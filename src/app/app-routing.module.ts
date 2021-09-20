@@ -9,6 +9,7 @@ import { FutureEventsComponent } from './forest-city/future-events/future-events
 import { RecruitingComponent } from './forest-city/recruiting/recruiting.component';
 import { ContactUsComponent } from './core/contact-us/contact-us.component';
 import { OurOfficersComponent } from './forest-city/our-officers/our-officers.component';
+import { AboutUsComponent } from './forest-city/about-us/about-us.component';
 
 const routes: Routes = [
   {
@@ -49,10 +50,14 @@ const routes: Routes = [
         component: OurOfficersComponent
       },
       {
+        path: 'about-us',
+        component: AboutUsComponent
+      },
+      {
         path: 'how-to-join',
         component: RecruitingComponent,
-      },
-    ],
+      }
+    ]
   },
   // routes without header or footer
   {
