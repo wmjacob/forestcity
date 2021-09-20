@@ -17,6 +17,7 @@ import { PastMastersService } from './forest-city/past-masters/service/past-mast
 import { RsvpComponent } from './forest-city/future-events/rsvp/rsvp.component';
 import { ContactUsComponent } from './core/contact-us/contact-us.component';
 import { OurOfficersComponent } from './forest-city/our-officers/our-officers.component';
+import { AboutUsComponent } from './forest-city/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { OurOfficersComponent } from './forest-city/our-officers/our-officers.co
     FutureEventsComponent,
     RsvpComponent,
     ContactUsComponent,
-    OurOfficersComponent
+    OurOfficersComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

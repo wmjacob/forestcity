@@ -8,6 +8,7 @@ import { BulletinComponent } from './forest-city/bulletin/bulletin.component';
 import { FutureEventsComponent } from './forest-city/future-events/future-events.component';
 import { ContactUsComponent } from './core/contact-us/contact-us.component';
 import { OurOfficersComponent } from './forest-city/our-officers/our-officers.component';
+import { AboutUsComponent } from './forest-city/about-us/about-us.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
       {
         path: 'our-officers',
         component: OurOfficersComponent
+      },
+      {
+        path: 'about-us',
+        component: AboutUsComponent
       }
     ],
   },
