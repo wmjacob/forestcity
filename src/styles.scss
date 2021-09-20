@@ -20,7 +20,18 @@ h1,h2,h3 {
     padding:0;
     margin:0;
 }
-
+*:focus {
+    outline: none ! important;
+}
+input:focus {
+    outline: #0076d6 dotted 1px ! important;
+}
+button:focus {
+    outline: #0076d6 dotted 1px ! important;
+}
+a:focus {
+    outline: #0076d6 dotted 1px ! important;
+}
 .bg-secondary-lightest {
     background-color: lighten(#f8dfe2, 5%);
 }

@@ -30,11 +30,10 @@
                                     href="#rsvpModal"
                                     aria-controls="rsvpModal"
                                     class="usa-button usa-button--outline centered mb-2"
-                                    (click)="setDateForRsvp(event.date)"
+                                    (click)="setDateForRsvp(event.date, event.name)"
                                     data-open-modal>
                                     RSVP
                                 </button>
-                                <fcl-rsvp [rsvpDate]="rsvpDate"></fcl-rsvp>
                             </div>
                         </div>
                     </div>
@@ -58,3 +57,4 @@
         </div>
     </div>
 </div>
+<fcl-rsvp [rsvpDate]="rsvpDate" [rsvpName]="rsvpName"></fcl-rsvp>

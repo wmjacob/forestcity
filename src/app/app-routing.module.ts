@@ -6,6 +6,7 @@ import { HistoryComponent } from './forest-city/our-history/history.component';
 import { PastMastersComponent } from './forest-city/past-masters/past-masters.component';
 import { BulletinComponent } from './forest-city/bulletin/bulletin.component';
 import { FutureEventsComponent } from './forest-city/future-events/future-events.component';
+import { RecruitingComponent } from './forest-city/recruiting/recruiting.component';
 import { ContactUsComponent } from './core/contact-us/contact-us.component';
 import { OurOfficersComponent } from './forest-city/our-officers/our-officers.component';
 import { AboutUsComponent } from './forest-city/about-us/about-us.component';
@@ -51,8 +52,12 @@ const routes: Routes = [
       {
         path: 'about-us',
         component: AboutUsComponent
+      },
+      {
+        path: 'how-to-join',
+        component: RecruitingComponent,
       }
-    ],
+    ]
   },
   // routes without header or footer
   {

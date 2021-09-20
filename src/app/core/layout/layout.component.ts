@@ -1,10 +1,29 @@
 import { Component } from "@angular/core";
+import { trigger, transition, animate, style } from '@angular/animations'
+
+import { AlertService } from '@services/alert';
 
 @Component({
-    selector: 'layout',
-    templateUrl: './layout.component.html',
-    styleUrls: [ './layout.component.scss' ]
+  selector: 'layout',
+  templateUrl: './layout.component.html',
+  styleUrls: [ './layout.component.scss' ],
+  animations: [
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({opacity: 0}),
+        animate(250, style({ opacity: 1 }))
+      ]),
+      transition(':leave', [
+        animate(250, style({ opacity: 0 }))
+      ])
+    ])
+  ],
 })
 export class LayoutComponent {
-    
+
+  constructor(private alertService: AlertService) {}
+
+  get alert() {
+    return this.alertService.alert;
+  }
 }

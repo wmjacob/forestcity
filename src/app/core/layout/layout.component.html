@@ -1,5 +1,12 @@
 <div class="d-flex flex-column layout-wrapper">
     <header-component></header-component>
+    <div *ngIf="alert" [@fadeInOut] class="usa-alert usa-alert--slim usa-alert--{{alert.className}} fcl-alert">
+        <div class="usa-alert__body">
+          <p class="usa-alert__text">
+            {{alert.text}}
+          </p>
+        </div>
+    </div>
     <div>
         <router-outlet></router-outlet>
     </div>

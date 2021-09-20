@@ -1,18 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import events from '@data/events.json';
+import { EventOptions } from '@data/interfaces';
 
-// TODO: move to common interfaces
-interface EventOptions {
-  date: string,
-  name: string,
-  description: string,
-  location: string,
-  address: string,
-  addressLink: string,
-  rsvpOptions: object | boolean,
-  spotlight: boolean,
-  spotlightImage: string,
-}
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' });
 const timeFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'short', hour: 'numeric', minute: 'numeric' });
@@ -24,6 +13,7 @@ const timeFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'short', hour:
 })
 export class FutureEventsComponent {
   rsvpDate: string = '';
+  rsvpName: string = '';
 
   ngOnInit(): void {
     this.events = events;
@@ -46,7 +36,8 @@ export class FutureEventsComponent {
     return today > eventDate ? true : false;
   }
 
-  setDateForRsvp(selectedDate: string) {
+  setDateForRsvp(selectedDate: string, selectedName: string) {
     this.rsvpDate = selectedDate;
+    this.rsvpName = selectedName;
   }
 }

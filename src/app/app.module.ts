@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,9 +14,9 @@ import { FutureEventsComponent } from './forest-city/future-events/future-events
 import { HistoryComponent } from './forest-city/our-history/history.component';
 import { PastMastersComponent } from './forest-city/past-masters/past-masters.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PastMastersService } from './forest-city/past-masters/service/past-masters.service';
-import { RsvpComponent } from './forest-city/future-events/rsvp/rsvp.component';
 import { ContactUsComponent } from './core/contact-us/contact-us.component';
+import { RsvpComponent } from './forest-city/future-events/rsvp/rsvp.component';
+import { PastMastersService } from './forest-city/past-masters/service/past-masters.service';
 import { OurOfficersComponent } from './forest-city/our-officers/our-officers.component';
 import { AboutUsComponent } from './forest-city/about-us/about-us.component';
 
@@ -37,6 +38,7 @@ import { AboutUsComponent } from './forest-city/about-us/about-us.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
