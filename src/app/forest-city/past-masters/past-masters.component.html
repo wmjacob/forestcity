@@ -5,7 +5,7 @@
 </div>
 <br>
 <div class="usa-card-group grid-col pmContainer">
-    <div *ngFor="let master of pastMastersList.reverse()">
+    <div *ngFor="let master of pageOfItems">
         <div class="grid-col usa-card">
             <div class="usa-card__container fclCardContainer">
                 <header class="usa-card__header bg-primary-lighter fclCardHeader">
@@ -22,7 +22,4 @@
         </div>
     </div>
 </div>
-
-
-
-
+<jw-pagination [items]="pastMastersList.reverse()" (changePage)="onChangePage($event)"></jw-pagination>
