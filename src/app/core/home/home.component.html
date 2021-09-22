@@ -32,10 +32,10 @@
                 <div *ngIf="event.description" class="event-highlight-description text-white centered">{{event.description}}</div>
                 <div class="event-highlight-date fs-4 text-white centered"> {{ event.date | date:'fullDate' }} {{ event.date | date:'shortTime' }} </div>
                 <button class="usa-button usa-button--outline usa-button--inverse usa-button--unstyled fs-4 mb-3"
-                    href="#rsvpModal"
                     aria-controls="rsvpModal"
                     (click)="setDateForRsvp(event.date)"
-                    data-open-modal>Make your reservation today!</button>
+                    data-bs-toggle="modal"
+                    data-bs-target="#rsvpModal">Make your reservation today!</button>
                 <fcl-rsvp [rsvpDate]="event.date" [rsvpName]="event.name"></fcl-rsvp>
             </div>
           </div>

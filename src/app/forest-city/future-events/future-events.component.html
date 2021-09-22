@@ -27,11 +27,11 @@
                             </div>
                             <div>
                                 <button *ngIf="event.rsvpOptions"
-                                    href="#rsvpModal"
                                     aria-controls="rsvpModal"
                                     class="usa-button usa-button--outline centered mb-2"
                                     (click)="setDateForRsvp(event.date, event.name)"
-                                    data-open-modal>
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#rsvpModal">
                                     RSVP
                                 </button>
                             </div>
