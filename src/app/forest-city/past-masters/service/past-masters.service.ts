@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { GetPastMastersResponse, PastMaster } from '../model/get-past-masters-response';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,10 +10,10 @@ export class PastMastersService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getPastMasters(): GetPastMastersResponse {
-    const response = this.httpClient.get('assets/data/past-master-list.json');
-    let responseObj: GetPastMastersResponse = new GetPastMastersResponse();
-    response.subscribe(
+  getPastMasters(): Observable<GetPastMastersResponse> {
+    const getResponse = this.httpClient.get('assets/data/past-master-list.json');
+    const tempResponseObj: GetPastMastersResponse = new GetPastMastersResponse();
+    getResponse.subscribe(
       (successData: any) => {
         successData.forEach((element: PastMaster) => {
           let pm: PastMaster = {
@@ -21,12 +22,13 @@ export class PastMastersService {
             term: element.term,
             imgUrl: element.imgUrl
           }
-          responseObj.pastMastersList.push(pm);
+          tempResponseObj.pastMastersList.push(pm);
         });
-        return responseObj;
       },
-      (errorData: HttpErrorResponse) => {}
+      (errorData: HttpErrorResponse) => {
+        return null;
+      }
     );
-    return responseObj;
+    return of(tempResponseObj);
   }
 }

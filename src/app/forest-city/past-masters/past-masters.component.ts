@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GetPastMastersResponse, PastMaster } from './model/get-past-masters-response';
-import { PastMastersService } from './service/past-masters.service';
+import { PastMaster } from './model/get-past-masters-response';
+import pastMastersList from '@data/past-master-list.json';
 
 @Component({
   selector: 'fcl-past-masters',
@@ -8,14 +8,29 @@ import { PastMastersService } from './service/past-masters.service';
   styleUrls: ['./past-masters.component.scss']
 })
 export class PastMastersComponent implements OnInit {
-  getPastMastersResponse: GetPastMastersResponse;
   pastMastersList: PastMaster[] = [];
+  pageOfItems: Array<any> = [];
 
-  constructor(private pastMastersService: PastMastersService) {
-    this.getPastMastersResponse = this.pastMastersService.getPastMasters();
-  }
+  constructor() {}
 
   ngOnInit(): void {
-    this.pastMastersList = this.getPastMastersResponse.pastMastersList;
+    this.setPastMastersList();
+  }
+
+  setPastMastersList() {
+    let today = new Date();
+    let currentYear = today.getFullYear().toString();
+    let currentMonth = today.getMonth(); // Jan = 0, Feb = 1 ...
+
+    this.pastMastersList = pastMastersList.filter( master => {
+      // auto-update on December 1st, as installation is different every year
+      let termEndYear = master.term.slice(-4);
+      return (termEndYear < currentYear) ||
+        (termEndYear === currentYear && currentMonth > 10);
+    });
+  }
+
+  onChangePage(pageOfItems: Array<any>) {
+    this.pageOfItems = pageOfItems;
   }
 }
