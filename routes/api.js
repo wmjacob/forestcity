@@ -28,24 +28,24 @@ router.get('/status', function (_req, res) {
 });
 
 router.post('/email', async function (req, res) {
-  const auth = await getAuth();
-  const transporter = nodemailer.createTransport({
-    auth: {
-      user: auth.user,
-      pass: auth.pass,
-    },
-    service: 'gmail',
-  });
-  const data = req.body;
-  const subject = data.subject;
-
-  const mailOptions = {
-    subject,
-    from: auth.user,
-    to: auth.recipient,
-    html: `<ul>${data.fields.map(key => `<li><b>${key}</b>: ${data[key]}</li>`).join('')}<ul>`,
-  };
   try {
+    const auth = await getAuth();
+    const transporter = nodemailer.createTransport({
+      auth: {
+        user: auth.user,
+        pass: auth.pass,
+      },
+      service: 'gmail',
+    });
+    const data = req.body;
+    const subject = data.subject;
+
+    const mailOptions = {
+      subject,
+      from: auth.user,
+      to: auth.recipient,
+      html: `<ul>${data.fields.map(key => `<li><b>${key}</b>: ${data[key]}</li>`).join('')}<ul>`,
+    };
     await new Promise((resolve, reject) => {
       transporter.sendMail(mailOptions, (error, info) =>{
         if (error) {

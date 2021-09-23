@@ -8,7 +8,7 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'forest-city', '--image', 'gcr.io/forest-city-325620/forest-city:$COMMIT_SHA', '--region', 'us-east1', '--concurrency', '80', '--max-instances', '5', '--memory', '256Mi', '--service-account', 'cloud-run@forest-city-325620.iam.gserviceaccount.com']
+  args: ['run', 'deploy', 'forest-city', '--image', 'gcr.io/forest-city-325620/forest-city:$COMMIT_SHA', '--region', 'us-east1', '--concurrency', '80', '--max-instances', '5', '--memory', '256Mi', '--service-account', 'cloud-run@forest-city-325620.iam.gserviceaccount.com', '--timeout', '30']
 images:
 - gcr.io/forest-city-325620/forest-city:$COMMIT_SHA
 logsBucket: 'gs://forest-city-build-logs'
