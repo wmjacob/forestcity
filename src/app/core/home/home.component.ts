@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import events from '@data/events.json';
+import { EventOptions } from "@data/interfaces";
 
 @Component({
     selector: 'home-component',
@@ -9,7 +10,7 @@ import events from '@data/events.json';
 export class HomeComponent {
     fclAge: number = 0;
     events: any[] = [];
-    rsvpDate: string = '';
+    event: any = ''; // for rsvp component
 
     ngOnInit() {
         this.calculateFCLAge();
@@ -26,7 +27,7 @@ export class HomeComponent {
         this.fclAge = Math.floor((diff / (1000 * 3600 * 24)) / 365.25);
     }
 
-    setDateForRsvp(selectedDate: string) {
-        this.rsvpDate = selectedDate;
+    setEventForRsvp(event: EventOptions) {
+        this.event = event;
       }
 }
