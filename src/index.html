@@ -15,8 +15,17 @@
       "url": "forestcitylodge.com"
     }
   </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript"> $('.containerClass').css({"visibility":"hidden" });</script>
 </head>
-<body class="bg-secondary-lightest" ng-cloak>
+<body class="bg-secondary-lightest containerClass">
   <app-root></app-root>
+  <script>
+		$(document).ready(function()
+		{
+			$('.containerClass').css({"visibility":"visible"});
+		});
+	</script>
+  <noscript><style>body { visibility: visible; }</style></noscript>
 </body>
 </html>
