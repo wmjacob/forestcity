@@ -8,7 +8,7 @@ const GOOGLE_EMAIL_SECRET = 'email-credentials'
 const getAuth = async () => {
   if (process.env.NODE_ENV !== 'development') {
     const client = new SecretManagerServiceClient();
-    const name = `projects/${process.env.GOOGLE_CLOUD_PROJECT}/secrets/${GOOGLE_EMAIL_SECRET}/versions/latest`;
+    const name = `projects/forest-city-325620/secrets/${GOOGLE_EMAIL_SECRET}/versions/latest`;
     const [version] = await client.accessSecretVersion({ name });
     if (!version.payload || !version.payload.data || !version.payload.data.toString) {
       res.status(500).json({ error: 'Internal Error' });
