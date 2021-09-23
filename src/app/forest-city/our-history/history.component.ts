@@ -140,7 +140,7 @@ const events: EventOptions[] = [
         content: `
         During the Sesquicentennial Celebration, WB Tim Cline called a special meeting to celebrate not only Forest City Lodge's 150 years in operation,
         but to open the time capsule WB Julius A. Negin had placed behind the cornerstone of the Shaker Masonic Temple.
-        The time capsule and cornerstone were recovered during the demolition of the temple building in earlier that year.
+        The time capsule and cornerstone were recovered during the demolition of the temple building earlier that year.
         `,
         imageSrc: "../../../assets/images/sesquicentennial.jpg",
         imageCaption: "Assembled dignitaries and officers",
@@ -150,7 +150,7 @@ const events: EventOptions[] = [
         content: `
         In response to the Covid 19 Pandemic Outbreak, the Grand Master granted dispensations to all
         lodges in Ohio to hold stated meetings, without ritual work, over video conference applications.
-        On April 15, Forest City #388 opened its first-ever virtual stated meeting.
+        On April 15, Forest City Lodge #388 opened its first-ever virtual stated meeting.
         At various points during the meeting, more than 40 brethren in five states joined the call.
         `,
         imageSrc: "../../../assets/images/zoom.jpg",

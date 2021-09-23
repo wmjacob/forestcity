@@ -12,8 +12,7 @@ const timeFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'short', hour:
   styleUrls: ['./future-events.component.scss']
 })
 export class FutureEventsComponent {
-  rsvpDate: string = '';
-  rsvpName: string = '';
+  event: any = ''; // for rsvp component
 
   ngOnInit(): void {
     this.events = events;
@@ -36,8 +35,7 @@ export class FutureEventsComponent {
     return today > eventDate ? true : false;
   }
 
-  setDateForRsvp(selectedDate: string, selectedName: string) {
-    this.rsvpDate = selectedDate;
-    this.rsvpName = selectedName;
+  setEventForRsvp(event: EventOptions) {
+    this.event = event;
   }
 }

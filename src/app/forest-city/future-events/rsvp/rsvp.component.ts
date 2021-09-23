@@ -4,16 +4,13 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from '@services/email';
 import { AlertService } from '@services/alert';
 
-
 @Component({
   selector: 'fcl-rsvp',
   templateUrl: './rsvp.component.html',
   styleUrls: ['./rsvp.component.scss']
 })
 export class RsvpComponent implements OnInit {
-
-  @Input() rsvpDate: string = "";
-  @Input() rsvpName: string = "";
+  @Input() event: any;
 
   rsvpForm: FormGroup = new FormGroup({
     firstName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
@@ -29,8 +26,8 @@ export class RsvpComponent implements OnInit {
     const value = this.rsvpForm.value;
     const response = await this.emailService.sendEmail({
       ...value,
-      date: this.rsvpDate,
-      subject: `Forest City ${value.firstName} ${value.lastName} RSVP for ${this.rsvpName}`,
+      date: this.event.date,
+      subject: `Forest City ${value.firstName} ${value.lastName} RSVP for ${this.event.name}`,
       fields: ['date', 'firstName', 'lastName', 'email'],
     });
     if (response) {

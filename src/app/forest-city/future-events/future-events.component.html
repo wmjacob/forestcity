@@ -29,7 +29,7 @@
                                 <button *ngIf="event.rsvpOptions"
                                     aria-controls="rsvpModal"
                                     class="usa-button usa-button--outline centered mb-2"
-                                    (click)="setDateForRsvp(event.date, event.name)"
+                                    (click)="setEventForRsvp(event)"
                                     data-bs-toggle="modal"
                                     data-bs-target="#rsvpModal">
                                     RSVP
@@ -57,4 +57,4 @@
         </div>
     </div>
 </div>
-<fcl-rsvp [rsvpDate]="rsvpDate" [rsvpName]="rsvpName"></fcl-rsvp>
+<fcl-rsvp [event]="event"></fcl-rsvp>
