@@ -13,7 +13,9 @@
             </div>
             <div class="modal-body">
                 <div class="usa-prose">
-                    <p id="rsvpDesc" class="text-center">RSVP for {{ rsvpDate | date:'fullDate' }}:</p>
+                    <p id="rsvpDesc" class="text-center">RSVP for {{ event.name }}</p>
+                    <p *ngIf="event.description" class="text-center">{{ event.description }}</p>
+                    <p class="text-center">{{ event.date | date:'fullDate' }}:</p>
                     <form [formGroup]="rsvpForm" (ngSubmit)="submitRsvp()">
                         <div class="mb-3">
                             <label for="first-name" class="usa-label required-field">First Name:</label>
@@ -46,7 +48,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="usa-button usa-button--primary" (click)="submitRsvp()" [disabled]="!rsvpForm.valid">Submit</button>
+                <button type="button" class="usa-button usa-button--primary" (click)="submitRsvp()" [disabled]="!rsvpForm.valid" data-bs-dismiss="modal">Submit</button>
                 <button type="button" class="usa-button usa-button--secondary" data-bs-dismiss="modal">Cancel</button>
             </div>
         </div>

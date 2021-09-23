@@ -20,7 +20,7 @@ const events: EventOptions[] = [
             Two years following the tragic death of President Abraham Lincoln, after being sponsored by Bigelow Lodge #243,
             a dispensation was granted by Grand Master Thomas Sparrow on March 28th, 1867.
             Two days later, Forest City Lodge U.D. held its first meeting in the Masonic Hall on Franklin Street, and adopted a code of By-Laws.
-            Following a charter being granted on October 16th, 1867 by the Grand Lodge of Ohio at its Cincinatti meeting,
+            Following a charter being granted on October 16th, 1867 by the Grand Lodge of Ohio at its Cincinnati meeting,
             Worshipful Brother Ellsworth, a bookkeeper, and a Past Master of Meridian Sun Lodge #226, was the first elected and installed Master of Forest City Lodge.
         `,
         imageSrc: "../../../assets/images/franklin-blvd-masonic-temple.jpg",
@@ -30,7 +30,7 @@ const events: EventOptions[] = [
         year: 1873,
         content: `
         As Cleveland grew and changed, so did its members change and relocate about the city.
-        In time, the number of East Side members was so predominate that a vote was held in November of 1873,
+        In time, the number of East Side members was so predominant that a vote was held in November of 1873,
         which resulted in the meeting place being moved to Case Hall, located at East 3rd Street and Superior Avenue.
         This location remained our home for almost a quarter of a century.
         `,
@@ -138,7 +138,9 @@ const events: EventOptions[] = [
     {
         year: 2018,
         content: `
-        Ask Tim for copy about sesquicentenmial.
+        During the Sesquicentennial Celebration, WB Tim Cline called a special meeting to celebrate not only Forest City Lodge's 150 years in operation,
+        but to open the time capsule WB Julius A. Negin had placed behind the cornerstone of the Shaker Masonic Temple.
+        The time capsule and cornerstone were recovered during the demolition of the temple building earlier that year.
         `,
         imageSrc: "../../../assets/images/sesquicentennial.jpg",
         imageCaption: "Assembled dignitaries and officers",
@@ -146,7 +148,10 @@ const events: EventOptions[] = [
     {
         year: 2020,
         content: `
-        Copy about first zoom meeting April 15 2020
+        In response to the Covid 19 Pandemic Outbreak, the Grand Master granted dispensations to all
+        lodges in Ohio to hold stated meetings, without ritual work, over video conference applications.
+        On April 15, Forest City Lodge #388 opened its first-ever virtual stated meeting.
+        At various points during the meeting, more than 40 brethren in five states joined the call.
         `,
         imageSrc: "../../../assets/images/zoom.jpg",
         imageCaption: "First zoom meeting",

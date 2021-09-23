@@ -33,10 +33,9 @@
                 <div class="event-highlight-date fs-4 text-white centered"> {{ event.date | date:'fullDate' }} {{ event.date | date:'shortTime' }} </div>
                 <button class="usa-button usa-button--outline usa-button--inverse usa-button--unstyled fs-4 mb-3"
                     aria-controls="rsvpModal"
-                    (click)="setDateForRsvp(event.date)"
+                    (click)="setEventForRsvp(event)"
                     data-bs-toggle="modal"
                     data-bs-target="#rsvpModal">Make your reservation today!</button>
-                <fcl-rsvp [rsvpDate]="event.date" [rsvpName]="event.name"></fcl-rsvp>
             </div>
           </div>
         </div>
@@ -50,3 +49,4 @@
         </button>
       </div>
 </div>
+<fcl-rsvp [event]="event"></fcl-rsvp>
