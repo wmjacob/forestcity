@@ -28,9 +28,9 @@ export class ContactUsComponent implements OnInit {
   async onSubmit(): Promise<void> {
     window.scrollTo(0, 0);
 
-    const response = await this.emailService.sendEmail({
+    const response = await this.emailService.sendEmailToFCL({
       ...this.contactUsForm.value,
-      subject: 'Forest City Contact Us',
+      subject: 'A New Message From Contact Us',
       fields: ['firstName', 'lastName', 'email', 'phoneNumber', 'message'],
     });
     this.contactUsForm.reset();
@@ -47,6 +47,8 @@ export class ContactUsComponent implements OnInit {
         timeout: 3000,
       });
     }
+
+    // TODO: create a template for contact us, and send confirmation email to user
   }
 
 }

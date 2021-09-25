@@ -16,16 +16,18 @@
     }
   </script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script type="text/javascript"> $('.containerClass').css({"visibility":"hidden" });</script>
+  <!-- attempt at preventing FOUC -->
+  <style type="text/css">
+    .hidden {display: none;}
+  </style>
+  <script type="text/javascript">
+    $('html').addClass('hidden');
+    $(document).ready(function() {
+      $('html').removeClass('hidden');
+    });
+  </script>
 </head>
 <body class="bg-secondary-lightest containerClass">
   <app-root></app-root>
-  <script>
-		$(document).ready(function()
-		{
-			$('.containerClass').css({"visibility":"visible"});
-		});
-	</script>
-  <noscript><style>body { visibility: visible; }</style></noscript>
 </body>
 </html>

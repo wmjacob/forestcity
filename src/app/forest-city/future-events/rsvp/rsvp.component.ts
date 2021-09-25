@@ -24,16 +24,17 @@ export class RsvpComponent implements OnInit {
 
   async submitRsvp(): Promise<void> {
     const value = this.rsvpForm.value;
-    const response = await this.emailService.sendEmail({
+    const response = await this.emailService.sendEmailToFCL({
       ...value,
       date: this.event.date,
-      subject: `Forest City ${value.firstName} ${value.lastName} RSVP for ${this.event.name}`,
+      subject: `RSVP for ${this.event.name} on ${this.event.date}`,
       fields: ['date', 'firstName', 'lastName', 'email'],
+      event: this.event
     });
     if (response) {
       this.alertService.setAlert({
         className: 'success',
-        text: 'Success! Your reservation has been sent',
+        text: 'Success! Your reservation has been sent. Please check your email shortly for a confirmation message.',
         timeout: 3000,
       });
     } else {
@@ -42,6 +43,19 @@ export class RsvpComponent implements OnInit {
         text: 'Error, please try again later',
         timeout: 3000,
       });
+    }
+
+    const response2 = await this.emailService.sendEmailToUser({
+      ...value,
+      date: this.event.date,
+      subject: `You have RSVP'd for ${this.event.name} on ${this.event.date} at Forest City Lodge`,
+      fields: ['date', 'firstName', 'lastName', 'email'],
+      event: this.event
+    });
+    if (response2) {
+      // do nothing; previous message should state that a confirmation email is sent to user
+    } else {
+      // maybe log, but nothing for now
     }
   }
 
