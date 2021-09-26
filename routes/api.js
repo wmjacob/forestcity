@@ -46,7 +46,12 @@ router.post('/email-to-fcl', async function (req, res) {
       subject,
       from: auth.user,
       to: auth.recipient,
-      html: htmlToSend
+      html: `<p>RSVP Received</p><br>
+        <ul>
+          <li>Name: ${data.firstName} ${data.lastName}</li>
+          <li>Event: ${data.event.name}</li>
+          <li>Date: ${data.date}
+        <ul>`
     };
     await new Promise((resolve, reject) => {
       transporter.sendMail(mailOptions, (error, info) =>{
