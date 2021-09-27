@@ -171,7 +171,7 @@ router.post('/rsvp-email-to-user', async function (req, res) {
 router.post('/contact-us-email-to-fcl', async function (req, res) {
   try {
     const auth = await getAuth();
-    const source = fs.readFileSync('./src/app/core/email/flc-contact-us-template.html', 'utf-8').toString();
+    const source = fs.readFileSync('./src/app/core/email/fcl-contact-us-template.html', 'utf-8').toString();
     const template = handlebars.compile(source);
 
     const transporter = nodemailer.createTransport({

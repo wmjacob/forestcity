@@ -44,7 +44,7 @@
                 >
                 </textarea>
                 <br>
-                <button type="submit" class="usa-button usa-button--primary" [disabled]="!contactUsForm.valid">Submit</button>
+                <button type="submit" class="usa-button usa-button--primary" [disabled]="!contactUsForm.valid || disableButton">Submit</button>
             </form>
         </div>
     </div>
