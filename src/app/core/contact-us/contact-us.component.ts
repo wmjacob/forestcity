@@ -10,6 +10,7 @@ import { EmailService } from '@services/email';
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent implements OnInit {
+  disableButton: boolean = false;
 
   contactUsForm: FormGroup = new FormGroup({
     firstName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
@@ -26,14 +27,13 @@ export class ContactUsComponent implements OnInit {
   }
 
   async onSubmit(): Promise<void> {
+    this.disableButton = true;
     window.scrollTo(0, 0);
-
     const response = await this.emailService.sendEmail({
       ...this.contactUsForm.value,
       subject: 'A New Message From Contact Us',
       fields: ['firstName', 'lastName', 'email', 'phoneNumber', 'message'],
     }, '/api/contact-us-email-to-fcl');
-    this.contactUsForm.reset();
     if (response) {
       this.alertService.setAlert({
         className: 'success',
@@ -53,7 +53,6 @@ export class ContactUsComponent implements OnInit {
       subject: 'Forest City Lodge Has Received Your Correspondence',
       fields: ['firstName', 'lastName', 'email', 'phoneNumber', 'message'],
     }, '/api/contact-us-email-to-user');
-    this.contactUsForm.reset();
     if (response2) {
       this.alertService.setAlert({
         className: 'success',
@@ -67,6 +66,9 @@ export class ContactUsComponent implements OnInit {
         timeout: 3000,
       });
     }
+
+    this.contactUsForm.reset();
+    this.disableButton = false;
   }
 
 }
