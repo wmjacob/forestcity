@@ -30,7 +30,7 @@ export class RsvpComponent implements OnInit {
       subject: `RSVP for ${this.event.name} on ${this.event.date}`,
       fields: ['date', 'firstName', 'lastName', 'email'],
       event: this.event
-    });
+    }, '/api/rsvp-email-to-fcl');
     if (response) {
       this.alertService.setAlert({
         className: 'success',
@@ -51,7 +51,7 @@ export class RsvpComponent implements OnInit {
       subject: `You have RSVP'd for ${this.event.name} on ${this.event.date} at Forest City Lodge`,
       fields: ['date', 'firstName', 'lastName', 'email'],
       event: this.event
-    });
+    }, '/api/rsvp-email-to-user');
     if (response2) {
       // do nothing; previous message should state that a confirmation email is sent to user
     } else {

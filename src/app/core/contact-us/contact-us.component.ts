@@ -32,7 +32,7 @@ export class ContactUsComponent implements OnInit {
       ...this.contactUsForm.value,
       subject: 'A New Message From Contact Us',
       fields: ['firstName', 'lastName', 'email', 'phoneNumber', 'message'],
-    });
+    }, '/api/contact-us-email-to-fcl');
     this.contactUsForm.reset();
     if (response) {
       this.alertService.setAlert({
