@@ -63,21 +63,6 @@ router.post('/rsvp-email-to-fcl', async function (req, res) {
           filename: 'fcl-bell-color.png',
           content: fs.createReadStream('./src/assets/images/fcl-bell-color.png'),
           cid: 'fcl-bell'
-        },
-        {
-          filename: 'email-fb-icon.png',
-          content: fs.createReadStream('./src/assets/images/email-fb-icon.png'),
-          cid: 'fb-icon'
-        },
-        {
-          filename: 'email-twitter-icon.png',
-          content: fs.createReadStream('./src/assets/images/email-twitter-icon.png'),
-          cid: 'twitter-icon'
-        },
-        {
-          filename: 'email-instagram-icon.png',
-          content: fs.createReadStream('./src/assets/images/email-instagram-icon.png'),
-          cid: 'ig-icon'
         }
       ]
     };
@@ -203,21 +188,6 @@ router.post('/contact-us-email-to-fcl', async function (req, res) {
           filename: 'fcl-bell-color.png',
           content: fs.createReadStream('./src/assets/images/fcl-bell-color.png'),
           cid: 'fcl-bell'
-        },
-        {
-          filename: 'email-fb-icon.png',
-          content: fs.createReadStream('./src/assets/images/email-fb-icon.png'),
-          cid: 'fb-icon'
-        },
-        {
-          filename: 'email-twitter-icon.png',
-          content: fs.createReadStream('./src/assets/images/email-twitter-icon.png'),
-          cid: 'twitter-icon'
-        },
-        {
-          filename: 'email-instagram-icon.png',
-          content: fs.createReadStream('./src/assets/images/email-instagram-icon.png'),
-          cid: 'ig-icon'
         }
       ]
     };
