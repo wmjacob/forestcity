@@ -112,29 +112,33 @@ router.post('/rsvp-email-to-user', async function (req, res) {
       subject,
       from: auth.user,
       to: recipient,
-      html: htmlToSend,
-      attachments: [
-        {
-          filename: 'fcl-bell-color.png',
-          content: fs.createReadStream('./src/assets/images/fcl-bell-color.png'),
-          cid: 'fcl-bell'
-        },
-        {
-          filename: 'email-fb-icon.png',
-          content: fs.createReadStream('./src/assets/images/email-fb-icon.png'),
-          cid: 'fb-icon'
-        },
-        {
-          filename: 'email-twitter-icon.png',
-          content: fs.createReadStream('./src/assets/images/email-twitter-icon.png'),
-          cid: 'twitter-icon'
-        },
-        {
-          filename: 'email-instagram-icon.png',
-          content: fs.createReadStream('./src/assets/images/email-instagram-icon.png'),
-          cid: 'ig-icon'
-        }
-      ]
+      html: `<p>RSVP Details:</p>
+            <ul>
+              <li>Name: ${data.firstName} ${data.lastName}</li>
+              <li>Date: ${data.date}</li>
+            </ul>`,
+      // attachments: [
+      //   {
+      //     filename: 'fcl-bell-color.png',
+      //     content: fs.createReadStream('./src/assets/images/fcl-bell-color.png'),
+      //     cid: 'fcl-bell'
+      //   },
+      //   {
+      //     filename: 'email-fb-icon.png',
+      //     content: fs.createReadStream('./src/assets/images/email-fb-icon.png'),
+      //     cid: 'fb-icon'
+      //   },
+      //   {
+      //     filename: 'email-twitter-icon.png',
+      //     content: fs.createReadStream('./src/assets/images/email-twitter-icon.png'),
+      //     cid: 'twitter-icon'
+      //   },
+      //   {
+      //     filename: 'email-instagram-icon.png',
+      //     content: fs.createReadStream('./src/assets/images/email-instagram-icon.png'),
+      //     cid: 'ig-icon'
+      //   }
+      // ]
     };
     await new Promise((resolve, reject) => {
       transporter.sendMail(mailOptions, (error, info) =>{
