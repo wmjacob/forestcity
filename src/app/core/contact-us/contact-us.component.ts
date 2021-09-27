@@ -28,7 +28,7 @@ export class ContactUsComponent implements OnInit {
   async onSubmit(): Promise<void> {
     window.scrollTo(0, 0);
 
-    const response = await this.emailService.sendEmailToFCL({
+    const response = await this.emailService.sendEmail({
       ...this.contactUsForm.value,
       subject: 'A New Message From Contact Us',
       fields: ['firstName', 'lastName', 'email', 'phoneNumber', 'message'],
@@ -48,7 +48,25 @@ export class ContactUsComponent implements OnInit {
       });
     }
 
-    // TODO: create a template for contact us, and send confirmation email to user
+    const response2 = await this.emailService.sendEmail({
+      ...this.contactUsForm.value,
+      subject: 'Forest City Lodge Has Received Your Correspondence',
+      fields: ['firstName', 'lastName', 'email', 'phoneNumber', 'message'],
+    }, '/api/contact-us-email-to-user');
+    this.contactUsForm.reset();
+    if (response2) {
+      this.alertService.setAlert({
+        className: 'success',
+        text: 'Success! Your inquiry has been sent',
+        timeout: 3000,
+      });
+    } else {
+      this.alertService.setAlert({
+        className: 'error',
+        text: 'Error, please try again later',
+        timeout: 3000,
+      });
+    }
   }
 
 }

@@ -7,26 +7,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 export class EmailService {
   constructor(private httpClient: HttpClient) { }
 
-  async sendEmailToFCL(data: object, url: string): Promise<boolean> {
-    return new Promise((resolve) => {
-      const response = this.httpClient.post(url, JSON.stringify(data), {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-
-      response.subscribe(
-        () => {
-          resolve(true);
-        },
-        () => {
-          resolve(false);
-        }
-      );
-    });
-  }
-
-  async sendEmailToUser(data: object, url: string): Promise<boolean> {
+  async sendEmail(data: object, url: string): Promise<boolean> {
     return new Promise((resolve) => {
       const response = this.httpClient.post(url, JSON.stringify(data), {
         headers: {

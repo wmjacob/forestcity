@@ -24,7 +24,7 @@ export class RsvpComponent implements OnInit {
 
   async submitRsvp(): Promise<void> {
     const value = this.rsvpForm.value;
-    const response = await this.emailService.sendEmailToFCL({
+    const response = await this.emailService.sendEmail({
       ...value,
       date: this.event.date,
       subject: `RSVP for ${this.event.name} on ${this.event.date}`,
@@ -45,7 +45,7 @@ export class RsvpComponent implements OnInit {
       });
     }
 
-    const response2 = await this.emailService.sendEmailToUser({
+    const response2 = await this.emailService.sendEmail({
       ...value,
       date: this.event.date,
       subject: `You have RSVP'd for ${this.event.name} on ${this.event.date} at Forest City Lodge`,
