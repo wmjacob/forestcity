@@ -42,15 +42,21 @@ mailjetRouter.post('/rsvp-to-fcl', async function(req, res) {
         const subject = data.subject;
         const recipient = data.email;
 
-        const replacements = {
+        const fclReplacements = {
             firstName: data.firstName,
             lastName: data.lastName,
             name: data.event.name,
             email: data.email,
             date: data.date
           };
-        const fclHtmlToSend = fclTemplate(replacements);
-        const attendeeHtmlToSend = attendeeTemplate(replacements);
+          const attendeeReplacements = {
+            firstName: data.firstName,
+            lastName: data.lastName,
+            name: data.event.name,
+            date: data.date
+          };
+        const fclHtmlToSend = fclTemplate(fclReplacements);
+        const attendeeHtmlToSend = attendeeTemplate(attendeeReplacements);
 
         const request = mailjet.post("send", {'version': 'v3.1'}).request({
         "Messages":[
@@ -73,8 +79,8 @@ mailjetRouter.post('/rsvp-to-fcl', async function(req, res) {
                     {
                             "ContentType": "image/png",
                             "Filename": "fcl-bell-color.png",
-                            "content": fs.createReadStream('./src/assets/images/fcl-bell-color.png'),
-                            "cid": "fcl-bell"
+                            "Content": fs.createReadStream('./src/assets/images/fcl-bell-color.png'),
+                            "ContentID": "fcl-bell"
                     },
                 ],
                 "CustomID": "rsvpConfirmationToSecretary"
@@ -97,26 +103,26 @@ mailjetRouter.post('/rsvp-to-fcl', async function(req, res) {
                     {
                             "ContentType": "image/png",
                             "Filename": "fcl-bell-color.png",
-                            "content": fs.createReadStream('./src/assets/images/fcl-bell-color.png'),
-                            "cid": "fcl-bell"
+                            "Content": fs.createReadStream('./src/assets/images/fcl-bell-color.png'),
+                            "ContentID": "fcl-bell"
                     },
                     {
                             "ContentType": "image/png",
                             "Filename": "email-fb-icon.png",
-                            "content": fs.createReadStream('./src/assets/images/email-fb-icon.png'),
-                            "cid": "fb-icon"
+                            "Content": fs.createReadStream('./src/assets/images/email-fb-icon.png'),
+                            "ContentID": "fb-icon"
                     },
                     {
                             "ContentType": "image/png",
                             "Filename": "email-twitter-icon.png",
-                            "content": fs.createReadStream('./src/assets/images/email-twitter-icon.png'),
-                            "cid": "twitter-icon"
+                            "Content": fs.createReadStream('./src/assets/images/email-twitter-icon.png'),
+                            "ContentID": "twitter-icon"
                     },
                     {
                             "ContentType": "image/png",
                             "Filename": "email-instagram-icon.png",
-                            "content": fs.createReadStream('./src/assets/images/email-instagram-icon.png'),
-                            "cid": "ig-icon"
+                            "Content": fs.createReadStream('./src/assets/images/email-instagram-icon.png'),
+                            "ContentID": "ig-icon"
                     }
                 ],
                 "CustomID": "rsvpConfirmationToAttendee"
