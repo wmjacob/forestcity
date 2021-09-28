@@ -44,7 +44,13 @@
                 >
                 </textarea>
                 <br>
-                <button type="submit" class="usa-button usa-button--primary" [disabled]="!contactUsForm.valid || disableButton">Submit</button>
+                <button type="submit" class="usa-button usa-button--primary" [disabled]="!contactUsForm.valid || disableButton">
+                    <span *ngIf="!disableButton">Submit</span>
+                    <span *ngIf="disableButton">
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Sending...
+                    </span>
+                </button>
             </form>
         </div>
     </div>
