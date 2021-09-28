@@ -30,7 +30,7 @@ export class RsvpComponent implements OnInit {
       subject: `RSVP for ${this.event.name} on ${this.event.date}`,
       fields: ['date', 'firstName', 'lastName', 'email'],
       event: this.event
-    }, '/api/rsvp-email-to-fcl');
+    }, '/mailjet-api/rsvp-to-fcl');
     if (response) {
       this.alertService.setAlert({
         className: 'success',
@@ -45,18 +45,18 @@ export class RsvpComponent implements OnInit {
       });
     }
 
-    const response2 = await this.emailService.sendEmail({
-      ...value,
-      date: this.event.date,
-      subject: `You have RSVP'd for ${this.event.name} on ${this.event.date} at Forest City Lodge`,
-      fields: ['date', 'firstName', 'lastName', 'email'],
-      event: this.event
-    }, '/api/rsvp-email-to-user');
-    if (response2) {
-      // do nothing; previous message should state that a confirmation email is sent to user
-    } else {
-      // maybe log, but nothing for now
-    }
+    // const response2 = await this.emailService.sendEmail({
+    //   ...value,
+    //   date: this.event.date,
+    //   subject: `You have RSVP'd for ${this.event.name} on ${this.event.date} at Forest City Lodge`,
+    //   fields: ['date', 'firstName', 'lastName', 'email'],
+    //   event: this.event
+    // }, '/api/rsvp-email-to-user');
+    // if (response2) {
+    //   // do nothing; previous message should state that a confirmation email is sent to user
+    // } else {
+    //   // maybe log, but nothing for now
+    // }
   }
 
 }
