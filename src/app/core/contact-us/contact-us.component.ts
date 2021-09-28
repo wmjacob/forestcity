@@ -33,7 +33,7 @@ export class ContactUsComponent implements OnInit {
       ...this.contactUsForm.value,
       subject: 'A New Message From Contact Us',
       fields: ['firstName', 'lastName', 'email', 'phoneNumber', 'message'],
-    }, '/api/contact-us-email-to-fcl');
+    }, '/mj/api/contact-us');
     if (response) {
       this.alertService.setAlert({
         className: 'success',
@@ -47,28 +47,5 @@ export class ContactUsComponent implements OnInit {
         timeout: 3000,
       });
     }
-
-    const response2 = await this.emailService.sendEmail({
-      ...this.contactUsForm.value,
-      subject: 'Forest City Lodge Has Received Your Correspondence',
-      fields: ['firstName', 'lastName', 'email', 'phoneNumber', 'message'],
-    }, '/api/contact-us-email-to-user');
-    if (response2) {
-      this.alertService.setAlert({
-        className: 'success',
-        text: 'Success! Your inquiry has been sent',
-        timeout: 3000,
-      });
-    } else {
-      this.alertService.setAlert({
-        className: 'error',
-        text: 'Error, please try again later',
-        timeout: 3000,
-      });
-    }
-
-    this.contactUsForm.reset();
-    this.disableButton = false;
   }
-
 }
