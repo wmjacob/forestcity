@@ -30,7 +30,7 @@ export class RsvpComponent implements OnInit {
       subject: `RSVP for ${this.event.name} on ${this.event.date}`,
       fields: ['date', 'firstName', 'lastName', 'email'],
       event: this.event
-    }, '/mailjet-api/rsvp-to-fcl');
+    }, '/mj/api/rsvp');
     if (response) {
       this.alertService.setAlert({
         className: 'success',
