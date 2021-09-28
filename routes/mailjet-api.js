@@ -1,8 +1,6 @@
 const express = require('express');
 const mailjetRouter = express.Router();
 const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
-const fs = require('fs');
-const handlebars = require('handlebars');
 
 const GOOGLE_MAILJET_SECRET = 'mailjet-credentials';
 const FCL_CONTACTS_EMAIL = 'forestcitylodgecontacts@gmail.com';
