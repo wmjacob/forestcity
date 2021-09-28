@@ -12,6 +12,8 @@ import { AlertService } from '@services/alert';
 export class RsvpComponent implements OnInit {
   @Input() event: any;
 
+  disableButton: boolean = false;
+
   rsvpForm: FormGroup = new FormGroup({
     firstName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
     lastName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
@@ -23,6 +25,7 @@ export class RsvpComponent implements OnInit {
   ngOnInit(): void {}
 
   async submitRsvp(): Promise<void> {
+    this.disableButton = true;
     const value = this.rsvpForm.value;
     const response = await this.emailService.sendEmail({
       ...value,
@@ -31,6 +34,7 @@ export class RsvpComponent implements OnInit {
       fields: ['date', 'firstName', 'lastName', 'email'],
       event: this.event
     }, '/mj/api/rsvp');
+
     if (response) {
       this.alertService.setAlert({
         className: 'success',
@@ -45,18 +49,7 @@ export class RsvpComponent implements OnInit {
       });
     }
 
-    // const response2 = await this.emailService.sendEmail({
-    //   ...value,
-    //   date: this.event.date,
-    //   subject: `You have RSVP'd for ${this.event.name} on ${this.event.date} at Forest City Lodge`,
-    //   fields: ['date', 'firstName', 'lastName', 'email'],
-    //   event: this.event
-    // }, '/mailjet-api/rsvp-to-attendee');
-    // if (response2) {
-    //   // do nothing; previous message should state that a confirmation email is sent to user
-    // } else {
-    //   // maybe log, but nothing for now
-    // }
+    this.disableButton = false;
   }
 
 }

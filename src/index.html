@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Forest City Lodge</title>
-  <meta name="description" content="Cleveland's premier masonic lodge - located at the Lyndhurst Masonic Lodge - Pride in Brotherhood">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title>Forest City Lodge #388</title>
+  <meta name="description" content="Cleveland's Premier Masonic Lodge - Located at the Lyndhurst Masonic Lodge - Pride in Brotherhood">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -16,18 +17,24 @@
     }
   </script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-  <!-- attempt at preventing FOUC -->
-  <style type="text/css">
-    .hidden {display: none;}
-  </style>
+  <!-- Prevent Clickjacking -->
   <script type="text/javascript">
-    $('html').addClass('hidden');
-    $(document).ready(function() {
-      $('html').removeClass('hidden');
-    });
+    if(self === top) {
+      var antiClickjack = document.getElementById("antiClickjack");
+      antiClickjack.parentNode.removeChild(antiClickjack);
+      } else {
+      top.location = self.location;
+    }
   </script>
 </head>
-<body class="bg-secondary-lightest containerClass">
-  <app-root></app-root>
+<body class="bg-secondary-lightest">
+  <app-root>
+    <div style="text-align: center;">
+      <img src="./assets/images/gifs/disc-square-and-compasses.gif" style="width:250px; height:250px;" alt="Loading"/>
+    </div>
+    <div style="text-align: center;">
+      <span style="font-size: x-large; font-family: 'Times New Roman', Times, serif;">Searching For The Light . . .</span>
+    </div>
+  </app-root>
 </body>
 </html>

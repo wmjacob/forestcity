@@ -34,7 +34,9 @@ export class ContactUsComponent implements OnInit {
       subject: 'A New Message From Contact Us',
       fields: ['firstName', 'lastName', 'email', 'phoneNumber', 'message'],
     }, '/mj/api/contact-us');
+
     if (response) {
+      this.clearForm();
       this.alertService.setAlert({
         className: 'success',
         text: 'Success! Your inquiry has been sent',
@@ -47,5 +49,10 @@ export class ContactUsComponent implements OnInit {
         timeout: 3000,
       });
     }
+    this.disableButton = false;
+  }
+
+  clearForm() {
+    this.contactUsForm.reset();
   }
 }
