@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { AfterViewInit, Component, OnInit } from "@angular/core";
 
 const calculateFCLAge = () => {
     let chartered = new Date(1867, 10, 16);
@@ -21,7 +21,7 @@ const events: EventOptions[] = [
             a dispensation was granted by Grand Master Thomas Sparrow on March 28th, 1867.
             Two days later, Forest City Lodge U.D. held its first meeting in the Masonic Hall on Franklin Street, and adopted a code of By-Laws.
             Following a charter being granted on October 16th, 1867 by the Grand Lodge of Ohio at its Cincinnati meeting,
-            Worshipful Brother Ellsworth, a bookkeeper, and a Past Master of Meridian Sun Lodge #226, was the first elected and installed Master of Forest City Lodge.
+            Worshipful Brother Elisha T. Ellsworth, a bookkeeper, and a Past Master of Meridian Sun Lodge #226, was the first elected and installed Master of Forest City Lodge.
         `,
         imageSrc: "../../../assets/images/franklin-blvd-masonic-temple.jpg",
         imageCaption: "The Masonic Hall on Franklin Street",
@@ -148,13 +148,13 @@ const events: EventOptions[] = [
     {
         year: 2020,
         content: `
-        In response to the Covid 19 Pandemic Outbreak, the Grand Master granted dispensations to all
+        In response to the COVID-19 Pandemic Outbreak, the Grand Master granted dispensations to all
         lodges in Ohio to hold stated meetings, without ritual work, over video conference applications.
-        On April 15, Forest City Lodge #388 opened its first-ever virtual stated meeting.
+        On April 15, 2020, Forest City Lodge #388 opened its first-ever virtual stated meeting.
         At various points during the meeting, more than 40 brethren in five states joined the call.
         `,
         imageSrc: "../../../assets/images/zoom.jpg",
-        imageCaption: "First zoom meeting",
+        imageCaption: "First Zoom meeting",
     },
     {
         year: 'Today',
@@ -163,7 +163,7 @@ const events: EventOptions[] = [
         With your Masonic efforts, we will prosper far into the 21st century and beyond.
         `,
         imageSrc: "../../../assets/images/working-tools.jpg",
-        imageCaption: "Forest City Lodge, working tools",
+        imageCaption: "Forest City Lodge working tools",
     },
 ];
 
@@ -172,12 +172,30 @@ const events: EventOptions[] = [
     templateUrl: './history.component.html',
     styleUrls: ['./history.component.scss']
 })
-export class HistoryComponent implements OnInit {
+export class HistoryComponent implements OnInit, AfterViewInit {
     fclAge: number = 0;
     events: EventOptions[] = [];
 
     ngOnInit() {
         this.fclAge = calculateFCLAge();
         this.events = events;
+    }
+
+    ngAfterViewInit() {
+        let topBtn = document.getElementById('returnToTop');
+        window.onscroll = function() {
+            if(topBtn) {
+                if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                    topBtn.style.display = 'block';
+                }
+                else {
+                    topBtn.style.display = 'none';
+                }
+            }
+        }
+    }
+
+    goToTop() {
+        window.scroll(0,0);
     }
 }
