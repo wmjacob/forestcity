@@ -32,5 +32,6 @@ export class PastMastersComponent implements OnInit {
 
   onChangePage(pageOfItems: Array<any>) {
     this.pageOfItems = pageOfItems;
+    window.scroll(0,0);
   }
 }
