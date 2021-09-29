@@ -7,7 +7,6 @@
     min-height: 4.5rem;
     padding-top: 1rem;
     border-radius: 0.5rem 0.5rem 0 0;
-    inline-size: 350px;
     overflow-wrap: break-word;
 }
 
@@ -18,7 +17,7 @@
 
 .fclImageContainer {
     height: 350px;
-    width: 350px;
+    min-width: 350px;
 
     img {
         height: 350px;
@@ -31,6 +30,6 @@ img {
 }
 
 .pmContainer {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
