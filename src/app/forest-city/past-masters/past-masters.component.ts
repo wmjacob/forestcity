@@ -27,10 +27,11 @@ export class PastMastersComponent implements OnInit {
       let termEndYear = master.term.slice(-4);
       return (termEndYear < currentYear) ||
         (termEndYear === currentYear && currentMonth > 10);
-    });
+    }).reverse();
   }
 
   onChangePage(pageOfItems: Array<any>) {
     this.pageOfItems = pageOfItems;
+    window.scroll(0,0);
   }
 }
