@@ -8,15 +8,15 @@
         <ul class="usa-card-group">
             <div class="grid-col-12">
                 <div *ngFor="let officer of officers">
-                    <div class="grid-row">
-                        <li class="tablet:grid-col-10 usa-card usa-card--flag">
+                    <div class="grid-row d-flex justify-content-center">
+                        <div class="tablet:grid-col-10 usa-card usa-card--flag">
                             <div class="usa-card__container fcl-card-container">
                                 <header class="usa-card__header">
                                     <h2 class="usa-card__heading"> {{ officer.name }} </h2>
                                     <h3 class="usa-card__heading"> {{ officer.office }} </h3>
                                 </header>
                                 <div class="usa-card__media">
-                                    <div  class="usa-card__img">
+                                    <div  class="usa-card__img d-flex justify-content-center">
                                         <img class="officer-image" src="{{ officer.image }}">
                                     </div>
                                 </div>
@@ -24,9 +24,9 @@
                                     <p> {{ officer.bio }} </p>
                                 </div>
                             </div>
-                        </li>
-                        <div class="tablet:grid-col-2 officer-jewel-container">
-                            <div class="centered">
+                        </div>
+                        <div class="usa-card tablet:grid-col-2 d-md-block d-none">
+                            <div class="d-flex align-items-center justify-content-center officer-jewel-container">
                                 <img class="officer-jewel" src="{{ officer.jewel }}">
                             </div>
                         </div>

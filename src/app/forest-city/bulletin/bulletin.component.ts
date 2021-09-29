@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 import bulletin from '@data/bulletin.json';
 
@@ -16,15 +16,9 @@ export class BulletinComponent {
     }
 
     constructor(sanitizer: DomSanitizer) {
-        this.sanitizer = sanitizer;
+        const rawBulletingSrc: string = bulletin.filename;
+        this.bulletinSrc = sanitizer.bypassSecurityTrustResourceUrl(rawBulletingSrc)
     }
 
-    safeBulletinUrl() {
-        if (this.sanitizer)
-            return this.sanitizer.bypassSecurityTrustUrl(this.bulletinSrc);
-        return "";
-    }
-
-    bulletinSrc: string = "../../../assets/pdf/FCL-March2020Bulletin.pdf";
-    sanitizer: DomSanitizer;
+    bulletinSrc: SafeResourceUrl;
 }

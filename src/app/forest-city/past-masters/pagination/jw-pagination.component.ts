@@ -16,7 +16,7 @@ export class JwPaginationComponent implements OnInit, OnChanges {
     @Input() items: Array<any> = [];
     @Output() changePage = new EventEmitter<any>(true);
     @Input() initialPage = 1;
-    @Input() pageSize = 10;
+    @Input() pageSize = 12;
     @Input() maxPages = 10;
 
     pager: any = {};
@@ -26,7 +26,6 @@ export class JwPaginationComponent implements OnInit, OnChanges {
         if (this.items && this.items.length) {
             this.setPage(this.initialPage);
         }
-        this.items;
     }
 
     ngOnChanges(changes: SimpleChanges) {
