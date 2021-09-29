@@ -2,17 +2,16 @@ const express = require('express');
 const mailjetRouter = express.Router();
 const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
 
+const GOOGLE_EMAIL_SECRET = 'email-credentials'
 const GOOGLE_MAILJET_SECRET = 'mailjet-credentials';
-const FCL_CONTACTS_EMAIL = 'forestcitylodgecontacts@gmail.com';
 const FCL_NAME = 'Forest City Lodge #388';
 
-const FCL_SECRETARY_EMAIL = 'forestcitylodgecontacts@gmail.com'; // TODO update as necessary
 const FCL_SECRETARY_NAME = 'Forest City Lodge Secretary';
 
-const getAuth = async () => {
+const getAuth = async (secretCredentials) => {
     if (process.env.NODE_ENV !== 'development') {
       const client = new SecretManagerServiceClient();
-      const name = `projects/forest-city-325620/secrets/${GOOGLE_MAILJET_SECRET}/versions/latest`;
+      const name = `projects/forest-city-325620/secrets/${secretCredentials}/versions/latest`;
       const [version] = await client.accessSecretVersion({ name });
       if (!version.payload || !version.payload.data || !version.payload.data.toString) {
         res.status(500).json({ error: 'Internal Error' });
@@ -32,8 +31,11 @@ mailjetRouter.get('/status', function (_req, res) {
 
 mailjetRouter.post('/rsvp', async function(req, res) {
     try {
-        const auth = await getAuth();
-        const mailjet = require ('node-mailjet').connect(auth.mailjetPublicKey, auth.mailjetPrivateKey);
+        const mjCreds = await getAuth(GOOGLE_MAILJET_SECRET);
+        const mailjet = require ('node-mailjet').connect(mjCreds.mailjetPublicKey, mjCreds.mailjetPrivateKey);
+
+        const gmailCreds = await getAuth(GOOGLE_EMAIL_SECRET);
+        const FCL_SECRETARY_EMAIL = gmailCreds.user;
 
         const data = req.body;
         const subject = data.subject;
@@ -45,7 +47,7 @@ mailjetRouter.post('/rsvp', async function(req, res) {
             {
                 "From":
                 {
-                    "Email": FCL_CONTACTS_EMAIL,
+                    "Email": FCL_SECRETARY_EMAIL,
                     "Name": FCL_NAME
                 },
                 "To": [
@@ -69,8 +71,8 @@ mailjetRouter.post('/rsvp', async function(req, res) {
             {
                 "From":
                 {
-                    "Email": "forestcitylodgecontacts@gmail.com",
-                    "Name": "Forest City Lodge #388"
+                    "Email": FCL_SECRETARY_EMAIL,
+                    "Name": FCL_NAME
                 },
                 "To": [
                     {
@@ -108,8 +110,11 @@ mailjetRouter.post('/rsvp', async function(req, res) {
 
 mailjetRouter.post('/contact-us', async function(req, res) {
     try {
-        const auth = await getAuth();
-        const mailjet = require ('node-mailjet').connect(auth.mailjetPublicKey, auth.mailjetPrivateKey);
+        const mjCreds = await getAuth(GOOGLE_MAILJET_SECRET);
+        const mailjet = require ('node-mailjet').connect(mjCreds.mailjetPublicKey, mjCreds.mailjetPrivateKey);
+
+        const gmailCreds = await getAuth(GOOGLE_EMAIL_SECRET);
+        const FCL_SECRETARY_EMAIL = gmailCreds.user;
 
         const data = req.body;
         const subject = data.subject;
@@ -121,7 +126,7 @@ mailjetRouter.post('/contact-us', async function(req, res) {
             {
                 "From":
                 {
-                    "Email": FCL_CONTACTS_EMAIL,
+                    "Email": FCL_SECRETARY_EMAIL,
                     "Name": FCL_NAME
                 },
                 "To": [
@@ -145,8 +150,8 @@ mailjetRouter.post('/contact-us', async function(req, res) {
             {
                 "From":
                 {
-                    "Email": "forestcitylodgecontacts@gmail.com",
-                    "Name": "Forest City Lodge #388"
+                    "Email": FCL_SECRETARY_EMAIL,
+                    "Name": FCL_NAME
                 },
                 "To": [
                     {

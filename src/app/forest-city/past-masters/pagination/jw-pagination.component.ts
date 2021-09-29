@@ -26,7 +26,7 @@ export class JwPaginationComponent implements OnInit, OnChanges {
         if (this.items && this.items.length) {
             this.setPage(this.initialPage);
         }
-        this.items.reverse();
+        this.items;
     }
 
     ngOnChanges(changes: SimpleChanges) {
