@@ -36,6 +36,7 @@ export class RsvpComponent implements OnInit {
     }, '/mj/api/rsvp');
 
     if (response) {
+      this.clearForm();
       this.alertService.setAlert({
         className: 'success',
         text: 'Success! Your reservation has been sent. Please check your email shortly for a confirmation message.',
@@ -50,6 +51,10 @@ export class RsvpComponent implements OnInit {
     }
 
     this.disableButton = false;
+  }
+
+  clearForm() {
+    this.rsvpForm.reset();
   }
 
 }
