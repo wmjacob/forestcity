@@ -3,7 +3,12 @@ import { AfterViewInit, Component, OnInit } from "@angular/core";
 const calculateFCLAge = () => {
     let chartered = new Date(1867, 10, 16);
     let diff = Math.abs(Date.now() - chartered.getTime());
-    return Math.floor((diff / (1000 * 3600 * 24)) / 365.25);
+    let age = Math.floor((diff / (1000 * 3600 * 24)) / 365.25);
+    let today = new Date();
+    if(today.getMonth() >= 9 && today.getDate() >= 16) {
+        age += 1;
+    }
+    return age;
 };
 
 interface EventOptions {
@@ -173,11 +178,9 @@ const events: EventOptions[] = [
     styleUrls: ['./history.component.scss']
 })
 export class HistoryComponent implements OnInit, AfterViewInit {
-    fclAge: number = 0;
     events: EventOptions[] = [];
 
     ngOnInit() {
-        this.fclAge = calculateFCLAge();
         this.events = events;
     }
 

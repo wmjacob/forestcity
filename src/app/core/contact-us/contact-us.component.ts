@@ -39,14 +39,16 @@ export class ContactUsComponent implements OnInit {
       this.clearForm();
       this.alertService.setAlert({
         className: 'success',
-        text: 'Success! Your inquiry has been sent',
-        timeout: 3000,
+        heading: 'Success!',
+        text: 'Your inquiry has been sent. Please check your email shortly for a confirmation message.',
+        timeout: 5000,
       });
     } else {
       this.alertService.setAlert({
         className: 'error',
-        text: 'Error, please try again later',
-        timeout: 3000,
+        heading: 'Error',
+        text: 'We apologize, something went wrong. Please try again later.',
+        timeout: 5000
       });
     }
     this.disableButton = false;
