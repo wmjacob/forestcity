@@ -17,10 +17,10 @@
             Menu
         </button>
     </div>
-    <nav aria-label="Primary Navigation" class="usa-nav bg-primary-light">
+    <nav id="mainNavbar" aria-label="Primary Navigation" class="usa-nav bg-primary-light">
         <div class="usa-nav__inner">
             <button class="usa-nav__close">
-                Close
+                <img src="close.svg" role="img" alt="Close">
             </button>
             <ul class="usa-nav__primary usa-accordion">
                 <li class="usa-nav__primary-item">
@@ -45,10 +45,10 @@
                             <div class="usa-col">
                                 <ul class="usa-nav__submenu-list">
                                     <li class="usa-nav__submenu-item">
-                                        <a href="/future-events">Our Calendar</a>
+                                        <a routerLink="/future-events">Our Calendar</a>
                                     </li>
                                     <li class="usa-nav__submenu-item">
-                                        <a href="/bulletin">Our Current Bulletin</a>
+                                        <a routerLink="/bulletin">Our Current Bulletin</a>
                                     </li>
                                     <li class="usa-nav__submenu-item">
                                         <a href="../../../assets/pdf/FCL_Petition_-_20182.pdf" target="_blank">Our Petition</a>
@@ -60,12 +60,6 @@
                                     <li class="usa-nav__submenu-item">
                                         <a routerLink="/about-us">About Us</a>
                                     </li>
-                                    <!-- <li class="usa-nav__submenu-item">
-                                        <a href="#">Things 2</a>
-                                    </li>
-                                    <li class="usa-nav__submenu-item">
-                                        <a href="#">Things 3</a>
-                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -98,9 +92,6 @@
                                     <li class="usa-nav__submenu-item">
                                         <a href="http://www.aasrcleveland.org" target="_blank" rel="noopener noreferrer">Ancient Accepted Scottish Rite, Valley of Cleveland</a>
                                     </li>
-                                    <!-- <li class="usa-nav__submenu-item">
-                                        <a href="#">Another Link Again</a>
-                                    </li> -->
                                 </ul>
                             </div>
                             <div class="usa-col">
@@ -136,7 +127,7 @@
                     <a routerLink="/how-to-join" class="usa-nav__link">Join Freemasonry</a>
                 </li>
                 <li class="usa-nav__primary-item">
-                    <a routerLink="/future-events" class="usa-nav__link">Events</a>
+                    <a routerLink="/upcoming-events" class="usa-nav__link">Upcoming Events</a>
                 </li>
                 <li class="usa-nav__primary-item">
                     <a routerLink="/contact-us" class="usa-nav__link">Contact Us</a>
