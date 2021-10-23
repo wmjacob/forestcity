@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 
 export interface AlertOptions {
   className: string,
+  heading: string,
   text: string,
   timeout: number | void,
 }
@@ -20,5 +21,9 @@ export class AlertService {
         this.alert = undefined;
       }, alert.timeout);
     }
+  }
+
+  clearAlert() {
+    this.alert = undefined;
   }
 }

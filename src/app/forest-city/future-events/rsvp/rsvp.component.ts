@@ -39,14 +39,16 @@ export class RsvpComponent implements OnInit {
       this.clearForm();
       this.alertService.setAlert({
         className: 'success',
-        text: 'Success! Your reservation has been sent. Please check your email shortly for a confirmation message.',
-        timeout: 3000,
+        heading: 'Success!',
+        text: 'Your reservation has been sent. Please check your email shortly for a confirmation message.',
+        timeout: 5000,
       });
     } else {
       this.alertService.setAlert({
         className: 'error',
-        text: 'Error, please try again later',
-        timeout: 3000,
+        heading: 'Error',
+        text: 'We apologize, something went wrong. Please try again later.',
+        timeout: 5000,
       });
     }
 

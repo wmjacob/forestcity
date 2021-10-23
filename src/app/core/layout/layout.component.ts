@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, HostListener } from "@angular/core";
 import { trigger, transition, animate, style } from '@angular/animations'
 
 import { AlertService } from '@services/alert';
@@ -25,5 +25,20 @@ export class LayoutComponent {
 
   get alert() {
     return this.alertService.alert;
+  }
+
+  dismiss() {
+    this.alertService.clearAlert();
+  }
+
+@HostListener('window:scroll', []) onScroll() {
+    const offset = 99;
+    let mainContent = document.getElementById('main-content') as HTMLElement;
+    if(window.pageYOffset >= offset) {
+      mainContent.classList.add("scroll-padding");
+    }
+    else {
+      mainContent.classList.remove("scroll-padding");
+    }
   }
 }

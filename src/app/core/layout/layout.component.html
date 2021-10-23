@@ -1,13 +1,17 @@
 <div class="d-flex flex-column layout-wrapper">
     <header-component></header-component>
-    <div *ngIf="alert" [@fadeInOut] class="usa-alert usa-alert--slim usa-alert--{{alert.className}} fcl-alert">
+    <div *ngIf="alert" [@fadeInOut] class="usa-alert usa-alert--{{alert.className}} fcl-alert">
         <div class="usa-alert__body">
+          <h4 class="usa-alert__heading">{{alert.heading}}</h4>
           <p class="usa-alert__text">
             {{alert.text}}
           </p>
+          <button class="usa-button usa-button--unstyled dismiss-button" (click)="dismiss()">
+            <img src="close.svg" role="img" alt="Close">
+          </button>
         </div>
     </div>
-    <div>
+    <div id="main-content">
         <router-outlet></router-outlet>
     </div>
     <join-freemasonry></join-freemasonry>

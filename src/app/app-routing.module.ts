@@ -38,7 +38,7 @@ const routes: Routes = [
         component: BulletinComponent,
       },
       {
-        path: 'future-events',
+        path: 'upcoming-events',
         component: FutureEventsComponent,
       },
       {
