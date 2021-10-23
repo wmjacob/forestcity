@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from "@angular/core";
+import { Component, HostListener, OnInit } from "@angular/core";
 
 const calculateFCLAge = () => {
     let chartered = new Date(1867, 10, 16);
@@ -177,18 +177,31 @@ const events: EventOptions[] = [
     templateUrl: './history.component.html',
     styleUrls: ['./history.component.scss']
 })
-export class HistoryComponent implements OnInit, AfterViewInit {
+export class HistoryComponent implements OnInit {
     events: EventOptions[] = [];
 
     ngOnInit() {
         this.events = events;
     }
 
-    ngAfterViewInit() {
-        let topBtn = document.getElementById('returnToTop');
-        window.onscroll = function() {
-            if(topBtn) {
-                if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    @HostListener('window:scroll', []) onScroll() {
+        let topBtn = document.getElementById('returnToTop') as HTMLElement;
+        if(topBtn) {
+            const mobile = window.matchMedia('(max-width: 1023px)');
+            if(mobile.matches) {
+                topBtn.style.display = 'none';
+                // delayed display for mobile after scrolling
+                if(this.hasScrolled()) {
+                    setTimeout(function() {
+                        topBtn.style.display = 'block';
+                    }, 2000);
+                }
+                else {
+                    topBtn.style.display = 'none';
+                }
+            }
+            else {
+                if(this.hasScrolled()) {
                     topBtn.style.display = 'block';
                 }
                 else {
@@ -196,6 +209,10 @@ export class HistoryComponent implements OnInit, AfterViewInit {
                 }
             }
         }
+    }
+
+    hasScrolled(): boolean {
+        return document.body.scrollTop > 400 || document.documentElement.scrollTop > 400
     }
 
     goToTop() {
