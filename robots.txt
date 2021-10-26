@@ -1,4 +1,4 @@
-Sitemap: https://www.forestcitylodge.com/sitemap.xml
+Sitemap: https://forestcitylodge.com/sitemap.xml
 User-agent: *
 Disallow: /our-officers
 Disallow: /bulletin
