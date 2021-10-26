@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && cat sitemap.template.xml | sed \"s/CURRENT_DATE/$(date \"+%Y-%m-%d\")/g\"",
+    "build": "ng build && cat sitemap.template.xml | sed \"s/CURRENT_DATE/$(date \"+%Y-%m-%d\")/g\" > sitemap.xml",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
