@@ -22,11 +22,11 @@ const events: EventOptions[] = [
     {
         year: 1867,
         content: `
-            Two years following the tragic death of President Abraham Lincoln, after being sponsored by Bigelow Lodge #243,
+            Two years following the tragic death of President Abraham Lincoln, after being sponsored by Bigelow Lodge No. 243,
             a dispensation was granted by Grand Master Thomas Sparrow on March 28th, 1867.
             Two days later, Forest City Lodge U.D. held its first meeting in the Masonic Hall on Franklin Street, and adopted a code of By-Laws.
             Following a charter being granted on October 16th, 1867 by the Grand Lodge of Ohio at its Cincinnati meeting,
-            Worshipful Brother Elisha T. Ellsworth, a bookkeeper, and a Past Master of Meridian Sun Lodge #226, was the first elected and installed Master of Forest City Lodge.
+            Worshipful Brother Elisha T. Ellsworth, a bookkeeper, and a Past Master of Meridian Sun Lodge No. 226, was the first elected and installed Master of Forest City Lodge.
         `,
         imageSrc: "../../../assets/images/franklin-blvd-masonic-temple.jpg",
         imageCaption: "The Masonic Hall on Franklin Street",
@@ -123,7 +123,7 @@ const events: EventOptions[] = [
     {
         year: 1986,
         content: `
-        On April 1st, 1986, Golden Square Lodge #679, chartered in 1922, consolidated its 356 members with the 800 members of Forest City Lodge, and returned their charter to the Grand Lodge of Ohio.
+        On April 1st, 1986, Golden Square Lodge No. 679, chartered in 1922, consolidated its 356 members with the 800 members of Forest City Lodge, and returned their charter to the Grand Lodge of Ohio.
         `,
         imageSrc: "../../../assets/images/golden-square.jpg",
         imageCaption: "Golden Square Lodge Gavels",
@@ -148,14 +148,14 @@ const events: EventOptions[] = [
         The time capsule and cornerstone were recovered during the demolition of the temple building earlier that year.
         `,
         imageSrc: "../../../assets/images/sesquicentennial.jpg",
-        imageCaption: "Assembled dignitaries and officers",
+        imageCaption: "2018 Grand Lodge Officers and Brethren of Forest City Lodge assemble for Forest City Lodge's 150th Reconsecration Ceremony",
     },
     {
         year: 2020,
         content: `
         In response to the COVID-19 Pandemic Outbreak, the Grand Master granted dispensations to all
         lodges in Ohio to hold stated meetings, without ritual work, over video conference applications.
-        On April 15, 2020, Forest City Lodge #388 opened its first-ever virtual stated meeting.
+        On April 15, 2020, Forest City Lodge No. 388 opened its first-ever virtual stated meeting.
         At various points during the meeting, more than 40 brethren in five states joined the call.
         `,
         imageSrc: "../../../assets/images/zoom.jpg",
