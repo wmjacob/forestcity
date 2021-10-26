@@ -13,6 +13,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist')));
+app.use('/robots.txt', express.static('./robots.txt'));
+app.use('/sitemap.xml', express.static('./sitemap.xml'));
 app.use('/api/', apiRouter);
 app.use('/mj/api/', mjApiRouter);
 app.use('/*', express.static('./dist/index.html'));

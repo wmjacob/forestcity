@@ -4,6 +4,6 @@ COPY package*.json ./
 RUN npm install
 COPY . ./
 ENV PATH="/usr/src/app/node_modules/.bin:${PATH}"
-RUN ng build
+RUN npm run build
 EXPOSE 3000
 CMD [ "node", "./bin/www" ]

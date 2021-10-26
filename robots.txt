@@ -1,0 +1,5 @@
+Sitemap: http://www.forestcitylodge.com/sitemap.xml
+User-agent: *
+Disallow: /our-officers
+Disallow: /bulletin
+Disallow: /contact-us
