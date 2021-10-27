@@ -4,9 +4,11 @@ const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
 
 const GOOGLE_EMAIL_SECRET = 'email-credentials'
 const GOOGLE_MAILJET_SECRET = 'mailjet-credentials';
+const SECRETARY_EMAIL_SECRET = 'secretary-email';
 const FCL_NAME = 'Forest City Lodge #388';
 
 const FCL_SECRETARY_NAME = 'Forest City Lodge Secretary';
+const FCL_CONTACTS_NAME = 'Forest City Lodge Contacts';
 
 const getAuth = async (secretCredentials) => {
     if (process.env.NODE_ENV !== 'development') {
@@ -35,25 +37,46 @@ mailjetRouter.post('/rsvp', async function(req, res) {
         const mailjet = require ('node-mailjet').connect(mjCreds.mailjetPublicKey, mjCreds.mailjetPrivateKey);
 
         const gmailCreds = await getAuth(GOOGLE_EMAIL_SECRET);
-        const FCL_SECRETARY_EMAIL = gmailCreds.user;
+        const FCL_CONTACTS_EMAIL = gmailCreds.user;
+
+        const secretaryCreds = await getAuth(SECRETARY_EMAIL_SECRET);
+        const FCL_SECRETARY_EMAIL = secretaryCreds.email;
 
         const data = req.body;
         const subject = data.subject;
         const recipientEmail = data.email;
         const recipientName = data.firstName + " " + data.lastName;
 
+        let mealSelection = "";
+
+        if(data.numberOfMeals > 1) {
+            mealSelection.concat("Meat: " + data.numberOfMeat + " Fish: " + data.numberOfFish);
+        }
+        else if(data.numberOfMeals == 1) {
+            mealSelection.concat(data.mealChoice);
+        }
+        else {
+            mealSelection.concat("-");
+        }
+
         const request = mailjet.post("send", {'version': 'v3.1'}).request({
         "Messages":[
             {
                 "From":
                 {
-                    "Email": FCL_SECRETARY_EMAIL,
+                    "Email": FCL_CONTACTS_EMAIL,
                     "Name": FCL_NAME
                 },
                 "To": [
                     {
                         "Email": FCL_SECRETARY_EMAIL,
                         "Name": FCL_SECRETARY_NAME
+                    }
+                ],
+                "Cc": [
+                    {
+                        "Email": FCL_CONTACTS_EMAIL,
+                        "Name": FCL_CONTACTS_NAME
                     }
                 ],
                 "TemplateID": 3205968,
@@ -64,14 +87,17 @@ mailjetRouter.post('/rsvp', async function(req, res) {
                     "lastName": data.lastName,
                     "email": data.email,
                     "eventName": data.event.name,
-                    "date": data.date
+                    "date": data.date,
+                    "earlyBirdDinner": data.earlyBirdDinner ? "Yes": "No",
+                    "numberOfMeals": data.earlyBirdDinner ? data.numberOfMeals : 0,
+                    "mealSelection": mealSelection
                 },
                 "CustomID": "rsvpConfirmationToSecretary"
             },
             {
                 "From":
                 {
-                    "Email": FCL_SECRETARY_EMAIL,
+                    "Email": FCL_CONTACTS_EMAIL,
                     "Name": FCL_NAME
                 },
                 "To": [
@@ -87,7 +113,13 @@ mailjetRouter.post('/rsvp', async function(req, res) {
                     "firstName": data.firstName,
                     "lastName": data.lastName,
                     "eventName": data.event.name,
-                    "date": data.date
+                    "date": data.date,
+                    "earlyBirdDinner": data.earlyBirdDinner ? "Yes": "No",
+                    "numberOfMeals": data.earlyBirdDinner ? data.numberOfMeals : 0,
+                    "mealSelection": mealSelection,
+                    "address": data.event.address,
+                    "addressLink": data.event.addressLink,
+                    "location": data.event.location
                 },
                 "CustomID": "rsvpConfirmationToAttendee"
             }
@@ -114,7 +146,10 @@ mailjetRouter.post('/contact-us', async function(req, res) {
         const mailjet = require ('node-mailjet').connect(mjCreds.mailjetPublicKey, mjCreds.mailjetPrivateKey);
 
         const gmailCreds = await getAuth(GOOGLE_EMAIL_SECRET);
-        const FCL_SECRETARY_EMAIL = gmailCreds.user;
+        const FCL_CONTACTS_EMAIL = gmailCreds.user;
+
+        const secretaryCreds = await getAuth(SECRETARY_EMAIL_SECRET);
+        const FCL_SECRETARY_EMAIL = secretaryCreds.email;
 
         const data = req.body;
         const subject = data.subject;
@@ -126,13 +161,19 @@ mailjetRouter.post('/contact-us', async function(req, res) {
             {
                 "From":
                 {
-                    "Email": FCL_SECRETARY_EMAIL,
+                    "Email": FCL_CONTACTS_EMAIL,
                     "Name": FCL_NAME
                 },
                 "To": [
                     {
                         "Email": FCL_SECRETARY_EMAIL,
                         "Name": FCL_SECRETARY_NAME
+                    }
+                ],
+                "Cc": [
+                    {
+                        "Email": FCL_CONTACTS_EMAIL,
+                        "Name": FCL_CONTACTS_NAME
                     }
                 ],
                 "TemplateID": 3210113,
@@ -150,7 +191,7 @@ mailjetRouter.post('/contact-us', async function(req, res) {
             {
                 "From":
                 {
-                    "Email": FCL_SECRETARY_EMAIL,
+                    "Email": FCL_CONTACTS_EMAIL,
                     "Name": FCL_NAME
                 },
                 "To": [
