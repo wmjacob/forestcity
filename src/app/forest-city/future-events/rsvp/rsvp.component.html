@@ -44,18 +44,66 @@
                                 [class.is-invalid] = "rsvpForm.get('email')?.invalid && rsvpForm.get('email')?.dirty"
                                 required>
                         </div>
+                        <div class="mb-3">
+                            <div class="usa-checkbox">
+                                <input id="early-bird-dinner"
+                                    type="checkbox"
+                                    class="usa-checkbox__input"
+                                    formControlName="earlyBirdDinner"
+                                    [checked]="earlyBirdChecked"
+                                    (click)="toggleChecked()"
+                                    value="earlyBirdChecked">
+                                <label class="usa-checkbox__label" for="early-bird-dinner">Early Bird Dinner (6:30pm)</label>
+                            </div>
+                            <div *ngIf="earlyBirdChecked">
+                                <label class="usa-label" for="numberOfMeals">Number of Meals:</label>
+                                <select class="usa-select" formControlName="numberOfMeals" id="numberOfMeals">
+                                    <option value=1 selected>1</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5</option>
+                                    <option value=6>6</option>
+                                    <option value=7>7</option>
+                                    <option value=8>8</option>
+                                    <option value=9>9</option>
+                                    <option value=10>10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div *ngIf="displayMealChoices()" class="mb-3">
+                            <fieldset class="usa-fieldset">
+                                <legend class="usa-legend">Please choose a meal preference:</legend>
+                                <div *ngIf="!displayMultipleMealChoices()">
+                                    <div *ngFor="let choice of event.earlyBirdOptions.choices" class="usa-radio">
+                                        <input class="usa-radio__input"
+                                            id="{{ choice }}"
+                                            type="radio"
+                                            formControlName="mealChoice"
+                                            value="{{ choice }}">
+                                        <label class="usa-radio__label" for="{{ choice }}">{{ choice }}</label>
+                                    </div>
+                                </div>
+                                <div *ngIf="displayMultipleMealChoices()">
+                                    <label class="usa-label" for="numberOfMeat">Number of Prime Rib:</label>
+                                    <input class="usa-input" type="number" id="numberOfMeat" formControlName="numberOfMeat">
+                                    <label class="usa-label" for="numberOfFish">Number of Salmon:</label>
+                                    <input class="usa-input" type="number" id="numberOfFish" formControlName="numberOfFish">
+                                </div>
+                            </fieldset>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="usa-button usa-button--primary" (click)="submitRsvp()" [disabled]="!rsvpForm.valid || disableButton" data-bs-dismiss="modal">
+                <button type="button" class="usa-button usa-button--primary" (click)="submitRsvp()" [disabled]="disableSubmit()" data-bs-dismiss="modal">
                     <span *ngIf="!disableButton">Submit</span>
                     <span *ngIf="disableButton">
                         <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                         Sending...
                     </span>
                 </button>
-                <button type="button" class="usa-button usa-button--secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="usa-button usa-button--secondary" (click)="clearForm()" data-bs-dismiss="modal">Cancel</button>
             </div>
         </div>
     </div>

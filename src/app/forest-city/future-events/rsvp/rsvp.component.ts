@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 import { EmailService } from '@services/email';
 import { AlertService } from '@services/alert';
+import { formatDate } from '@angular/common';
 
 @Component({
   selector: 'fcl-rsvp',
@@ -13,11 +14,18 @@ export class RsvpComponent implements OnInit {
   @Input() event: any;
 
   disableButton: boolean = false;
+  earlyBirdChecked: boolean = false;
+  mealChoice: boolean = false;
 
   rsvpForm: FormGroup = new FormGroup({
     firstName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
     lastName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
-    email: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")])
+    email: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
+    earlyBirdDinner: new FormControl(false),
+    numberOfMeals: new FormControl('1'),
+    mealChoice: new FormControl('Prime Rib'),
+    numberOfMeat: new FormControl(''),
+    numberOfFish: new FormControl('')
   });
 
   constructor(private emailService: EmailService, private alertService: AlertService) { }
@@ -27,11 +35,12 @@ export class RsvpComponent implements OnInit {
   async submitRsvp(): Promise<void> {
     this.disableButton = true;
     const value = this.rsvpForm.value;
+    // todo: calculate cost based on number of meal reservations, if any
     const response = await this.emailService.sendEmail({
       ...value,
-      date: this.event.date,
-      subject: `RSVP for ${this.event.name} on ${this.event.date}`,
-      fields: ['date', 'firstName', 'lastName', 'email'],
+      date: this.formatEventDate(),
+      subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
+      fields: ['date', 'firstName', 'lastName', 'email', 'earlyBirdDinner', 'numberOfMeals', 'mealChoice', 'numberOfMeat', 'numberOfFish'],
       event: this.event
     }, '/mj/api/rsvp');
 
@@ -57,6 +66,41 @@ export class RsvpComponent implements OnInit {
 
   clearForm() {
     this.rsvpForm.reset();
+    this.earlyBirdChecked = false;
+    this.rsvpForm.get('mealChoice')?.setValue('Prime Rib');
+    this.rsvpForm.get('numberOfMeals')?.setValue(1);
+  }
+
+  toggleChecked() {
+    this.earlyBirdChecked = !this.earlyBirdChecked;
+    this.rsvpForm.get('earlyBirdDinner')?.setValue(this.earlyBirdChecked);
+  }
+
+  displayMealChoices(): boolean {
+    return this.earlyBirdChecked && this.event.earlyBirdOptions.choices.length > 0;
+  }
+
+  displayMultipleMealChoices(): boolean {
+    return this.rsvpForm.get('numberOfMeals')?.value > 1;
+  }
+
+  disableSubmit() {
+    if(this.rsvpForm.invalid || this.disableButton) {
+      return true;
+    }
+    if(this.displayMultipleMealChoices() && this.displayMealChoices()) {
+      let numberOfMeals = this.rsvpForm.get('numberOfMeals')?.value;
+      let numberOfMeat = this.rsvpForm.get('numberOfMeat')?.value;
+      let numberOfFish = this.rsvpForm.get('numberOfFish')?.value;
+      if(numberOfMeals != numberOfMeat + numberOfFish) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  formatEventDate() {
+    return formatDate(this.event.date, 'E, MMM d, h:mm a', 'en-US');
   }
 
 }

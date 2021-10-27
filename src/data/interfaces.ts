@@ -14,4 +14,5 @@ export interface EventOptions {
     rsvpOptions: object | boolean,
     spotlight: boolean,
     spotlightImage: string,
+    earlyBirdOptions: object
 };
