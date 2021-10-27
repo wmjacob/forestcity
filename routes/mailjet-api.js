@@ -47,18 +47,6 @@ mailjetRouter.post('/rsvp', async function(req, res) {
         const recipientEmail = data.email;
         const recipientName = data.firstName + " " + data.lastName;
 
-        let mealSelection = "";
-
-        if(data.numberOfMeals > 1) {
-            mealSelection.concat("Meat: " + data.numberOfMeat + " Fish: " + data.numberOfFish);
-        }
-        else if(data.numberOfMeals == 1) {
-            mealSelection.concat(data.mealChoice);
-        }
-        else {
-            mealSelection.concat("-");
-        }
-
         const request = mailjet.post("send", {'version': 'v3.1'}).request({
         "Messages":[
             {
@@ -69,16 +57,16 @@ mailjetRouter.post('/rsvp', async function(req, res) {
                 },
                 "To": [
                     {
-                        "Email": FCL_SECRETARY_EMAIL,
+                        "Email": FCL_CONTACTS_EMAIL, // TODO change to secretary email after testing
                         "Name": FCL_SECRETARY_NAME
                     }
                 ],
-                "Cc": [
-                    {
-                        "Email": FCL_CONTACTS_EMAIL,
-                        "Name": FCL_CONTACTS_NAME
-                    }
-                ],
+                // "Cc": [
+                //     {
+                //         "Email": FCL_CONTACTS_EMAIL,
+                //         "Name": FCL_CONTACTS_NAME
+                //     }
+                // ],
                 "TemplateID": 3205968,
 				"TemplateLanguage": true,
                 "Subject": subject,
@@ -90,7 +78,7 @@ mailjetRouter.post('/rsvp', async function(req, res) {
                     "date": data.date,
                     "earlyBirdDinner": data.earlyBirdDinner ? "Yes": "No",
                     "numberOfMeals": data.earlyBirdDinner ? data.numberOfMeals : 0,
-                    "mealSelection": mealSelection
+                    "mealSelection": data.mealSelection
                 },
                 "CustomID": "rsvpConfirmationToSecretary"
             },
@@ -116,9 +104,8 @@ mailjetRouter.post('/rsvp', async function(req, res) {
                     "date": data.date,
                     "earlyBirdDinner": data.earlyBirdDinner ? "Yes": "No",
                     "numberOfMeals": data.earlyBirdDinner ? data.numberOfMeals : 0,
-                    "mealSelection": mealSelection,
+                    "mealSelection": data.mealSelection,
                     "address": data.event.address,
-                    "addressLink": data.event.addressLink,
                     "location": data.event.location
                 },
                 "CustomID": "rsvpConfirmationToAttendee"

@@ -35,14 +35,18 @@ export class RsvpComponent implements OnInit {
   async submitRsvp(): Promise<void> {
     this.disableButton = true;
     const value = this.rsvpForm.value;
+    const request = this.buildRequest();
     // todo: calculate cost based on number of meal reservations, if any
-    const response = await this.emailService.sendEmail({
-      ...value,
-      date: this.formatEventDate(),
-      subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
-      fields: ['date', 'firstName', 'lastName', 'email', 'earlyBirdDinner', 'numberOfMeals', 'mealChoice', 'numberOfMeat', 'numberOfFish'],
-      event: this.event
-    }, '/mj/api/rsvp');
+    const response = await this.emailService.sendEmail(
+      request,
+    //   {
+    //   ...value,
+    //   date: this.formatEventDate(),
+    //   subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
+    //   fields: ['date', 'firstName', 'lastName', 'email', 'earlyBirdDinner', 'numberOfMeals', 'mealChoice', 'numberOfMeat', 'numberOfFish'],
+    //   event: this.event
+    // },
+    '/mj/api/rsvp');
 
     if (response) {
       this.clearForm();
@@ -63,6 +67,30 @@ export class RsvpComponent implements OnInit {
 
     this.disableButton = false;
   }
+
+buildRequest() {
+  const formValues = this.rsvpForm.value;
+  let mealSelection: string = '';
+  if(this.displayMealChoices() && formValues.numberOfMeals > 1) {
+    mealSelection = mealSelection.concat("Meat: " + formValues.numberOfMeat ? formValues.numberOfMeat : 0 + " Fish: " + formValues.numberOfFish ? formValues.numberOfFish : 0);
+  }
+  else if(this.displayMealChoices() && formValues.numberOfMeals == 1) {
+    mealSelection = mealSelection.concat(formValues.mealChoice);
+  }
+  else {
+    mealSelection = mealSelection.concat("-")
+  }
+
+console.log('mealSelection=' + mealSelection);
+
+  return {
+    value: formValues,
+    date: this.formatEventDate(),
+    subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
+    event: this.event,
+    mealSelection: mealSelection
+  }
+}
 
   clearForm() {
     this.rsvpForm.reset();
