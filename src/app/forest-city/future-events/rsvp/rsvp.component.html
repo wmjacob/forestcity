@@ -86,9 +86,9 @@
                                 </div>
                                 <div *ngIf="displayMultipleMealChoices()">
                                     <label class="usa-label" for="numberOfMeat">Number of Prime Rib:</label>
-                                    <input class="usa-input" type="number" id="numberOfMeat" formControlName="numberOfMeat">
+                                    <input class="usa-input" type="number" min="0" id="numberOfMeat" formControlName="numberOfMeat">
                                     <label class="usa-label" for="numberOfFish">Number of Salmon:</label>
-                                    <input class="usa-input" type="number" id="numberOfFish" formControlName="numberOfFish">
+                                    <input class="usa-input" type="number" min="0" id="numberOfFish" formControlName="numberOfFish">
                                 </div>
                             </fieldset>
                         </div>
