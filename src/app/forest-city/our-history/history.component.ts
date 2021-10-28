@@ -16,6 +16,7 @@ interface EventOptions {
     content: string,
     imageSrc: string,
     imageCaption: string,
+    altText: string
 }
 
 const events: EventOptions[] = [
@@ -30,6 +31,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/franklin-blvd-masonic-temple.jpg",
         imageCaption: "The Masonic Hall on Franklin Street",
+        altText: ""
     },
     {
         year: 1873,
@@ -41,6 +43,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/case_hall.jpg",
         imageCaption: "Case Hall, early 1900s. Western Reserve Historical Society",
+        altText: ""
     },
     {
         year: 1896,
@@ -51,6 +54,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/newburgh.jpg",
         imageCaption: "Newburgh Masonic Temple, 2019. Abandoned since 1984",
+        altText: ""
     },
     {
         year: 1921,
@@ -62,6 +66,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/cleveland_masonic_temple.jpg",
         imageCaption: "Cleveland Masonic Temple",
+        altText: ""
     },
     {
         year: 1942,
@@ -71,6 +76,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/timecapsule.jpg",
         imageCaption: "Julius Negin's grandchildren open time capsule",
+        altText: ""
     },
     {
         year: 1955,
@@ -80,6 +86,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/groundbreaking.jpg",
         imageCaption: "Newspaper article on groundbreaking",
+        altText: ""
     },
     {
         year: 1958,
@@ -90,6 +97,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/cornerstone.jpg",
         imageCaption: "Cornerstone of the Shaker Masonic Temple",
+        altText: ""
     },
     {
         year: 1966,
@@ -100,6 +108,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/ohio-masonic-home.jpg",
         imageCaption: "Ohio Masonic Home, Springfield",
+        altText: ""
     },
     {
         year: 1973,
@@ -110,6 +119,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/brotherhood-night.jpg",
         imageCaption: "45th Annual Brotherhood Night, Candle Lighting Ceremony",
+        altText: "Discovery Photo Online"
     },
     {
         year: 1979,
@@ -119,6 +129,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/minutes.jpg",
         imageCaption: "Forest City Lodge attendance book",
+        altText: "Discovery Photo Online"
     },
     {
         year: 1986,
@@ -127,6 +138,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/golden-square.jpg",
         imageCaption: "Golden Square Lodge Gavels",
+        altText: "Discovery Photo Online"
     },
     {
         year: 1999,
@@ -139,6 +151,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/alter.jpg",
         imageCaption: "Lodge Room Altar, Lyndhurst Masonic Temple",
+        altText: "Discovery Photo Online"
     },
     {
         year: 2018,
@@ -149,6 +162,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/sesquicentennial.jpg",
         imageCaption: "2018 Grand Lodge Officers and Brethren of Forest City Lodge assemble for Forest City Lodge's 150th Reconsecration Ceremony",
+        altText: ""
     },
     {
         year: 2020,
@@ -160,6 +174,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/zoom.jpg",
         imageCaption: "First Zoom meeting",
+        altText: ""
     },
     {
         year: 'Today',
@@ -169,6 +184,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/working-tools.jpg",
         imageCaption: "Forest City Lodge working tools",
+        altText: "Discovery Photo Online"
     },
 ];
 
