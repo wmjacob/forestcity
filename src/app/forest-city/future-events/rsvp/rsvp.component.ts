@@ -37,13 +37,6 @@ export class RsvpComponent implements OnInit {
     const request = this.buildRequest();
     const response = await this.emailService.sendEmail(
       request,
-    //   {
-    //   ...value,
-    //   date: this.formatEventDate(),
-    //   subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
-    //   fields: ['date', 'firstName', 'lastName', 'email', 'earlyBirdDinner', 'numberOfMeals', 'mealChoice', 'numberOfMeat', 'numberOfFish'],
-    //   event: this.event
-    // },
     '/mj/api/rsvp');
 
     if (response) {
