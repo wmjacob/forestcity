@@ -34,9 +34,7 @@ export class RsvpComponent implements OnInit {
 
   async submitRsvp(): Promise<void> {
     this.disableButton = true;
-    const value = this.rsvpForm.value;
     const request = this.buildRequest();
-    // todo: calculate cost based on number of meal reservations, if any
     const response = await this.emailService.sendEmail(
       request,
     //   {
@@ -68,29 +66,38 @@ export class RsvpComponent implements OnInit {
     this.disableButton = false;
   }
 
-buildRequest() {
-  const formValues = this.rsvpForm.value;
-  let mealSelection: string = '';
-  if(this.displayMealChoices() && formValues.numberOfMeals > 1) {
-    mealSelection = mealSelection.concat("Meat: " + formValues.numberOfMeat ? formValues.numberOfMeat : 0 + " Fish: " + formValues.numberOfFish ? formValues.numberOfFish : 0);
-  }
-  else if(this.displayMealChoices() && formValues.numberOfMeals == 1) {
-    mealSelection = mealSelection.concat(formValues.mealChoice);
-  }
-  else {
-    mealSelection = mealSelection.concat("-")
+  buildRequest() {
+    const formValues = this.rsvpForm.value;
+    let mealSelection = this.getMealSelection();
+    let earlyBirdDinner = this.earlyBirdChecked ? "Yes" : "No";
+    let numberOfMeals = this.earlyBirdChecked ? formValues.numberOfMeals : 0;
+
+    return {
+      value: formValues,
+      date: this.formatEventDate(),
+      subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
+      event: this.event,
+      fields: ['date', 'firstName', 'lastName', 'email', 'earlyBirdDinner', 'numberOfMeals', 'mealChoice', 'numberOfMeat', 'numberOfFish'],
+      mealSelection: mealSelection,
+      earlyBirdDinner: earlyBirdDinner,
+      numberOfMeals: numberOfMeals
+    }
   }
 
-console.log('mealSelection=' + mealSelection);
-
-  return {
-    value: formValues,
-    date: this.formatEventDate(),
-    subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
-    event: this.event,
-    mealSelection: mealSelection
+  getMealSelection() {
+    const formValues = this.rsvpForm.value;
+    if(this.displayMealChoices() && formValues.numberOfMeals > 1) {
+      let numberOfMeat = formValues.numberOfMeat ? formValues.numberOfMeat : "0";
+      let numberOfFish = formValues.numberOfFish ? formValues.numberOfFish : "0";
+      return "Meat: " + numberOfMeat + " Fish: " + numberOfFish;
+    }
+    else if(this.displayMealChoices() && formValues.numberOfMeals == 1) {
+      return formValues.mealChoice;
+    }
+    else {
+      return "-";
+    }
   }
-}
 
   clearForm() {
     this.rsvpForm.reset();
