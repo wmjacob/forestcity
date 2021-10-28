@@ -73,11 +73,12 @@ export class RsvpComponent implements OnInit {
     let numberOfMeals = this.earlyBirdChecked ? formValues.numberOfMeals : 0;
 
     return {
-      value: formValues,
+      firstName: formValues.firstName,
+      lastName: formValues.lastName,
+      email: formValues.email,
       date: this.formatEventDate(),
       subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
       event: this.event,
-      fields: ['date', 'firstName', 'lastName', 'email', 'earlyBirdDinner', 'numberOfMeals', 'mealChoice', 'numberOfMeat', 'numberOfFish'],
       mealSelection: mealSelection,
       earlyBirdDinner: earlyBirdDinner,
       numberOfMeals: numberOfMeals
