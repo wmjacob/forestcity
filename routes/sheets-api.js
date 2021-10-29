@@ -27,42 +27,49 @@ const getAuth = async (secretCredentials) => {
 }
 
 sheetsRouter.post('/append-rsvp', async function(request, response) {
-    const data = request.body;
-    const eventNameDate = data.event.name + ' ' + data.date; // event name and date for sheets/tabs
-    // check if the sheet exists, if so, append, if not, create the page and add the row
+    try {
+        const data = request.body;
+        const eventNameDate = data.event.name + ' ' + data.date; // event name and date for sheets/tabs
+        // check if the sheet exists, if so, append, if not, create the page and add the row
 
-    const sheetsSecret = await getAuth(SHEETS_SECRET);
+        const sheetsSecret = await getAuth(SHEETS_SECRET);
 
-    const sheetsCreds = {
-        client_email: sheetsSecret.client_email,
-        private_key: sheetsSecret.private_key
+        const sheetsCreds = {
+            client_email: sheetsSecret.client_email,
+            private_key: sheetsSecret.private_key
+        }
+
+        const auth = new googleSheets.auth.GoogleAuth({
+            credentials: sheetsCreds,
+            scopes: [
+                'https://www.googleapis.com/auth/spreadsheets'
+            ]
+        });
+
+        const authClient = await auth.getClient();
+        const sheets = googleSheets.sheets({version: 'v4', auth: authClient});
+        const rsvpSheet = await getAuth(SHEETS_ID_SECRET);
+
+        let sheetsRequest = await sheets.spreadsheets.values.get({spreadsheetId: rsvpSheet.sheetId});
+        console.log(sheetsRequest.data);
+
+        const res = await sheets.spreadsheets.values.append({
+            spreadsheetId : rsvpSheet.sheetId,
+            range : "A1:F1",
+            valueInputOption: 'USER_ENTERED',
+            requestBody: {
+              values: [
+                [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.mealSelection]
+              ],
+            },
+          });
+          console.log(res.data);
+    }
+    catch (error) {
+        console.log(error);
+        response.status(500).json({error: 'Internal Error'});
     }
 
-    const auth = new googleSheets.auth.GoogleAuth({
-        credentials: sheetsCreds,
-        scopes: [
-            'https://www.googleapis.com/auth/spreadsheets'
-        ]
-    });
-
-    const authClient = await auth.getClient();
-    const sheets = googleSheets.sheets({version: 'v4', auth: authClient});
-    const rsvpSheet = await getAuth(SHEETS_ID_SECRET);
-
-    let sheetsRequest = await sheets.spreadsheets.values.get({spreadsheetId: rsvpSheet.sheetId});
-    console.log(sheetsRequest.data);
-
-    const res = await sheets.spreadsheets.values.append({
-        spreadsheetId : rsvpSheet.sheetId,
-        range : "A1:F1",
-        valueInputOption: 'USER_ENTERED',
-        requestBody: {
-          values: [
-            [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.mealSelection]
-          ],
-        },
-      });
-      console.log(res.data);
 });
 
 module.exports = sheetsRouter;
