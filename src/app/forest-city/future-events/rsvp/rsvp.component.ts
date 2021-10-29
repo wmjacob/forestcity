@@ -5,7 +5,6 @@ import { EmailService } from '@services/email';
 import { AlertService } from '@services/alert';
 import { formatDate } from '@angular/common';
 import { SheetsService } from '@services/sheets';
-
 @Component({
   selector: 'fcl-rsvp',
   templateUrl: './rsvp.component.html',
@@ -61,16 +60,18 @@ export class RsvpComponent implements OnInit {
       });
     }
 
-    // if(emailSuccessful) {
-    //   const sheetsResponse = await this.sheetsService.writeToSheet(request);
+    if(emailSuccessful) {
+      const sheetsResponse = await this.sheetsService.writeToSheet(request);
 
-    //   if(sheetsResponse) {
-    //     // do nothing
-    //   }
-    //   else {
-    //     // do nothing
-    //   }
-    // }
+      if(sheetsResponse) {
+        // do nothing
+        console.log("sheets worked, response=" + sheetsResponse);
+      }
+      else {
+        // do nothing
+        console.log("sheets did not work");
+      }
+    }
 
     this.disableButton = false;
   }
@@ -145,7 +146,7 @@ export class RsvpComponent implements OnInit {
   }
 
   formatEventDate() {
-    return formatDate(this.event.date, 'E, MMM d, y, h:mm a', 'en-US');
+    return formatDate(this.event.date, 'E, MMM d, y h:mma', 'en-US');
   }
 
 }
