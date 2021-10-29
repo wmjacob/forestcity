@@ -119,7 +119,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/brotherhood-night.jpg",
         imageCaption: "45th Annual Brotherhood Night, Candle Lighting Ceremony",
-        altText: "Discovery Photo Online"
+        altText: "Discovery Photo"
     },
     {
         year: 1979,
@@ -129,7 +129,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/minutes.jpg",
         imageCaption: "Forest City Lodge attendance book",
-        altText: "Discovery Photo Online"
+        altText: "Discovery Photo"
     },
     {
         year: 1986,
@@ -138,7 +138,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/golden-square.jpg",
         imageCaption: "Golden Square Lodge Gavels",
-        altText: "Discovery Photo Online"
+        altText: "Discovery Photo"
     },
     {
         year: 1999,
@@ -151,7 +151,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/alter.jpg",
         imageCaption: "Lodge Room Altar, Lyndhurst Masonic Temple",
-        altText: "Discovery Photo Online"
+        altText: "Discovery Photo"
     },
     {
         year: 2018,
@@ -184,7 +184,7 @@ const events: EventOptions[] = [
         `,
         imageSrc: "../../../assets/images/working-tools.jpg",
         imageCaption: "Forest City Lodge working tools",
-        altText: "Discovery Photo Online"
+        altText: "Discovery Photo"
     },
 ];
 

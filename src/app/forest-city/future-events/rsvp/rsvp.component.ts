@@ -4,6 +4,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmailService } from '@services/email';
 import { AlertService } from '@services/alert';
 import { formatDate } from '@angular/common';
+import { SheetsService } from '@services/sheets';
 
 @Component({
   selector: 'fcl-rsvp',
@@ -28,18 +29,20 @@ export class RsvpComponent implements OnInit {
     numberOfFish: new FormControl('')
   });
 
-  constructor(private emailService: EmailService, private alertService: AlertService) { }
+  constructor(private emailService: EmailService,
+              private sheetsService: SheetsService,
+              private alertService: AlertService) { }
 
   ngOnInit(): void {}
 
   async submitRsvp(): Promise<void> {
+    let emailSuccessful: boolean = false;
     this.disableButton = true;
     const request = this.buildRequest();
-    const response = await this.emailService.sendEmail(
-      request,
-    '/mj/api/rsvp');
+    const response = await this.emailService.sendEmail(request, '/mj/api/rsvp');
 
     if (response) {
+      emailSuccessful = true;
       this.clearForm();
       this.alertService.setAlert({
         className: 'success',
@@ -47,7 +50,9 @@ export class RsvpComponent implements OnInit {
         text: 'Your reservation has been sent. Please check your email shortly for a confirmation message.',
         timeout: 5000,
       });
+
     } else {
+      emailSuccessful = false;
       this.alertService.setAlert({
         className: 'error',
         heading: 'Error',
@@ -55,6 +60,17 @@ export class RsvpComponent implements OnInit {
         timeout: 5000,
       });
     }
+
+    // if(emailSuccessful) {
+    //   const sheetsResponse = await this.sheetsService.writeToSheet(request);
+
+    //   if(sheetsResponse) {
+    //     // do nothing
+    //   }
+    //   else {
+    //     // do nothing
+    //   }
+    // }
 
     this.disableButton = false;
   }
@@ -129,7 +145,7 @@ export class RsvpComponent implements OnInit {
   }
 
   formatEventDate() {
-    return formatDate(this.event.date, 'E, MMM d, h:mm a', 'en-US');
+    return formatDate(this.event.date, 'E, MMM d, y, h:mm a', 'en-US');
   }
 
 }
