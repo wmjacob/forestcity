@@ -9,7 +9,7 @@
     "rsvpOptions": true,
     "spotlight": true,
     "spotlightImage": "gavel.jpg",
-    "altText": "Courtesy Discovery Photo Online",
+    "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
       "cost": "12",
       "choices": []
@@ -41,7 +41,7 @@
     "rsvpOptions": true,
     "spotlight": true,
     "spotlightImage": "lights.jpeg",
-    "altText": "Courtesy Discovery Photo Online",
+    "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
       "cost": "12",
       "choices": []
@@ -73,7 +73,7 @@
     "rsvpOptions": true,
     "spotlight": true,
     "spotlightImage": "hats.jpeg",
-    "altText": "Courtesy Discovery Photo Online",
+    "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
@@ -105,7 +105,7 @@
     "rsvpOptions": true,
     "spotlight": true,
     "spotlightImage": "brotherhood-night.jpg",
-    "altText": "Courtesy Discovery Photo Online",
+    "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
@@ -169,7 +169,7 @@
     "rsvpOptions": true,
     "spotlight": true,
     "spotlightImage": "valentines.jpg",
-    "altText": "Courtesy Discovery Photo Online",
+    "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
@@ -249,7 +249,7 @@
     "rsvpOptions": true,
     "spotlight": true,
     "spotlightImage": "workingtools.jpeg",
-    "altText": "Courtesy Discovery Photo Online",
+    "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
       "cost": "12",
       "choices": []
@@ -281,7 +281,7 @@
     "rsvpOptions": true,
     "spotlight": true,
     "spotlightImage": "lights.jpeg",
-    "altText": "Courtesy Discovery Photo Online",
+    "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
       "cost": "12",
       "choices": []
@@ -329,7 +329,7 @@
     "rsvpOptions": true,
     "spotlight": true,
     "spotlightImage": "tablelodge.jpeg",
-    "altText": "Courtesy Discovery Photo Online",
+    "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
       "cost": "12",
       "choices": []
@@ -393,7 +393,7 @@
     "rsvpOptions": true,
     "spotlight": true,
     "spotlightImage": "alter.jpg",
-    "altText": "Courtesy Discovery Photo Online",
+    "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
       "cost": "12",
       "choices": []
@@ -457,7 +457,7 @@
     "rsvpOptions": true,
     "spotlight": true,
     "spotlightImage": "gavel.jpg",
-    "altText": "Courtesy Discovery Photo Online",
+    "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
       "cost": "12",
       "choices": []
