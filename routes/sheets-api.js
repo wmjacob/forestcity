@@ -32,8 +32,6 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
     // check if the sheet exists, if so, append, if not, create the page and add the row
 
     const sheetsSecret = await getAuth(SHEETS_SECRET);
-    const CLIENT_ID = sheetsSecret.client_id;
-    const API_KEY = 'AIzaSyDckYbZHgVrCrcenEJ6se4zPyFm4QDHrlg'; // store as secret?
 
     const sheetsCreds = {
         client_email: sheetsSecret.client_email,
