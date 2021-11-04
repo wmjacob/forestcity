@@ -24,8 +24,13 @@ $theme-image-path: '~uswds/src/img';
     src: local("Aref Ruquaa"), url(./assets/fonts/Aref_Ruqaa/ArefRuqaa-Regular.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "Crimson Text";
+    src: local("Crimson Text") url(./assets/fonts/Crimson_Text/CrimsonText-SemiBold.ttf) format("truetype");
+}
+
 h1,h2,h3 {
-    font-family: Fredericka !important;
+    font-family: 'Crimson Text' !important;
 }
 h1,h2,h3 {
     padding:0;
