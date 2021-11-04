@@ -43,7 +43,7 @@
     "spotlightImage": "lights.jpeg",
     "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
-      "cost": "12",
+      "cost": "",
       "choices": []
     }
   },
