@@ -44,7 +44,7 @@
                                 [class.is-invalid] = "rsvpForm.get('email')?.invalid && rsvpForm.get('email')?.dirty"
                                 required>
                         </div>
-                        <div class="mb-3">
+                        <div *ngIf="displayEarlyBirdCheckbox()" class="mb-3">
                             <div class="usa-checkbox">
                                 <input id="early-bird-dinner"
                                     type="checkbox"
@@ -53,7 +53,7 @@
                                     [checked]="earlyBirdChecked"
                                     (click)="toggleChecked()"
                                     value="earlyBirdChecked">
-                                <label class="usa-checkbox__label" for="early-bird-dinner">Early Bird Dinner (6:30pm)</label>
+                                <label class="usa-checkbox__label" for="early-bird-dinner">Early Bird Dinner {{ event.earlyBirdOptions.time }}</label>
                             </div>
                             <div *ngIf="earlyBirdChecked">
                                 <label class="usa-label" for="numberOfMeals">Number of Meals:</label>

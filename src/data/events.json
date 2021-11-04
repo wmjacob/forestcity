@@ -1,21 +1,5 @@
 [
   {
-    "date": "2021-11-03 19:30",
-    "name": "Annual Meeting",
-    "description": "Election of Officers",
-    "location": "Forest City Lodge",
-    "address": "Lyndhurst Masonic Temple",
-    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": true,
-    "spotlight": true,
-    "spotlightImage": "gavel.jpg",
-    "altText": "Courtesy Discovery Photo",
-    "earlyBirdOptions": {
-      "cost": "12",
-      "choices": []
-    }
-  },
-  {
     "date": "2021-11-10 19:30",
     "name": "Wednesday Night Light",
     "description": "",
@@ -27,6 +11,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -43,6 +28,7 @@
     "spotlightImage": "lights.jpeg",
     "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "",
       "choices": []
     }
@@ -59,6 +45,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -75,6 +62,7 @@
     "spotlightImage": "hats.jpeg",
     "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
     }
@@ -91,6 +79,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -107,6 +96,7 @@
     "spotlightImage": "brotherhood-night.jpg",
     "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
     }
@@ -123,6 +113,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -139,6 +130,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -155,6 +147,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -171,6 +164,7 @@
     "spotlightImage": "valentines.jpg",
     "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
     }
@@ -187,6 +181,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -203,6 +198,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -219,6 +215,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -235,6 +232,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -251,6 +249,7 @@
     "spotlightImage": "workingtools.jpeg",
     "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -267,6 +266,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -283,6 +283,7 @@
     "spotlightImage": "lights.jpeg",
     "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -299,6 +300,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -315,6 +317,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -331,6 +334,7 @@
     "spotlightImage": "tablelodge.jpeg",
     "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -347,22 +351,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
-      "cost": "12",
-      "choices": []
-    }
-  },
-  {
-    "date": "2022-06-29 19:30",
-    "name": "Special Meeting",
-    "description": "Sports Night",
-    "location": "Forest City Lodge",
-    "address": "Lyndhurst Masonic Temple",
-    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": true,
-    "spotlight": false,
-    "spotlightImage": "",
-    "altText": "",
-    "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -379,6 +368,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "(5:30 PM)",
       "cost": "20",
       "choices": []
     }
@@ -395,6 +385,7 @@
     "spotlightImage": "alter.jpg",
     "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -411,6 +402,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -427,6 +419,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -443,6 +436,7 @@
     "spotlightImage": "",
     "altText": "",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }
@@ -459,6 +453,7 @@
     "spotlightImage": "gavel.jpg",
     "altText": "Courtesy Discovery Photo",
     "earlyBirdOptions": {
+      "time": "",
       "cost": "12",
       "choices": []
     }

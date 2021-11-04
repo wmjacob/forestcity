@@ -122,6 +122,14 @@ export class RsvpComponent implements OnInit {
     this.rsvpForm.get('earlyBirdDinner')?.setValue(this.earlyBirdChecked);
   }
 
+  displayEarlyBirdCheckbox() {
+    let earlyBirdOptions = this.event.earlyBirdOptions;
+    if(earlyBirdOptions !== undefined) {
+      return earlyBirdOptions.cost !== "";
+    }
+    return false;
+  }
+
   displayMealChoices(): boolean {
     return this.earlyBirdChecked && this.event.earlyBirdOptions.choices.length > 0;
   }
