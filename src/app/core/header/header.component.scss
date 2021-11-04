@@ -14,6 +14,7 @@ img {
 
 .primary-title {
     font-size: 36px;
+    text-align: center;
 
     &-small {
         font-size: 20px;
@@ -47,4 +48,9 @@ img {
     .usa-logo {
         max-width: 60%;
     }
+
+    // .bell-logo {
+    //     width: 70px;
+    //     height: 70px;
+    // }
 }

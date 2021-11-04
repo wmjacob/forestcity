@@ -60,18 +60,18 @@ export class RsvpComponent implements OnInit {
       });
     }
 
-    if(emailSuccessful) {
-      const sheetsResponse = await this.sheetsService.writeToSheet(request);
+    // if(emailSuccessful) {
+    //   const sheetsResponse = await this.sheetsService.writeToSheet(request);
 
-      if(sheetsResponse) {
-        // do nothing
-        console.log("sheets worked, response=" + sheetsResponse);
-      }
-      else {
-        // do nothing
-        console.log("sheets did not work");
-      }
-    }
+    //   if(sheetsResponse) {
+    //     // do nothing
+    //     console.log("automated sheets update success");
+    //   }
+    //   else {
+    //     // do nothing
+    //     console.log("automated sheets error");
+    //   }
+    // }
 
     this.disableButton = false;
   }
