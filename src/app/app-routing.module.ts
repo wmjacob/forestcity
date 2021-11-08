@@ -10,6 +10,8 @@ import { RecruitingComponent } from './forest-city/recruiting/recruiting.compone
 import { ContactUsComponent } from './core/contact-us/contact-us.component';
 import { OurOfficersComponent } from './forest-city/our-officers/our-officers.component';
 import { AboutUsComponent } from './forest-city/about-us/about-us.component';
+import { ImageGalleryComponent } from './forest-city/image-gallery/image-gallery.component';
+import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-collection/gallery-collection.component';
 
 const routes: Routes = [
   {
@@ -23,7 +25,7 @@ const routes: Routes = [
       },
       {
         path: 'home',
-        component: HomeComponent,
+        component: HomeComponent
       },
       {
         path: 'history',
@@ -35,11 +37,11 @@ const routes: Routes = [
       },
       {
         path: 'bulletin',
-        component: BulletinComponent,
+        component: BulletinComponent
       },
       {
         path: 'upcoming-events',
-        component: FutureEventsComponent,
+        component: FutureEventsComponent
       },
       {
         path: 'contact-us',
@@ -55,8 +57,16 @@ const routes: Routes = [
       },
       {
         path: 'how-to-join',
-        component: RecruitingComponent,
-      }
+        component: RecruitingComponent
+      },
+      // {
+      //   path: 'image-gallery',
+      //   component: ImageGalleryComponent
+      // },
+      // {
+      //   path: 'gallery-collection',
+      //   component: GalleryCollectionComponent
+      // }
     ]
   },
   // routes without header or footer

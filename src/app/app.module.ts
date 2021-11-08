@@ -21,6 +21,8 @@ import { OurOfficersComponent } from './forest-city/our-officers/our-officers.co
 import { AboutUsComponent } from './forest-city/about-us/about-us.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { JwPaginationComponent } from './forest-city/past-masters/pagination/jw-pagination.component';
+import { ImageGalleryComponent } from './forest-city/image-gallery/image-gallery.component';
+import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-collection/gallery-collection.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { JwPaginationComponent } from './forest-city/past-masters/pagination/jw-
     OurOfficersComponent,
     AboutUsComponent,
     FooterComponent,
-    JwPaginationComponent
+    JwPaginationComponent,
+    ImageGalleryComponent,
+    GalleryCollectionComponent
   ],
   imports: [
     BrowserModule,
