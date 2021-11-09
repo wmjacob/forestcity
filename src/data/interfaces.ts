@@ -15,5 +15,6 @@ export interface EventOptions {
     spotlight: boolean,
     spotlightImage: string,
     altText: string,
+    tyled: boolean,
     earlyBirdOptions: object
 };
