@@ -28,6 +28,10 @@ export class FutureEventsComponent {
     return timeFormatter.format(new Date(date))
   }
 
+  getTyled(tyled: boolean) {
+    return tyled ? 'Tyled' : 'Open';
+  }
+
   hasEventPassed(date: string): boolean {
     let today = new Date();
     let eventDate = new Date(date);
