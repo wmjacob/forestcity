@@ -13,6 +13,8 @@ import { AboutUsComponent } from './forest-city/about-us/about-us.component';
 import { ImageGalleryComponent } from './forest-city/image-gallery/image-gallery.component';
 import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-collection/gallery-collection.component';
 
+const IMAGE_GALLERY_URL = 'image-gallery';
+
 const routes: Routes = [
   {
     path: '',
@@ -59,14 +61,14 @@ const routes: Routes = [
         path: 'how-to-join',
         component: RecruitingComponent
       },
-      // {
-      //   path: 'image-gallery',
-      //   component: ImageGalleryComponent
-      // },
-      // {
-      //   path: 'gallery-collection',
-      //   component: GalleryCollectionComponent
-      // }
+      {
+        path: IMAGE_GALLERY_URL,
+        component: ImageGalleryComponent
+      },
+      {
+        path: IMAGE_GALLERY_URL + '/gallery-collection',
+        component: GalleryCollectionComponent
+      }
     ]
   },
   // routes without header or footer

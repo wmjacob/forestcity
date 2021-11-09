@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'fcl-image-gallery',
@@ -8,13 +8,14 @@ import { Router } from '@angular/router';
 })
 export class ImageGalleryComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+              private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
 
   goToCollection(collection: string) {
-    console.log('clicked in div, collection=' + collection);
+    this.router.navigate(['gallery-collection'], {state: {data: collection}, relativeTo: this.route});
   }
 
 }

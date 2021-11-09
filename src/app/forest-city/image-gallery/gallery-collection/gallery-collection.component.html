@@ -1,82 +1,45 @@
-<div class="row">
-    <h1>Masonry Gallery</h1>
-
-    <div class="gallery" id="gallery">
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,care" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,studied" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,substance" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,choose" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,past" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,lamp" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,yet" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,eight" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,crew" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,event" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,instrument" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,practical" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,pass" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,bigger" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,number" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,feature" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,line" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,railroad" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,pride" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,too" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,bottle" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,base" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,cell" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,bag" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,card" alt=""></div>
+<div *ngIf="loading">
+    <div style="text-align: center;">
+        <img src="../../../../assets/images/gifs/blue-bar-spinner.gif" style="width:50px; height:50px;" alt="Loading"/>
+      </div>
+      <div style="text-align: center;">
+        <span style="font-size: x-large; font-family: 'Times New Roman', Times, serif;">Loading . . .</span>
+      </div>
+</div>
+<div *ngIf="!loading">
+    <div class="image-row">
+        <div class="image-column" *ngFor="let image of images; let i = index">
+            <img src="{{IMAGE_URL_PREFIX}}{{image.name}}" (click)="openModal(); currentSlide(i+1)" class="hover-shadow cursor" loading="lazy">
         </div>
     </div>
+    <div id="imgModal" class="slide-modal">
+        <span class="close cursor" (click)="closeModal()">&times;</span>
+        <div class="slide-modal-content">
+            <div class="img-slides" *ngFor="let image of images; let i = index">
+                <img src="{{IMAGE_URL_PREFIX}}{{image.name}}">
+            </div>
+            <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+            <a class="next" (click)="plusSlides(1)">&#10095;</a>
+            <!-- <div class="image-row">
+                <div class="image-column" *ngFor="let image of images; let i = index">
+                    <img class="images" (click)="currentSlide(i+1)" src="{{IMAGE_URL_PREFIX}}{{image.name}}">
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
 </div>
-<script src="gallery.js"></script>
+<!-- <div *ngIf="!loading" class="row">
+    <h1 class="text-center">Forest City Lodge No. 388</h1>
+    <h2 class="text-center">title goes here</h2>
+    <div class="gallery" id="gallery">
+        <div *ngFor="let image of images">
+            <div class="gallery-item">
+                <div class="content">
+                    <img src="{{IMAGE_URL_PREFIX}}{{image.name}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

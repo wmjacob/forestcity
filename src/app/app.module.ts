@@ -23,6 +23,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { JwPaginationComponent } from './forest-city/past-masters/pagination/jw-pagination.component';
 import { ImageGalleryComponent } from './forest-city/image-gallery/image-gallery.component';
 import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-collection/gallery-collection.component';
+import { GalleryModule, GALLERY_CONFIG } from 'ng-gallery';
 
 @NgModule({
   declarations: [
@@ -50,10 +51,18 @@ import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GalleryModule
   ],
   providers: [
-    PastMastersService
+    PastMastersService,
+    {
+      provide: GALLERY_CONFIG,
+      useValue: {
+        dots: true,
+        imageSize: 'cover'
+      }
+    }
   ],
   bootstrap: [AppComponent]
 })
