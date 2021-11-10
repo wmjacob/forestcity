@@ -56,33 +56,8 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
                 [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.mealSelection]
             );
         }
-        await sheet.addRow({
-            'Last Name': data.lastName,
-            'First Name': data.firstName,
-            'Email': data.email,
-            'Early Bird Dinner': data.earlyBirdDinner,
-            'Number of Meals': data.numberOfMeals,
-            'Meal Choice': data.mealSelection
-        });
-
-        await sheet.addRow(
-            [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.mealSelection]
-        );
-
-        // const res = await sheets.spreadsheets.values.append({
-        //     spreadsheetId : rsvpSheet.sheetId,
-        //     range : "A1:F1",
-        //     valueInputOption: 'USER_ENTERED',
-        //     requestBody: {
-        //       values: [
-        //         [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.mealSelection]
-        //       ],
-        //     },
-        //   });
-        //   console.log(res.data);
     }
     catch (error) {
-        console.log(error);
         response.status(500).json({error: 'Internal Service Error: ' + error});
     }
     response.status(200).json({ status: 'Ok' });
