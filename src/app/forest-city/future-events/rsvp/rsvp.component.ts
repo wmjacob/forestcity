@@ -62,16 +62,7 @@ export class RsvpComponent implements OnInit {
 
     if(emailSuccessful) {
       request.date = this.formatSheetsDate();
-      const sheetsResponse = await this.sheetsService.writeToSheet(request);
-
-      if(sheetsResponse) {
-        // do nothing
-        console.log("automated sheets update success");
-      }
-      else {
-        // do nothing
-        console.log("automated sheets error");
-      }
+      await this.sheetsService.writeToSheet(request);
     }
 
     this.disableButton = false;
