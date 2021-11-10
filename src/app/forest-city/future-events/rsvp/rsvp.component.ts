@@ -61,6 +61,7 @@ export class RsvpComponent implements OnInit {
     }
 
     if(emailSuccessful) {
+      request.date = this.formatSheetsDate();
       const sheetsResponse = await this.sheetsService.writeToSheet(request);
 
       if(sheetsResponse) {
@@ -155,6 +156,10 @@ export class RsvpComponent implements OnInit {
 
   formatEventDate() {
     return formatDate(this.event.date, 'E, MMM d, y h:mma', 'en-US');
+  }
+
+  formatSheetsDate() {
+    return formatDate(this.event.date, 'E, MMM d, y', 'en-US');
   }
 
 }
