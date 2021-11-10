@@ -34,20 +34,34 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
 
         const sheetsSecret = await getAuth(SHEETS_SECRET);
 
-        const sheetsCreds = {
-            client_email: sheetsSecret.client_email,
-            private_key: sheetsSecret.private_key
-        }
+        // const sheetsCreds = {
+        //     client_email: sheetsSecret.client_email,
+        //     private_key: sheetsSecret.private_key
+        // }
 
-        const auth = new googleSheets.auth.GoogleAuth({
-            credentials: sheetsCreds,
-            scopes: [
-                'https://www.googleapis.com/auth/spreadsheets'
-            ]
+        let jwtClient = new googleSheets.auth.JWT(sheetsSecret.client_email,
+                                            null,
+                                            sheetsSecret.private_key,
+                                            ["https://www.googleapis.com/auth/spreadsheets"]);
+
+        jwtClient.authorize(function(err, tokens) {
+            if (err) {
+                console.log(err);
+                return;
+              } else {
+                console.log("Successfully connected!");
+              }
         });
 
-        const authClient = await auth.getClient();
-        const sheets = googleSheets.sheets({version: 'v4', auth: authClient});
+        // const auth = new googleSheets.auth.GoogleAuth({
+        //     credentials: sheetsCreds,
+        //     scopes: [
+        //         'https://www.googleapis.com/auth/spreadsheets'
+        //     ]
+        // });
+
+        // const authClient = await auth.getClient();
+        const sheets = googleSheets.sheets({version: 'v4', auth: jwtClient});
         const rsvpSheet = await getAuth(SHEETS_ID_SECRET);
 
         let sheetsRequest = await sheets.spreadsheets.values.get({spreadsheetId: rsvpSheet.sheetId});
@@ -67,7 +81,7 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
     }
     catch (error) {
         console.log(error);
-        response.status(500).json({error: 'Internal Error'});
+        response.status(500).json({error: 'Internal Service Error'});
     }
 
 });
