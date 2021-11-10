@@ -44,7 +44,7 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
 
         await doc.loadInfo();
 
-        let sheet = doc.sheetsByTitle(eventNameDate);
+        let sheet = doc.sheetsByTitle[eventNameDate];
         await sheet.addRow({
             'Last Name': data.lastName,
             'First Name': data.firstName,
