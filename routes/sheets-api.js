@@ -72,7 +72,7 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
     }
     catch (error) {
         console.log(error);
-        response.status(500).json({error: 'Internal Service Error'});
+        response.status(500).json({error: 'Internal Service Error: ' + error});
     }
     response.status(200).json({ status: 'Ok' });
 });
