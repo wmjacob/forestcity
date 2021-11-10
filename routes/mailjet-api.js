@@ -57,16 +57,16 @@ mailjetRouter.post('/rsvp', async function(req, res) {
                 },
                 "To": [
                     {
-                        "Email": FCL_CONTACTS_EMAIL, // TODO change to secretary email after testing
+                        "Email": FCL_SECRETARY_EMAIL,
                         "Name": FCL_SECRETARY_NAME
                     }
                 ],
-                // "Cc": [
-                //     {
-                //         "Email": FCL_CONTACTS_EMAIL,
-                //         "Name": FCL_CONTACTS_NAME
-                //     }
-                // ],
+                "Cc": [
+                    {
+                        "Email": FCL_CONTACTS_EMAIL,
+                        "Name": FCL_CONTACTS_NAME
+                    }
+                ],
                 "TemplateID": 3205968,
 				"TemplateLanguage": true,
                 "Subject": subject,
