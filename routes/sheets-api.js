@@ -51,7 +51,7 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
             );
         }
         else {
-            sheet = doc.addSheet({headerValues: HEADER_VALUES});
+            sheet = await doc.addSheet({headerValues: HEADER_VALUES});
             await sheet.addRow(
                 [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.mealSelection]
             );
