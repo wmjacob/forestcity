@@ -60,18 +60,10 @@ export class RsvpComponent implements OnInit {
       });
     }
 
-    // if(emailSuccessful) {
-    //   const sheetsResponse = await this.sheetsService.writeToSheet(request);
-
-    //   if(sheetsResponse) {
-    //     // do nothing
-    //     console.log("automated sheets update success");
-    //   }
-    //   else {
-    //     // do nothing
-    //     console.log("automated sheets error");
-    //   }
-    // }
+    if(emailSuccessful) {
+      request.date = this.formatSheetsDate();
+      await this.sheetsService.writeToSheet(request);
+    }
 
     this.disableButton = false;
   }
@@ -155,6 +147,10 @@ export class RsvpComponent implements OnInit {
 
   formatEventDate() {
     return formatDate(this.event.date, 'E, MMM d, y h:mma', 'en-US');
+  }
+
+  formatSheetsDate() {
+    return formatDate(this.event.date, 'E, MMM d, y', 'en-US');
   }
 
 }
