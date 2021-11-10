@@ -30,9 +30,9 @@ const getAuth = async (secretCredentials) => {
 sheetsRouter.post('/append-rsvp', async function(request, response) {
     try {
         const data = request.body;
-        const eventNameDate = data.event.name + ' ' + data.date; // event name and date for sheets/tabs
-        // TODO check if the sheet exists, if so, append, if not, create the page and add the row
 
+        // event name and date for sheet titles
+        const eventNameDate = data.event.name + ' ' + data.date;
         const rsvpSheet = await getAuth(SHEETS_ID_SECRET);
         const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
         const sheetsSecret = await getAuth(SHEETS_SECRET);
@@ -45,6 +45,17 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
         await doc.loadInfo();
 
         let sheet = doc.sheetsByTitle[eventNameDate];
+        if(sheet) {
+            await sheet.addRow(
+                [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.mealSelection]
+            );
+        }
+        else {
+            sheet = doc.addSheet({headerValues: HEADER_VALUES});
+            await sheet.addRow(
+                [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.mealSelection]
+            );
+        }
         await sheet.addRow({
             'Last Name': data.lastName,
             'First Name': data.firstName,
