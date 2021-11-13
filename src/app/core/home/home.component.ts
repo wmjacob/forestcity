@@ -16,7 +16,7 @@ export class HomeComponent {
         this.calculateFCLAge();
         const now = new Date();
         this.events = events
-            .filter(ev => ev.spotlight && new Date(ev.date) > now)
+            .filter(ev => ev.spotlight && new Date(ev.date.replace(/-/g, "/")) > now)
             .map(event => ({ ...event, spotlightImage: `../../../assets/images/${event.spotlightImage}` }))
             .slice(0, 3);
     }
@@ -31,7 +31,11 @@ export class HomeComponent {
         }
     }
 
+    cleanDate(date: string) {
+        return date.replace(/-/g, "/");
+    }
+
     setEventForRsvp(event: EventOptions) {
         this.event = event;
-      }
+    }
 }

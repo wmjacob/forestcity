@@ -21,11 +21,11 @@ export class FutureEventsComponent {
   events: EventOptions[] = [];
 
   getDate(date: string) {
-    return dateFormatter.format(new Date(date))
+    return dateFormatter.format(new Date(date.replace(/-/g, "/")))
   }
 
   getTime(date: string) {
-    return timeFormatter.format(new Date(date))
+    return timeFormatter.format(new Date(date.replace(/-/g, "/")))
   }
 
   getTyled(tyled: boolean) {
@@ -34,7 +34,7 @@ export class FutureEventsComponent {
 
   hasEventPassed(date: string): boolean {
     let today = new Date();
-    let eventDate = new Date(date);
+    let eventDate = new Date(date.replace(/-/g, "/"));
 
     return today > eventDate ? true : false;
   }
