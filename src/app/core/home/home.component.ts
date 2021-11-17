@@ -22,13 +22,9 @@ export class HomeComponent {
     }
 
     private calculateFCLAge() {
-        let chartered = new Date(1867, 10, 16);
+        let chartered = new Date(1867, 9, 16);
         let diff = Math.abs(Date.now() - chartered.getTime());
         this.fclAge = Math.floor((diff / (1000 * 3600 * 24)) / 365.25);
-        let today = new Date();
-        if((today.getMonth() > 9) || (today.getMonth() == 9 && today.getDate() >= 16)) {
-            this.fclAge += 1;
-        }
     }
 
     cleanDate(date: string) {
