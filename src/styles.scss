@@ -4,6 +4,8 @@ $theme-image-path: '~uswds/src/img';
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~uswds/dist/css/uswds.min.css';
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+@import '~@angular/cdk/overlay-prebuilt.css';
 
 .centered {
     text-align: center;

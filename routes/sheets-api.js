@@ -1,8 +1,6 @@
 const express = require('express');
 const sheetsRouter = express.Router();
 const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
-const googleSheets = require('@googleapis/sheets');
-const fs = require('fs');
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 const SHEETS_SECRET = 'sheets-credentials';

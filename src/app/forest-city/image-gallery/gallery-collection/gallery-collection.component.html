@@ -7,39 +7,12 @@
       </div>
 </div>
 <div *ngIf="!loading">
-    <div class="image-row">
-        <div class="image-column" *ngFor="let image of images; let i = index">
-            <img src="{{IMAGE_URL_PREFIX}}{{image.name}}" (click)="openModal(); currentSlide(i+1)" class="hover-shadow cursor" loading="lazy">
-        </div>
-    </div>
-    <div id="imgModal" class="slide-modal">
-        <span class="close cursor" (click)="closeModal()">&times;</span>
-        <div class="slide-modal-content">
-            <div class="img-slides" *ngFor="let image of images; let i = index">
-                <img src="{{IMAGE_URL_PREFIX}}{{image.name}}">
+    <h1 class="text-center">{{header}}</h1>
+        <div class="row">
+            <div class="column" *ngFor="let item of items; index as i">
+                <img [lightbox]="i"
+                    [src]="item.data.thumb"
+                    class="hover-shadow cursor" loading="lazy">
             </div>
-            <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
-            <a class="next" (click)="plusSlides(1)">&#10095;</a>
-            <!-- <div class="image-row">
-                <div class="image-column" *ngFor="let image of images; let i = index">
-                    <img class="images" (click)="currentSlide(i+1)" src="{{IMAGE_URL_PREFIX}}{{image.name}}">
-                </div>
-            </div> -->
         </div>
-    </div>
-
-
 </div>
-<!-- <div *ngIf="!loading" class="row">
-    <h1 class="text-center">Forest City Lodge No. 388</h1>
-    <h2 class="text-center">title goes here</h2>
-    <div class="gallery" id="gallery">
-        <div *ngFor="let image of images">
-            <div class="gallery-item">
-                <div class="content">
-                    <img src="{{IMAGE_URL_PREFIX}}{{image.name}}">
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
