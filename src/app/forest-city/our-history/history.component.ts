@@ -1,14 +1,10 @@
 import { Component, HostListener, OnInit } from "@angular/core";
 
 const calculateFCLAge = () => {
-    let chartered = new Date(1867, 10, 16);
+    let chartered = new Date(1867, 9, 16);
     let diff = Math.abs(Date.now() - chartered.getTime());
-    let age = Math.floor((diff / (1000 * 3600 * 24)) / 365.25);
-    let today = new Date();
-    if((today.getMonth() > 9) || (today.getMonth() == 9 && today.getDate() >= 16)) {
-        age += 1;
-    }
-    return age;
+    return Math.floor((diff / (1000 * 3600 * 24)) / 365.25);
+
 };
 
 interface EventOptions {
