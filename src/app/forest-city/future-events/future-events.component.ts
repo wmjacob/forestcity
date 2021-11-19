@@ -13,12 +13,11 @@ const timeFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'short', hour:
 })
 export class FutureEventsComponent {
   event: any = ''; // for rsvp component
+  events: EventOptions[] = [];
 
   ngOnInit(): void {
     this.events = events;
   }
-
-  events: EventOptions[] = [];
 
   getDate(date: string) {
     return dateFormatter.format(new Date(date.replace(/-/g, "/")))
@@ -41,5 +40,18 @@ export class FutureEventsComponent {
 
   setEventForRsvp(event: EventOptions) {
     this.event = event;
+  }
+
+  isRsvp(event: EventOptions) {
+    let expirationDaysBefore = parseInt(event.rsvpExpirationDays);
+    let eventDate = new Date(event.date);
+    let expirationDate = new Date(eventDate.getTime() - (expirationDaysBefore * 24 * 60 * 60 * 1000));
+    let today = new Date();
+    if(today.getFullYear() >= expirationDate.getFullYear() &&
+        today.getMonth() >= expirationDate.getMonth() &&
+        today.getDate() >= expirationDate.getDate()) {
+          return false;
+      }
+    return event.rsvpOptions;
   }
 }

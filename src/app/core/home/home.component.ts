@@ -9,7 +9,7 @@ import { EventOptions } from "@data/interfaces";
 })
 export class HomeComponent {
     fclAge: number = 0;
-    events: any[] = [];
+    events: EventOptions[] = [];
     event: any = ''; // for rsvp component
 
     ngOnInit() {
@@ -34,4 +34,17 @@ export class HomeComponent {
     setEventForRsvp(event: EventOptions) {
         this.event = event;
     }
+
+    isRsvp(event: EventOptions) {
+        let expirationDaysBefore = parseInt(event.rsvpExpirationDays);
+        let eventDate = new Date(event.date);
+        let expirationDate = new Date(eventDate.getTime() - (expirationDaysBefore * 24 * 60 * 60 * 1000));
+        let today = new Date();
+        if(today.getFullYear() >= expirationDate.getFullYear() &&
+            today.getMonth() >= expirationDate.getMonth() &&
+            today.getDate() >= expirationDate.getDate()) {
+              return false;
+          }
+        return event.rsvpOptions;
+      }
 }

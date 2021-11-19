@@ -96,7 +96,7 @@ export class RsvpComponent implements OnInit {
     if(this.displayMealChoices() && formValues.numberOfMeals > 1) {
       let numberOfMeat = formValues.numberOfMeat ? formValues.numberOfMeat : "0";
       let numberOfFish = formValues.numberOfFish ? formValues.numberOfFish : "0";
-      return "Meat: " + numberOfMeat + " Fish: " + numberOfFish;
+      return "Prime Rib: " + numberOfMeat + " Salmon: " + numberOfFish;
     }
     else if(this.displayMealChoices() && formValues.numberOfMeals == 1) {
       return formValues.mealChoice;

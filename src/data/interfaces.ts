@@ -12,6 +12,7 @@ export interface EventOptions {
     address: string,
     addressLink: string,
     rsvpOptions: object | boolean,
+    rsvpExpirationDays: string,
     spotlight: boolean,
     spotlightImage: string,
     altText: string,
