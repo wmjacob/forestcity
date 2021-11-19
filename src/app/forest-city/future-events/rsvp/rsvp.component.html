@@ -15,7 +15,7 @@
                 <div class="usa-prose">
                     <p id="rsvpDesc" class="text-center">RSVP for {{ event.name }}</p>
                     <p *ngIf="event.description" class="text-center">{{ event.description }}</p>
-                    <p class="text-center">{{ event.date | date:'fullDate' }}</p>
+                    <p class="text-center">{{ cleanDate(event.date || '') | date:'fullDate' }}</p>
                     <form [formGroup]="rsvpForm" (ngSubmit)="submitRsvp()">
                         <div class="mb-3">
                             <label for="first-name" class="usa-label required-field">First Name:</label>

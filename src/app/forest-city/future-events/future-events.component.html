@@ -27,7 +27,7 @@
                                 </div>
                             </div>
                             <div>
-                                <button *ngIf="event.rsvpOptions"
+                                <button *ngIf="isRsvp(event)"
                                     aria-controls="rsvpModal"
                                     class="usa-button usa-button--outline centered mb-2"
                                     (click)="setEventForRsvp(event)"

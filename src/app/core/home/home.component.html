@@ -30,8 +30,9 @@
             <div class="d-flex bg-ink align-items-center justify-content-end flex-column" style="background-image: url('{{event.spotlightImage}}');background-size: cover;background-repeat: no-repeat;min-height: 50vw; background-position: bottom" title="{{event.altText}}">
                 <div class="event-highlight-name text-white centered">{{event.name}}</div>
                 <div *ngIf="event.description" class="event-highlight-description text-white centered">{{event.description}}</div>
-                <div class="event-highlight-date fs-4 text-white centered"> {{ event.date | date:'fullDate' }} {{ event.date | date:'shortTime' }} </div>
+                <div class="event-highlight-date fs-4 text-white centered"> {{ cleanDate(event.date) | date:'fullDate' }} {{ cleanDate(event.date) | date:'shortTime' }} </div>
                 <button class="usa-button usa-button--outline usa-button--inverse usa-button--unstyled fs-4 mb-3"
+                    *ngIf="isRsvp(event)"
                     aria-controls="rsvpModal"
                     (click)="setEventForRsvp(event)"
                     data-bs-toggle="modal"

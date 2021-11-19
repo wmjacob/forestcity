@@ -68,6 +68,10 @@ export class RsvpComponent implements OnInit {
     this.disableButton = false;
   }
 
+  cleanDate(date: string) {
+    return date.replace(/-/g, "/");
+  }
+
   buildRequest() {
     const formValues = this.rsvpForm.value;
     let mealSelection = this.getMealSelection();
@@ -92,7 +96,7 @@ export class RsvpComponent implements OnInit {
     if(this.displayMealChoices() && formValues.numberOfMeals > 1) {
       let numberOfMeat = formValues.numberOfMeat ? formValues.numberOfMeat : "0";
       let numberOfFish = formValues.numberOfFish ? formValues.numberOfFish : "0";
-      return "Meat: " + numberOfMeat + " Fish: " + numberOfFish;
+      return "Prime Rib: " + numberOfMeat + " Salmon: " + numberOfFish;
     }
     else if(this.displayMealChoices() && formValues.numberOfMeals == 1) {
       return formValues.mealChoice;
@@ -146,11 +150,11 @@ export class RsvpComponent implements OnInit {
   }
 
   formatEventDate() {
-    return formatDate(this.event.date, 'E, MMM d, y h:mma', 'en-US');
+    return formatDate(this.cleanDate(this.event.date || ''), 'E, MMM d, y h:mma', 'en-US');
   }
 
   formatSheetsDate() {
-    return formatDate(this.event.date, 'E, MMM d, y', 'en-US');
+    return formatDate(this.cleanDate(this.event.date || ''), 'E, MMM d, y', 'en-US');
   }
 
 }
