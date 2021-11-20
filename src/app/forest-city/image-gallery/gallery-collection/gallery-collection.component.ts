@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Gallery, GalleryItem, ImageItem } from 'ng-gallery';
@@ -8,7 +8,8 @@ import { Lightbox } from  'ng-gallery/lightbox';
 @Component({
   selector: 'fcl-gallery-collection',
   templateUrl: './gallery-collection.component.html',
-  styleUrls: ['./gallery-collection.component.scss']
+  styleUrls: ['./gallery-collection.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDestroy {
   private readonly FCL_IMAGE_BUCKET = 'https://storage.googleapis.com/storage/v1/b/forest-city-website-images/o';
@@ -65,7 +66,7 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
   }
 
   setHeader() {
-    //2019_06_19_Table_Lodge
+    // Example name from object: 2019_06_19_Table_Lodge
     let event = this.collection.substr(11).replace('_', ' ');
     let year = this.collection.substr(0, 4);
     this.header = event + ' ' + year;

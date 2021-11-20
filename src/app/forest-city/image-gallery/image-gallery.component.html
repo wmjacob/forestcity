@@ -1,91 +1,17 @@
-<div class="container">
-    <div class="wrap">
-        <div class="row">
-            <div class="grid-col">
-                <div class="tile" (click)="goToCollection('2019_12_05_Brotherhood_Night')">
-                    <img src="https://storage.googleapis.com/forest-city-website-images/2019_12_05_Brotherhood_Night/_cover.jpg"/>
+<div class="wrap">
+    <div class="grid-row">
+        <div *ngFor="let album of pageOfItems; index as i">
+            <div class="grid-col-3">
+                <div class="tile" (click)="goToCollection( album.albumName )">
+                    <img src="https://storage.googleapis.com/forest-city-website-images/{{album.albumName}}/_cover.jpg"/>
                     <div class="text">
-                        <h1>Brotherhood Night 2019</h1>
-                        <h2 class="animate-text">Step Into The Light</h2>
-                        <p class="animate-text">An Evening of Fellowship, Charity, and Brotherly Love</p>
-                    </div>
-                </div>
-                <div class="tile" (click)="goToCollection('2019_06_19_Table_Lodge')">
-                    <img src="https://storage.googleapis.com/forest-city-website-images/2019_06_19_Table_Lodge/_cover.jpg"/>
-                    <div class="text">
-                        <h1>Table Lodge 2019</h1>
-                        <h2 class="animate-text"></h2>
-                        <p class="animate-text"></p>
-                    </div>
-                </div>
-                <div class="tile" (click)="goToCollection('2018_12_06_Brotherhood_Night')">
-                    <img src="https://storage.googleapis.com/forest-city-website-images/2018_12_06_Brotherhood_Night/_cover.jpg"/>
-                    <div class="text">
-                        <h1>Brotherhood Night 2018</h1>
-                        <h2 class="animate-text">Invest</h2>
-                        <p class="animate-text"></p>
+                        <h1>{{ album.title }}</h1>
+                        <h2 class="animate-text">{{album.subtitle}}</h2>
+                        <p class="animate-text">{{album.description}}</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="grid-col">
-                <div class="tile" (click)="goToCollection('2018_03_08_Awards_Night')">
-                    <img src="https://storage.googleapis.com/forest-city-website-images/2018_03_08_Awards_Night/_cover.jpg"/>
-                    <div class="text">
-                        <h1>Awards Night 2018</h1>
-                        <h2 class="animate-text"></h2>
-                        <p class="animate-text"></p>
-                    </div>
-                </div>
-                <div class="tile" (click)="goToCollection('2018_02_08_Valentines_Day_Dinner')">
-                    <img src="https://storage.googleapis.com/forest-city-website-images/2018_02_08_Valentines_Day_Dinner/_cover.jpg"/>
-                    <div class="text">
-                        <h1>Valentine's Day Dinner 2018</h1>
-                        <h2 class="animate-text">Wing It</h2>
-                        <p class="animate-text">With Special Guests</p>
-                    </div>
-                </div>
-                <div class="tile" (click)="goToCollection('2017_08_24_Steak_Roast')">
-                    <img src="https://storage.googleapis.com/forest-city-website-images/2017_08_24_Steak_Roast/_cover.jpg"/>
-                    <div class="text">
-                        <h1>Steak Roast 2017</h1>
-                        <h2 class="animate-text"></h2>
-                        <p class="animate-text">At Horseshoe Lake Park in Cleveland Heights, OH</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="grid-col">
-                <div class="tile" (click)="goToCollection('2017_05_17_Special_Guest_Night_Brad_Stuver')">
-                    <img src="https://storage.googleapis.com/forest-city-website-images/2017_05_17_Special_Guest_Night_Brad_Stuver/_cover.jpg"/>
-                    <div class="text">
-                        <h1>Special Guest Night 2017</h1>
-                        <h2 class="animate-text">With Brad Stuver</h2>
-                        <p class="animate-text">Professional Major League Soccer Goalkeeper</p>
-                    </div>
-                </div>
-                <div class="tile" (click)="goToCollection('2017_03_29_Awards_Night')">
-                    <img src="https://storage.googleapis.com/forest-city-website-images/2017_03_29_Awards_Night/_cover.jpg"/>
-                    <div class="text">
-                        <h1>Awards Night 2017</h1>
-                        <h2 class="animate-text"></h2>
-                        <p class="animate-text"></p>
-                    </div>
-                </div>
-                <div class="tile" (click)="goToCollection('2017_03_15_Sports_Night')">
-                    <img src="https://storage.googleapis.com/forest-city-website-images/2017_03_15_Sports_Night/_cover.jpg"/>
-                    <div class="text">
-                        <h1>Sports Night 2017</h1>
-                        <h2 class="animate-text">With Jim Chones</h2>
-                        <p class="animate-text">Former NBA Basketball Player with the Cleveland Cavaliers</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
+<jw-img-pagination [items]="albums" (changePage)="onChangePage($event)"></jw-img-pagination>

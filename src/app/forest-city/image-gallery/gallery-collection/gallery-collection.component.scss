@@ -34,3 +34,15 @@
     max-width: 100%;
   }
 }
+
+.g-image-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  height: 100%;
+  width: 100%;
+}
+
+.g-dot {
+  display: none !important;
+}

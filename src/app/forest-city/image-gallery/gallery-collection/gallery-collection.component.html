@@ -7,8 +7,8 @@
       </div>
 </div>
 <div *ngIf="!loading">
-    <h1 class="text-center">{{header}}</h1>
-        <div class="row">
+    <h1 class="pt-3 text-center">{{header}}</h1>
+        <div class="pt-3 pb-5 row">
             <div class="column" *ngFor="let item of items; index as i">
                 <img [lightbox]="i"
                     [src]="item.data.thumb"
