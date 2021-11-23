@@ -62,7 +62,7 @@ import { JwImgPaginationComponent } from './forest-city/image-gallery/pagination
     {
       provide: GALLERY_CONFIG,
       useValue: {
-        dots: true,
+        dots: false,
         imageSize: 'cover'
       }
     },
