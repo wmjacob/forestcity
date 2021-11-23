@@ -11,7 +11,7 @@ const timeFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'short', hour:
   templateUrl: './future-events.component.html',
   styleUrls: ['./future-events.component.scss']
 })
-export class FutureEventsComponent {
+export class FutureEventsComponent implements OnInit {
   event: any = ''; // for rsvp component
   events: EventOptions[] = [];
 
