@@ -10,12 +10,6 @@ interface PhotoAlbum {
 
 const albums: PhotoAlbum[] = [
   {
-    albumName: '2021_11_17_Kakou_DDGM_Installation',
-    title: 'DDGM Installation',
-    subtitle: 'RWB Franck T. Kakou',
-    description: 'Forest City Lodge\'s Very Own'
-  },
-  {
     albumName: '2019_12_05_Brotherhood_Night',
     title: 'Brotherhood Night 2019',
     subtitle: 'Step Into The Light',
@@ -74,12 +68,6 @@ const albums: PhotoAlbum[] = [
     title: 'Brotherhood Night 2016',
     subtitle: 'Freemasonry',
     description: 'A Brotherhood of Values'
-  },
-  {
-    albumName: '2016_08_17_Steak_Roast',
-    title: 'Steak Roast 2016',
-    subtitle: 'Another Great Steak Roast',
-    description: ''
   },
 ]
 
