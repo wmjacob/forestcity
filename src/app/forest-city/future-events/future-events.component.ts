@@ -1,3 +1,4 @@
+import { formatDate } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import events from '@data/events.json';
 import { EventOptions } from '@data/interfaces';
@@ -14,6 +15,8 @@ const timeFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'short', hour:
 export class FutureEventsComponent implements OnInit {
   event: any = ''; // for rsvp component
   events: EventOptions[] = [];
+  rsvpExpDate: string = '';
+  rsvpExpTime: string = '';
 
   ngOnInit(): void {
     this.events = events;
@@ -46,6 +49,8 @@ export class FutureEventsComponent implements OnInit {
     let expirationDaysBefore = parseInt(event.rsvpExpirationDays);
     let eventDate = new Date(event.date);
     let expirationDate = new Date(eventDate.getTime() - (expirationDaysBefore * 24 * 60 * 60 * 1000));
+    this.rsvpExpDate = formatDate(expirationDate, 'MMM d', 'en-US');
+    this.rsvpExpTime = formatDate(expirationDate, 'h:mma', 'en-US');
     let today = new Date();
     if(today.getFullYear() >= expirationDate.getFullYear() &&
         today.getMonth() >= expirationDate.getMonth() &&

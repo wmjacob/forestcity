@@ -20,6 +20,7 @@ export class RsvpComponent implements OnInit {
   rsvpForm: FormGroup = new FormGroup({
     firstName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
     lastName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
+    masonicTitle: new FormControl('', [Validators.pattern("[-,\\w\\s]*")]),
     email: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
     earlyBirdDinner: new FormControl(false),
     numberOfMeals: new FormControl('1'),
@@ -74,18 +75,17 @@ export class RsvpComponent implements OnInit {
 
   buildRequest() {
     const formValues = this.rsvpForm.value;
-    let mealSelection = this.getMealSelection();
     let earlyBirdDinner = this.earlyBirdChecked ? "Yes" : "No";
     let numberOfMeals = this.earlyBirdChecked ? formValues.numberOfMeals : 0;
 
     return {
       firstName: formValues.firstName,
-      lastName: formValues.lastName,
+      lastName: this.getLastName(),
       email: formValues.email,
       date: this.formatEventDate(),
       subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
       event: this.event,
-      mealSelection: mealSelection,
+      mealSelection: this.getMealSelection(),
       earlyBirdDinner: earlyBirdDinner,
       numberOfMeals: numberOfMeals
     }
@@ -103,6 +103,16 @@ export class RsvpComponent implements OnInit {
     }
     else {
       return "-";
+    }
+  }
+
+  getLastName() {
+    const formValues = this.rsvpForm.value;
+    if(formValues.masonicTitle) {
+      return formValues.lastName + ', ' + formValues.masonicTitle;
+    }
+    else {
+      return formValues.lastName;
     }
   }
 

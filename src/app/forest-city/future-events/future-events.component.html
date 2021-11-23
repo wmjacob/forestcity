@@ -26,15 +26,19 @@
                                     <div>{{event.location}}&nbsp;|&nbsp;</div><div><a class="text-base" [href]="event.addressLink" target="_blank">{{event.address}}</a></div>
                                 </div>
                             </div>
-                            <div>
-                                <button *ngIf="isRsvp(event)"
-                                    aria-controls="rsvpModal"
+                            <div *ngIf="isRsvp(event)">
+                                <div class="rsvpButton">
+                                    <button aria-controls="rsvpModal"
                                     class="usa-button usa-button--outline centered mb-2"
                                     (click)="setEventForRsvp(event)"
                                     data-bs-toggle="modal"
                                     data-bs-target="#rsvpModal">
-                                    RSVP
-                                </button>
+                                        RSVP
+                                    </button>
+                                    <div class="text-base d-flex flex-wrap">
+                                        <p>Closes {{ rsvpExpDate }} at 12:00am</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
