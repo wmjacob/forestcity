@@ -23,8 +23,8 @@ const albums: PhotoAlbum[] = [
   },
   {
     albumName: '2019_06_19_Table_Lodge',
-    title: 'Table Lodge 2019',
-    subtitle: '',
+    title: '41st Annual Table Lodge',
+    subtitle: 'Worshipful Master Timothy S. Cline',
     description: ''
   },
   {
@@ -77,8 +77,14 @@ const albums: PhotoAlbum[] = [
   },
   {
     albumName: '2016_08_17_Steak_Roast',
-    title: 'Steak Roast 2019',
+    title: 'Steak Roast 2016',
     subtitle: 'Another Great Steak Roast',
+    description: ''
+  },
+  {
+    albumName: '2016_06_01_Table_Lodge',
+    title: '38th Annual Table Lodge',
+    subtitle: 'Worshipful Master Daniel Cohen',
     description: ''
   },
 ]
