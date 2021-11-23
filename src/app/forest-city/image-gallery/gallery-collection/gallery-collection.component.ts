@@ -67,7 +67,8 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
 
   setHeader() {
     // Example name from object: 2019_06_19_Table_Lodge
-    let event = this.collection.substr(11).replace('_', ' ');
+    let regex = /_/g;
+    let event = this.collection.substr(11).replace(regex, ' ');
     let year = this.collection.substr(0, 4);
     this.header = event + ' ' + year;
   }
