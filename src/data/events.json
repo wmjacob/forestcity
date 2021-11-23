@@ -1,6 +1,6 @@
 [
   {
-    "date": "2021-11-10 19:30",
+    "date": "2021/11/10 19:30",
     "name": "Wednesday Night Light",
     "description": "",
     "location": "Virtual",
@@ -19,7 +19,7 @@
     }
   },
   {
-    "date": "2021-11-17 19:30",
+    "date": "2021/11/17 19:30",
     "name": "Stated Meeting",
     "description": "Typewritten Ritual (EA)",
     "location": "Forest City Lodge",
@@ -38,7 +38,7 @@
     }
   },
   {
-    "date": "2021-11-21 10:30",
+    "date": "2021/11/21 10:30",
     "name": "Rehearsal",
     "description": "Installation of Officers",
     "location": "Forest City Lodge",
@@ -57,7 +57,7 @@
     }
   },
   {
-    "date": "2021-11-27 19:30",
+    "date": "2021/11/27 19:30",
     "name": "Installation of Officers",
     "description": "",
     "location": "Forest City Lodge",
@@ -76,7 +76,7 @@
     }
   },
   {
-    "date": "2021-12-01 19:30",
+    "date": "2021/12/01 19:30",
     "name": "Stated Meeting",
     "description": "Ugly Sweater/Tie Night",
     "location": "Forest City Lodge",
@@ -95,7 +95,7 @@
     }
   },
   {
-    "date": "2021-12-15 19:30",
+    "date": "2021/12/15 19:30",
     "name": "Brotherhood Night",
     "description": "",
     "location": "Forest City Lodge",
@@ -104,7 +104,7 @@
     "rsvpOptions": true,
     "rsvpExpirationDays": "2",
     "spotlight": true,
-    "spotlightImage": "brotherhood-night.jpg",
+    "spotlightImage": "brotherhood/night.jpg",
     "altText": "Courtesy Discovery Photo",
     "tyled": false,
     "earlyBirdOptions": {
@@ -114,7 +114,7 @@
     }
   },
   {
-    "date": "2022-01-05 19:30",
+    "date": "2022/01/05 19:30",
     "name": "Stated Meeting",
     "description": "EA Degree",
     "location": "Forest City Lodge",
@@ -133,7 +133,7 @@
     }
   },
   {
-    "date": "2022-01-19 19:30",
+    "date": "2022/01/19 19:30",
     "name": "Stated Meeting",
     "description": "Chili Cookoff",
     "location": "Forest City Lodge",
@@ -152,7 +152,7 @@
     }
   },
   {
-    "date": "2022-02-02 19:30",
+    "date": "2022/02/02 19:30",
     "name": "Stated Meeting",
     "description": "FC Degree",
     "location": "Forest City Lodge",
@@ -171,7 +171,7 @@
     }
   },
   {
-    "date": "2022-02-16 19:30",
+    "date": "2022/02/16 19:30",
     "name": "Valentine's Day Dinner",
     "description": "",
     "location": "Forest City Lodge",
@@ -190,7 +190,7 @@
     }
   },
   {
-    "date": "2022-03-02 19:30",
+    "date": "2022/03/02 19:30",
     "name": "Stated Meeting",
     "description": "",
     "location": "Forest City Lodge",
@@ -209,7 +209,7 @@
     }
   },
   {
-    "date": "2022-03-16 19:30",
+    "date": "2022/03/16 19:30",
     "name": "Stated Meeting",
     "description": "Birthday Night",
     "location": "Forest City Lodge",
@@ -228,7 +228,7 @@
     }
   },
   {
-    "date": "2022-03-27 10:30",
+    "date": "2022/03/27 10:30",
     "name": "Rehearsal",
     "description": "Inspection (EA)",
     "location": "Forest City Lodge",
@@ -247,7 +247,7 @@
     }
   },
   {
-    "date": "2022-04-03 10:30",
+    "date": "2022/04/03 10:30",
     "name": "Rehearsal",
     "description": "Inspection (EA)",
     "location": "Forest City Lodge",
@@ -266,7 +266,7 @@
     }
   },
   {
-    "date": "2022-04-06 19:30",
+    "date": "2022/04/06 19:30",
     "name": "Annual Inspection",
     "description": "Entered Apprentice",
     "location": "Forest City Lodge",
@@ -285,7 +285,7 @@
     }
   },
   {
-    "date": "2022-04-20 19:30",
+    "date": "2022/04/20 19:30",
     "name": "Stated Meeting",
     "description": "",
     "location": "Forest City Lodge",
@@ -304,7 +304,7 @@
     }
   },
   {
-    "date": "2022-05-04 19:30",
+    "date": "2022/05/04 19:30",
     "name": "Awards Night",
     "description": "",
     "location": "Forest City Lodge",
@@ -323,7 +323,7 @@
     }
   },
   {
-    "date": "2022-05-18 19:30",
+    "date": "2022/05/18 19:30",
     "name": "Stated Meeting",
     "description": "",
     "location": "Forest City Lodge",
@@ -342,7 +342,7 @@
     }
   },
   {
-    "date": "2022-06-01 19:30",
+    "date": "2022/06/01 19:30",
     "name": "Stated Meeting",
     "description": "Birthday Night",
     "location": "Forest City Lodge",
@@ -361,7 +361,7 @@
     }
   },
   {
-    "date": "2022-06-15 19:30",
+    "date": "2022/06/15 19:30",
     "name": "Table Lodge",
     "description": "",
     "location": "Forest City Lodge",
@@ -380,7 +380,7 @@
     }
   },
   {
-    "date": "2022-06-29 19:30",
+    "date": "2022/06/29 19:30",
     "name": "Special Meeting",
     "description": "Sports Night",
     "location": "Forest City Lodge",
@@ -399,7 +399,7 @@
     }
   },
   {
-    "date": "2022-08-17 17:30",
+    "date": "2022/08/17 17:30",
     "name": "Steak Roast",
     "description": "",
     "location": "Solon Community Park",
@@ -418,7 +418,7 @@
     }
   },
   {
-    "date": "2022-09-07 19:30",
+    "date": "2022/09/07 19:30",
     "name": "Stated Meeting",
     "description": "Memorial Night",
     "location": "Forest City Lodge",
@@ -437,7 +437,7 @@
     }
   },
   {
-    "date": "2022-09-21 19:30",
+    "date": "2022/09/21 19:30",
     "name": "Stated Meeting",
     "description": "Birthday Night",
     "location": "Forest City Lodge",
@@ -456,7 +456,7 @@
     }
   },
   {
-    "date": "2022-10-05 19:30",
+    "date": "2022/10/05 19:30",
     "name": "Stated Meeting",
     "description": "",
     "location": "Forest City Lodge",
@@ -475,7 +475,7 @@
     }
   },
   {
-    "date": "2022-10-19 17:30",
+    "date": "2022/10/19 17:30",
     "name": "Stated Meeting",
     "description": "Past Masters' Night",
     "location": "Forest City Lodge",
@@ -494,7 +494,7 @@
     }
   },
   {
-    "date": "2022-11-02 19:30",
+    "date": "2022/11/02 19:30",
     "name": "Annual Meeting",
     "description": "Election of Officers",
     "location": "Forest City Lodge",
