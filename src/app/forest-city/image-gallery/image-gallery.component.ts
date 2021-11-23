@@ -63,6 +63,12 @@ const albums: PhotoAlbum[] = [
     subtitle: 'With Jim Chones',
     description: 'Former NBA Basketball Player with the Cleveland Cavaliers'
   },
+  {
+    albumName: '2016_12_08_Brotherhood_Night',
+    title: 'Brotherhood Night 2016',
+    subtitle: 'Freemasonry',
+    description: 'A Brotherhood of Values'
+  },
 ]
 
 @Component({
