@@ -36,6 +36,15 @@
                                 required>
                         </div>
                         <div class="mb-3">
+                            <label for="masonic-title" class="usa-label">Masonic Title(s) (optional):</label>
+                            <input id="masonic-title"
+                                type="text"
+                                class="form-control"
+                                formControlName="masonicTitle"
+                                placeholder="WM, PDDGM, etc"
+                                [class.is-invalid] = "rsvpForm.get('masonicTitle')?.invalid && rsvpForm.get('masonicTitle')?.dirty">
+                        </div>
+                        <div class="mb-3">
                             <label for="email" class="usa-label required-field">Email:</label>
                             <input id="email"
                                 type="email"
