@@ -20,4 +20,8 @@
 .rsvpButton {
     display: grid;
     grid-auto-columns: max-content;
+
+    @media screen and (max-width: 424px) {
+        grid-auto-columns: min-content;
+    }
 }
