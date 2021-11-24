@@ -79,13 +79,55 @@ const albums: PhotoAlbum[] = [
     albumName: '2016_08_17_Steak_Roast',
     title: 'Steak Roast 2016',
     subtitle: 'Another Great Steak Roast',
-    description: ''
+    description: 'At Horseshoe Lake Park in Cleveland Heights, OH'
   },
   {
     albumName: '2016_06_01_Table_Lodge',
     title: '38th Annual Table Lodge',
     subtitle: 'Worshipful Master Daniel Cohen',
     description: ''
+  },
+  {
+    albumName: '2016_03_30_Awards_Night',
+    title: 'Awards Night 2016',
+    subtitle: '',
+    description: ''
+  },
+  {
+    albumName: '2016_02_01_Brotherhood_Night',
+    title: 'Brotherhood Night 2016',
+    subtitle: '',
+    description: ''
+  },
+  {
+    albumName: '2015_06_04_Sports_Night',
+    title: 'Sports Night 2015',
+    subtitle: 'With Jay Burton of IMG',
+    description: ''
+  },
+  {
+    albumName: '2015_04_16_Awards_Night',
+    title: 'Awards Night 2015',
+    subtitle: '',
+    description: ''
+  },
+  {
+    albumName: '2015_02_08_Whirly_Ball',
+    title: 'Whirly Ball Night 2015',
+    subtitle: '',
+    description: ''
+  },
+  {
+    albumName: '2014_06_21_Captains_Game',
+    title: 'Lake County Captains Game 2014',
+    subtitle: 'A Perfect Night for Baseball',
+    description: ''
+  },
+  {
+    albumName: '2013_08_21_Steak_Roast',
+    title: 'Steak Roast 2013',
+    subtitle: '',
+    description: 'At Horseshoe Lake Park in Cleveland Heights, OH'
   },
 ]
 
