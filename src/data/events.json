@@ -104,7 +104,7 @@
     "rsvpOptions": true,
     "rsvpExpirationDays": "2",
     "spotlight": true,
-    "spotlightImage": "brotherhood/night.jpg",
+    "spotlightImage": "brotherhood-night.jpg",
     "altText": "Courtesy Discovery Photo",
     "tyled": false,
     "earlyBirdOptions": {
