@@ -1,8 +1,16 @@
 .fcl-home-welcome {
-    background: url(../../../assets/images/officer2021.jpg) no-repeat center;
+    background: url(../../../assets/images/officers_2021_2022.jpg) no-repeat center;
     background-size: cover;
-    height: 715px;
+    height: 785px;
     position: relative;
+
+    @media screen and (max-width: 768px) {
+        height: 575px;
+    }
+
+    @media screen and (max-width: 425px) {
+        height: 425px;
+    }
 }
 
 .fcl-age-banner {
