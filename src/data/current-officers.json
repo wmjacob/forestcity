@@ -1,34 +1,34 @@
 [
     {
-        "name": "Shawn S. Franks",
+        "name": "Ryan E. Stuver",
         "office": "Worshipful Master",
-        "image": "current-officers/2020-2021_shawn_s_franks.jpg",
-        "bio": "",
+        "image": "past_masters/2021-2022_ryan_e_stuver.jpg",
+        "bio": "Sales professional selling complex solutions in the independent automotive aftermarket. Mediocre golfer, Cleveland sports junkie, and a soccer nut. Proud 4th generation Mason.",
         "jewel": "worshipful_master.png"
     },
     {
-        "name": "Ryan E. Stuver",
+        "name": "Jason A. Kiner",
         "office": "Senior Warden",
         "image": "current-officers/square_and_compasses.jpg",
-        "bio": "Sales professional selling complex solutions in the independent automotive aftermarket. Mediocre golfer, Cleveland sports junkie, and a soccer nut. Proud 4th generation Mason.",
+        "bio": "",
         "jewel": "senior_warden.png"
     },
     {
-        "name": "Jason A. Kiner",
+        "name": "Ronald E. Stuver",
         "office": "Junior Warden",
-        "image": "current-officers/square_and_compasses.jpg",
-        "bio": "",
+        "image": "current-officers/ronald_e_stuver.jpg",
+        "bio": "Small business owner consulting in the field of Industry 4.0.  An avid long distance runner who also enjoys the game of soccer.  Proud 3rd generation Mason with two sons who are also Masons.",
         "jewel": "junior_warden.png"
     },
     {
-        "name": "Ronald E. Stuver",
+        "name": "Dylan S. Marsh",
         "office": "Senior Deacon",
-        "image": "current-officers/ronald_e_stuver.jpg",
-        "bio": "Small business owner consulting in the field of Industry 4.0.  An avid long distance runner who also enjoys the game of soccer.  Proud 3rd generation Mason with two sons who are also Masons.",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
         "jewel": "senior_deacon.png"
     },
     {
-        "name": "Dylan S. Marsh",
+        "name": "Joshua Jaffe",
         "office": "Junior Deacon",
         "image": "current-officers/square_and_compasses.jpg",
         "bio": "",
@@ -70,17 +70,17 @@
         "jewel": "chaplain.png"
     },
     {
-        "name": "Joshua Jaffe",
+        "name": "James D. Paluf",
         "office": "Senior Steward",
         "image": "current-officers/square_and_compasses.jpg",
         "bio": "",
         "jewel": "steward.png"
     },
     {
-        "name": "James D. Paluf",
+        "name": "David L. Jones",
         "office": "Junior Steward",
-        "image": "current-officers/square_and_compasses.jpg",
-        "bio": "",
+        "image": "current-officers/david_l_jones.jpg",
+        "bio": "Software Developer. Currently working on a faster 5K time (P.R. 29:43). Also currently struggling to both encourage and contain the curiosity of a 2 year old toddler... and Go Browns!",
         "jewel": "steward.png"
     },
     {
@@ -89,12 +89,5 @@
         "image": "current-officers/square_and_compasses.jpg",
         "bio": "",
         "jewel": "tyler.png"
-    },
-    {
-        "name": "David L. Jones",
-        "office": "Marshal",
-        "image": "current-officers/david_l_jones.jpg",
-        "bio": "Software Developer. Currently working on a faster 5K time (P.R. 29:43). Also currently struggling to both encourage and contain the curiosity of a 2 year old toddler... and Go Browns!",
-        "jewel": "marshal.png"
     }
 ]
