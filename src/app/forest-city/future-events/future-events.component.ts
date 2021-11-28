@@ -49,12 +49,14 @@ export class FutureEventsComponent implements OnInit {
     let expirationDaysBefore = parseInt(event.rsvpExpirationDays);
     let eventDate = new Date(event.date);
     let expirationDate = new Date(eventDate.getTime() - (expirationDaysBefore * 24 * 60 * 60 * 1000));
+    expirationDate.setHours(21, 0);
     this.rsvpExpDate = formatDate(expirationDate, 'MMM d', 'en-US');
     this.rsvpExpTime = formatDate(expirationDate, 'h:mma', 'en-US');
     let today = new Date();
     if(today.getFullYear() >= expirationDate.getFullYear() &&
         today.getMonth() >= expirationDate.getMonth() &&
-        today.getDate() >= expirationDate.getDate()) {
+        today.getDate() >= expirationDate.getDate() &&
+        today.getTime() >= expirationDate.getTime()) {
           return false;
       }
     return event.rsvpOptions;
