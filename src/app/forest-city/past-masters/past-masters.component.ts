@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PastMaster } from './model/get-past-masters-response';
 import pastMastersList from '@data/past-master-list.json';
+import events from '@data/events.json';
 
 @Component({
   selector: 'fcl-past-masters',
@@ -10,6 +11,7 @@ import pastMastersList from '@data/past-master-list.json';
 export class PastMastersComponent implements OnInit {
   pastMastersList: PastMaster[] = [];
   pageOfItems: Array<any> = [];
+  installationOfOfficers: Array<any> = [];
 
   constructor() {}
 
@@ -21,12 +23,22 @@ export class PastMastersComponent implements OnInit {
     let today = new Date();
     let currentYear = today.getFullYear().toString();
     let currentMonth = today.getMonth(); // Jan = 0, Feb = 1 ...
+    let currentDate = today.getDate();
+    let installationDate: Date;
+
+    this.installationOfOfficers = events.filter(event => {
+      return event.name === 'Installation of Officers';
+    });
+
+    if(this.installationOfOfficers.length > 0) {
+      installationDate = new Date(this.installationOfOfficers[this.installationOfOfficers.length - 1].date);
+    }
 
     this.pastMastersList = pastMastersList.filter( master => {
-      // auto-update on December 1st, as installation is different every year
+      // get installation date from events.json
       let termEndYear = master.term.slice(-4);
-      return (termEndYear < currentYear) ||
-        (termEndYear === currentYear && currentMonth > 10);
+      return (currentYear > termEndYear) ||
+        (termEndYear === currentYear && currentMonth >= installationDate.getMonth() && currentDate >= installationDate.getDate());
     }).reverse();
   }
 
