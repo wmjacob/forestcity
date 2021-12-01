@@ -53,12 +53,9 @@ export class FutureEventsComponent implements OnInit {
     this.rsvpExpDate = formatDate(expirationDate, 'MMM d', 'en-US');
     this.rsvpExpTime = formatDate(expirationDate, 'h:mma', 'en-US');
     let today = new Date();
-    if(today.getFullYear() >= expirationDate.getFullYear() &&
-        today.getMonth() >= expirationDate.getMonth() &&
-        today.getDate() >= expirationDate.getDate() &&
-        today.getTime() >= expirationDate.getTime()) {
-          return false;
-      }
+    if(today.getTime() >= expirationDate.getTime()) {
+      return false;
+    }
     return event.rsvpOptions;
   }
 }
