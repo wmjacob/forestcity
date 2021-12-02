@@ -7,12 +7,15 @@
       </div>
 </div>
 <div *ngIf="!loading">
-    <h1 class="pt-3 text-center">{{header}}</h1>
-        <div class="pt-3 pb-5 row">
-            <div class="column" *ngFor="let item of items; index as i">
-                <img [lightbox]="i"
-                    [src]="item.data.thumb"
-                    class="hover-shadow cursor" loading="lazy">
-            </div>
+    <h1 class="pt-3 text-center">{{ title }}</h1>
+    <h2 class="text-center">{{ subtitle }}</h2>
+    <h3 class="text-center">{{ description }}</h3>
+    <div class="pt-3 pb-5 row">
+        <div class="column" *ngFor="let item of items; index as i">
+            <img [lightbox]="i"
+                [src]="item.data.thumb"
+                class="hover-shadow cursor" loading="lazy">
         </div>
+    </div>
+    <button id="returnToTop" class="usa-button usa-button--outline return-to-top-btn" (click)="goToTop()">Top</button>
 </div>

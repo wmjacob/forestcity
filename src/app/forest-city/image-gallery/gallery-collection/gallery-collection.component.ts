@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { AfterViewInit, Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Gallery, GalleryItem, ImageItem } from 'ng-gallery';
@@ -12,14 +12,18 @@ import { Lightbox } from  'ng-gallery/lightbox';
   encapsulation: ViewEncapsulation.None
 })
 export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDestroy {
-  private readonly FCL_IMAGE_BUCKET = 'https://storage.googleapis.com/storage/v1/b/forest-city-website-images/o';
+  private readonly FCL_IMAGE_BUCKET = 'https://storage.googleapis.com/storage/v1/b/forest-city-website-images/o?prefix=';
   readonly IMAGE_URL_PREFIX = 'https://storage.googleapis.com/forest-city-website-images/';
+
   routeState: any;
   collection: string = '';
   loading: boolean = false;
   images: any;
   imageSub: Subscription = new Subscription;
   header: string = '';
+  title: string = '';
+  subtitle: string = '';
+  description: string = '';
 
   galleryImages: GalleryItem[] = [];
   items: GalleryItem[] = [];
@@ -33,7 +37,10 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
     if(this.router.getCurrentNavigation()?.extras.state) {
       this.routeState = this.router.getCurrentNavigation()?.extras.state;
       if(this.routeState) {
-        this.collection = this.routeState.data;
+        this.collection = this.routeState.data.albumName;
+        this.title = this.routeState.data.title;
+        this.subtitle = this.routeState.data.subtitle;
+        this.description = this.routeState.data.description;
       }
     }
     else {
@@ -43,14 +50,13 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
 
   ngOnInit(): void {
     this.loading = true;
-    this.setHeader();
-    this.imageSub = this.httpClient.get(this.FCL_IMAGE_BUCKET).subscribe(
+    console.log(this.collection);
+    this.imageSub = this.httpClient.get(this.FCL_IMAGE_BUCKET + this.collection + '/').subscribe(
       (data) => {
         const jsonObj = JSON.parse(JSON.stringify(data));
         const imageArray = jsonObj.items;
-
         const result = imageArray.filter((imageObj: any) => {
-          return imageObj.name.includes(this.collection) && !imageObj.name.includes('cover');
+          return !imageObj.name.includes('cover');
         })
 
         if(result) {
@@ -60,17 +66,9 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
         }
       },
       (error) => {
-        console.log('error=' + error);
+        // TODO maybe throw notification
       }
     );
-  }
-
-  setHeader() {
-    // Example name from object: 2019_06_19_Table_Lodge
-    let regex = /_/g;
-    let event = this.collection.substr(11).replace(regex, ' ');
-    let year = this.collection.substr(0, 4);
-    this.header = event + ' ' + year;
   }
 
   loadGalleryImages() {
@@ -94,5 +92,42 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
   ngOnDestroy() {
     this.imageSub.unsubscribe();
   }
+
+  @HostListener('window:scroll', []) onScroll() {
+    let topBtn = document.getElementById('returnToTop') as HTMLElement;
+    if(topBtn) {
+        const mobile = window.matchMedia('(max-width: 1023px)');
+        if(mobile.matches) {
+            topBtn.style.display = 'none';
+            // delayed display for mobile after scrolling
+            if(this.hasScrolled()) {
+                setTimeout(function() {
+                    topBtn.style.display = 'block';
+                }, 2000);
+            }
+            else {
+                topBtn.style.display = 'none';
+            }
+        }
+        else {
+            if(this.hasScrolled()) {
+                topBtn.style.display = 'block';
+            }
+            else {
+                topBtn.style.display = 'none';
+            }
+        }
+    }
+}
+
+hasScrolled(): boolean {
+    return document.body.scrollTop > 400 || document.documentElement.scrollTop > 400
+}
+
+goToTop() {
+    window.scroll(0,0);
+}
+
+
 
 }

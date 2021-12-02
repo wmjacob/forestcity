@@ -2,7 +2,7 @@
     <div class="grid-row">
         <div *ngFor="let album of pageOfItems; index as i">
             <div class="grid-col-3">
-                <div class="tile" (click)="goToCollection( album.albumName )">
+                <div class="tile" (click)="goToCollection( album )">
                     <img src="https://storage.googleapis.com/forest-city-website-images/{{album.albumName}}/_cover.jpg"/>
                     <div class="text">
                         <h1>{{ album.title }}</h1>

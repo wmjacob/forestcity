@@ -11,14 +11,14 @@ interface PhotoAlbum {
 const albums: PhotoAlbum[] = [
   {
     albumName: '2021_11_27_Officers_Installation',
-    title: '2021-2021 Installation of Officers',
+    title: '2021-2022 Installation of Officers',
     subtitle: 'WM Ryan E. Stuver',
     description: 'Photos Courteous Rose Cohen and Nam Do'
   },
   {
     albumName: '2021_11_17_Kakou_DDGM_Installation',
     title: 'DDGM Installation',
-    subtitle: 'Franck T. Kakou',
+    subtitle: 'RWB Franck T. Kakou',
     description: 'Forest City Lodge\'s Very Own'
   },
   {
@@ -153,8 +153,8 @@ export class ImageGalleryComponent implements OnInit {
     this.albums = albums;
   }
 
-  goToCollection(collection: string) {
-    this.router.navigate(['gallery-collection'], {state: {data: collection}, relativeTo: this.route});
+  goToCollection(album: PhotoAlbum) {
+    this.router.navigate(['gallery-collection'], {state: {data: album}, relativeTo: this.route});
   }
 
   onChangePage(pageOfItems: Array<any>) {

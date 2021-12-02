@@ -30,25 +30,3 @@ figure {
         width: 100%;
     }
 }
-
-.return-to-top-btn {
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    display: none; /* Hidden by default until scrolled */
-    position: fixed; /* Fixed/sticky position */
-
-    @media screen and (min-width: 768px) {
-        bottom: 20px; /* Place the button at the bottom of the page */
-        right: 30px; /* Place the button 30px from the right */
-    }
-
-    @media screen and (max-width: 767px) {
-        margin: 15px;
-        width: 60px;
-        bottom: 0px;
-        right: 0px;
-    }
-}
