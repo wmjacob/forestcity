@@ -1,28 +1,17 @@
 <div class="wrap">
-    <div class="tile" (click)="goToCollection('2019_12_05_Brotherhood_Night')">
-        <img src="https://storage.googleapis.com/forest-city-website-images/2019_12_05_Brotherhood_Night/053.jpg"/>
-        <div class="text">
-            <h1>Brotherhood Night 2019</h1>
-            <h2 class="animate-text">Step Into The Light</h2>
-            <p class="animate-text">An Evening of Fellowship, Charity, and Brotherly Love</p>
-        </div>
-    </div>
-
-    <div class="tile" (click)="goToCollection('2019_06_19_Table_Lodge')">
-        <img src="https://storage.googleapis.com/forest-city-website-images/2019_06_19_Table_Lodge/001.jpg"/>
-        <div class="text">
-            <h1>Table Lodge 2019</h1>
-            <h2 class="animate-text"></h2>
-            <p class="animate-text"></p>
-        </div>
-    </div>
-
-    <div class="tile">
-        <img src="https://storage.googleapis.com/forest-city-website-images/2018_12_06_Brotherhood_Night/022.jpg"/>
-        <div class="text">
-            <h1>Brotherhood Night 2018</h1>
-            <h2 class="animate-text">Invest</h2>
-            <p class="animate-text"></p>
+    <div class="grid-row">
+        <div *ngFor="let album of pageOfItems; index as i">
+            <div class="grid-col-3">
+                <div class="tile" (click)="goToCollection( album )">
+                    <img src="https://storage.googleapis.com/forest-city-website-images/{{album.albumName}}/_cover.jpg"/>
+                    <div class="text">
+                        <h1>{{ album.title }}</h1>
+                        <h2 class="animate-text">{{album.subtitle}}</h2>
+                        <p class="animate-text">{{album.description}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<jw-img-pagination [items]="albums" (changePage)="onChangePage($event)"></jw-img-pagination>
