@@ -23,7 +23,9 @@ import { FooterComponent } from './core/footer/footer.component';
 import { JwPaginationComponent } from './forest-city/past-masters/pagination/jw-pagination.component';
 import { ImageGalleryComponent } from './forest-city/image-gallery/image-gallery.component';
 import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-collection/gallery-collection.component';
-
+import { GalleryModule, GALLERY_CONFIG } from 'ng-gallery'
+import { LightboxModule, LIGHTBOX_CONFIG } from  'ng-gallery/lightbox';
+import { JwImgPaginationComponent } from './forest-city/image-gallery/pagination/jw-img-pagination.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +43,7 @@ import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-
     AboutUsComponent,
     FooterComponent,
     JwPaginationComponent,
+    JwImgPaginationComponent,
     ImageGalleryComponent,
     GalleryCollectionComponent
   ],
@@ -50,10 +53,26 @@ import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    GalleryModule,
+    LightboxModule
   ],
   providers: [
-    PastMastersService
+    PastMastersService,
+    {
+      provide: GALLERY_CONFIG,
+      useValue: {
+        dots: false,
+        imageSize: 'cover'
+      }
+    },
+    {
+      provide: LIGHTBOX_CONFIG,
+      useValue: {
+        keyboardShortcuts: true
+      }
+    }
+
   ],
   bootstrap: [AppComponent]
 })

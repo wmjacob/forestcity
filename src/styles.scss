@@ -4,6 +4,8 @@ $theme-image-path: '~uswds/src/img';
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~uswds/dist/css/uswds.min.css';
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+@import '~@angular/cdk/overlay-prebuilt.css';
 
 .centered {
     text-align: center;
@@ -75,4 +77,26 @@ a:focus {
 .required-field:after {
     content:" *";
     color: red;
+}
+
+.return-to-top-btn {
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    display: none; /* Hidden by default until scrolled */
+    position: fixed; /* Fixed/sticky position */
+
+    @media screen and (min-width: 768px) {
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+    }
+
+    @media screen and (max-width: 767px) {
+        margin: 15px;
+        width: 60px;
+        bottom: 0px;
+        right: 0px;
+    }
 }
