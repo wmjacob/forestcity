@@ -14,6 +14,7 @@ import { Lightbox } from  'ng-gallery/lightbox';
 export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDestroy {
   private readonly FCL_IMAGE_BUCKET = 'https://storage.googleapis.com/storage/v1/b/forest-city-website-images/o?prefix=';
   readonly IMAGE_URL_PREFIX = 'https://storage.googleapis.com/forest-city-website-images/';
+  readonly THUMB_URL_PREFIX = 'https://storage.googleapis.com/forest-city-website-images-thumbs/';
 
   routeState: any;
   collection: string = '';
@@ -75,7 +76,7 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
     for(let i = 0; i < this.images.length; i++) {
       this.items.push(
         new ImageItem({ src: this.IMAGE_URL_PREFIX + this.images[i].name,
-                        thumb: this.IMAGE_URL_PREFIX + this.images[i].name })
+                        thumb: this.THUMB_URL_PREFIX + this.images[i].name })
       );
     }
   }
