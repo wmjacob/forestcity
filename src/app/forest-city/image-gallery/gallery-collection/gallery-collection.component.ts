@@ -51,7 +51,6 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
 
   ngOnInit(): void {
     this.loading = true;
-    console.log(this.collection);
     this.imageSub = this.httpClient.get(this.FCL_IMAGE_BUCKET + this.collection + '/').subscribe(
       (data) => {
         const jsonObj = JSON.parse(JSON.stringify(data));
