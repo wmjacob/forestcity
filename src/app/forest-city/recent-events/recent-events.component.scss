@@ -1,0 +1,22 @@
+.card-container {
+    @media screen and (min-width: 576px) {
+        padding: 1.5rem;
+        margin-right: auto;
+        margin-left: auto;
+        border-width: 1px;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        max-width: 50vw;
+    }
+
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -0.75rem 0;
+    border: solid #dee2e6;
+    border-width: 1px 0 0;
+    background-color: azure;
+}
+
+.carousel-item {
+    max-height: 74vh;
+}

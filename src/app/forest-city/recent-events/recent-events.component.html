@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="my-3">
+        <h1 class="text-center">Recent Events From The Last 365 Days At Forest City Lodge No. 388!</h1>
+    </div>
+    <div *ngFor="let event of recentEvents, let i = index">
+        <div class="card my-3 card-container">
+            <div [id]="event.eventId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item" *ngFor="let imageUrls of event.imageUrls, let j = index" [ngClass]="{'active': j === 0}">
+                        <img src="https://storage.googleapis.com/forest-city-website-images/{{event.albumName}}/{{imageUrls}}" class="d-block w-100"/>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>{{ event.slideLabels[j] }}</h5>
+                            <p>{{ event.slideContent }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="hasMultipleImages(event.imageUrls)">
+                <button class="carousel-control-prev" [attr.data-bs-target]="'#' + event.eventId" role="button" type="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" [attr.data-bs-target]="'#' + event.eventId" role="button" type="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="card-body text-center">
+                <h5 class="card-title">{{ event.eventName }}</h5>
+                <p class="card-text text-bold">{{ event.displayDate }}</p>
+                <p class="card-text">{{ event.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<button id="returnToTop" class="usa-button usa-button--outline return-to-top-btn" (click)="goToTop()">Top</button>
