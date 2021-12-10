@@ -1,9 +1,11 @@
 <div class="container">
-    <div class="my-3">
-        <h1 class="text-center">Recent Events From The Last 365 Days At Forest City Lodge No. 388!</h1>
+    <div class="header bg-primary-lighter pt-2 pb-2">
+        <div class="centered">
+            <h1 class="text-center">Recent Events From The Last Year At Forest City Lodge No. 388!</h1>
+        </div>
     </div>
     <div *ngFor="let event of recentEvents, let i = index">
-        <div class="card my-3 card-container">
+        <div class="card my-3 card-container bg-primary-lighter">
             <div [id]="event.eventId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
                 <div class="carousel-inner">
                     <div class="carousel-item" *ngFor="let imageUrls of event.imageUrls, let j = index" [ngClass]="{'active': j === 0}">
