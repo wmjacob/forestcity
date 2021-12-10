@@ -12,6 +12,7 @@ import { OurOfficersComponent } from './forest-city/our-officers/our-officers.co
 import { AboutUsComponent } from './forest-city/about-us/about-us.component';
 import { ImageGalleryComponent } from './forest-city/image-gallery/image-gallery.component';
 import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-collection/gallery-collection.component';
+import { RecentEventsComponent } from './forest-city/recent-events/recent-events.component';
 
 const IMAGE_GALLERY_URL = 'image-gallery';
 
@@ -68,6 +69,10 @@ const routes: Routes = [
       {
         path: IMAGE_GALLERY_URL + '/gallery-collection',
         component: GalleryCollectionComponent
+      },
+      {
+        path: 'recent-events',
+        component: RecentEventsComponent
       }
     ]
   },

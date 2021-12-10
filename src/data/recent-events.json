@@ -1,0 +1,57 @@
+[
+    {
+        "eventName": "Ugly Holiday Sweater/Tie Night",
+        "eventId": "uglySweaterNight",
+        "displayDate": "Wednesday, December 1st, 2021",
+        "description": "A fun way to kick off the holiday season! For our Stated Meeting, the Brethren dusted off their festive sweaters and ties to start the holidays off with a bang!",
+        "albumName": "2021_12_01_Ugly_Sweater_Night",
+        "imageUrls": [
+            "003.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": "",
+        "eventDate": "2021/12/01"
+    },
+    {
+        "eventName": "Installation of Officers 2021-2022",
+        "eventId": "installation",
+        "displayDate": "Saturday, November 27th, 2021",
+        "description": "WB Ryan E. Stuver was installed as Worshipful Master of Forest City Lodge No. 388, as well as his elected and appointed officers. Congratulations to all! Special thanks to the installing officers for all of their hardwork!",
+        "albumName": "2021_11_27_Officers_Installation_Original",
+        "imageUrls": [
+            "087.jpg",
+            "035.JPG",
+            "044.JPG"
+        ],
+        "slideLabels": [
+            "Officers of Forest City Lodge",
+            "Before the Installation",
+            "Receiving the Jewel"
+        ],
+        "slideContent": [
+
+        ],
+        "eventDate": "2021/11/27"
+    },
+    {
+        "eventName": "Installation of RWB Franck T. Kakou",
+        "eventId": "ddgmInstallation",
+        "displayDate": "Wednesday, November 17th, 2021",
+        "description": "Forest City Lodge No. 388's very own Franck T. Kakou was installed as District Deputy Grand Master of the Tremendous 22nd District of Ohio! Congratulations Right Worshipful!",
+        "albumName": "2021_11_17_Kakou_DDGM_Installation",
+        "imageUrls": [
+            "014.jpg",
+            "010.jpg",
+            "011.jpg"
+        ],
+        "slideLabels": [
+            "RWB Kakou, center"
+        ],
+        "slideContent": [
+
+        ],
+        "eventDate": "2021/11/17"
+    }
+]
