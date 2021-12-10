@@ -24,7 +24,7 @@ export class PastMastersComponent implements OnInit {
     let currentYear = today.getFullYear().toString();
     let currentMonth = today.getMonth(); // Jan = 0, Feb = 1 ...
     let currentDate = today.getDate();
-    let installationDate: Date;
+    let installationDate: Date = new Date();
 
     this.installationOfOfficers = events.filter(event => {
       return event.name === 'Installation of Officers';
@@ -34,13 +34,19 @@ export class PastMastersComponent implements OnInit {
       installationDate = new Date(this.installationOfOfficers[this.installationOfOfficers.length - 1].date);
     }
 
+    console.log('installationDate=' + installationDate)
     // TODO logic for handling if there is no installation of officers event in the json...shouldn't happen though
+
+    console.log('currentYear=' + currentYear + ' installationYear=' + installationDate.getFullYear())
+    console.log('currentMonth=' + currentMonth + ' installationMonth=' + installationDate.getMonth())
+    console.log('currentDate=' + currentDate + ' installationDate=' + installationDate.getDate())
 
     this.pastMastersList = pastMastersList.filter( master => {
       // get installation date from events.json
       let termEndYear = master.term.slice(-4);
       return (currentYear > termEndYear) ||
-        (termEndYear === currentYear && currentMonth >= installationDate.getMonth() && currentDate >= installationDate.getDate());
+        (currentYear === termEndYear && currentMonth > installationDate.getMonth()) ||
+        (currentYear === termEndYear && currentMonth === installationDate.getMonth() && currentDate >= installationDate.getDate());
     }).reverse();
   }
 
