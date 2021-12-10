@@ -24,7 +24,7 @@ export class PastMastersComponent implements OnInit {
     let currentYear = today.getFullYear().toString();
     let currentMonth = today.getMonth(); // Jan = 0, Feb = 1 ...
     let currentDate = today.getDate();
-    let installationDate: Date;
+    let installationDate: Date = new Date();
 
     this.installationOfOfficers = events.filter(event => {
       return event.name === 'Installation of Officers';
@@ -40,7 +40,8 @@ export class PastMastersComponent implements OnInit {
       // get installation date from events.json
       let termEndYear = master.term.slice(-4);
       return (currentYear > termEndYear) ||
-        (termEndYear === currentYear && currentMonth >= installationDate.getMonth() && currentDate >= installationDate.getDate());
+        (currentYear === termEndYear && currentMonth > installationDate.getMonth()) ||
+        (currentYear === termEndYear && currentMonth === installationDate.getMonth() && currentDate >= installationDate.getDate());
     }).reverse();
   }
 
