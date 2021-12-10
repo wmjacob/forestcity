@@ -34,12 +34,7 @@ export class PastMastersComponent implements OnInit {
       installationDate = new Date(this.installationOfOfficers[this.installationOfOfficers.length - 1].date);
     }
 
-    console.log('installationDate=' + installationDate)
     // TODO logic for handling if there is no installation of officers event in the json...shouldn't happen though
-
-    console.log('currentYear=' + currentYear + ' installationYear=' + installationDate.getFullYear())
-    console.log('currentMonth=' + currentMonth + ' installationMonth=' + installationDate.getMonth())
-    console.log('currentDate=' + currentDate + ' installationDate=' + installationDate.getDate())
 
     this.pastMastersList = pastMastersList.filter( master => {
       // get installation date from events.json
