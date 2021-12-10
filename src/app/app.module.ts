@@ -26,6 +26,7 @@ import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-
 import { GalleryModule, GALLERY_CONFIG } from 'ng-gallery'
 import { LightboxModule, LIGHTBOX_CONFIG } from  'ng-gallery/lightbox';
 import { JwImgPaginationComponent } from './forest-city/image-gallery/pagination/jw-img-pagination.component';
+import { RecentEventsComponent } from './forest-city/recent-events/recent-events.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,8 @@ import { JwImgPaginationComponent } from './forest-city/image-gallery/pagination
     JwPaginationComponent,
     JwImgPaginationComponent,
     ImageGalleryComponent,
-    GalleryCollectionComponent
+    GalleryCollectionComponent,
+    RecentEventsComponent
   ],
   imports: [
     BrowserModule,

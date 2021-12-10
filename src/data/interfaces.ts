@@ -19,3 +19,15 @@ export interface EventOptions {
     tyled: boolean,
     earlyBirdOptions: object
 };
+
+export interface RecentEvent {
+    eventName: string,
+    eventId: string,
+    displayDate: string,
+    description: string,
+    albumName: string,
+    imageUrls: any,
+    slideLabels: any,
+    slideContent: any,
+    eventDate: string
+}
