@@ -6,7 +6,7 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 const SHEETS_SECRET = 'sheets-credentials';
 const SHEETS_ID_SECRET = 'sheets-id';
 
-const HEADER_VALUES = ['Last Name', 'First Name', 'Email', 'Early Bird Dinner', 'Number of Meals', 'Meal Choice'];
+const HEADER_VALUES = ['Last Name', 'First Name', 'Email', 'Early Bird Dinner', 'Number of Meals', 'Prime Rib', 'Salmon'];
 
 sheetsRouter.get('/status', function (_req, res) {
     res.status(200).json({ status: 'UP' });
@@ -45,13 +45,13 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
         let sheet = doc.sheetsByTitle[eventNameDate];
         if(sheet) {
             await sheet.addRow(
-                [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.mealSelection]
+                [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.numberOfPrimeRib, data.numberOfSalmon]
             );
         }
         else {
             sheet = await doc.addSheet({headerValues: HEADER_VALUES, title: eventNameDate});
             await sheet.addRow(
-                [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.mealSelection]
+                [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.numberOfPrimeRib, data.numberOfSalmon]
             );
         }
     }
