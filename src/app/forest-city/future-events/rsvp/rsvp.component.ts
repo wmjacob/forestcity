@@ -39,6 +39,7 @@ export class RsvpComponent implements OnInit {
     let emailSuccessful: boolean = false;
     this.disableButton = true;
     const request = this.buildRequest();
+    console.log('request=' + JSON.stringify(request))
     const response = await this.emailService.sendEmail(request, '/mj/api/rsvp');
 
     if (response) {
@@ -85,21 +86,33 @@ export class RsvpComponent implements OnInit {
       date: this.formatEventDate(),
       subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
       event: this.event,
-      mealSelection: this.getMealSelection(),
+      numberOfPrimeRib: this.getNumberOfPrimeRib(),
+      numberOfSalmon: this.getNumberOfSalmon(),
       earlyBirdDinner: earlyBirdDinner,
       numberOfMeals: numberOfMeals
     }
   }
 
-  getMealSelection() {
+  getNumberOfPrimeRib() {
     const formValues = this.rsvpForm.value;
-    if(this.displayMealChoices() && formValues.numberOfMeals > 1) {
-      let numberOfMeat = formValues.numberOfMeat ? formValues.numberOfMeat : "0";
-      let numberOfFish = formValues.numberOfFish ? formValues.numberOfFish : "0";
-      return "Prime Rib: " + numberOfMeat + " Salmon: " + numberOfFish;
+    if(this.displayMealChoices() && formValues.numberOfMeals > 0) {
+      if(formValues.numberOfMeals === '1' && formValues.mealChoice === 'Prime Rib') {
+        return 1;
+      }
+      return formValues.numberOfMeat ? formValues.numberOfMeat : 0;
     }
-    else if(this.displayMealChoices() && formValues.numberOfMeals == 1) {
-      return formValues.mealChoice;
+    else {
+      return "-";
+    }
+  }
+
+  getNumberOfSalmon() {
+    const formValues = this.rsvpForm.value;
+    if(this.displayMealChoices() && formValues.numberOfMeals > 0) {
+      if(formValues.numberOfMeals === '1' && formValues.mealChoice === 'Salmon') {
+        return 1;
+      }
+      return formValues.numberOfFish ? formValues.numberOfFish : 0;
     }
     else {
       return "-";
