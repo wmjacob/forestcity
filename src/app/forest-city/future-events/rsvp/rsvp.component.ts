@@ -85,9 +85,37 @@ export class RsvpComponent implements OnInit {
       date: this.formatEventDate(),
       subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
       event: this.event,
+      numberOfPrimeRib: this.getNumberOfPrimeRib(),
+      numberOfSalmon: this.getNumberOfSalmon(),
       mealSelection: this.getMealSelection(),
       earlyBirdDinner: earlyBirdDinner,
       numberOfMeals: numberOfMeals
+    }
+  }
+
+  getNumberOfPrimeRib() {
+    const formValues = this.rsvpForm.value;
+    if(this.displayMealChoices() && formValues.numberOfMeals > 0) {
+      if(formValues.numberOfMeals == 1 && formValues.mealChoice === 'Prime Rib') {
+        return 1;
+      }
+      return formValues.numberOfMeat ? formValues.numberOfMeat : 0;
+    }
+    else {
+      return "-";
+    }
+  }
+
+  getNumberOfSalmon() {
+    const formValues = this.rsvpForm.value;
+    if(this.displayMealChoices() && formValues.numberOfMeals > 0) {
+      if(formValues.numberOfMeals == 1 && formValues.mealChoice === 'Salmon') {
+        return 1;
+      }
+      return formValues.numberOfFish ? formValues.numberOfFish : 0;
+    }
+    else {
+      return "-";
     }
   }
 
