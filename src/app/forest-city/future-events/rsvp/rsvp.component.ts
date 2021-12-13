@@ -39,7 +39,6 @@ export class RsvpComponent implements OnInit {
     let emailSuccessful: boolean = false;
     this.disableButton = true;
     const request = this.buildRequest();
-    console.log('request=' + JSON.stringify(request))
     const response = await this.emailService.sendEmail(request, '/mj/api/rsvp');
 
     if (response) {
