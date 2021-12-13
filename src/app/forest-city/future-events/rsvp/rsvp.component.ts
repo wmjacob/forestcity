@@ -88,6 +88,7 @@ export class RsvpComponent implements OnInit {
       event: this.event,
       numberOfPrimeRib: this.getNumberOfPrimeRib(),
       numberOfSalmon: this.getNumberOfSalmon(),
+      mealSelection: this.getMealSelection(),
       earlyBirdDinner: earlyBirdDinner,
       numberOfMeals: numberOfMeals
     }
@@ -96,7 +97,7 @@ export class RsvpComponent implements OnInit {
   getNumberOfPrimeRib() {
     const formValues = this.rsvpForm.value;
     if(this.displayMealChoices() && formValues.numberOfMeals > 0) {
-      if(formValues.numberOfMeals === '1' && formValues.mealChoice === 'Prime Rib') {
+      if(formValues.numberOfMeals == 1 && formValues.mealChoice === 'Prime Rib') {
         return 1;
       }
       return formValues.numberOfMeat ? formValues.numberOfMeat : 0;
@@ -109,10 +110,25 @@ export class RsvpComponent implements OnInit {
   getNumberOfSalmon() {
     const formValues = this.rsvpForm.value;
     if(this.displayMealChoices() && formValues.numberOfMeals > 0) {
-      if(formValues.numberOfMeals === '1' && formValues.mealChoice === 'Salmon') {
+      if(formValues.numberOfMeals == 1 && formValues.mealChoice === 'Salmon') {
         return 1;
       }
       return formValues.numberOfFish ? formValues.numberOfFish : 0;
+    }
+    else {
+      return "-";
+    }
+  }
+
+  getMealSelection() {
+    const formValues = this.rsvpForm.value;
+    if(this.displayMealChoices() && formValues.numberOfMeals > 1) {
+      let numberOfMeat = formValues.numberOfMeat ? formValues.numberOfMeat : "0";
+      let numberOfFish = formValues.numberOfFish ? formValues.numberOfFish : "0";
+      return "Prime Rib: " + numberOfMeat + " Salmon: " + numberOfFish;
+    }
+    else if(this.displayMealChoices() && formValues.numberOfMeals == 1) {
+      return formValues.mealChoice;
     }
     else {
       return "-";
