@@ -135,6 +135,18 @@ const albums: PhotoAlbum[] = [
     subtitle: '',
     description: 'At Horseshoe Lake Park in Cleveland Heights, OH'
   },
+  {
+    albumName: '2013_06_29_Captains_Game',
+    title: 'Lake County Captains Game 2013',
+    subtitle: '',
+    description: ''
+  },
+  {
+    albumName: '2013_06_19_Table_Lodge',
+    title: '35th Annual Table Lodge',
+    subtitle: 'Worshipful Master Chester F. Willey',
+    description: ''
+  },
 ]
 
 @Component({
