@@ -13,6 +13,7 @@ import { AboutUsComponent } from './forest-city/about-us/about-us.component';
 import { ImageGalleryComponent } from './forest-city/image-gallery/image-gallery.component';
 import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-collection/gallery-collection.component';
 import { RecentEventsComponent } from './forest-city/recent-events/recent-events.component';
+import { PastBulletinsComponent } from './forest-city/past-bulletins/past-bulletins.component';
 
 const IMAGE_GALLERY_URL = 'image-gallery';
 
@@ -73,7 +74,11 @@ const routes: Routes = [
       {
         path: 'recent-events',
         component: RecentEventsComponent
-      }
+      },
+      // {
+      //   path: 'past-bulletins',
+      //   component: PastBulletinsComponent
+      // }
     ]
   },
   // routes without header or footer

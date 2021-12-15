@@ -40,5 +40,9 @@
     <loc>https://forestcitylodge.com/about-us</loc>
     <lastmod>CURRENT_DATE</lastmod>
   </url>
+  <url>
+    <loc>https://forestcitylodge.com/recent-events</loc>
+    <lastmod>CURRENT_DATE</lastmod>
+  </url>
 </urlset>
 

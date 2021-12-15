@@ -1,11 +1,11 @@
-<div class="container">
-    <div class="header bg-primary-lighter pt-2 pb-2">
-        <div class="centered">
-            <h1 class="text-center">Recent Events From The Last Year At Forest City Lodge No. 388!</h1>
-        </div>
+<div class="grid-col-12 padding-y-3 margin-bottom-3 bg-primary-lighter">
+    <div class="centered">
+        <h2>Recent Events From The Last Year At Forest City Lodge No. 388</h2>
     </div>
+</div>
+<div class="container">
     <div *ngFor="let event of recentEvents, let i = index">
-        <div class="card my-3 card-container bg-primary-lighter">
+        <div class="card my-3 card-container" [ngClass]="{'bg-light': i % 2 === 0, 'bg-primary-lighter': i % 2 === 1}">
             <div [id]="event.eventId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
                 <div class="carousel-inner">
                     <div class="carousel-item" *ngFor="let imageUrls of event.imageUrls, let j = index" [ngClass]="{'active': j === 0}">
