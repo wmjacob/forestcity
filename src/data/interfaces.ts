@@ -31,3 +31,9 @@ export interface RecentEvent {
     slideContent: any,
     eventDate: string
 }
+
+export interface PastBulletin {
+    year: string,
+    displayName: string,
+    filename: string
+}
