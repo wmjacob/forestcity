@@ -3,8 +3,9 @@
         <div class="grid-col-12 centered padding-top-1">
             <h2>Contact the Brethren of Forest City Lodge</h2>
         </div>
-        <div class="grid-col-12">
-            <form class="padding-bottom-2" [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
+        <!-- Left Half (Form) -->
+        <div class="desktop:grid-col-6 mobile-lg:grid-col-auto">
+            <form class="padding-bottom-2 mx-3" [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
                 <label for="firstName" class="usa-label required-field">First Name:</label>
                 <input id="firstName"
                     type="text"
@@ -52,6 +53,70 @@
                     </span>
                 </button>
             </form>
+        </div>
+        <!-- Right Half -->
+        <div class="desktop:grid-col-6 mobile-lg:grid-col-auto mt-5">
+            <div class="mx-3">
+                <div class="grid-row">
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4 text-center">
+                            <img src="../../../assets/images/icons/help_outline.svg" class="img-fluid rounded-start" alt="General Questions">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Have Questions?</h5>
+                              <p class="card-text">If you have general questions about our Lodge or Freemasonry, please fill out the form and we will reach out to you as soon as we can.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4 text-center">
+                            <img src="../../../assets/images/icons/groups.svg" class="img-fluid rounded-start" alt="General Questions">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Come Meet Us</h5>
+                              <p class="card-text">We meet on the 1st and 3rd Wednesdays of the month at 7:30pm, with the exception of July and August.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4 text-center">
+                            <img src="../../../assets/images/icons/restaurant.svg" class="img-fluid rounded-start" alt="General Questions">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Eat With Us</h5>
+                              <p class="card-text">Before our meetings, we usually have a meal, at around 6:30pm. If you would like to join us for a meal to meet and eat with the brethren, please RSVP on our <a routerLink="../upcoming-events">Upcoming Events page.</a></p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-4 text-center">
+                            <img src="../../../assets/images/icons/event.svg" class="img-fluid rounded-start" alt="General Questions">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Schedule a Visit</h5>
+                              <p class="card-text">If you would like to view our upcoming events and RSVP for an event/dinner, please go to our <a routerLink="../upcoming-events">Upcoming Events page</a>.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
