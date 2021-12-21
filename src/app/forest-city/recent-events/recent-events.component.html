@@ -9,7 +9,7 @@
             <div [id]="event.eventId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
                 <div class="carousel-inner">
                     <div class="carousel-item" *ngFor="let imageUrls of event.imageUrls, let j = index" [ngClass]="{'active': j === 0}">
-                        <img src="https://storage.googleapis.com/forest-city-website-images/{{event.albumName}}/{{imageUrls}}" class="d-block w-100"/>
+                        <img src="https://storage.cloud.google.com/forest-city-website-images/{{event.albumName}}/{{imageUrls}}" class="d-block w-100"/>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>{{ event.slideLabels[j] }}</h5>
                             <p>{{ event.slideContent }}</p>

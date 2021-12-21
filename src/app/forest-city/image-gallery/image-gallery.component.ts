@@ -10,6 +10,12 @@ interface PhotoAlbum {
 
 const albums: PhotoAlbum[] = [
   {
+    albumName: '2021_12_15_Brotherhood_Night',
+    title: 'Brotherhood Night 2021',
+    subtitle: 'A Night With The Clergy',
+    description: 'A Call For Brotherhood'
+  },
+  {
     albumName: '2021_11_27_Officers_Installation',
     title: '2021-2022 Installation of Officers',
     subtitle: 'WM Ryan E. Stuver',
