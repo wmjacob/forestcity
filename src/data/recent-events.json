@@ -1,4 +1,25 @@
-[
+[{
+    "eventName": "Brotherhood Night 2021",
+    "eventId": "brotherHoodNight2021",
+    "displayDate": "Wednesday, December 15th, 2021",
+    "description": "Our 48th Annual Brotherhood Night, A Night With The Clergy, and Candle Lighting Ceremony. We welcomed special guest speakers Reverend Marvin McMickle, Rabbi Matthew Eisenberg, Right Worshipful Brother Timothy Ward, Grand Chaplain, Most Worshipful Brother Richard Dickersheid, Past Grand Master, and Most Worshipful Brother Timothy Wheeland, Grand Master of Masons in Ohio. At the end of these wonderful addresses, we extended donations to five local charitable organizations in the name of Brotherhood!",
+    "albumName": "2021_12_15_Brotherhood_Night",
+    "imageUrls": [
+        "062.jpg",
+        "040.jpg",
+        "089.jpg",
+        "088.jpg"
+    ],
+    "slideLabels": [
+        "Candle Lighting Ceremony",
+        "Line-up of speakers",
+        "Grand Officers and Officers of FCL",
+        "Grand Master Wheeland with visiting PHA Brethren"
+    ],
+    "slideContent": "",
+    "eventDate": "2021/12/01"
+},
+
     {
         "eventName": "Ugly Holiday Sweater/Tie Night",
         "eventId": "uglySweaterNight",
