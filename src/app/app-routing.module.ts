@@ -75,10 +75,10 @@ const routes: Routes = [
         path: 'recent-events',
         component: RecentEventsComponent
       },
-      // {
-      //   path: 'past-bulletins',
-      //   component: PastBulletinsComponent
-      // }
+      {
+        path: 'past-bulletins',
+        component: PastBulletinsComponent
+      }
     ]
   },
   // routes without header or footer
