@@ -68,7 +68,7 @@ const routes: Routes = [
         component: ImageGalleryComponent
       },
       {
-        path: IMAGE_GALLERY_URL + '/gallery-collection',
+        path: IMAGE_GALLERY_URL + '/:albumName',
         component: GalleryCollectionComponent
       },
       {

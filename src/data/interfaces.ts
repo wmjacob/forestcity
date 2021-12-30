@@ -37,3 +37,10 @@ export interface PastBulletin {
     displayName: string,
     filename: string
 }
+
+export interface PhotoAlbum {
+    albumName: string,
+    title: string,
+    subtitle: string,
+    description: string
+}

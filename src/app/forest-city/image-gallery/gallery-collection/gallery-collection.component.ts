@@ -1,9 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { AfterViewInit, Component, HostListener, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { Gallery, GalleryItem, ImageItem } from 'ng-gallery';
+import { Gallery, GalleryItem, ImageItem, ThumbnailsMode } from 'ng-gallery';
 import { Lightbox } from  'ng-gallery/lightbox';
+import albums from '@data/photo-albums.json'
+import { PhotoAlbum } from '@data/interfaces';
 
 @Component({
   selector: 'fcl-gallery-collection',
@@ -16,11 +18,13 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
   readonly IMAGE_URL_PREFIX = 'https://storage.googleapis.com/forest-city-website-images/';
   readonly THUMB_URL_PREFIX = 'https://storage.googleapis.com/forest-city-website-images-thumbs/';
 
+  albumInfo: PhotoAlbum[] = [];
   routeState: any;
-  collection: string = '';
   loading: boolean = false;
   images: any;
   imageSub: Subscription = new Subscription;
+  albumNameParam: string | null = '';
+  albumName: string = '';
   header: string = '';
   title: string = '';
   subtitle: string = '';
@@ -32,26 +36,30 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
   slideIndex = 0;
 
   constructor(private router: Router,
+              private route: ActivatedRoute,
               private httpClient: HttpClient,
               public gallery: Gallery,
               public lightbox: Lightbox) {
-    if(this.router.getCurrentNavigation()?.extras.state) {
-      this.routeState = this.router.getCurrentNavigation()?.extras.state;
-      if(this.routeState) {
-        this.collection = this.routeState.data.albumName;
-        this.title = this.routeState.data.title;
-        this.subtitle = this.routeState.data.subtitle;
-        this.description = this.routeState.data.description;
-      }
-    }
-    else {
-      this.router.navigate(['image-gallery']);
-    }
+    // if(this.router.getCurrentNavigation()?.extras.state) {
+    //   this.routeState = this.router.getCurrentNavigation()?.extras.state;
+    //   if(this.routeState) {
+    //     this.title = this.routeState.data.title;
+    //     this.subtitle = this.routeState.data.subtitle;
+    //     this.description = this.routeState.data.description;
+    //   }
+    // }
+    // else {
+    //   this.router.navigate(['image-gallery']);
+    // }
   }
 
   ngOnInit(): void {
     this.loading = true;
-    this.imageSub = this.httpClient.get(this.FCL_IMAGE_BUCKET + this.collection + '/').subscribe(
+    this.albumNameParam = this.route.snapshot.paramMap.get('albumName');
+    if(this.albumNameParam) {
+      this.albumName = this.albumNameParam;
+    }
+    this.imageSub = this.httpClient.get(this.FCL_IMAGE_BUCKET + this.albumName + '/').subscribe(
       (data) => {
         const jsonObj = JSON.parse(JSON.stringify(data));
         const imageArray = jsonObj.items;
@@ -60,15 +68,27 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
         })
 
         if(result) {
+          this.setAlbumInfo();
           this.images = result;
           this.loadGalleryImages();
           this.gallery.ref().load(this.items);
         }
       },
       (error) => {
-        // TODO maybe throw notification
+        this.router.navigate(['image-gallery']);
       }
     );
+  }
+
+  setAlbumInfo() {
+    albums.forEach(album => {
+      if(album.albumName.includes(this.albumName)) {
+        this.title = album.title;
+        this.subtitle = album.subtitle;
+        this.description = album.description;
+        return;
+      }
+    });
   }
 
   loadGalleryImages() {
