@@ -23,7 +23,8 @@
                                     {{event.description}}
                                 </div>
                                 <div class="future-events-list-item-location text-base d-flex flex-wrap">
-                                    <div>{{event.location}}&nbsp;|&nbsp;</div><div><a class="text-base" [href]="event.addressLink" target="_blank">{{event.address}}</a></div>
+                                    <div>{{getEarlyBirdOptions(event.earlyBirdOptions)}}</div>
+                                    <div>&nbsp;|&nbsp;<a class="text-base" [href]="event.addressLink" target="_blank">{{event.address}}</a></div>
                                 </div>
                             </div>
                             <div *ngIf="isRsvp(event)">
