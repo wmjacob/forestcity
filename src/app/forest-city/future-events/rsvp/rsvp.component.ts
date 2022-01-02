@@ -148,7 +148,7 @@ export class RsvpComponent implements OnInit {
 
   getCostPerMeal() {
     let cost = this.event.earlyBirdOptions.cost;
-    return cost ? cost : '-';
+    return cost ? '$' + cost : '-';
   }
 
   getEarlyBirdTime() {
