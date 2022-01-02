@@ -89,7 +89,9 @@ export class RsvpComponent implements OnInit {
       numberOfSalmon: this.getNumberOfSalmon(),
       mealSelection: this.getMealSelection(),
       earlyBirdDinner: earlyBirdDinner,
-      numberOfMeals: numberOfMeals
+      numberOfMeals: numberOfMeals,
+      costPerMeal: this.getCostPerMeal(),
+      earlyBirdTime: this.getEarlyBirdTime()
     }
   }
 
@@ -142,6 +144,16 @@ export class RsvpComponent implements OnInit {
     else {
       return formValues.lastName;
     }
+  }
+
+  getCostPerMeal() {
+    let cost = this.event.earlyBirdOptions.cost;
+    return cost ? cost : '-';
+  }
+
+  getEarlyBirdTime() {
+    let time: string = this.event.earlyBirdOptions.time;
+    return time.replace('(', '').replace(')', '').replace(/\s+/g, '');
   }
 
   clearForm() {
