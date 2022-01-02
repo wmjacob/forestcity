@@ -58,4 +58,13 @@ export class FutureEventsComponent implements OnInit {
     }
     return event.rsvpOptions;
   }
+
+  getEarlyBirdOptions(options: any) {
+    let time: string = options.time;
+    time = time.replace('(', '').replace(')', '').replace(/\s+/g, '');
+    if(options.time) {
+      return 'Dinner: ' + time + ' Cost: $' + options.cost;
+    }
+    return '';
+  }
 }
