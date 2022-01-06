@@ -89,7 +89,9 @@ export class RsvpComponent implements OnInit {
       numberOfSalmon: this.getNumberOfSalmon(),
       mealSelection: this.getMealSelection(),
       earlyBirdDinner: earlyBirdDinner,
-      numberOfMeals: numberOfMeals
+      numberOfMeals: numberOfMeals,
+      costPerMeal: this.getCostPerMeal(),
+      earlyBirdTime: this.getEarlyBirdTime()
     }
   }
 
@@ -144,6 +146,16 @@ export class RsvpComponent implements OnInit {
     }
   }
 
+  getCostPerMeal() {
+    let cost = this.event.earlyBirdOptions.cost;
+    return cost ? '$' + cost : '-';
+  }
+
+  getEarlyBirdTime() {
+    let time: string = this.event.earlyBirdOptions.time;
+    return time.replace('(', '').replace(')', '').replace(/\s+/g, '');
+  }
+
   clearForm() {
     this.rsvpForm.reset();
     this.earlyBirdChecked = false;
@@ -156,11 +168,14 @@ export class RsvpComponent implements OnInit {
     this.rsvpForm.get('earlyBirdDinner')?.setValue(this.earlyBirdChecked);
   }
 
+  /**
+   * Turned off until further notice from WM
+   */
   displayEarlyBirdCheckbox() {
-    let earlyBirdOptions = this.event.earlyBirdOptions;
-    if(earlyBirdOptions !== undefined) {
-      return earlyBirdOptions.cost !== "";
-    }
+    // let earlyBirdOptions = this.event.earlyBirdOptions;
+    // if(earlyBirdOptions !== undefined) {
+    //   return earlyBirdOptions.cost !== "";
+    // }
     return false;
   }
 
