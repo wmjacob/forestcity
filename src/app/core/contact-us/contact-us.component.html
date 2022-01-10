@@ -5,7 +5,7 @@
         </div>
         <!-- Left Half (Form) -->
         <div class="desktop:grid-col-6 mobile-lg:grid-col-auto">
-            <form class="padding-bottom-2 mx-3" [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
+            <form class="padding-bottom-4 margin-y-6 me-3 card card-body bg-light" [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
                 <label for="firstName" class="usa-label required-field">First Name:</label>
                 <input id="firstName"
                     type="text"
@@ -56,7 +56,55 @@
         </div>
         <!-- Right Half -->
         <div class="desktop:grid-col-6 mobile-lg:grid-col-auto mt-5">
-            <div class="mx-3">
+          <section class="usa-graphic-list">
+            <div class="usa-graphic-list__row">
+
+              <div class="usa-media-block">
+                <div class="usa-media-block__img circle-6 bg-primary-light display-flex flex-row flex-align-center flex-justify-center text-white">
+                  <img src="../../../assets/images/icons/help_outline.svg" class="img-fluid rounded-start" alt="General Questions">
+                </div>
+                <div class="usa-media-block__body">
+                  <h4>Have Questions?</h4>
+                  <p>If you have general questions about our Lodge or Freemasonry, please fill out the form and we will reach out to you as soon as we can.</p>
+                </div>
+              </div>
+
+              <div class="usa-media-block">
+                <div class="usa-media-block__img circle-6 bg-primary-light display-flex flex-row flex-align-center flex-justify-center text-white">
+                  <img src="../../../assets/images/icons/groups.svg" class="img-fluid rounded-start" alt="Meeting Info">
+                </div>
+                <div class="usa-media-block__body">
+                  <h4>Come Meet Us</h4>
+                  <p>We meet on the 1st and 3rd Wednesdays of the month at 7:30pm, with the exception of July and August.</p>
+                </div>
+              </div>
+
+              <div class="usa-media-block">
+                <div class="usa-media-block__img circle-6 bg-primary-light display-flex flex-row flex-align-center flex-justify-center text-white">
+                  <img src="../../../assets/images/icons/restaurant.svg" class="img-fluid rounded-start" alt="Meal Info">
+                </div>
+                <div class="usa-media-block__body">
+                  <h4>Eat With Us</h4>
+                  <p>Before our meetings, we usually have a meal, at around 6:30pm. If you would like to join us for a meal to meet and eat with the brethren, please RSVP on our <a routerLink="../upcoming-events">Upcoming Events page.</a></p>
+                </div>
+              </div>
+
+              <div class="usa-media-block">
+                <div class="usa-media-block__img circle-6 bg-primary-light display-flex flex-row flex-align-center flex-justify-center text-white">
+                  <img src="../../../assets/images/icons/event.svg" class="img-fluid rounded-start" alt="Event Info">
+                </div>
+                <div class="usa-media-block__body">
+                  <h4>Schedule A Visit</h4>
+                  <p>If you would like to view our upcoming events and RSVP for an event/dinner, please go to our <a routerLink="../upcoming-events">Upcoming Events page</a>.</p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+        <!-- <div class="desktop:grid-col-6 mobile-lg:grid-col-auto mt-5">
+            <div class="ms-3">
                 <div class="grid-row">
 
                     <div class="card mb-3" style="max-width: 540px;">
@@ -117,6 +165,6 @@
 
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
