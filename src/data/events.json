@@ -135,7 +135,7 @@
   {
     "date": "2022/01/19 19:30",
     "name": "Stated Meeting",
-    "description": "Chili Cookoff",
+    "description": "EA Degree",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -154,7 +154,7 @@
   {
     "date": "2022/02/02 19:30",
     "name": "Stated Meeting",
-    "description": "FC Degree",
+    "description": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -172,7 +172,7 @@
   },
   {
     "date": "2022/02/16 19:30",
-    "name": "Valentine's Day Dinner",
+    "name": "Valentine's Day Event",
     "description": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -305,7 +305,7 @@
   },
   {
     "date": "2022/05/04 19:30",
-    "name": "Awards Night",
+    "name": "Stated Meeting",
     "description": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -315,7 +315,7 @@
     "spotlight": true,
     "spotlightImage": "lights.jpeg",
     "altText": "Courtesy Discovery Photo",
-    "tyled": false,
+    "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
       "cost": "6",
@@ -324,7 +324,7 @@
   },
   {
     "date": "2022/05/18 19:30",
-    "name": "Stated Meeting",
+    "name": "Awards Night",
     "description": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -334,7 +334,7 @@
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
-    "tyled": true,
+    "tyled": false,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
       "cost": "6",
@@ -343,25 +343,6 @@
   },
   {
     "date": "2022/06/01 19:30",
-    "name": "Stated Meeting",
-    "description": "Birthday Night",
-    "location": "Forest City Lodge",
-    "address": "Lyndhurst Masonic Temple",
-    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": true,
-    "rsvpExpirationDays": "1",
-    "spotlight": false,
-    "spotlightImage": "",
-    "altText": "",
-    "tyled": true,
-    "earlyBirdOptions": {
-      "time": "(6:30 PM)",
-      "cost": "6",
-      "choices": []
-    }
-  },
-  {
-    "date": "2022/06/15 19:30",
     "name": "Table Lodge",
     "description": "",
     "location": "Forest City Lodge",
@@ -373,6 +354,25 @@
     "spotlightImage": "tablelodge.jpeg",
     "altText": "Courtesy Discovery Photo",
     "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(6:30 PM)",
+      "cost": "6",
+      "choices": []
+    }
+  },
+  {
+    "date": "2022/06/15 19:30",
+    "name": "Stated Meeting",
+    "description": "Birthday Night",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
       "cost": "6",
