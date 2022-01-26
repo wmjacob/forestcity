@@ -40,17 +40,6 @@ export class GalleryCollectionComponent implements OnInit, AfterViewInit, OnDest
               private httpClient: HttpClient,
               public gallery: Gallery,
               public lightbox: Lightbox) {
-    // if(this.router.getCurrentNavigation()?.extras.state) {
-    //   this.routeState = this.router.getCurrentNavigation()?.extras.state;
-    //   if(this.routeState) {
-    //     this.title = this.routeState.data.title;
-    //     this.subtitle = this.routeState.data.subtitle;
-    //     this.description = this.routeState.data.description;
-    //   }
-    // }
-    // else {
-    //   this.router.navigate(['image-gallery']);
-    // }
   }
 
   ngOnInit(): void {
