@@ -17,7 +17,10 @@
                         <tr [ngClass]="{'table-info': i%2==0, 'table-light': i%2==1}">
                             <td id="year">{{ bulletin.year }}</td>
                             <td id="bulletin">{{ bulletin.displayName }}</td>
-                            <td id="options"><button class="btn btn-primary" (click)="getPdf(bulletin.filename)">View / Download</button></td>
+                            <td id="options">
+                                <button id="viewPdfBtn" class="btn btn-primary" (click)="viewPdf(bulletin)" data-bs-toggle="modal" data-bs-target="#viewPdfModal">View</button>
+                                <button id="downloadPdfBtn" class="btn btn-secondary ms-2" (click)="downloadPdf(bulletin.filename)">Download</button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -26,3 +29,22 @@
     </div>
     <jw-blt-pagination [items]="pastBulletins" (changePage)="onChangePage($event)"></jw-blt-pagination>
 </div>
+
+<div class="modal fade" id="viewPdfModal" tabindex="-1" role="dialog" aria-labelledby="viewPdfModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="viewPdfModalTitle">{{ modalTitle }}</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe [src]="viewSource" type="application/pdf"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
