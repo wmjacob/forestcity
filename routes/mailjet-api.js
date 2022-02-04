@@ -76,6 +76,7 @@ mailjetRouter.post('/rsvp', async function(req, res) {
                     "email": data.email,
                     "eventName": data.event.name,
                     "date": data.date,
+                    "numberOfAttendees": data.numberOfAttendees,
                     "earlyBirdDinner": data.earlyBirdDinner,
                     "numberOfMeals": data.numberOfMeals,
                     "mealSelection": data.mealSelection
@@ -102,6 +103,7 @@ mailjetRouter.post('/rsvp', async function(req, res) {
                     "lastName": data.lastName,
                     "eventName": data.event.name,
                     "date": data.date,
+                    "numberOfAttendees": data.numberOfAttendees,
                     "earlyBirdDinner": data.earlyBirdDinner,
                     "earlyBirdTime": data.earlyBirdTime,
                     "numberOfMeals": data.numberOfMeals,
