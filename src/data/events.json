@@ -184,8 +184,8 @@
     "altText": "Courtesy Discovery Photo",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "(6:30 PM)",
-      "cost": "12",
+      "time": "",
+      "cost": "",
       "choices": ["Prime Rib", "Salmon"]
     }
   },

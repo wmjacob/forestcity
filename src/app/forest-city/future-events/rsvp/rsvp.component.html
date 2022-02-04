@@ -53,6 +53,21 @@
                                 [class.is-invalid] = "rsvpForm.get('email')?.invalid && rsvpForm.get('email')?.dirty"
                                 required>
                         </div>
+                        <div class="mb-3">
+                            <label for="numberOfAttendees" class="usa-label required-field">Number Of Attendees (including yourself):</label>
+                            <select class="usa-select" formControlName="numberOfAttendees" id="numberOfAttendees">
+                                <option value=1 selected>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5</option>
+                                <option value=6>6</option>
+                                <option value=7>7</option>
+                                <option value=8>8</option>
+                                <option value=9>9</option>
+                                <option value=10>10</option>
+                            </select>
+                        </div>
                         <div *ngIf="displayEarlyBirdCheckbox()" class="mb-3">
                             <div class="usa-checkbox">
                                 <input id="early-bird-dinner"
