@@ -173,7 +173,7 @@
   {
     "date": "2022/02/16 19:30",
     "name": "Valentine's Day Event",
-    "description": "",
+    "description": "Desserts and Refreshments After",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -192,45 +192,26 @@
   {
     "date": "2022/03/02 19:30",
     "name": "Stated Meeting",
+    "description": "FC Degree",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30 PM)",
+      "cost": "6",
+      "choices": []
+    }
+  },
+  {
+    "date": "2022/03/12 10:00",
+    "name": "Pre-inspection and Inspection Rehearsal",
     "description": "",
-    "location": "Forest City Lodge",
-    "address": "Lyndhurst Masonic Temple",
-    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": true,
-    "rsvpExpirationDays": "1",
-    "spotlight": false,
-    "spotlightImage": "",
-    "altText": "",
-    "tyled": true,
-    "earlyBirdOptions": {
-      "time": "(6:30 PM)",
-      "cost": "6",
-      "choices": []
-    }
-  },
-  {
-    "date": "2022/03/16 19:30",
-    "name": "Stated Meeting",
-    "description": "Birthday Night",
-    "location": "Forest City Lodge",
-    "address": "Lyndhurst Masonic Temple",
-    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": true,
-    "rsvpExpirationDays": "1",
-    "spotlight": false,
-    "spotlightImage": "",
-    "altText": "",
-    "tyled": true,
-    "earlyBirdOptions": {
-      "time": "(6:30 PM)",
-      "cost": "6",
-      "choices": []
-    }
-  },
-  {
-    "date": "2022/03/27 10:30",
-    "name": "Rehearsal",
-    "description": "Inspection (EA)",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -247,9 +228,28 @@
     }
   },
   {
-    "date": "2022/04/03 10:30",
-    "name": "Rehearsal",
-    "description": "Inspection (EA)",
+    "date": "2022/03/16 19:30",
+    "name": "Stated Meeting",
+    "description": "Birthday Night | Chili Cookoff",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30 PM)",
+      "cost": "6",
+      "choices": []
+    }
+  },
+  {
+    "date": "2022/04/03 11:00",
+    "name": "Inspection Rehearsal",
+    "description": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -268,7 +268,7 @@
   {
     "date": "2022/04/06 19:30",
     "name": "Annual Inspection",
-    "description": "Entered Apprentice",
+    "description": "Entered Apprentice Degree",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -312,8 +312,8 @@
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
     "rsvpOptions": true,
     "rsvpExpirationDays": "1",
-    "spotlight": true,
-    "spotlightImage": "lights.jpeg",
+    "spotlight": false,
+    "spotlightImage": "",
     "altText": "Courtesy Discovery Photo",
     "tyled": true,
     "earlyBirdOptions": {
@@ -331,8 +331,8 @@
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
     "rsvpOptions": true,
     "rsvpExpirationDays": "1",
-    "spotlight": false,
-    "spotlightImage": "",
+    "spotlight": true,
+    "spotlightImage": "lights.jpeg",
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
