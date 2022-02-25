@@ -1,25 +1,48 @@
-[{
-    "eventName": "Brotherhood Night 2021",
-    "eventId": "brotherHoodNight2021",
-    "displayDate": "Wednesday, December 15th, 2021",
-    "description": "Our 48th Annual Brotherhood Night, A Night With The Clergy, and Candle Lighting Ceremony. We welcomed special guest speakers Reverend Marvin McMickle, Rabbi Matthew Eisenberg, Right Worshipful Brother Timothy Ward, Grand Chaplain, Most Worshipful Brother Richard Dickersheid, Past Grand Master, and Most Worshipful Brother Timothy Wheeland, Grand Master of Masons in Ohio. At the end of these wonderful addresses, we extended donations to five local charitable organizations in the name of Brotherhood!",
-    "albumName": "2021_12_15_Brotherhood_Night",
-    "imageUrls": [
-        "062.jpg",
-        "040.jpg",
-        "089.jpg",
-        "088.jpg"
-    ],
-    "slideLabels": [
-        "Candle Lighting Ceremony",
-        "Line-up of speakers",
-        "Grand Officers and Officers of FCL",
-        "Grand Master Wheeland with visiting PHA Brethren"
-    ],
-    "slideContent": "",
-    "eventDate": "2021/12/15"
-},
+[
+    {
+        "eventName": "Valentine's Day Event 2022",
+        "eventId": "valentinesDayEvent2022",
+        "displayDate": "Wednesday, February 16th, 2022",
+        "description": "Special thanks to Kandice Zeligson and her husband W.B. Bill Zeligson for their time and energy in organizing this event! Paul Christensen was gracious enough to provide the entertainment for the evening, and what a show it was! Due to the rise in COVID cases, we weren't able to hold a proper dinner beforehand as in years past, but the evening was still magical. Here is a URL for Mr. Christensen's Facebook page: https://www.facebook.com/paul.w.christensen.5",
+        "albumName": "2022_02_16_Valentines_Day_Event",
+        "imageUrls": [
+            "001.jpg",
+            "008.jpg",
+            "030.jpg",
+            "031.jpg"
+        ],
+        "slideLabels": [
+            "Mr. Paul Christensen",
+            "Showing his versatility",
+            "W.B. Bill and Kandice Zeligson",
+            "Bro. Ralph Jurecki and wife showing us how it's done!"
+        ],
+        "slideContent": [
 
+        ],
+        "eventDate": "2021/12/15"
+    },
+    {
+        "eventName": "Brotherhood Night 2021",
+        "eventId": "brotherHoodNight2021",
+        "displayDate": "Wednesday, December 15th, 2021",
+        "description": "Our 48th Annual Brotherhood Night, A Night With The Clergy, and Candle Lighting Ceremony. We welcomed special guest speakers Reverend Marvin McMickle, Rabbi Matthew Eisenberg, Right Worshipful Brother Timothy Ward, Grand Chaplain, Most Worshipful Brother Richard Dickersheid, Past Grand Master, and Most Worshipful Brother Timothy Wheeland, Grand Master of Masons in Ohio. At the end of these wonderful addresses, we extended donations to five local charitable organizations in the name of Brotherhood!",
+        "albumName": "2021_12_15_Brotherhood_Night",
+        "imageUrls": [
+            "062.jpg",
+            "040.jpg",
+            "089.jpg",
+            "088.jpg"
+        ],
+        "slideLabels": [
+            "Candle Lighting Ceremony",
+            "Line-up of speakers",
+            "Grand Officers and Officers of FCL",
+            "Grand Master Wheeland with visiting PHA Brethren"
+        ],
+        "slideContent": [],
+        "eventDate": "2021/12/15"
+    },
     {
         "eventName": "Ugly Holiday Sweater/Tie Night",
         "eventId": "uglySweaterNight",
@@ -32,7 +55,7 @@
         "slideLabels": [
             ""
         ],
-        "slideContent": "",
+        "slideContent": [],
         "eventDate": "2021/12/01"
     },
     {
