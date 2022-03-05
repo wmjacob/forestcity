@@ -1,5 +1,22 @@
 [
     {
+        "eventName": "At Refreshment",
+        "eventId": "march02AtRefreshment2022",
+        "displayDate": "Wednesday, March 2nd, 2022",
+        "description": "",
+        "albumName": "2022_03_02_At_Refreshment",
+        "imageUrls": [
+            "001.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [
+
+        ],
+        "eventDate": "2022/03/02"
+    },
+    {
         "eventName": "Valentine's Day Event 2022",
         "eventId": "valentinesDayEvent2022",
         "displayDate": "Wednesday, February 16th, 2022",
@@ -20,7 +37,7 @@
         "slideContent": [
 
         ],
-        "eventDate": "2021/12/15"
+        "eventDate": "2022/02/16"
     },
     {
         "eventName": "Brotherhood Night 2021",
