@@ -53,6 +53,21 @@
                                 [class.is-invalid] = "rsvpForm.get('email')?.invalid && rsvpForm.get('email')?.dirty"
                                 required>
                         </div>
+                        <div class="mb-3">
+                            <label for="numberOfAttendees" class="usa-label required-field">Number Of Attendees (including yourself):</label>
+                            <select class="usa-select" formControlName="numberOfAttendees" id="numberOfAttendees">
+                                <option value=1 selected>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5</option>
+                                <option value=6>6</option>
+                                <option value=7>7</option>
+                                <option value=8>8</option>
+                                <option value=9>9</option>
+                                <option value=10>10</option>
+                            </select>
+                        </div>
                         <div *ngIf="displayEarlyBirdCheckbox()" class="mb-3">
                             <div class="usa-checkbox">
                                 <input id="early-bird-dinner"
@@ -62,7 +77,7 @@
                                     [checked]="earlyBirdChecked"
                                     (click)="toggleChecked()"
                                     value="earlyBirdChecked">
-                                <label class="usa-checkbox__label" for="early-bird-dinner">Will Attend Dinner {{ event.earlyBirdOptions.time }}</label>
+                                <label class="usa-checkbox__label" for="early-bird-dinner">Will Attend Dinner {{ event.earlyBirdOptions.time }} | Cost: ${{ event.earlyBirdOptions.cost }} per meal</label>
                             </div>
                             <div *ngIf="earlyBirdChecked">
                                 <label class="usa-label" for="numberOfMeals">Number of Meals:</label>
@@ -78,9 +93,6 @@
                                     <option value=9>9</option>
                                     <option value=10>10</option>
                                 </select>
-                                <div>
-                                    Cost: ${{ event.earlyBirdOptions.cost }} per meal
-                                </div>
                             </div>
                         </div>
                         <div *ngIf="displayMealChoices()" class="mb-3">
@@ -97,9 +109,9 @@
                                     </div>
                                 </div>
                                 <div *ngIf="displayMultipleMealChoices()">
-                                    <label class="usa-label" for="numberOfMeat">Number of Prime Rib:</label>
+                                    <label class="usa-label" for="numberOfMeat">Number of {{ event.earlyBirdOptions.choices[0] }}:</label>
                                     <input class="usa-input" type="number" min="0" id="numberOfMeat" formControlName="numberOfMeat">
-                                    <label class="usa-label" for="numberOfFish">Number of Salmon:</label>
+                                    <label class="usa-label" for="numberOfFish">Number of {{ event.earlyBirdOptions.choices[1] }}:</label>
                                     <input class="usa-input" type="number" min="0" id="numberOfFish" formControlName="numberOfFish">
                                 </div>
                             </fieldset>

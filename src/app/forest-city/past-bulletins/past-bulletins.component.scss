@@ -1,0 +1,19 @@
+iframe {
+    width: 100vw;
+    height: 100vh;
+
+    @media screen and (min-width: 1024px) {
+        width: 1024px;
+    }
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+}
+
+#viewPdfBtn {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+}

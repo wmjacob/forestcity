@@ -26,7 +26,8 @@ export class RsvpComponent implements OnInit {
     numberOfMeals: new FormControl('1'),
     mealChoice: new FormControl('Prime Rib'),
     numberOfMeat: new FormControl(''),
-    numberOfFish: new FormControl('')
+    numberOfFish: new FormControl(''),
+    numberOfAttendees: new FormControl('1')
   });
 
   constructor(private emailService: EmailService,
@@ -39,6 +40,7 @@ export class RsvpComponent implements OnInit {
     let emailSuccessful: boolean = false;
     this.disableButton = true;
     const request = this.buildRequest();
+    console.log('request= ' + JSON.stringify(request))
     const response = await this.emailService.sendEmail(request, '/mj/api/rsvp');
 
     if (response) {
@@ -91,14 +93,18 @@ export class RsvpComponent implements OnInit {
       earlyBirdDinner: earlyBirdDinner,
       numberOfMeals: numberOfMeals,
       costPerMeal: this.getCostPerMeal(),
-      earlyBirdTime: this.getEarlyBirdTime()
+      earlyBirdTime: this.getEarlyBirdTime(),
+      numberOfAttendees: formValues.numberOfAttendees,
+      meatChoice: this.getMeatChoice(),
+      fishChoice: this.getFishChoice()
     }
   }
 
   getNumberOfPrimeRib() {
     const formValues = this.rsvpForm.value;
     if(this.displayMealChoices() && formValues.numberOfMeals > 0) {
-      if(formValues.numberOfMeals == 1 && formValues.mealChoice === 'Prime Rib') {
+      // TODO update this with any choices
+      if(formValues.numberOfMeals == 1 && (formValues.mealChoice === 'Prime Rib' || formValues.mealChoice === 'Chicken')) {
         return 1;
       }
       return formValues.numberOfMeat ? formValues.numberOfMeat : 0;
@@ -111,7 +117,7 @@ export class RsvpComponent implements OnInit {
   getNumberOfSalmon() {
     const formValues = this.rsvpForm.value;
     if(this.displayMealChoices() && formValues.numberOfMeals > 0) {
-      if(formValues.numberOfMeals == 1 && formValues.mealChoice === 'Salmon') {
+      if(formValues.numberOfMeals == 1 && (formValues.mealChoice === 'Salmon' || formValues.mealChoice === 'Fish')) {
         return 1;
       }
       return formValues.numberOfFish ? formValues.numberOfFish : 0;
@@ -121,12 +127,23 @@ export class RsvpComponent implements OnInit {
     }
   }
 
+  getMeatChoice() {
+    const mealChoices = this.event.earlyBirdOptions.choices;
+    return mealChoices[0] != null ? mealChoices[0] : 'Meat';
+  }
+
+  getFishChoice() {
+    const mealChoices = this.event.earlyBirdOptions.choices;
+    return mealChoices[1] != null ? mealChoices[1] : 'Fish';
+  }
+
   getMealSelection() {
     const formValues = this.rsvpForm.value;
+    const mealChoices = this.event.earlyBirdOptions.choices;
     if(this.displayMealChoices() && formValues.numberOfMeals > 1) {
       let numberOfMeat = formValues.numberOfMeat ? formValues.numberOfMeat : "0";
       let numberOfFish = formValues.numberOfFish ? formValues.numberOfFish : "0";
-      return "Prime Rib: " + numberOfMeat + " Salmon: " + numberOfFish;
+      return mealChoices[0] + ": " + numberOfMeat + " " + mealChoices[1] +": " + numberOfFish;
     }
     else if(this.displayMealChoices() && formValues.numberOfMeals == 1) {
       return formValues.mealChoice;
@@ -161,6 +178,7 @@ export class RsvpComponent implements OnInit {
     this.earlyBirdChecked = false;
     this.rsvpForm.get('mealChoice')?.setValue('Prime Rib');
     this.rsvpForm.get('numberOfMeals')?.setValue(1);
+    this.rsvpForm.get('numberOfAttendees')?.setValue(1);
   }
 
   toggleChecked() {
@@ -168,14 +186,11 @@ export class RsvpComponent implements OnInit {
     this.rsvpForm.get('earlyBirdDinner')?.setValue(this.earlyBirdChecked);
   }
 
-  /**
-   * Turned off until further notice from WM
-   */
   displayEarlyBirdCheckbox() {
-    // let earlyBirdOptions = this.event.earlyBirdOptions;
-    // if(earlyBirdOptions !== undefined) {
-    //   return earlyBirdOptions.cost !== "";
-    // }
+    let earlyBirdOptions = this.event.earlyBirdOptions;
+    if(earlyBirdOptions !== undefined) {
+      return earlyBirdOptions.cost !== "";
+    }
     return false;
   }
 
