@@ -280,8 +280,8 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
-      "choices": []
+      "cost": "12",
+      "choices": ["Chicken", "Fish"]
     }
   },
   {
@@ -337,8 +337,8 @@
     "tyled": false,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
-      "choices": []
+      "cost": "12",
+      "choices": ["Prime Rib", "Salmon"]
     }
   },
   {
@@ -356,7 +356,7 @@
     "tyled": false,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "12",
       "choices": []
     }
   },
@@ -394,8 +394,8 @@
     "tyled": false,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
-      "choices": []
+      "cost": "12",
+      "choices": ["Prime Rib", "Salmon"]
     }
   },
   {
@@ -476,8 +476,8 @@
   },
   {
     "date": "2022/10/19 17:30",
-    "name": "Stated Meeting",
-    "description": "Past Masters' Night",
+    "name": "Past Masters' Night",
+    "description": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -489,8 +489,8 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
-      "choices": []
+      "cost": "12",
+      "choices": ["Prime Rib", "Salmon"]
     }
   },
   {

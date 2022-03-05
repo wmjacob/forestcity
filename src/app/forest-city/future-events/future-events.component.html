@@ -23,11 +23,11 @@
                                     {{event.description}}
                                 </div>
                                 <div class="future-events-list-item-location text-base d-flex flex-wrap">
-                                    <!-- <div>
-                                        {{ getEarlyBirdOptions(event.earlyBirdOptions) }}&nbsp;|&nbsp;
-                                    </div> -->
                                     <div>
                                         <a class="text-base" [href]="event.addressLink" target="_blank">{{ event.address }}</a>
+                                    </div>
+                                    <div *ngIf="getEarlyBirdOptions(event.earlyBirdOptions)">
+                                        &nbsp;|&nbsp;{{ getEarlyBirdOptions(event.earlyBirdOptions) }}
                                     </div>
                                 </div>
                             </div>

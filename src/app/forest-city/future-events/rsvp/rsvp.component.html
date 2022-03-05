@@ -77,7 +77,7 @@
                                     [checked]="earlyBirdChecked"
                                     (click)="toggleChecked()"
                                     value="earlyBirdChecked">
-                                <label class="usa-checkbox__label" for="early-bird-dinner">Will Attend Dinner {{ event.earlyBirdOptions.time }}</label>
+                                <label class="usa-checkbox__label" for="early-bird-dinner">Will Attend Dinner {{ event.earlyBirdOptions.time }} | Cost: ${{ event.earlyBirdOptions.cost }} per meal</label>
                             </div>
                             <div *ngIf="earlyBirdChecked">
                                 <label class="usa-label" for="numberOfMeals">Number of Meals:</label>
@@ -93,9 +93,6 @@
                                     <option value=9>9</option>
                                     <option value=10>10</option>
                                 </select>
-                                <div>
-                                    Cost: ${{ event.earlyBirdOptions.cost }} per meal
-                                </div>
                             </div>
                         </div>
                         <div *ngIf="displayMealChoices()" class="mb-3">
