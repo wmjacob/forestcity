@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import events from '@data/events.json';
+import events from '@data/future-events.json';
 import { EventOptions } from "@data/interfaces";
 
 @Component({

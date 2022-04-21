@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PastMaster } from './model/get-past-masters-response';
 import pastMastersList from '@data/past-master-list.json';
-import events from '@data/events.json';
+import events from '@data/future-events.json';
 
 @Component({
   selector: 'fcl-past-masters',
