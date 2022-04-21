@@ -304,9 +304,9 @@
     }
   },
   {
-    "date": "2022/05/04 19:30",
+    "date": "2022/05/04 17:30",
     "name": "Stated Meeting",
-    "description": "",
+    "description": "Master Mason Degree",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -314,7 +314,7 @@
     "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
-    "altText": "Courtesy Discovery Photo",
+    "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
@@ -333,7 +333,7 @@
     "rsvpExpirationDays": "3",
     "spotlight": true,
     "spotlightImage": "lights.jpeg",
-    "altText": "",
+    "altText": "Courtesy Discovery Photo",
     "tyled": false,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
