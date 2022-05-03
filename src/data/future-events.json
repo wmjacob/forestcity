@@ -357,7 +357,7 @@
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
       "cost": "12",
-      "choices": []
+      "choices": ["Chicken", "Fish"]
     }
   },
   {
