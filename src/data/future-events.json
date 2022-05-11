@@ -380,25 +380,6 @@
     }
   },
   {
-    "date": "2022/06/29 19:30",
-    "name": "Special Meeting",
-    "description": "Sports Night",
-    "location": "Forest City Lodge",
-    "address": "Lyndhurst Masonic Temple",
-    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": true,
-    "rsvpExpirationDays": "3",
-    "spotlight": false,
-    "spotlightImage": "",
-    "altText": "",
-    "tyled": false,
-    "earlyBirdOptions": {
-      "time": "(6:30 PM)",
-      "cost": "12",
-      "choices": ["Prime Rib", "Salmon"]
-    }
-  },
-  {
     "date": "2022/08/17 17:30",
     "name": "Steak Roast",
     "description": "",
