@@ -12,6 +12,7 @@ export class PastMastersComponent implements OnInit {
   pastMastersList: PastMaster[] = [];
   pageOfItems: Array<any> = [];
   installationOfOfficers: Array<any> = [];
+  listView: boolean = false;
 
   constructor() {}
 
@@ -48,5 +49,9 @@ export class PastMastersComponent implements OnInit {
   onChangePage(pageOfItems: Array<any>) {
     this.pageOfItems = pageOfItems;
     window.scroll(0,0);
+  }
+
+  toggleListView() {
+    this.listView = !this.listView;
   }
 }

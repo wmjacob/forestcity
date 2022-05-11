@@ -1,25 +1,52 @@
 <div class="grid-col-12 padding-y-3 bg-primary-lighter">
     <div class="centered">
         <h2>Past Masters of Forest City Lodge No. 388</h2>
+        <a (click)="toggleListView()" class="button" style="cursor: pointer;">
+            View <span *ngIf="!listView">As List</span><span *ngIf="listView">Original</span>
+        </a>
     </div>
 </div>
 <br>
-<div class="usa-card-group grid-col pmContainer">
-    <div *ngFor="let master of pageOfItems">
-        <div class="grid-col usa-card">
-            <div class="usa-card__container fclCardContainer">
-                <header class="usa-card__header bg-primary-lighter fclCardHeader">
-                    <h2 class="usa-card__heading centered text-bold"> {{ master.name }} </h2>
-                </header>
-                <div class="fclCardHeaderLine"></div>
-                <div class="centered">
-                    <div class="fclImageContainer">
-                        <img src="{{ master.imgUrl }}"/>
+<div *ngIf="!listView">
+    <div class="usa-card-group grid-col pmContainer">
+        <div *ngFor="let master of pageOfItems">
+            <div class="grid-col usa-card">
+                <div class="usa-card__container fclCardContainer">
+                    <header class="usa-card__header bg-primary-lighter fclCardHeader">
+                        <h2 class="usa-card__heading centered text-bold"> {{ master.name }} </h2>
+                    </header>
+                    <div class="fclCardHeaderLine"></div>
+                    <div class="centered">
+                        <div class="fclImageContainer">
+                            <img src="{{ master.imgUrl }}"/>
+                        </div>
+                        <h4> {{ master.term }} </h4>
                     </div>
-                    <h4> {{ master.term }} </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <jw-pagination [items]="pastMastersList" (changePage)="onChangePage($event)"></jw-pagination>
+</div>
+<div *ngIf="listView">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 text-center my-3">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover align-middle">
+                        <tr>
+                            <th>Worshipful Master</th>
+                            <th>Year</th>
+                        </tr>
+                        <tbody *ngFor="let master of pastMastersList; index as i">
+                            <tr [ngClass]="{'table-info': i%2==0, 'table-light': i%2==1}">
+                                <td>{{master.name}}</td>
+                                <td>{{master.term}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<jw-pagination [items]="pastMastersList" (changePage)="onChangePage($event)"></jw-pagination>
