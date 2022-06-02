@@ -382,7 +382,7 @@
   {
     "date": "2022/08/17 17:30",
     "name": "Steak Roast",
-    "description": "",
+    "description": "5 - 8:30 PM",
     "location": "Solon Community Park",
     "address": "6679 Som Center Rd",
     "addressLink": "https://goo.gl/maps/W2qoHpmXe8iQuvcy6",
@@ -393,8 +393,8 @@
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "(5:30 PM)",
-      "cost": "20",
+      "time": "(5:00 PM)",
+      "cost": "16",
       "choices": []
     }
   },
