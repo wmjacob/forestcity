@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module } from "ng-recaptcha";
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
@@ -61,7 +63,8 @@ import { JwBltPaginationComponent } from './forest-city/past-bulletins/paginatio
     FormsModule,
     HttpClientModule,
     GalleryModule,
-    LightboxModule
+    LightboxModule,
+    RecaptchaV3Module
   ],
   providers: [
     PastMastersService,
@@ -77,8 +80,11 @@ import { JwBltPaginationComponent } from './forest-city/past-bulletins/paginatio
       useValue: {
         keyboardShortcuts: true
       }
+    },
+    {
+      provide: RECAPTCHA_V3_SITE_KEY,
+      useValue: "6LcHyzQgAAAAAGJyWSdZaYUvo-WV81vRac7ydxNn"
     }
-
   ],
   bootstrap: [AppComponent]
 })

@@ -1,16 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 import { AlertService } from '@services/alert';
 import { EmailService } from '@services/email';
+import { ReCaptchaV3Service } from 'ng-recaptcha';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.scss']
 })
-export class ContactUsComponent implements OnInit {
+export class ContactUsComponent implements OnInit, OnDestroy {
   disableButton: boolean = false;
+  recaptchaSub: Subscription = Subscription.EMPTY;
 
   contactUsForm: FormGroup = new FormGroup({
     firstName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
@@ -20,13 +23,24 @@ export class ContactUsComponent implements OnInit {
     message: new FormControl('', [Validators.required])
   });
 
-  constructor(private emailService: EmailService, private alertService: AlertService) { }
+  constructor(private emailService: EmailService,
+              private alertService: AlertService,
+              private recaptchaV3Service: ReCaptchaV3Service) { }
 
   ngOnInit(): void {
     window.scrollTo(0, 0);
   }
 
+  ngOnDestroy(): void {
+    if(this.recaptchaSub) {
+      this.recaptchaSub.unsubscribe();
+    }
+  }
+
   async onSubmit(): Promise<void> {
+    this.recaptchaSub = this.recaptchaV3Service.execute('submitContactUs')
+      .subscribe((token) => this.handleToken(token));
+
     this.disableButton = true;
     window.scrollTo(0, 0);
     const response = await this.emailService.sendEmail({
@@ -56,5 +70,11 @@ export class ContactUsComponent implements OnInit {
 
   clearForm() {
     this.contactUsForm.reset();
+  }
+
+  handleToken(token: string) {
+    console.log('received token:' + token);
+    // TODO make backend call with token, secret key, will receive json object back
+    
   }
 }
