@@ -14,6 +14,7 @@ import { ImageGalleryComponent } from './forest-city/image-gallery/image-gallery
 import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-collection/gallery-collection.component';
 import { RecentEventsComponent } from './forest-city/recent-events/recent-events.component';
 import { PastBulletinsComponent } from './forest-city/past-bulletins/past-bulletins.component';
+import { OperationBackpackComponent } from './forest-city/temp-events/operation-backpack/operation-backpack.component';
 
 const IMAGE_GALLERY_URL = 'image-gallery';
 
@@ -78,6 +79,10 @@ const routes: Routes = [
       {
         path: 'past-bulletins',
         component: PastBulletinsComponent
+      },
+      {
+        path: 'operation-backpack',
+        component: OperationBackpackComponent
       }
     ]
   },
