@@ -29,6 +29,7 @@ import { JwImgPaginationComponent } from './forest-city/image-gallery/pagination
 import { RecentEventsComponent } from './forest-city/recent-events/recent-events.component';
 import { PastBulletinsComponent } from './forest-city/past-bulletins/past-bulletins.component';
 import { JwBltPaginationComponent } from './forest-city/past-bulletins/pagination/jw-blt-pagination.component';
+import { OperationBackpackComponent } from './forest-city/temp-events/operation-backpack/operation-backpack.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +52,8 @@ import { JwBltPaginationComponent } from './forest-city/past-bulletins/paginatio
     GalleryCollectionComponent,
     RecentEventsComponent,
     PastBulletinsComponent,
-    JwBltPaginationComponent
+    JwBltPaginationComponent,
+    OperationBackpackComponent
   ],
   imports: [
     BrowserModule,
