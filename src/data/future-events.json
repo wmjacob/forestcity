@@ -511,5 +511,24 @@
       "cost": "6",
       "choices": []
     }
+  },
+  {
+    "date": "2022/11/16 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
   }
 ]
