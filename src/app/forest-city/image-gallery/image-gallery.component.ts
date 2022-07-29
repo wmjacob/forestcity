@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { PhotoAlbum } from '@data/interfaces';
 import albums from '@data/photo-albums.json';
+import { LocalStorageService } from '@services/localStorageService';
 
 @Component({
   selector: 'fcl-image-gallery',
@@ -13,7 +14,16 @@ export class ImageGalleryComponent implements OnInit {
   albums: PhotoAlbum[] = [];
 
   constructor(private router: Router,
-              private route: ActivatedRoute) { }
+              private route: ActivatedRoute,
+              private localStorageService: LocalStorageService) {
+    router.events.subscribe((event) => {
+      if(event instanceof NavigationStart) {
+        if(!event.url.includes('image-gallery')) {
+          this.localStorageService.clearData();
+        }
+      }
+    });
+  }
 
   ngOnInit(): void {
     this.albums = albums;
