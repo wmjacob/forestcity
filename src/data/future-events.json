@@ -530,5 +530,499 @@
       "cost": "",
       "choices": []
     }
+  },
+  {
+    "date": "2022/11/30 19:30",
+    "name": "Installation of Officers",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2022/12/07 19:30",
+    "name": "Brotherhood Night",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/01/04 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/01/18 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/02/01 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/02/15 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/03/01 19:30",
+    "name": "Valentine's Night",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/03/15 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/03/29 19:30",
+    "name": "Special Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/04/05 19:30",
+    "name": "Stated Meeting",
+    "description": "Passover / Fun Night",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/04/19 19:30",
+    "name": "Annual Inspection",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/05/03 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/05/17 19:30",
+    "name": "Awards Night",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/05/31 19:30",
+    "name": "Special Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/06/07 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/06/21 19:30",
+    "name": "Table Lodge",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/08/16 19:30",
+    "name": "Steak Roast",
+    "description": "",
+    "location": "TBD",
+    "address": "TBD",
+    "addressLink": "",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/08/30 19:30",
+    "name": "Special Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/09/06 19:30",
+    "name": "Memorial Night",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/09/20 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/10/04 19:30",
+    "name": "Past Masters Night",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/10/14 11:30",
+    "name": "Appreciation Brunch",
+    "description": "Details TBD",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/10/18 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/11/01 19:30",
+    "name": "Annual Meeting",
+    "description": "Election of Officers",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/11/15 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/11/29 19:30",
+    "name": "Special Meeting",
+    "description": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "0",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
+    }
   }
 ]
