@@ -80,10 +80,10 @@ const routes: Routes = [
         path: 'past-bulletins',
         component: PastBulletinsComponent
       },
-      {
-        path: 'operation-backpack',
-        component: OperationBackpackComponent
-      }
+      // {
+      //   path: 'operation-backpack',
+      //   component: OperationBackpackComponent
+      // }
     ]
   },
   // routes without header or footer
