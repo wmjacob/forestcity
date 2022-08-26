@@ -8,6 +8,7 @@ export interface EventOptions {
     date: string,
     name: string,
     description: string,
+    extraInfo: string,
     location: string,
     address: string,
     addressLink: string,
