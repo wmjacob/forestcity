@@ -33,6 +33,7 @@
     "mjml": "^4.10.3",
     "morgan": "^1.10.0",
     "ng-gallery": "^5.1.1",
+    "ngx-google-analytics": "^11.2.1",
     "node-mailjet": "^3.0.5",
     "nodemailer": "^6.6.3",
     "rxjs": "~6.6.0",
