@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -59,6 +60,7 @@ import { OperationBackpackComponent } from './forest-city/temp-events/operation-
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    NgxGoogleAnalyticsModule.forRoot('G-XVY2D29X41'),
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
