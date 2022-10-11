@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 
 import { EmailService } from '@services/email';
 import { AlertService } from '@services/alert';
@@ -17,17 +17,17 @@ export class RsvpComponent implements OnInit {
   earlyBirdChecked: boolean = false;
   mealChoice: boolean = false;
 
-  rsvpForm: FormGroup = new FormGroup({
-    firstName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
-    lastName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
-    masonicTitle: new FormControl('', [Validators.pattern("[-,\\w\\s]*")]),
-    email: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
-    earlyBirdDinner: new FormControl(false),
-    numberOfMeals: new FormControl('1'),
-    mealChoice: new FormControl('Prime Rib'),
-    numberOfMeat: new FormControl(''),
-    numberOfFish: new FormControl(''),
-    numberOfAttendees: new FormControl('1')
+  rsvpForm: UntypedFormGroup = new UntypedFormGroup({
+    firstName: new UntypedFormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
+    lastName: new UntypedFormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
+    masonicTitle: new UntypedFormControl('', [Validators.pattern("[-,\\w\\s]*")]),
+    email: new UntypedFormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
+    earlyBirdDinner: new UntypedFormControl(false),
+    numberOfMeals: new UntypedFormControl('1'),
+    mealChoice: new UntypedFormControl('Prime Rib'),
+    numberOfMeat: new UntypedFormControl(''),
+    numberOfFish: new UntypedFormControl(''),
+    numberOfAttendees: new UntypedFormControl('1')
   });
 
   constructor(private emailService: EmailService,

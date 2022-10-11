@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl, Validators } from '@angular/forms';
 
 import { AlertService } from '@services/alert';
 import { EmailService } from '@services/email';
@@ -12,12 +12,12 @@ import { EmailService } from '@services/email';
 export class ContactUsComponent implements OnInit {
   disableButton: boolean = false;
 
-  contactUsForm: FormGroup = new FormGroup({
-    firstName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
-    lastName: new FormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
-    email: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
-    phoneNumber: new FormControl('', [Validators.pattern("^[0-9\\s\\-\\(\\)\\+\\/]+(?:[\\.][0-9\\s\\-]+){0,2}(?:(?:ext|x)\\s?[0-9]+)?$")]),
-    message: new FormControl('', [Validators.required])
+  contactUsForm: UntypedFormGroup = new UntypedFormGroup({
+    firstName: new UntypedFormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
+    lastName: new UntypedFormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
+    email: new UntypedFormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
+    phoneNumber: new UntypedFormControl('', [Validators.pattern("^[0-9\\s\\-\\(\\)\\+\\/]+(?:[\\.][0-9\\s\\-]+){0,2}(?:(?:ext|x)\\s?[0-9]+)?$")]),
+    message: new UntypedFormControl('', [Validators.required])
   });
 
   constructor(private emailService: EmailService, private alertService: AlertService) { }

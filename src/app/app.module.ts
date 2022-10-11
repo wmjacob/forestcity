@@ -31,6 +31,7 @@ import { RecentEventsComponent } from './forest-city/recent-events/recent-events
 import { PastBulletinsComponent } from './forest-city/past-bulletins/past-bulletins.component';
 import { JwBltPaginationComponent } from './forest-city/past-bulletins/pagination/jw-blt-pagination.component';
 import { OperationBackpackComponent } from './forest-city/temp-events/operation-backpack/operation-backpack.component';
+import { GoldenSquarePMComponent } from './forest-city/golden-square/past-masters/golden-square-pm.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +55,8 @@ import { OperationBackpackComponent } from './forest-city/temp-events/operation-
     RecentEventsComponent,
     PastBulletinsComponent,
     JwBltPaginationComponent,
-    OperationBackpackComponent
+    OperationBackpackComponent,
+    GoldenSquarePMComponent
   ],
   imports: [
     BrowserModule,
