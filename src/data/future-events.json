@@ -127,16 +127,16 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
-    "spotlight": false,
-    "spotlightImage": "",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": true,
+    "spotlightImage": "lights.jpeg",
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
-      "choices": []
+      "time": "(6:30 PM)",
+      "cost": "12",
+      "choices": ["Prime Rib", "Salmon"]
     }
   },
   {
@@ -147,16 +147,16 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
-    "spotlight": false,
-    "spotlightImage": "",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": true,
+    "spotlightImage": "brotherhood-night.jpg",
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
-      "choices": []
+      "time": "(6:30 PM)",
+      "cost": "12",
+      "choices": ["Prime Rib", "Salmon"]
     }
   },
   {
