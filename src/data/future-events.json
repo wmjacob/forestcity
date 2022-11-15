@@ -167,15 +167,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -187,15 +187,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -207,15 +207,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -227,15 +227,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -247,15 +247,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "12",
       "choices": []
     }
   },
@@ -267,15 +267,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -287,15 +287,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -307,15 +307,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -327,15 +327,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "12",
       "choices": []
     }
   },
@@ -347,15 +347,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -367,15 +367,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -387,15 +387,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -407,15 +407,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -427,15 +427,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -447,15 +447,15 @@
     "location": "TBD",
     "address": "TBD",
     "addressLink": "",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "5",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(5:30 PM)",
+      "cost": "20",
       "choices": []
     }
   },
@@ -467,15 +467,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -487,15 +487,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "12",
       "choices": []
     }
   },
@@ -507,15 +507,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -527,15 +527,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "12",
       "choices": []
     }
   },
@@ -567,15 +567,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -587,15 +587,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -607,15 +607,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   },
@@ -627,15 +627,15 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
-    "rsvpExpirationDays": "0",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "",
-      "cost": "",
+      "time": "(6:30 PM)",
+      "cost": "6",
       "choices": []
     }
   }
