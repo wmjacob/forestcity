@@ -4,11 +4,15 @@ const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
 
 const GOOGLE_EMAIL_SECRET = 'email-credentials'
 const GOOGLE_MAILJET_SECRET = 'mailjet-credentials';
+const WM_EMAIL_SECRET = 'worshipful-master-email';
 const SECRETARY_EMAIL_SECRET = 'secretary-email';
+const ASSOC_SECRETARY_EMAIL_SECRET = 'associate-secretary-email';
 const FCL_NAME = 'Forest City Lodge #388';
 
 const FCL_SECRETARY_NAME = 'Forest City Lodge Secretary';
 const FCL_CONTACTS_NAME = 'Forest City Lodge Contacts';
+const FCL_WM_NAME = 'Forest City Lodge Worshipful Master';
+const FCL_ASSC_SEC_NAME = 'Forest City Lodge Assc. Secretary';
 
 const getAuth = async (secretCredentials) => {
     if (process.env.NODE_ENV !== 'development') {
@@ -56,12 +60,6 @@ mailjetRouter.post('/rsvp', async function(req, res) {
                     "Name": FCL_NAME
                 },
                 "To": [
-                    {
-                        "Email": FCL_SECRETARY_EMAIL,
-                        "Name": FCL_SECRETARY_NAME
-                    }
-                ],
-                "Cc": [
                     {
                         "Email": FCL_CONTACTS_EMAIL,
                         "Name": FCL_CONTACTS_NAME
@@ -139,8 +137,14 @@ mailjetRouter.post('/contact-us', async function(req, res) {
         const gmailCreds = await getAuth(GOOGLE_EMAIL_SECRET);
         const FCL_CONTACTS_EMAIL = gmailCreds.user;
 
+        const wmCreds = await getAuth(WM_EMAIL_SECRET);
+        const FCL_WM_EMAIL = wmCreds.email;
+
         const secretaryCreds = await getAuth(SECRETARY_EMAIL_SECRET);
         const FCL_SECRETARY_EMAIL = secretaryCreds.email;
+
+        const assocSecretaryCreds = await getAuth(ASSOC_SECRETARY_EMAIL_SECRET);
+        const FCL_ASSC_SEC_EMAIL = assocSecretaryCreds.email;
 
         const data = req.body;
         const subject = data.subject;
@@ -165,6 +169,14 @@ mailjetRouter.post('/contact-us', async function(req, res) {
                     {
                         "Email": FCL_CONTACTS_EMAIL,
                         "Name": FCL_CONTACTS_NAME
+                    },
+                    {
+                        "Email": FCL_WM_EMAIL,
+                        "Name": FCL_WM_NAME
+                    },
+                    {
+                        "Email": FCL_ASSC_SEC_EMAIL,
+                        "Name": FCL_ASSC_SEC_NAME
                     }
                 ],
                 "TemplateID": 3210113,
@@ -176,6 +188,9 @@ mailjetRouter.post('/contact-us', async function(req, res) {
                     "email": data.email,
                     "phoneNumber": data.phoneNumber,
                     "message": data.message
+                },
+                "Headers": {
+                    "ReplyTo": data.email
                 },
                 "CustomID": "contactUsConfirmationToSecretary"
             },
