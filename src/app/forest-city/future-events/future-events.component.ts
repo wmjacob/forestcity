@@ -31,7 +31,7 @@ export class FutureEventsComponent implements OnInit {
   }
 
   getTyled(tyled: boolean) {
-    return tyled ? 'Tyled' : 'Open';
+    return tyled ? 'Tyled: Masons Only' : 'Open to All';
   }
 
   hasEventPassed(date: string): boolean {

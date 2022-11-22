@@ -160,6 +160,26 @@
     }
   },
   {
+    "date": "2022/12/21 19:30",
+    "name": "Stated Meeting",
+    "description": "EA Degree",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30 PM)",
+      "cost": "6",
+      "choices": []
+    }
+  },
+  {
     "date": "2023/01/04 19:30",
     "name": "Stated Meeting",
     "description": "",
