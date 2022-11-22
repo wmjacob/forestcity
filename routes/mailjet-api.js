@@ -165,7 +165,7 @@ mailjetRouter.post('/contact-us', async function(req, res) {
                         "Name": FCL_SECRETARY_NAME
                     }
                 ],
-                "Cc": [
+                "Bcc": [
                     {
                         "Email": FCL_CONTACTS_EMAIL,
                         "Name": FCL_CONTACTS_NAME
@@ -190,7 +190,7 @@ mailjetRouter.post('/contact-us', async function(req, res) {
                     "message": data.message
                 },
                 "Headers": {
-                    "ReplyTo": data.email
+                    "Reply-To": recipientEmail
                 },
                 "CustomID": "contactUsConfirmationToSecretary"
             },
