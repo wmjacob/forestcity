@@ -122,8 +122,8 @@
   {
     "date": "2022/11/30 19:30",
     "name": "Installation of Officers",
-    "description": "",
-    "extraInfo": "",
+    "description": "POSTPONED",
+    "extraInfo": "Postponed - Moved to 12/10/2022",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -141,8 +141,8 @@
   },
   {
     "date": "2022/12/07 19:30",
-    "name": "Brotherhood Night",
-    "description": "",
+    "name": "49th Annual Brotherhood Night",
+    "description": "A Night with the Clergy",
     "extraInfo": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -157,6 +157,26 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
+    }
+  },
+  {
+    "date": "2022/12/10 13:00",
+    "name": "Installation of Officers",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
+    "spotlight": true,
+    "spotlightImage": "lights.jpeg",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "",
+      "cost": "",
+      "choices": []
     }
   },
   {
@@ -263,7 +283,7 @@
     "date": "2023/03/01 19:30",
     "name": "Valentine's Night",
     "description": "",
-    "extraInfo": "",
+    "extraInfo": "Organized by Kandi Zeligson",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
