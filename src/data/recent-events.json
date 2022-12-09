@@ -1,5 +1,61 @@
 [
     {
+        "eventName": "49th Annual Brotherhood Night",
+        "eventId": "brotherHoodNight2022",
+        "displayDate": "Wednesday, December 7th, 2022",
+        "description": "Our 49th Annual Brotherhood Night, A Night With The Clergy, and Candle Lighting Ceremony. We welcomed special guest speakers Reverend Joseph Hilinski, Interfaith Director for the Diocese of Cleveland; Rabbi Jonathan Cohen from Temple Tifereth Israel; Right Worshipful Brother Mark D. Harris, Grand Chaplain; and Most Worshipful Brother Steven M. Grindle, Grand Master of Masons in Ohio. At the end of the evening, we extended donations to six charitable organizations in the name of Brotherhood!",
+        "albumName": "2022_12_07_Brotherhood_Night",
+        "imageUrls": [
+            "087.jpg",
+            "069.jpg",
+            "111.jpg",
+            "048.jpg"
+        ],
+        "slideLabels": [
+            "Candle Lighting Ceremony",
+            "Line-up of speakers",
+            "Grand Officers and Officers of FCL",
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2021/12/15"
+    },
+    {
+        "eventName": "Installation of District Officers",
+        "eventId": "districtOfficersInstallation2022",
+        "displayDate": "Wednesday, November 16th, 2022",
+        "description": "Forest City Lodge No. 388's very own Shawn Franks and Tim Cline were installed as District Education Officer and District Deputy Grand Master, respectively, for the Tremendous 22nd Masonic District of Ohio! Congratulations!",
+        "albumName": "2022_11_16_District_Officer_Installation",
+        "imageUrls": [
+            "045.jpg",
+            "104.jpg",
+            "108.jpg",
+            "139.jpg",
+            "144.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2022/11/16"
+    },
+    {
+        "eventName": "2022 Annual Inspection",
+        "eventId": "2022inspection",
+        "displayDate": "Wednesday, April 6th, 2022",
+        "description": "This year, our inspection was in the EA Degree, and quite the turnout we had that evening! Special thanks to the PHA Brethren from Excelsior Lodge for helping to make the night extra special!",
+        "albumName": "2022_04_06_Inspection",
+        "imageUrls": [
+            "013.JPG"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2022/04/06"
+
+    },
+    {
         "eventName": "At Refreshment",
         "eventId": "march02AtRefreshment2022",
         "displayDate": "Wednesday, March 2nd, 2022",
