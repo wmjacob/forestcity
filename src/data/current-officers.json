@@ -1,29 +1,29 @@
 [
     {
-        "name": "Ryan E. Stuver",
+        "name": "Jason A. Kiner",
         "office": "Worshipful Master",
-        "image": "past_masters/2021-2022_ryan_e_stuver.JPG",
-        "bio": "Sales professional selling complex solutions in the independent automotive aftermarket. Mediocre golfer, Cleveland sports junkie, and a soccer nut. Proud 4th generation Mason.",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
         "jewel": "worshipful_master.png"
     },
     {
-        "name": "Jason A. Kiner",
+        "name": "Ronald E. Stuver",
         "office": "Senior Warden",
-        "image": "current-officers/square_and_compasses.jpg",
-        "bio": "",
+        "image": "current-officers/ronald_e_stuver.jpg",
+        "bio": "Small business owner consulting in the field of Industry 4.0.  An avid long distance runner who also enjoys the game of soccer.  Proud 3rd generation Mason with two sons who are also Masons.",
         "jewel": "senior_warden.png"
     },
     {
-        "name": "Ronald E. Stuver",
+        "name": "Dylan S. Marsh",
         "office": "Junior Warden",
-        "image": "current-officers/ronald_e_stuver.jpg",
-        "bio": "Small business owner consulting in the field of Industry 4.0.  An avid long distance runner who also enjoys the game of soccer.  Proud 3rd generation Mason with two sons who are also Masons.",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
         "jewel": "junior_warden.png"
     },
     {
-        "name": "Dylan S. Marsh",
+        "name": "James D. Paluf",
         "office": "Senior Deacon",
-        "image": "current-officers/square_and_compasses.jpg",
+        "image": "current-officers/james_d_paluf.jpg",
         "bio": "",
         "jewel": "senior_deacon.png"
     },
@@ -70,17 +70,17 @@
         "jewel": "chaplain.png"
     },
     {
-        "name": "James D. Paluf",
+        "name": "David L. Jones",
         "office": "Senior Steward",
-        "image": "current-officers/james_d_paluf.jpg",
-        "bio": "",
+        "image": "current-officers/david_l_jones.jpg",
+        "bio": "Software Developer. Currently working on a faster 5K time (P.R. 29:43). Also currently struggling to both encourage and contain the curiosity of a 3 year old toddler... and Go Browns!",
         "jewel": "steward.png"
     },
     {
-        "name": "David L. Jones",
+        "name": "Nam Do",
         "office": "Junior Steward",
-        "image": "current-officers/david_l_jones.jpg",
-        "bio": "Software Developer. Currently working on a faster 5K time (P.R. 29:43). Also currently struggling to both encourage and contain the curiosity of a 2 year old toddler... and Go Browns!",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
         "jewel": "steward.png"
     },
     {
