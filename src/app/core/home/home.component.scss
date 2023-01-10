@@ -1,5 +1,5 @@
 .fcl-home-welcome {
-    background: url(../../../assets/images/officers_2021_2022.webp) no-repeat center;
+    background: url(../../../assets/images/officers_2022_2023.jpg) no-repeat center;
     background-size: cover;
     height: 785px;
     position: relative;
@@ -9,7 +9,15 @@
     }
 
     @media screen and (max-width: 425px) {
-        height: 425px;
+        height: 350px;
+    }
+
+    @media screen and (max-width: 375px) {
+        height: 325px;
+    }
+
+    @media screen and (max-width: 320px) {
+        height: 275px;
     }
 }
 
