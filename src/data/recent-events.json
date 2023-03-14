@@ -1,5 +1,78 @@
 [
     {
+        "eventName": "Valentine's Day Event 2023",
+        "eventId": "valentinesDayEvent2023",
+        "displayDate": "Wednesday, March 1st, 2023",
+        "description": "Kandice Zeligson and W.B. Bill Zeligson once again pulled out all the stops to put our Valentine's Day Dinner Event together! Dinner was wonderful, as was the fellowship, and the evening's entertainment provided by Kristine Jackson was phenomenal as well.",
+        "albumName": "2023_03_01_Valentines_Day_Event",
+        "imageUrls": [
+            "004.jpg",
+            "006.jpg",
+            "018.jpg",
+            "020.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/02/13"
+    },
+    {
+        "eventName": "GLO Mason Monday",
+        "eventId": "masonMondayHighlight",
+        "displayDate": "Monday, February 13th, 2023",
+        "description": "Our very own Nam Do, Junior Steward, was highlighted in the Grand Lodge of Ohio's Mason Monday campaign. Congratulations Nam!",
+        "albumName": "Mason_Monday",
+        "imageUrls": [
+            "2023_02_13.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/02/13"
+    },
+    {
+        "eventName": "Pancake Breakfast Fundraiser",
+        "eventId": "pancakeBreakfastFundraiser2023",
+        "displayDate": "Saturday, January 21st, 2023",
+        "description": "What a successful event!  So very happy to have partnered with the South Euclid-Lyndhurst elementry school PTAs to raise money for new playgrounds. Thank you to everyone who helped and supported the cause!",
+        "albumName": "2023_01_21_Pancake_Breakfast",
+        "imageUrls": [
+            "004.jpg",
+            "001.jpg",
+            "002.jpg",
+            "018.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/01/21"
+    },
+    {
+        "eventName": "Installation of Lodge Officers",
+        "eventId": "lodgeOfficerInstallation2022",
+        "displayDate": "Saturday, December 10th, 2022",
+        "description": "WB Jason A. Kiner was installed as Worshipful Master of Forest City Lodge No. 388, as well as his elected and appointed officers. Congratulations to all! Special thanks to the installing officers for all of their hard work!",
+        "albumName": "2022_12_10_Officers_Installation",
+        "imageUrls": [
+            "030.jpg",
+            "037.jpg",
+            "042.jpg",
+            "062.jpg",
+            "081.jpg"
+        ],
+        "slideLabels": [
+            "WM Jason Kiner",
+            "SW Ron Stuver",
+            "JW Dylan Marsh",
+            "SD Jim Paluf"
+        ],
+        "slideContent": [],
+        "eventDate": "2022/12/15"
+    },
+    {
         "eventName": "49th Annual Brotherhood Night",
         "eventId": "brotherHoodNight2022",
         "displayDate": "Wednesday, December 7th, 2022",
@@ -14,11 +87,11 @@
         "slideLabels": [
             "Candle Lighting Ceremony",
             "Line-up of speakers",
-            "Grand Officers and Officers of FCL",
+            "Grand Lodge Officers and Officers of FCL",
             ""
         ],
         "slideContent": [],
-        "eventDate": "2021/12/15"
+        "eventDate": "2022/12/15"
     },
     {
         "eventName": "Installation of District Officers",
