@@ -376,7 +376,7 @@
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
       "cost": "12",
-      "choices": []
+      "choices": ["Chicken", "Salmon"]
     }
   },
   {
@@ -415,8 +415,8 @@
     "tyled": false,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
-      "choices": []
+      "cost": "12",
+      "choices": ["Prime Rib", "Salmon"]
     }
   },
   {
