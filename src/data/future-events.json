@@ -408,7 +408,7 @@
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
     "rsvpOptions": true,
-    "rsvpExpirationDays": "1",
+    "rsvpExpirationDays": "3",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
@@ -676,6 +676,26 @@
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
       "cost": "6",
+      "choices": []
+    }
+  },
+  {
+    "date": "2023/12/06 19:30",
+    "name": "50th Annual Brotherhood Night",
+    "description": "A Night with the Clergy",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": true,
+    "spotlightImage": "brotherhood-night.jpg",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30 PM)",
+      "cost": "12",
       "choices": []
     }
   }
