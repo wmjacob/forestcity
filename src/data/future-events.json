@@ -380,9 +380,9 @@
     }
   },
   {
-    "date": "2023/05/03 19:30",
+    "date": "2023/05/03 17:30",
     "name": "Stated Meeting",
-    "description": "",
+    "description": "Master Mason Degree",
     "extraInfo": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -460,10 +460,10 @@
     }
   },
   {
-    "date": "2023/06/21 19:30",
+    "date": "2023/06/21 18:00",
     "name": "Table Lodge",
-    "description": "",
-    "extraInfo": "",
+    "description": "Entered Apprentice Degree",
+    "extraInfo": "Meal Choice TBD",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -474,8 +474,8 @@
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "(6:30 PM)",
-      "cost": "6",
+      "time": "(7:00 PM)",
+      "cost": "12",
       "choices": []
     }
   },
