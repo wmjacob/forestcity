@@ -462,19 +462,19 @@
   {
     "date": "2023/06/21 18:00",
     "name": "Table Lodge",
-    "description": "Entered Apprentice Degree",
+    "description": "Entered Apprentice Degree at 6:00 PM, Table Lodge at 7:30 PM",
     "extraInfo": "Meal Choice TBD",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
     "rsvpOptions": true,
-    "rsvpExpirationDays": "1",
+    "rsvpExpirationDays": "3",
     "spotlight": true,
     "spotlightImage": "tablelodge.jpeg",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "(7:00 PM)",
+      "time": "(7:30 PM)",
       "cost": "12",
       "choices": []
     }
