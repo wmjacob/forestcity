@@ -109,10 +109,10 @@
                                     </div>
                                 </div>
                                 <div *ngIf="displayMultipleMealChoices()">
-                                    <label class="usa-label" for="numberOfMeat">Number of {{ event.earlyBirdOptions.choices[0] }}:</label>
-                                    <input class="usa-input" type="number" min="0" id="numberOfMeat" formControlName="numberOfMeat">
-                                    <label class="usa-label" for="numberOfFish">Number of {{ event.earlyBirdOptions.choices[1] }}:</label>
-                                    <input class="usa-input" type="number" min="0" id="numberOfFish" formControlName="numberOfFish">
+                                    <div *ngFor="let choice of event.earlyBirdOptions.choices">
+                                        <label class="usa-label" for="{{ choice }}">Number of {{ choice }}:</label>
+                                        <input class="usa-input" type="number" min="0" id="{{ getFormControlName(choice) }}" formControlName="{{ getFormControlName(choice) }}">
+                                    </div>
                                 </div>
                             </fieldset>
                         </div>

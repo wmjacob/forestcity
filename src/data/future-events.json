@@ -463,7 +463,7 @@
     "date": "2023/06/21 18:00",
     "name": "Table Lodge",
     "description": "Entered Apprentice Degree at 6:00 PM, Table Lodge at 7:30 PM",
-    "extraInfo": "Meal Choice TBD",
+    "extraInfo": "Meal Choice: Stuffed Chicken (has dairy), Breaded Chicken, or Salmon",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -476,7 +476,7 @@
     "earlyBirdOptions": {
       "time": "(7:30 PM)",
       "cost": "12",
-      "choices": []
+      "choices": ["Stuffed Chicken", "Breaded Chicken", "Salmon"]
     }
   },
   {

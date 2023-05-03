@@ -42,16 +42,33 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
 
         let sheet = doc.sheetsByTitle[eventNameDate];
         if(sheet) {
-            await sheet.addRow(
-                [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.numberOfPrimeRib, data.numberOfSalmon, data.numberOfAttendees]
-            );
+            if(data.thirdChoice) {
+                await sheet.addRow(
+                    [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.firstChoiceCount, data.secondChoiceCount, data.thirdChoiceCount, data.numberOfAttendees]
+                );
+            }
+            else {
+                await sheet.addRow(
+                    [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.firstChoiceCount, data.secondChoiceCount, data.numberOfAttendees]
+                );
+            }
+
         }
         else {
-            const HEADER_VALUES = ['Last Name', 'First Name', 'Email', 'Early Bird Dinner', 'Number of Meals', data.meatChoice, data.fishChoice, 'Number of Attendees'];
-            sheet = await doc.addSheet({headerValues: HEADER_VALUES, title: eventNameDate});
-            await sheet.addRow(
-                [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.numberOfPrimeRib, data.numberOfSalmon, data.numberOfAttendees]
-            );
+            if(data.thirdChoice) {
+                const HEADER_VALUES = ['Last Name', 'First Name', 'Email', 'Early Bird Dinner', 'Number of Meals', data.firstChoice, data.secondChoice, data.thirdChoice, 'Number of Attendees'];
+                sheet = await doc.addSheet({headerValues: HEADER_VALUES, title: eventNameDate});
+                await sheet.addRow(
+                    [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.firstChoiceCount, data.secondChoiceCount, data.thirdChoiceCount, data.numberOfAttendees]
+                );
+            }
+            else {
+                const HEADER_VALUES = ['Last Name', 'First Name', 'Email', 'Early Bird Dinner', 'Number of Meals', data.firstChoice, data.secondChoice, 'Number of Attendees'];
+                sheet = await doc.addSheet({headerValues: HEADER_VALUES, title: eventNameDate});
+                await sheet.addRow(
+                    [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.firstChoiceCount, data.secondChoiceCount, data.numberOfAttendees]
+                );
+            }
         }
     }
     catch (error) {
