@@ -24,9 +24,7 @@ export class RsvpComponent implements OnInit {
     email: new UntypedFormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
     earlyBirdDinner: new UntypedFormControl(false),
     numberOfMeals: new UntypedFormControl('1'),
-    mealChoice: new UntypedFormControl('Prime Rib'),
-    numberOfMeat: new UntypedFormControl(''),
-    numberOfFish: new UntypedFormControl(''),
+    mealChoice: new UntypedFormControl(''),
     numberOfAttendees: new UntypedFormControl('1')
   });
 
@@ -34,13 +32,19 @@ export class RsvpComponent implements OnInit {
               private sheetsService: SheetsService,
               private alertService: AlertService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
+
+  getFormControlName(choice: string): string {
+    let controlName = 'count' + choice.replace(/\s/g, "");
+    this.rsvpForm.addControl(controlName, new UntypedFormControl(''));
+    return controlName;
+  }
 
   async submitRsvp(): Promise<void> {
     let emailSuccessful: boolean = false;
     this.disableButton = true;
     const request = this.buildRequest();
-    console.log('request= ' + JSON.stringify(request))
     const response = await this.emailService.sendEmail(request, '/mj/api/rsvp');
 
     if (response) {
@@ -80,70 +84,79 @@ export class RsvpComponent implements OnInit {
     let earlyBirdDinner = this.earlyBirdChecked ? "Yes" : "No";
     let numberOfMeals = this.earlyBirdChecked ? formValues.numberOfMeals : 0;
 
-    return {
+    let request = {
       firstName: formValues.firstName,
       lastName: this.getLastName(),
       email: formValues.email,
       date: this.formatEventDate(),
       subject: `RSVP for ${this.event.name} on ${this.formatEventDate()}`,
       event: this.event,
-      numberOfPrimeRib: this.getNumberOfPrimeRib(),
-      numberOfSalmon: this.getNumberOfSalmon(),
-      mealSelection: this.getMealSelection(),
+      numberOfAttendees: formValues.numberOfAttendees,
       earlyBirdDinner: earlyBirdDinner,
+      earlyBirdTime: this.getEarlyBirdTime(),
       numberOfMeals: numberOfMeals,
       costPerMeal: this.getCostPerMeal(),
-      earlyBirdTime: this.getEarlyBirdTime(),
-      numberOfAttendees: formValues.numberOfAttendees,
-      meatChoice: this.getMeatChoice(),
-      fishChoice: this.getFishChoice()
+      mealSelection: this.getMealSelection(),
+      firstChoice: this.getChoiceForIndex(0),
+      firstChoiceCount: this.getNumberOfMealChoice(0),
+      secondChoice: this.getChoiceForIndex(1),
+      secondChoiceCount: this.getNumberOfMealChoice(1),
     }
+
+    if(this.event.earlyBirdOptions.choices.length > 2) {
+      let jsonObj = JSON.parse(JSON.stringify(request));
+      jsonObj.thirdChoice = this.getChoiceForIndex(2)
+      jsonObj.thirdChoiceCount = this.getNumberOfMealChoice(2);
+      request = jsonObj;
+    }
+
+    return request;
   }
 
-  getNumberOfPrimeRib() {
+  getNumberOfMealChoice(index: number) {
     const formValues = this.rsvpForm.value;
+    const mealChoices = this.event.earlyBirdOptions.choices;
     if(this.displayMealChoices() && formValues.numberOfMeals > 0) {
-      // TODO update this with any choices
-      if(formValues.numberOfMeals == 1 && (formValues.mealChoice === 'Prime Rib' || formValues.mealChoice === 'Chicken')) {
+      if(formValues.numberOfMeals == 1 && (formValues.mealChoice === mealChoices[index])) {
         return 1;
       }
-      return formValues.numberOfMeat ? formValues.numberOfMeat : 0;
+      else {
+        let count = this.rsvpForm.get(this.getFormControlName(mealChoices[index]))?.value;
+        return count ? count : 0;
+      }
     }
     else {
       return "-";
     }
   }
 
-  getNumberOfSalmon() {
-    const formValues = this.rsvpForm.value;
-    if(this.displayMealChoices() && formValues.numberOfMeals > 0) {
-      if(formValues.numberOfMeals == 1 && (formValues.mealChoice === 'Salmon' || formValues.mealChoice === 'Fish')) {
-        return 1;
-      }
-      return formValues.numberOfFish ? formValues.numberOfFish : 0;
-    }
-    else {
-      return "-";
-    }
+  getChoiceForIndex(index: number) {
+    const mealChoices = this.event.earlyBirdOptions.choices;
+    return mealChoices[index] != null ? mealChoices[index] : this.getDefaultChoice(index);
   }
 
-  getMeatChoice() {
-    const mealChoices = this.event.earlyBirdOptions.choices;
-    return mealChoices[0] != null ? mealChoices[0] : 'Meat';
+  getDefaultChoice(index: number) {
+    return index === 0 ? 'Meat' : 'Fish';
   }
 
-  getFishChoice() {
+  getChoiceCountForIndex(index: number) {
     const mealChoices = this.event.earlyBirdOptions.choices;
-    return mealChoices[1] != null ? mealChoices[1] : 'Fish';
+    return this.rsvpForm.get(this.getFormControlName(mealChoices[index]))?.value ? this.rsvpForm.get(this.getFormControlName(mealChoices[index]))?.value : 0;
   }
 
   getMealSelection() {
     const formValues = this.rsvpForm.value;
     const mealChoices = this.event.earlyBirdOptions.choices;
     if(this.displayMealChoices() && formValues.numberOfMeals > 1) {
-      let numberOfMeat = formValues.numberOfMeat ? formValues.numberOfMeat : "0";
-      let numberOfFish = formValues.numberOfFish ? formValues.numberOfFish : "0";
-      return mealChoices[0] + ": " + numberOfMeat + " " + mealChoices[1] +": " + numberOfFish;
+      let countFirstChoice = this.getChoiceCountForIndex(0);
+      let countSecondChoice = this.getChoiceCountForIndex(1);
+      if(mealChoices.length < 3) {
+        return mealChoices[0] + ": " + countFirstChoice + " " + mealChoices[1] +": " + countSecondChoice;
+      }
+      else {
+        let countThirdChoice = this.getChoiceCountForIndex(2);
+        return mealChoices[0] + ": " + countFirstChoice + " " + mealChoices[1] +": " + countSecondChoice + " " + mealChoices[2] + ": " + countThirdChoice;
+      }
     }
     else if(this.displayMealChoices() && formValues.numberOfMeals == 1) {
       return formValues.mealChoice;
@@ -202,16 +215,26 @@ export class RsvpComponent implements OnInit {
     return this.rsvpForm.get('numberOfMeals')?.value > 1;
   }
 
+
   disableSubmit() {
     if(this.rsvpForm.invalid || this.disableButton) {
       return true;
     }
     if(this.displayMultipleMealChoices() && this.displayMealChoices()) {
+      const mealChoices = this.event.earlyBirdOptions.choices;
       let numberOfMeals = this.rsvpForm.get('numberOfMeals')?.value;
-      let numberOfMeat = this.rsvpForm.get('numberOfMeat')?.value;
-      let numberOfFish = this.rsvpForm.get('numberOfFish')?.value;
-      if(numberOfMeals != numberOfMeat + numberOfFish) {
-        return true;
+      let countFirstChoice = this.getChoiceCountForIndex(0);
+      let countSecondChoice = this.getChoiceCountForIndex(1);
+      if(mealChoices.length < 3) {
+        if(numberOfMeals != countFirstChoice + countSecondChoice) {
+          return true;
+        }
+      }
+      else {
+        let countThirdChoice = this.getChoiceCountForIndex(2);
+        if(numberOfMeals != countFirstChoice + countSecondChoice + countThirdChoice) {
+          return true;
+        }
       }
     }
     return false;
