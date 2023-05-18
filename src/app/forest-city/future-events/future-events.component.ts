@@ -2,6 +2,7 @@ import { formatDate } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import events from '@data/future-events.json';
 import { EventOptions } from '@data/interfaces';
+import { SheetsService } from '@services/sheets';
 
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' });
@@ -18,8 +19,11 @@ export class FutureEventsComponent implements OnInit {
   rsvpExpDate: string = '';
   rsvpExpTime: string = '';
 
+  constructor(private sheetsService: SheetsService) {}
+
   ngOnInit(): void {
     this.events = events;
+    this.readSheetForGuestLimit();
   }
 
   getDate(date: string) {
@@ -66,5 +70,16 @@ export class FutureEventsComponent implements OnInit {
       return 'Dinner: ' + time + ' Cost: $' + options.cost;
     }
     return '';
+  }
+
+  async readSheetForGuestLimit() {
+    const response = await this.sheetsService.readFromSheet();
+
+    let numberOfAttendees = this.getNumberOfAttendees(response);
+  }
+
+  private getNumberOfAttendees(response: string) {
+    console.log(response);
+    console.log(JSON.stringify(response));
   }
 }
