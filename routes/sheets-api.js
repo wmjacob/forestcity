@@ -77,7 +77,7 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
     response.status(200).json({ status: 'Ok' });
 });
 
-sheetsRouter.get('/read', async function(request, response) {
+sheetsRouter.post('/read', async function(request, response) {
     try {
         // update this with required sheet name
         const eventNameDate = 'Table Lodge Wed, Jun 21, 2023';
@@ -93,7 +93,7 @@ sheetsRouter.get('/read', async function(request, response) {
 
         let filter = eventNameDate + '!I:I';
         await doc.loadInfo();
-        
+
         doc.loadCells(filter).then((result) => {
             response.status(200).json({data: result});
         })
