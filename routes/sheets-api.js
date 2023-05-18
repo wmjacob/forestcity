@@ -77,4 +77,35 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
     response.status(200).json({ status: 'Ok' });
 });
 
+sheetsRouter.get('/read', async function(request, response) {
+    try {
+        // update this with required sheet name
+        const eventNameDate = 'Table Lodge Wed, Jun 21, 2023';
+
+        const rsvpSheet = await getAuth(SHEETS_ID_SECRET);
+        const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
+        const sheetsSecret = await getAuth(SHEETS_SECRET);
+
+        await doc.useServiceAccountAuth({
+            client_email: sheetsSecret.client_email,
+            private_key: sheetsSecret.private_key
+        });
+
+        let filter = eventNameDate + 'I:I';
+
+        doc.loadCells(filter).then((result) => {
+            response.status(200).json({data: result});
+        })
+        .catch((error) => {
+            console.error(error.statusCode);
+            response.status(500).json({error: 'Internal Service Error: ' + error});
+        })
+    }
+    catch(error) {
+        console.error(error);
+        response.status(500).json({error: 'Internal Service Error: ' + error});
+    }
+
+});
+
 module.exports = sheetsRouter;
