@@ -92,7 +92,8 @@ sheetsRouter.get('/read', async function(request, response) {
         });
 
         let filter = eventNameDate + '!I:I';
-
+        await doc.loadInfo();
+        
         doc.loadCells(filter).then((result) => {
             response.status(200).json({data: result});
         })

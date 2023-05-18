@@ -73,9 +73,16 @@ export class FutureEventsComponent implements OnInit {
   }
 
   async readSheetForGuestLimit() {
-    const response = await this.sheetsService.readFromSheet();
+    await this.sheetsService.readFromSheet().then(
+      (result) => {
+        let numberOfAttendees = this.getNumberOfAttendees(result);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
 
-    let numberOfAttendees = this.getNumberOfAttendees(response);
+    // let numberOfAttendees = this.getNumberOfAttendees(response);
   }
 
   private getNumberOfAttendees(response: string) {
