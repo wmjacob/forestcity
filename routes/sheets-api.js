@@ -77,7 +77,7 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
     response.status(200).json({ status: 'Ok' });
 });
 
-sheetsRouter.post('/read', async function(request, response) {
+sheetsRouter.get('/read', async function(request, response) {
     try {
         // update this with required sheet name
         const eventNameDate = 'Table Lodge Wed, Jun 21, 2023';
@@ -96,16 +96,28 @@ sheetsRouter.post('/read', async function(request, response) {
         let sheet = doc.sheetsByTitle[eventNameDate];
         console.log('sheet loaded: ' + sheet.rowCount + ' rows, cell stats: ' + sheet.cellStats + ' column count: ' + sheet.columnCount);
 
-        await sheet.loadCells(filter);
-        console.log('cells loaded')
-        
-        let count = 0;
-        for(let i = 0; i < sheet.rowCount; i++) {
-            let cell = sheet.getCell(i, 0);
-            count = count + cell.value;
-        }
+        await sheet.loadCells(filter).then( (result) => {
+            let count = 0;
+            for(let i = 0; i < sheet.rowCount; i++) {
+                let cell = sheet.getCell(i, 0);
+                count = count + cell.value;
+            }
 
-        response.status(200).json({data: count});
+            response.status(200).json({data: count});
+        }).catch((error) => {
+            response.status(500).json({error: 'Internal Service Error: ' + error});
+        });
+
+        // await sheet.loadCells(filter); //load cells into cache
+        // console.log('cells loaded')
+
+        // let count = 0;
+        // for(let i = 0; i < sheet.rowCount; i++) {
+        //     let cell = sheet.getCell(i, 0);
+        //     count = count + cell.value;
+        // }
+
+
 
         // await doc.loadCells(eventNameDate).then((result) => {
         //     response.status(200).json({data: result});

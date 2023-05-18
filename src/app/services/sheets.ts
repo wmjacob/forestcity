@@ -31,12 +31,8 @@ export class SheetsService {
 
     async readFromSheet() : Promise<any> {
         return new Promise((resolve) => {
-            const response = this.httpClient.post(this.SHEETS_READ_URL, null, {
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-            
+            const response = this.httpClient.get(this.SHEETS_READ_URL);
+
             response.subscribe(
                 (result) => {
                     resolve(result);
