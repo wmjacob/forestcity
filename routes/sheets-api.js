@@ -112,7 +112,7 @@ sheetsRouter.get('/read', async function(request, response) {
         await sheet.loadCells(); //load cells into cache
 
         let count = 0;
-        for(let i = 2; i < sheet.rowCount + 2; i++) {
+        for(let i = 2; i <= sheet.rowCount; i++) {
             let cell = sheet.getCellByA1('I' + i);
             count = count + cell.value;
         }
