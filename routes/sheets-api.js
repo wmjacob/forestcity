@@ -116,7 +116,7 @@ sheetsRouter.get('/read', async function(request, response) {
             let cell = sheet.getCellByA1('I' + i);
             count = count + cell.value;
         }
-
+        response.status(200).json({data: count});
 
 
         // await doc.loadCells(eventNameDate).then((result) => {
