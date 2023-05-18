@@ -91,7 +91,7 @@ sheetsRouter.get('/read', async function(request, response) {
             private_key: sheetsSecret.private_key
         });
 
-        let filter = eventNameDate + 'I:I';
+        let filter = eventNameDate + '!I:I';
 
         doc.loadCells(filter).then((result) => {
             response.status(200).json({data: result});
