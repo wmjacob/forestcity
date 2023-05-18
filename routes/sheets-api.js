@@ -94,13 +94,15 @@ sheetsRouter.post('/read', async function(request, response) {
         let filter = 'I:I';
         await doc.loadInfo();
         let sheet = doc.sheetsByTitle[eventNameDate];
+        console.log('sheet loaded: ' + sheet.rowCount + ' rows, cell stats: ' + sheet.cellStats + ' column count: ' + sheet.columnCount);
 
         await sheet.loadCells(filter);
-
+        console.log('cells loaded')
+        
         let count = 0;
         for(let i = 0; i < sheet.rowCount; i++) {
-            let numAttendees = sheet.getCell(i, 0).value;
-            count = count + numAttendees;
+            let cell = sheet.getCell(i, 0);
+            count = count + cell.value;
         }
 
         response.status(200).json({data: count});
