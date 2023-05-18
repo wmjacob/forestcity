@@ -91,16 +91,27 @@ sheetsRouter.post('/read', async function(request, response) {
             private_key: sheetsSecret.private_key
         });
 
-        let filter = eventNameDate + '!I:I';
+        let filter = 'I:I';
         await doc.loadInfo();
+        let sheet = doc.sheetsByTitle[eventNameDate];
 
-        doc.loadCells(filter).then((result) => {
-            response.status(200).json({data: result});
-        })
-        .catch((error) => {
-            console.error(error.statusCode);
-            response.status(500).json({error: 'Internal Service Error: ' + error});
-        })
+        await sheet.loadCells(filter);
+
+        let count = 0;
+        for(let i = 0; i < sheet.rowCount; i++) {
+            let numAttendees = sheet.getCell(i, 0).value;
+            count = count + numAttendees;
+        }
+
+        response.status(200).json({data: count});
+
+        // await doc.loadCells(eventNameDate).then((result) => {
+        //     response.status(200).json({data: result});
+        // })
+        // .catch((error) => {
+        //     console.error(error.statusCode);
+        //     response.status(500).json({error: 'Internal Service Error: ' + error});
+        // })
     }
     catch(error) {
         console.error(error);
