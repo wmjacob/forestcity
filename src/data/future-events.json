@@ -17,7 +17,8 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2022/09/21 19:30",
@@ -37,7 +38,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2022/10/05 19:30",
@@ -57,7 +59,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2022/10/19 17:30",
@@ -77,7 +80,8 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2022/11/02 19:30",
@@ -97,7 +101,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2022/11/16 19:30",
@@ -117,7 +122,8 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2022/11/30 19:30",
@@ -137,7 +143,8 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": ["Chicken", "Salmon"]
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2022/12/07 19:30",
@@ -157,7 +164,8 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2022/12/10 13:00",
@@ -177,7 +185,8 @@
       "time": "",
       "cost": "",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2022/12/21 19:30",
@@ -197,7 +206,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/01/04 19:30",
@@ -217,7 +227,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/01/18 19:30",
@@ -237,7 +248,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/02/01 19:30",
@@ -257,7 +269,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/02/15 19:30",
@@ -277,7 +290,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/03/01 19:30",
@@ -297,7 +311,8 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": ["Prime Rib", "Chicken"]
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/03/15 19:30",
@@ -317,7 +332,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/03/29 19:30",
@@ -337,7 +353,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/04/05 19:30",
@@ -357,7 +374,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/04/19 17:30",
@@ -377,7 +395,8 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": ["Chicken", "Salmon"]
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/05/03 17:30",
@@ -397,7 +416,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/05/17 19:30",
@@ -417,7 +437,8 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/06/07 19:30",
@@ -437,7 +458,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/06/21 18:00",
@@ -457,7 +479,8 @@
       "time": "(7:30 PM)",
       "cost": "12",
       "choices": ["Stuffed Chicken", "Breaded Chicken", "Salmon"]
-    }
+    },
+    "rsvpLimit": true
   },
   {
     "date": "2023/08/16 17:30",
@@ -477,7 +500,8 @@
       "time": "(5:30 PM)",
       "cost": "20",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/08/30 19:30",
@@ -497,7 +521,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/09/06 19:30",
@@ -517,7 +542,8 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/09/20 19:30",
@@ -537,7 +563,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/10/04 19:30",
@@ -557,7 +584,8 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/10/14 11:30",
@@ -577,7 +605,8 @@
       "time": "",
       "cost": "",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/10/18 19:30",
@@ -597,7 +626,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/11/01 19:30",
@@ -617,7 +647,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/11/15 19:30",
@@ -637,7 +668,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/11/29 19:30",
@@ -657,7 +689,8 @@
       "time": "(6:30 PM)",
       "cost": "6",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   },
   {
     "date": "2023/12/06 19:30",
@@ -677,6 +710,7 @@
       "time": "(6:30 PM)",
       "cost": "12",
       "choices": []
-    }
+    },
+    "rsvpLimit": false
   }
 ]
