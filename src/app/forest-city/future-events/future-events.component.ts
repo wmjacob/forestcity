@@ -20,11 +20,12 @@ export class FutureEventsComponent implements OnInit {
   rsvpExpTime: string = '';
   tableLodgeAttendeeCount: number = 0;
 
-  constructor(private sheetsService: SheetsService) {}
+  constructor(private sheetsService: SheetsService) {
+    this.readSheetForGuestLimit();
+  }
 
   ngOnInit(): void {
     this.events = events;
-    this.readSheetForGuestLimit();
   }
 
   getDate(date: string) {
@@ -84,7 +85,6 @@ export class FutureEventsComponent implements OnInit {
     await this.sheetsService.readFromSheet().then(
       (result) => {
         this.tableLodgeAttendeeCount = this.getNumberOfAttendees(result);
-        console.log('tableLodgeAttendeeCount=' + this.tableLodgeAttendeeCount);
       },
       (error) => {
         console.log(error);
