@@ -18,6 +18,7 @@ export class FutureEventsComponent implements OnInit {
   events: EventOptions[] = [];
   rsvpExpDate: string = '';
   rsvpExpTime: string = '';
+  tableLodgeAttendeeCount: number = 0;
 
   constructor(private sheetsService: SheetsService) {}
 
@@ -60,6 +61,13 @@ export class FutureEventsComponent implements OnInit {
     if(today.getTime() >= expirationDate.getTime()) {
       return false;
     }
+
+    if(event.rsvpLimit) {
+      if(this.tableLodgeAttendeeCount >= 56) {
+        return false;
+      }
+    }
+
     return event.rsvpOptions;
   }
 
@@ -75,18 +83,16 @@ export class FutureEventsComponent implements OnInit {
   async readSheetForGuestLimit() {
     await this.sheetsService.readFromSheet().then(
       (result) => {
-        let numberOfAttendees = this.getNumberOfAttendees(result);
+        this.tableLodgeAttendeeCount = this.getNumberOfAttendees(result);
+        console.log('tableLodgeAttendeeCount=' + this.tableLodgeAttendeeCount);
       },
       (error) => {
         console.log(error);
       }
     );
-
-    // let numberOfAttendees = this.getNumberOfAttendees(response);
   }
 
-  private getNumberOfAttendees(response: string) {
-    console.log(response);
-    console.log(JSON.stringify(response));
+  private getNumberOfAttendees(response: any) {
+    return response.data;
   }
 }
