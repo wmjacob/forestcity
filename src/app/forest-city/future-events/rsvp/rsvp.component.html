@@ -53,7 +53,7 @@
                                 [class.is-invalid] = "rsvpForm.get('email')?.invalid && rsvpForm.get('email')?.dirty"
                                 required>
                         </div>
-                        <div class="mb-3">
+                        <div *ngIf="!event.rsvpLimit" class="mb-3">
                             <label for="numberOfAttendees" class="usa-label required-field">Number Of Attendees (including yourself):</label>
                             <select class="usa-select" formControlName="numberOfAttendees" id="numberOfAttendees">
                                 <option value=1 selected>1</option>
@@ -66,6 +66,12 @@
                                 <option value=8>8</option>
                                 <option value=9>9</option>
                                 <option value=10>10</option>
+                            </select>
+                        </div>
+                        <div *ngIf="event.rsvpLimit" class="mb-3">
+                            <label for="numberOfAttendees" class="usa-label required-field">Number Of Attendees (including yourself):</label>
+                            <select class="form-control" formControlName="numberOfAttendees" id="numberOfAttendees">
+                                <option value=1 selected>1</option>
                             </select>
                         </div>
                         <div *ngIf="displayEarlyBirdCheckbox()" class="mb-3">
@@ -81,18 +87,25 @@
                             </div>
                             <div *ngIf="earlyBirdChecked">
                                 <label class="usa-label" for="numberOfMeals">Number of Meals:</label>
-                                <select class="usa-select" formControlName="numberOfMeals" id="numberOfMeals">
-                                    <option value=1 selected>1</option>
-                                    <option value=2>2</option>
-                                    <option value=3>3</option>
-                                    <option value=4>4</option>
-                                    <option value=5>5</option>
-                                    <option value=6>6</option>
-                                    <option value=7>7</option>
-                                    <option value=8>8</option>
-                                    <option value=9>9</option>
-                                    <option value=10>10</option>
-                                </select>
+                                <div *ngIf="!event.rsvpLimit">
+                                    <select class="usa-select" formControlName="numberOfMeals" id="numberOfMeals">
+                                        <option value=1 selected>1</option>
+                                        <option value=2>2</option>
+                                        <option value=3>3</option>
+                                        <option value=4>4</option>
+                                        <option value=5>5</option>
+                                        <option value=6>6</option>
+                                        <option value=7>7</option>
+                                        <option value=8>8</option>
+                                        <option value=9>9</option>
+                                        <option value=10>10</option>
+                                    </select>
+                                </div>
+                                <div *ngIf="event.rsvpLimit">
+                                    <select class="form-control" formControlName="numberOfMeals" id="numberOfMeals">
+                                        <option value=1 selected>1</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div *ngIf="displayMealChoices()" class="mb-3">
@@ -109,10 +122,10 @@
                                     </div>
                                 </div>
                                 <div *ngIf="displayMultipleMealChoices()">
-                                    <label class="usa-label" for="numberOfMeat">Number of {{ event.earlyBirdOptions.choices[0] }}:</label>
-                                    <input class="usa-input" type="number" min="0" id="numberOfMeat" formControlName="numberOfMeat">
-                                    <label class="usa-label" for="numberOfFish">Number of {{ event.earlyBirdOptions.choices[1] }}:</label>
-                                    <input class="usa-input" type="number" min="0" id="numberOfFish" formControlName="numberOfFish">
+                                    <div *ngFor="let choice of event.earlyBirdOptions.choices">
+                                        <label class="usa-label" for="{{ choice }}">Number of {{ choice }}:</label>
+                                        <input class="usa-input" type="number" min="0" id="{{ getFormControlName(choice) }}" formControlName="{{ getFormControlName(choice) }}">
+                                    </div>
                                 </div>
                             </fieldset>
                         </div>

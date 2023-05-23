@@ -18,7 +18,8 @@ export interface EventOptions {
     spotlightImage: string,
     altText: string,
     tyled: boolean,
-    earlyBirdOptions: object
+    earlyBirdOptions: object,
+    rsvpLimit: boolean
 };
 
 export interface RecentEvent {

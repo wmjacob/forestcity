@@ -2,6 +2,7 @@ import { formatDate } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import events from '@data/future-events.json';
 import { EventOptions } from '@data/interfaces';
+import { SheetsService } from '@services/sheets';
 
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric' });
@@ -17,6 +18,11 @@ export class FutureEventsComponent implements OnInit {
   events: EventOptions[] = [];
   rsvpExpDate: string = '';
   rsvpExpTime: string = '';
+  tableLodgeAttendeeCount: number = 0;
+
+  constructor(private sheetsService: SheetsService) {
+    this.readSheetForGuestLimit();
+  }
 
   ngOnInit(): void {
     this.events = events;
@@ -56,6 +62,13 @@ export class FutureEventsComponent implements OnInit {
     if(today.getTime() >= expirationDate.getTime()) {
       return false;
     }
+
+    if(event.rsvpLimit) {
+      if(this.tableLodgeAttendeeCount >= 56) {
+        return false;
+      }
+    }
+
     return event.rsvpOptions;
   }
 
@@ -66,5 +79,20 @@ export class FutureEventsComponent implements OnInit {
       return 'Dinner: ' + time + ' Cost: $' + options.cost;
     }
     return '';
+  }
+
+  async readSheetForGuestLimit() {
+    await this.sheetsService.readFromSheet().then(
+      (result) => {
+        this.tableLodgeAttendeeCount = this.getNumberOfAttendees(result);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
+
+  private getNumberOfAttendees(response: any) {
+    return response.data;
   }
 }
