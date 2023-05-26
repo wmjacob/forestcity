@@ -53,6 +53,5 @@ export interface SocialOuting {
     location: string,
     locationAddress: string,
     locationUrl: string,
-    locationMap: string,
     description: string
 }
