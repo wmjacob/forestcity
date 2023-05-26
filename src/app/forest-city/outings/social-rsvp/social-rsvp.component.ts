@@ -57,7 +57,7 @@ export class SocialRsvpComponent implements OnInit {
 
         if(emailSuccessful) {
             request.date = this.formatSheetsDate();
-            await this.sheetsService.writeToSheet(request);
+            await this.sheetsService.writeToSocialSheet(request);
         }
 
         this.isSending = false;
