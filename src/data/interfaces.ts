@@ -46,3 +46,13 @@ export interface PhotoAlbum {
     subtitle: string,
     description: string
 }
+
+export interface SocialOuting {
+    name: string,
+    date: string,
+    location: string,
+    locationAddress: string,
+    locationUrl: string,
+    locationMap: string,
+    description: string
+}
