@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class SheetsService {
     private readonly SHEETS_APPEND_URL = '/sheets/api/append-rsvp';
     private readonly SHEETS_READ_URL = '/sheets/api/read';
+    private readonly SHEETS_APPEND_SOCIAL_URL = '/sheets/api/append-social-rsvp';
 
     constructor(private httpClient: HttpClient) {}
 
@@ -39,6 +40,25 @@ export class SheetsService {
                 },
                 (error) => {
                     resolve(error);
+                }
+            );
+        });
+    }
+
+    async writeToSocialSheet(request: object): Promise<boolean> {
+        return new Promise((resolve) => {
+            const response = this.httpClient.post(this.SHEETS_APPEND_SOCIAL_URL, JSON.stringify(request), {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            response.subscribe(
+                () => {
+                    resolve(true);
+                },
+                () => {
+                    resolve(false);
                 }
             );
         });

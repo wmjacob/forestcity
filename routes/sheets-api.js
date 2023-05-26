@@ -4,7 +4,8 @@ const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 const SHEETS_SECRET = 'sheets-credentials';
-const SHEETS_ID_SECRET = 'sheets-id';
+const RSVP_SHEETS_ID_SECRET = 'sheets-id';
+const SOCIAL_RSVP_SHEETS_ID_SECRET = 'social-rsvp-sheet-id';
 
 sheetsRouter.get('/status', function (_req, res) {
     res.status(200).json({ status: 'UP' });
@@ -29,7 +30,7 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
 
         // event name and date for sheet titles
         const eventNameDate = data.event.name + ' ' + data.date;
-        const rsvpSheet = await getAuth(SHEETS_ID_SECRET);
+        const rsvpSheet = await getAuth(RSVP_SHEETS_ID_SECRET);
         const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
         const sheetsSecret = await getAuth(SHEETS_SECRET);
 
@@ -77,12 +78,49 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
     response.status(200).json({ status: 'Ok' });
 });
 
+sheetsRouter.post('/append-social-rsvp', async function(request, response) {
+    try {
+        const data = request.body;
+
+        // event name and date for sheet titles
+        const eventNameDate = data.event.name + ' ' + data.date;
+        const rsvpSheet = await getAuth(SOCIAL_RSVP_SHEETS_ID_SECRET);
+        const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
+        const sheetsSecret = await getAuth(SHEETS_SECRET);
+
+        await doc.useServiceAccountAuth({
+            client_email: sheetsSecret.client_email,
+            private_key: sheetsSecret.private_key
+          });
+
+        await doc.loadInfo();
+
+        let sheet = doc.sheetsByTitle[eventNameDate];
+        if(sheet) {
+            await sheet.addRow(
+                [data.lastName, data.firstName, data.email, data.numberOfAttendees]
+            );
+        }
+        else {
+            const HEADER_VALUES = ['Last Name', 'First Name', 'Email', 'Number of Attendees'];
+            sheet = await doc.addSheet({headerValues: HEADER_VALUES, title: eventNameDate});
+            await sheet.addRow(
+                [data.lastName, data.firstName, data.email, data.numberOfAttendees]
+            );
+        }
+    }
+    catch (error) {
+        response.status(500).json({error: 'Internal Service Error: ' + error});
+    }
+    response.status(200).json({ status: 'Ok' });
+});
+
 sheetsRouter.get('/read', async function(request, response) {
     try {
         // update this with required sheet name
         const eventNameDate = 'Table Lodge Wed, Jun 21, 2023';
 
-        const rsvpSheet = await getAuth(SHEETS_ID_SECRET);
+        const rsvpSheet = await getAuth(RSVP_SHEETS_ID_SECRET);
         const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
         const sheetsSecret = await getAuth(SHEETS_SECRET);
 
