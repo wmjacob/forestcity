@@ -32,6 +32,8 @@ import { PastBulletinsComponent } from './forest-city/past-bulletins/past-bullet
 import { JwBltPaginationComponent } from './forest-city/past-bulletins/pagination/jw-blt-pagination.component';
 import { OperationBackpackComponent } from './forest-city/temp-events/operation-backpack/operation-backpack.component';
 import { GoldenSquarePMComponent } from './forest-city/golden-square/past-masters/golden-square-pm.component';
+import { ForestCityInTheCityComponent } from './forest-city/outings/forest-city-in-the-city/forest-city-in-the-city.component';
+import { SocialRsvpComponent } from './forest-city/outings/social-rsvp/social-rsvp.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +58,9 @@ import { GoldenSquarePMComponent } from './forest-city/golden-square/past-master
     PastBulletinsComponent,
     JwBltPaginationComponent,
     OperationBackpackComponent,
-    GoldenSquarePMComponent
+    GoldenSquarePMComponent,
+    ForestCityInTheCityComponent,
+    SocialRsvpComponent
   ],
   imports: [
     BrowserModule,

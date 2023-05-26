@@ -16,6 +16,7 @@ import { RecentEventsComponent } from './forest-city/recent-events/recent-events
 import { PastBulletinsComponent } from './forest-city/past-bulletins/past-bulletins.component';
 import { OperationBackpackComponent } from './forest-city/temp-events/operation-backpack/operation-backpack.component';
 import { GoldenSquarePMComponent } from './forest-city/golden-square/past-masters/golden-square-pm.component';
+import { ForestCityInTheCityComponent } from './forest-city/outings/forest-city-in-the-city/forest-city-in-the-city.component';
 
 const IMAGE_GALLERY_URL = 'image-gallery';
 
@@ -84,6 +85,10 @@ const routes: Routes = [
       {
         path: 'golden-square-past-masters',
         component: GoldenSquarePMComponent
+      },
+      {
+        path: 'social-outings',
+        component: ForestCityInTheCityComponent
       }
       // {
       //   path: 'operation-backpack',

@@ -1,0 +1,62 @@
+<div class="social-events">
+    <div class="social-events-title bg-white pt-4 pb-3 centered">
+        <h2>Forest City In The City</h2>
+    </div>
+
+    <div class="grid-col-12 bg-primary-lighter">
+        <div class="centered">
+            <h3>Upcoming Social Outings</h3>
+        </div>
+    </div>
+
+    <div class="social-events-content bg-primary-lighter py-3">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12 mb-2">
+
+                    <div class="col-md-12 col-lg-12 centered">
+                        <div class="border-rounded p-3 bg-gray-5 mb-3">
+                            <div class="fs-6 text-align-center mb-2">"Forest City In The City" is Forest City Lodge No. 388's informal gathering hub.</div>
+                            <div class="fs-6 text-align-center mb-2">Come join us for fun, fellowship, and refreshments. All are welcome!</div>
+                            <div class="fs-6 text-align-center mb-2">All events are pay-your-own-way.</div>
+                            <div class="fs-6 text-align-center mb-2"></div>
+                        </div>
+                    </div>
+
+                    <div *ngFor="let event of events, let i = index" class="border-rounded mb-2">
+
+                        <div *ngIf="!hasEventPassed(event.date)">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                  <div class="fw-bold fs-4">{{event.name}}</div>
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">{{event.description}}</h5>
+                                  <h5>{{getDate(event.date)}}</h5>
+                                  <p class="card-text"><span class="fw-bold">Location: </span>{{event.location}}, <a class="link-offset-2" [href]="event.locationUrl" target="_blank">{{ event.locationAddress }}</a></p>
+                                  <div [innerHtml]="getMapHtml(event.locationMap)"></div>
+                                  <div *ngIf="isRsvp(event)">
+                                    <div class="mt-2">
+                                        <button aria-controls="socialRsvpModal"
+                                                class="btn btn-primary"
+                                                (click)="setEventForRsvp(event)"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#socialRsvpModal">
+                                                RSVP
+                                        </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card-footer text-muted">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<fcl-social-rsvp [event]="event"></fcl-social-rsvp>
