@@ -1,5 +1,39 @@
 [
     {
+        "eventName": "Awards Night 2023",
+        "eventId": "2023AwardsNight",
+        "displayDate": "Wednesday, May 17th, 2023",
+        "description": "For this year's Awards Night, we were honored to present many milestone awards, including a 65 Year award. Congratulations to all the recipients, and thank you for all that you do for our fraternity!",
+        "albumName": "2023_05_17_Awards_Night",
+        "imageUrls": [
+            "005.jpg",
+            "006.jpg",
+            "007.jpg",
+            "008.jpg",
+            "009.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/03/27"
+    },
+    {
+        "eventName": "Raised a new Master Mason!",
+        "eventId": "2023InspectionNewMM",
+        "displayDate": "Wednesday, April 19th, 2023",
+        "description": "Congrats to our newest Master Mason!  FCL has a new brother, who is also the real brother of a Past Master. Also, thank you to everyone who came out to support RWB Jason Stitak for his final inspection!",
+        "albumName": "2023_04_19_Annual_Inspection",
+        "imageUrls": [
+            "001.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/04/19"
+    },
+    {
         "eventName": "Another GLO Mason Monday",
         "eventId": "masonMondayHighlightTwo",
         "displayDate": "Monday, March 27th, 2023",
