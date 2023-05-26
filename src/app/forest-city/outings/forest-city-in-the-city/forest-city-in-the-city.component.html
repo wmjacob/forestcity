@@ -3,24 +3,53 @@
         <h2>Forest City In The City</h2>
     </div>
 
-    <div class="grid-col-12 bg-primary-lighter">
-        <div class="centered">
-            <h3>Upcoming Social Outings</h3>
-        </div>
-    </div>
-
     <div class="social-events-content bg-primary-lighter py-3">
         <div class="container">
+            <div class="row centered">
+                <div class="fs-3 text-align-center pb-4">"Forest City In The City" is Forest City Lodge No. 388's informal gathering hub.</div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 pb-3 centered">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5 >Building Brotherhood</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Come join us for fun, fellowship, and refreshments.</p>
+                            <p class="card-text">Come as you are, and get to know the Brethren of Forest City Lodge outside of the Lodge!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5>All are welcome!</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">These events are open to the general public, not only Freemasons.</p>
+                            <p class="card-text">Feel free to bring your friends, family, children, significant others...anyone!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5 class="card-title">All Events Are Pay-your-own-way</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">These events are informal and not sponsored by the Lodge.</p>
+                            <p class="card-text">Please RSVP so we can have an estimate of the number of attendees.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-md-12 col-lg-12 mb-2">
-
-                    <div class="col-md-12 col-lg-12 centered">
-                        <div class="border-rounded p-3 bg-gray-5 mb-3">
-                            <div class="fs-6 text-align-center mb-2">"Forest City In The City" is Forest City Lodge No. 388's informal gathering hub.</div>
-                            <div class="fs-6 text-align-center mb-2">Come join us for fun, fellowship, and refreshments. All are welcome!</div>
-                            <div class="fs-6 text-align-center mb-2">All events are pay-your-own-way.</div>
-                            <div class="fs-6 text-align-center mb-2"></div>
+                    <div class="grid-col-12 bg-primary-lighter pb-2">
+                        <div class="centered">
+                            <h3>Upcoming Social Outings</h3>
                         </div>
                     </div>
 
@@ -35,7 +64,6 @@
                                   <h5 class="card-title">{{event.description}}</h5>
                                   <h5>{{getDate(event.date)}}</h5>
                                   <p class="card-text"><span class="fw-bold">Location: </span>{{event.location}}, <a class="link-offset-2" [href]="event.locationUrl" target="_blank">{{ event.locationAddress }}</a></p>
-                                  <div [innerHtml]="getMapHtml(event.locationMap)"></div>
                                   <div *ngIf="isRsvp(event)">
                                     <div class="mt-2">
                                         <button aria-controls="socialRsvpModal"
