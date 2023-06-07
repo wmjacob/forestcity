@@ -27,7 +27,7 @@
                                 </div>
                                 <div class="future-events-list-item-location text-base d-flex flex-wrap">
                                     <div>
-                                        <a class="text-base" [href]="event.addressLink" target="_blank">{{ event.address }}</a>
+                                        <a class="link-primary" [href]="event.addressLink" target="_blank">{{ event.address }}</a>
                                     </div>
                                     <div *ngIf="getEarlyBirdOptions(event.earlyBirdOptions)">
                                         &nbsp;|&nbsp;{{ getEarlyBirdOptions(event.earlyBirdOptions) }}
