@@ -87,7 +87,7 @@ const routes: Routes = [
         component: GoldenSquarePMComponent
       },
       {
-        path: 'social-outings',
+        path: 'social-events',
         component: ForestCityInTheCityComponent
       }
       // {
