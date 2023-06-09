@@ -469,7 +469,7 @@
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": true,
+    "rsvpOptions": false,
     "rsvpExpirationDays": "3",
     "spotlight": true,
     "spotlightImage": "tablelodge.jpeg",
