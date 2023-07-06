@@ -486,7 +486,7 @@
     "date": "2023/08/16 17:30",
     "name": "Steak Roast",
     "description": "At Solon Community Park",
-    "extraInfo": "",
+    "extraInfo": "Main Choice of Steak ($20) or Chicken ($15)",
     "location": "Solon Community Park",
     "address": "6679 SOM Ctr Rd, Solon, OH 44139",
     "addressLink": "https://goo.gl/maps/q3Vph5SdWBtjWGws7",
@@ -498,8 +498,8 @@
     "tyled": false,
     "earlyBirdOptions": {
       "time": "(5:30 PM)",
-      "cost": "20",
-      "choices": []
+      "cost": "15 - 20",
+      "choices": ["Steak", "Chicken"]
     },
     "rsvpLimit": false
   },
