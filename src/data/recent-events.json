@@ -1,7 +1,84 @@
 [
     {
+        "eventName": "Volunteering at the Geauga County Fair",
+        "eventId": "geaugaCountyFair2023",
+        "displayDate": "Wednesday, August 30th, 2023",
+        "description": "We had the opportunity to volunteer at the Geauga County Fair booth to help support Brotherhood Night and Village Lodge No. 274, of Burton, Ohio. It was a great time by all!",
+        "albumName": "2023_08_30_Geauga_County_Fair",
+        "imageUrls": [
+            "002.jpg",
+            "016.jpg",
+            "013.jpg",
+            "009.jpg",
+            "004.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/08/30"
+    },
+    {
+        "eventName": "Annual Steak Roast",
+        "eventId": "annualSteakRoast2023",
+        "displayDate": "Wednesday, August 16th, 2023",
+        "description": "Our Annual Steak Roast! Held at Solon Community Park, we had a great turnout with great food, and even better conversation. Special thanks to our chefs for the day!",
+        "albumName": "2023_08_16_Steak_Roast",
+        "imageUrls": [
+            "017.jpg",
+            "025.jpg",
+            "026.jpg",
+            "031.jpg",
+            "033.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": ""
+    },
+    {
+        "eventName": "44th Annual Table Lodge",
+        "eventId": "annualTableLodge2023",
+        "displayDate": "Wednesday, June 21st, 2023",
+        "description": "Our 44th Annual Table Lodge, featuring Most Worshipful Brother Steven M. Grindle as the guest speaker. The night started with a wonderful EA degree, and concluded with a great meal, several toasts, and an inspiring speech by Most Worshipful.",
+        "albumName": "2023_06_21_Table_Lodge",
+        "imageUrls": [
+            "012.jpg",
+            "014.jpg",
+            "015.jpg",
+            "008.jpg",
+            "016.jpg"
+
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/06/21"
+    },
+    {
+        "eventName": "Master, Wardens and Wine",
+        "eventId": "masterWardensWine2023",
+        "displayDate": "Saturday, June 10th, 2023",
+        "description": "Our Master, Wardens and Wine celebration at Debonné Winery. You could not have asked for better weather, but more importantly, better company. Thank you to Bro. Jim Paluf for coordinating this event!",
+        "albumName": "2023_06_10_Master_Wardens_Wine",
+        "imageUrls": [
+            "005.jpg",
+            "007.jpg",
+            "008.jpg",
+            "010.jpg",
+            "011.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/06/10"
+    },
+    {
         "eventName": "Awards Night 2023",
-        "eventId": "2023AwardsNight",
+        "eventId": "awardsNight2023",
         "displayDate": "Wednesday, May 17th, 2023",
         "description": "For this year's Awards Night, we were honored to present many milestone awards, including a 65 Year award. Congratulations to all the recipients, and thank you for all that you do for our fraternity!",
         "albumName": "2023_05_17_Awards_Night",
