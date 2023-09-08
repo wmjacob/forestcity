@@ -765,8 +765,8 @@
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
     "rsvpOptions": true,
     "rsvpExpirationDays": "3",
-    "spotlight": false,
-    "spotlightImage": "",
+    "spotlight": true,
+    "spotlightImage": "working-tools.jpg",
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
@@ -786,8 +786,8 @@
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
     "rsvpOptions": true,
     "rsvpExpirationDays": "3",
-    "spotlight": false,
-    "spotlightImage": "",
+    "spotlight": true,
+    "spotlightImage": "valentines.jpg",
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
