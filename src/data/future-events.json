@@ -672,7 +672,7 @@
     "rsvpLimit": false
   },
   {
-    "date": "2023/12/06 19:30",
+    "date": "2023/12/06 19:00",
     "name": "50th Annual Brotherhood Night",
     "description": "A Night with the Clergy",
     "extraInfo": "",
@@ -686,7 +686,7 @@
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "(6:30 PM)",
+      "time": "(6:00 PM)",
       "cost": "12",
       "choices": []
     },
