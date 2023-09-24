@@ -583,7 +583,7 @@
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
       "cost": "12",
-      "choices": []
+      "choices": ["Prime Rib", "Salmon"]
     },
     "rsvpLimit": false
   },
