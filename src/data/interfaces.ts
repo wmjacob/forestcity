@@ -53,5 +53,7 @@ export interface SocialOuting {
     location: string,
     locationAddress: string,
     locationUrl: string,
-    description: string
+    description: string,
+    eventImageUrl: string,
+    isRsvp: boolean
 }

@@ -56,7 +56,7 @@
                     <div *ngFor="let event of events, let i = index" class="border-rounded mb-2">
 
                         <div *ngIf="!hasEventPassed(event.date)">
-                            <div class="card text-center">
+                            <div class="card text-center" [ngClass]="{'bg-light': i % 2 === 0, 'bg-info-lighter': i % 2 === 1}">
                                 <div class="card-header">
                                   <div class="fw-bold fs-4">{{event.name}}</div>
                                 </div>
@@ -64,6 +64,9 @@
                                   <h5 class="card-title">{{event.description}}</h5>
                                   <h5>{{getDate(event.date)}}</h5>
                                   <p class="card-text"><span class="fw-bold">Location: </span>{{event.location}}, <a class="link-offset-2" [href]="event.locationUrl" target="_blank">{{ event.locationAddress }}</a></p>
+                                  <div *ngIf="hasEventImageUrl(event)">
+                                    <img src="https://storage.cloud.google.com/forest-city-website-images/Social Events/{{event.eventImageUrl}}" class="event-image"/>
+                                  </div>
                                   <div *ngIf="isRsvp(event)">
                                     <div class="mt-2">
                                         <button aria-controls="socialRsvpModal"

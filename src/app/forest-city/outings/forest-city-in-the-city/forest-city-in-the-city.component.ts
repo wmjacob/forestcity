@@ -43,6 +43,10 @@ export class ForestCityInTheCityComponent implements OnInit {
     }
 
     isRsvp(event: SocialOuting) {
+        if(!event.isRsvp) {
+            return false;
+        }
+        
         let expirationDaysBefore = 1;
         let eventDate = new Date(event.date);
         let expirationDate = new Date(eventDate.getTime() - (expirationDaysBefore * 24 * 60 * 60 * 1000));
@@ -54,6 +58,13 @@ export class ForestCityInTheCityComponent implements OnInit {
         }
 
         return true;
+    }
+
+    hasEventImageUrl(event: SocialOuting) {
+        if(event.eventImageUrl) {
+            return true;
+        }
+        return false;
     }
 
     getMapHtml(mapHtml: string) {
