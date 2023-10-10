@@ -5,6 +5,28 @@
         "location": "Buffalo Wild Wings",
         "locationAddress": "5433 Mayfield Rd, Lyndhurst, OH 44124",
         "locationUrl": "https://goo.gl/maps/DHaYwvTEPnghCjYB9?coh=178572&entry=tt",
-        "description": "Come enjoy some fellowship, wings, and refreshments with the Brethren of Forest City Lodge!"
+        "description": "Come enjoy some fellowship, wings, and refreshments with the Brethren of Forest City Lodge!",
+        "eventImageUrl": "",
+        "isRsvp": false
+    },
+    {
+        "name": "Browns Tailgate Party",
+        "date": "2023/10/22 12:30",
+        "location": "Lyndhurst Masonic Temple Parking Lot",
+        "locationAddress": "5516 Mayfield Rd, Lyndhurst, OH 44124",
+        "locationUrl": "https://maps.app.goo.gl/jjs8XU7QYnkaAEDc6",
+        "description": "Potluck and BYOB Tailgate Party!",
+        "eventImageUrl": "2023_10_22_browns_tailgate.png",
+        "isRsvp": false
+    },
+    {
+        "name": "The Big Game Watch Party",
+        "date": "2023/11/25 11:00",
+        "location": "Pioneer Cleveland",
+        "locationAddress": "2407 Lorain Ave, Cleveland, OH 44113",
+        "locationUrl": "https://maps.app.goo.gl/dqE2K1jcji1SvTnJ9",
+        "description": "Come watch the Ohio State Buckeyes battle That School Up North! The game starts at high 12. Please RSVP so we can reserve seats ahead of time.",
+        "eventImageUrl": "",
+        "isRsvp": true
     }
 ]

@@ -1,5 +1,35 @@
 [
     {
+        "eventName": "Royal Scofield Society Masterpiece Presentation",
+        "eventId": "rssMasterpiece2023",
+        "displayDate": "Monday, September 11th, 2023",
+        "description": "Brother Ronald E. Stuver (center) presented his Royal Scofield Society Masterpiece 'Exactly Different: Masonry in Pennsylvania and Ohio'. We are proud to announce Brother Stuver will now be inducted as a Royal Scofield Society Master of the Craft. He will be the 47th Mason to be inducted, and the first for Forest City Lodge!",
+        "albumName": "2023_09_11_RSS_Masterpiece",
+        "imageUrls": [
+            "001.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/09/06"
+    },
+    {
+        "eventName": "Memorial Night 2023",
+        "eventId": "memorialNight2023",
+        "displayDate": "Wednesday, September 6th, 2023",
+        "description": "Our annual Memorial Night, where we honor the Brethren that we lost in the past year.",
+        "albumName": "2023_09_06_Memorial_Night",
+        "imageUrls": [
+            "001.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/09/06"
+    },
+    {
         "eventName": "Volunteering at the Geauga County Fair",
         "eventId": "geaugaCountyFair2023",
         "displayDate": "Wednesday, August 30th, 2023",
