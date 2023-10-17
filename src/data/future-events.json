@@ -667,7 +667,7 @@
     "earlyBirdOptions": {
       "time": "(6:00 PM)",
       "cost": "12",
-      "choices": []
+      "choices": ["Prime Rib", "Salmon"]
     },
     "rsvpLimit": false
   },
@@ -688,7 +688,7 @@
     "earlyBirdOptions": {
       "time": "(6:00 PM)",
       "cost": "12",
-      "choices": []
+      "choices": ["Beef Tenderloin", "Tuscan Chicken", "Bourbon Salmon"]
     },
     "rsvpLimit": false
   },
