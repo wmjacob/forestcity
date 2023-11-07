@@ -1,5 +1,25 @@
 [
     {
+        "eventName": "Browns Tailgate Party",
+        "eventId": "brownsTailgate2023",
+        "displayDate": "Sunday, October 22nd, 2023",
+        "description": "We had our first (and hopefully annual) Browns Tailgate Party in the parking lot of the Lodge! We had a great turnout, and despite the cold, everyone had a blast. The Browns won to boot!",
+        "albumName": "2023_10_22_Browns_Tailgate",
+        "imageUrls": [
+            "006.jpg",
+            "001.jpg",
+            "002.jpg",
+            "003.jpg",
+            "004.jpg",
+            "005.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/10/22"
+    },
+    {
         "eventName": "Royal Scofield Society Masterpiece Presentation",
         "eventId": "rssMasterpiece2023",
         "displayDate": "Monday, September 11th, 2023",
