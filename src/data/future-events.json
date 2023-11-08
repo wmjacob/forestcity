@@ -667,7 +667,7 @@
     "earlyBirdOptions": {
       "time": "(6:00 PM)",
       "cost": "12",
-      "choices": ["Prime Rib", "Salmon"]
+      "choices": ["Beef Tenderloin", "Salmon"]
     },
     "rsvpLimit": false
   },
