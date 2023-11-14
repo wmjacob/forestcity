@@ -1020,7 +1020,7 @@
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
-    "tyled": true,
+    "tyled": false,
     "earlyBirdOptions": {
       "time": "(5:00 PM)",
       "cost": "20",
