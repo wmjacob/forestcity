@@ -18,7 +18,7 @@ export class FutureEventsComponent implements OnInit {
   events: EventOptions[] = [];
   rsvpExpDate: string = '';
   rsvpExpTime: string = '';
-  tableLodgeAttendeeCount: number = 0;
+  attendeeCount: number = 0;
 
   constructor(private sheetsService: SheetsService) {
     this.readSheetForGuestLimit();
@@ -64,7 +64,7 @@ export class FutureEventsComponent implements OnInit {
     }
 
     if(event.rsvpLimit) {
-      if(this.tableLodgeAttendeeCount >= 56) {
+      if(this.attendeeCount >= 150) {
         return false;
       }
     }
@@ -84,7 +84,7 @@ export class FutureEventsComponent implements OnInit {
   async readSheetForGuestLimit() {
     await this.sheetsService.readFromSheet().then(
       (result) => {
-        this.tableLodgeAttendeeCount = this.getNumberOfAttendees(result);
+        this.attendeeCount = this.getNumberOfAttendees(result);
       },
       (error) => {
         console.log(error);
