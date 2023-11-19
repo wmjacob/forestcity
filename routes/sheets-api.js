@@ -118,7 +118,7 @@ sheetsRouter.post('/append-social-rsvp', async function(request, response) {
 sheetsRouter.get('/read', async function(request, response) {
     try {
         // update this with required sheet name
-        const eventNameDate = 'Table Lodge Wed, Jun 21, 2023';
+        const eventNameDate = '50th Annual Brotherhood Night Wed, Dec 6, 2023';
 
         const rsvpSheet = await getAuth(RSVP_SHEETS_ID_SECRET);
         const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
