@@ -137,7 +137,8 @@ sheetsRouter.get('/read', async function(request, response) {
 
         let count = 0;
         for(let i = 2; i <= sheet.rowCount; i++) {
-            let cell = sheet.getCellByA1('I' + i);
+            // cell E for meals, I for attendees
+            let cell = sheet.getCellByA1('E' + i);
             count = count + cell.value;
         }
 
