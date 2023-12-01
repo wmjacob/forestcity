@@ -12,11 +12,13 @@
             <div class="table-responsive">
                 <table class="table table-striped table-hover align-middle">
                     <tr>
+                        <th>Number</th>
                         <th>Worshipful Master</th>
                         <th>Year</th>
                     </tr>
                     <tbody *ngFor="let master of goldenSquarePMList; index as i">
                         <tr [ngClass]="{'table-info': i%2==0, 'table-light': i%2==1}">
+                            <td>{{master.number}}</td>
                             <td>{{master.name}}</td>
                             <td>{{master.term}}</td>
                         </tr>

@@ -28,7 +28,7 @@ export class PastMastersComponent implements OnInit {
     let installationDate: Date = new Date();
 
     this.installationOfOfficers = events.filter(event => {
-      return event.name === 'Installation of Officers';
+      return event.name === 'Installation of Officers' || event.description === 'Installation of Officers';
     });
 
     if(this.installationOfOfficers.length > 0) {
