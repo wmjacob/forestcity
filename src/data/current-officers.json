@@ -1,37 +1,37 @@
 [
     {
-        "name": "Jason A. Kiner",
+        "name": "Ronald E. Stuver",
         "office": "Worshipful Master",
-        "image": "current-officers/square_and_compasses.jpg",
-        "bio": "",
+        "image": "past_masters/2023-2024_ronald_e_stuver.jpg",
+        "bio": "Small business owner consulting in the field of Industry 4.0.  An avid long distance runner who also enjoys the game of soccer.  Proud 3rd generation Mason with two sons who are also Masons.",
         "jewel": "worshipful_master.png"
     },
     {
-        "name": "Ronald E. Stuver",
+        "name": "Dylan S. Marsh",
         "office": "Senior Warden",
-        "image": "current-officers/ronald_e_stuver.jpg",
-        "bio": "Small business owner consulting in the field of Industry 4.0.  An avid long distance runner who also enjoys the game of soccer.  Proud 3rd generation Mason with two sons who are also Masons.",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
         "jewel": "senior_warden.png"
     },
     {
-        "name": "Dylan S. Marsh",
+        "name": "James D. Paluf",
         "office": "Junior Warden",
-        "image": "current-officers/square_and_compasses.jpg",
+        "image": "current-officers/james_d_paluf.jpg",
         "bio": "",
         "jewel": "junior_warden.png"
     },
     {
-        "name": "James D. Paluf",
+        "name": "Jason A. Kiner, P.M.",
         "office": "Senior Deacon",
-        "image": "current-officers/james_d_paluf.jpg",
+        "image": "current-officers/square_and_compasses.jpg",
         "bio": "",
         "jewel": "senior_deacon.png"
     },
     {
-        "name": "Joshua Jaffe",
+        "name": "David L. Jones",
         "office": "Junior Deacon",
-        "image": "current-officers/square_and_compasses.jpg",
-        "bio": "",
+        "image": "current-officers/david_l_jones.jpg",
+        "bio": "Software developer, home cook level 3, home mixologist level 4, father level 3, husband level 0.",
         "jewel": "junior_deacon.png"
     },
     {
@@ -40,6 +40,13 @@
         "image": "current-officers/2007-2008_alan_h_rothman.JPG",
         "bio": "",
         "jewel": "secretary.png"
+    },
+    {
+        "name": "Ryan E. Stuver, P.M.",
+        "office": "Associate Secretary",
+        "image": "past_masters/2021-2022_ryan_e_stuver.JPG",
+        "bio": "",
+        "jewel": "associate_secretary.png"
     },
     {
         "name": "Alexander C. Meske, P.M.",
@@ -56,28 +63,28 @@
         "jewel": "treasurer.png"
     },
     {
-        "name": "Timothy S. Cline, P.M.",
-        "office": "Chaplain, District Education Officer",
-        "image": "current-officers/2017-2018_timothy_s_cline.jpg",
+        "name": "Ryan E. Stuver, P.M.",
+        "office": "Chaplain",
+        "image": "past_masters/2021-2022_ryan_e_stuver.JPG",
         "bio": "",
         "jewel": "chaplain.png"
     },
     {
-        "name": "Shawn S. Franks, P.M.",
+        "name": "Daniel N. Cohen, P.M.",
         "office": "Associate Chaplain",
-        "image": "current-officers/2020-2021_shawn_s_franks.jpg",
+        "image": "past_masters/2015-2016_daniel_n_cohen.jpg",
         "bio": "",
         "jewel": "chaplain.png"
-    },
-    {
-        "name": "David L. Jones",
-        "office": "Senior Steward",
-        "image": "current-officers/david_l_jones.jpg",
-        "bio": "Software Developer by day, family man by night. I enjoy trying new things in the kitchen, at my home bar, and spending time with my family.",
-        "jewel": "steward.png"
     },
     {
         "name": "Nam Do",
+        "office": "Senior Steward",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
+        "jewel": "steward.png"
+    },
+    {
+        "name": "Scott H. Honess",
         "office": "Junior Steward",
         "image": "current-officers/square_and_compasses.jpg",
         "bio": "",
@@ -89,5 +96,19 @@
         "image": "current-officers/square_and_compasses.jpg",
         "bio": "",
         "jewel": "tyler.png"
+    },
+    {
+        "name": "Mitchell L. Alperin, P.D.D.G.M., P.M.",
+        "office": "Lodge Education Officer",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
+        "jewel": "past_master.png"
+    },
+    {
+        "name": "Barry J. Siegel, P.M., K.Y.C.H., E.G.S.",
+        "office": "Associate Lodge Education Officer",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
+        "jewel": "past_master.png"
     }
 ]
