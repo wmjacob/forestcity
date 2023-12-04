@@ -91,6 +91,13 @@
         "jewel": "steward.png"
     },
     {
+        "name": "Alex P. Kaufman",
+        "office": "Marshal",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "Software developer, sports fan, third-generation Mason.",
+        "jewel": "marshal.png"
+    },
+    {
         "name": "Bruce A. Koval",
         "office": "Tyler",
         "image": "current-officers/square_and_compasses.jpg",
