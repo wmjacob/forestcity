@@ -1,5 +1,23 @@
 [
     {
+        "eventName": "2023 - 2024 Installation of Officers",
+        "eventId": "lodgeOfficerInstallation2023",
+        "displayDate": "Wednesday, November 29th, 2023",
+        "description": "Congratulations to Worshipful Master Ronald E. Stuver and his officer line on a wonderful installation ceremony. A special thank you to the installing officers, featuring the father and son of WM Stuver, and thank you to all guests and brethren!",
+        "albumName": "2023_11_29_Officers_Installation",
+        "imageUrls": [
+            "225.jpg",
+            "223.jpg",
+            "224.jpg",
+            "229.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/11/29"
+    },
+    {
         "eventName": "Browns Tailgate Party",
         "eventId": "brownsTailgate2023",
         "displayDate": "Sunday, October 22nd, 2023",
