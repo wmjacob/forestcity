@@ -1,5 +1,26 @@
 [
     {
+        "eventName": "50th Annual Brotherhood Night: A Night With The Clergy and Candle Lighting Ceremony",
+        "eventId": "brotherHoodNight2023",
+        "displayDate": "Wednesday, December 6th, 2023",
+        "description": "Forest City Lodge No. 388 celebrated our 50th Annual Brotherhood Night: A Night With The Clergy and Candle Lighting Ceremony with a bang! We want to extend a very special thank you to our guest speakers - Most Reverent Michael G. Woost, Auxiliary Bishop of the Catholic Diocese of Cleveland; Rabbi Joshua Caruso of Anshe Chesed Fairmount Temple; Right Worshipful Brother J. Randolph Clark, Grand Chaplain of the Grand Lodge F&AM of Ohio; and Most Worshipful Brother Paul A. Weglage, Grand Master of the Grand Lodge F&AM of Ohio. The night was capped off with the presentation of $20,000 donated to ten worthy charities in our area! Thank you to all who attended, and a very warm thank you to the Brotherhood Committee - none of this would have been possible without your hard work and dedication!",
+        "albumName": "2023_12_06_Brotherhood_Night",
+        "imageUrls": [
+            "145.jpg",
+            "212.jpg",
+            "206.jpg",
+            "123.jpg",
+            "130.jpg",
+            "135.jpg",
+            "196.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2023/11/29"
+    },
+    {
         "eventName": "2023 - 2024 Installation of Officers",
         "eventId": "lodgeOfficerInstallation2023",
         "displayDate": "Wednesday, November 29th, 2023",
