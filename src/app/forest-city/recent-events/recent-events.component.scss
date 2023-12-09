@@ -28,3 +28,10 @@
 .carousel-item {
     max-height: 100vh;
 }
+
+:host ::ng-deep .bullet-list {
+    display: block;
+    max-width: max-content;
+    margin: auto;
+    text-align: left;
+}
