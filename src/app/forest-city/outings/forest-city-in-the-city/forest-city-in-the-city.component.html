@@ -62,6 +62,9 @@
                                 </div>
                                 <div class="card-body">
                                   <h5 class="card-title">{{event.description}}</h5>
+                                  <div *ngIf="isRsvp(event)">
+                                    <h5><i>{{event.rsvpDesc}}</i></h5>
+                                  </div>
                                   <h5>{{getDate(event.date)}}</h5>
                                   <p class="card-text"><span class="fw-bold">Location: </span>{{event.location}}, <a class="link-offset-2" [href]="event.locationUrl" target="_blank">{{ event.locationAddress }}</a></p>
                                   <div *ngIf="hasEventImageUrl(event)">
