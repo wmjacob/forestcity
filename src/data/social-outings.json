@@ -38,5 +38,15 @@
         "description": "Come watch the Ohio State Buckeyes battle That School Up North! The game starts at high 12. Please RSVP so we can reserve seats ahead of time.",
         "eventImageUrl": "2023_11_25_osu_mich.png",
         "isRsvp": true
+    },
+    {
+        "name": "Brothers and Brews",
+        "date": "2024/01/20 13:00",
+        "location": "Boss Dog Brewing Company",
+        "locationAddress": "2179 Lee Rd, Cleveland Heights, OH 44118",
+        "locationUrl": "https://maps.app.goo.gl/HmWZkEP5zeQt7PySA",
+        "description": "Come enjoy some fellowship, food, and refreshments with the Brethren of Forest City Lodge! Please RSVP so we can reserve seating ahead of time.",
+        "eventImageUrl": "boss_dog_logo.jpg",
+        "isRsvp": true
     }
 ]
