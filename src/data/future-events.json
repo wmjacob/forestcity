@@ -708,7 +708,7 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "No Charge",
       "choices": []
     },
     "rsvpLimit": false
@@ -729,7 +729,7 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "No Charge",
       "choices": []
     },
     "rsvpLimit": false
@@ -738,7 +738,7 @@
     "date": "2024/01/17 19:30",
     "name": "Stated Meeting",
     "description": "Chili Cookoff",
-    "extraInfo": "Type-written Ritual",
+    "extraInfo": "EA Degree will be conferred",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -750,7 +750,7 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "No Charge",
       "choices": []
     },
     "rsvpLimit": false
@@ -758,8 +758,8 @@
   {
     "date": "2024/01/31 19:30",
     "name": "Awards Night",
-    "description": "",
-    "extraInfo": "Will include Zoom for remote members",
+    "description": "Special (open) Meeting",
+    "extraInfo": "Members and guests are welcome",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -779,8 +779,8 @@
   {
     "date": "2024/02/07 19:30",
     "name": "Valentine's Day Dinner",
-    "description": "",
-    "extraInfo": "",
+    "description": "A brief tyled meeting will be held - No business planned. Musical entertainment is planned during and after dinner",
+    "extraInfo": "Members and guests are welcome for dinner and activities are planned after the brief tyled meeeting",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -800,7 +800,7 @@
   {
     "date": "2024/02/21 19:30",
     "name": "Stated Meeting",
-    "description": "Rusty Nail Degree Night",
+    "description": "Rusty Nail Degree Night - An educational evening for Master Masons. Brethren are encouraged to reach out to those who haven't attended regularly and bring them back to Lodge",
     "extraInfo": "Birthday Night (Dec, Jan, Feb)",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -813,7 +813,7 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "No Charge",
       "choices": []
     },
     "rsvpLimit": false
@@ -834,7 +834,7 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "No Charge",
       "choices": []
     },
     "rsvpLimit": false
@@ -855,7 +855,7 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "No Charge",
       "choices": []
     },
     "rsvpLimit": false
@@ -876,7 +876,7 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "No Charge",
       "choices": []
     },
     "rsvpLimit": false
@@ -918,7 +918,7 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "No Charge",
       "choices": []
     },
     "rsvpLimit": false
@@ -939,7 +939,7 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "No Charge",
       "choices": []
     },
     "rsvpLimit": false
@@ -960,7 +960,7 @@
     "tyled": false,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "No Charge",
       "choices": []
     },
     "rsvpLimit": false
@@ -981,7 +981,7 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
-      "cost": "6",
+      "cost": "No Charge",
       "choices": []
     },
     "rsvpLimit": false
