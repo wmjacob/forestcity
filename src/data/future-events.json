@@ -789,7 +789,7 @@
     "spotlight": true,
     "spotlightImage": "valentines.jpg",
     "altText": "",
-    "tyled": true,
+    "tyled": false,
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
       "cost": "12",
