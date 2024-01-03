@@ -756,7 +756,7 @@
     "rsvpLimit": false
   },
   {
-    "date": "2024/01/31 19:30",
+    "date": "2024/01/31 19:00",
     "name": "Awards Night",
     "description": "Special (open) Meeting",
     "extraInfo": "Members and guests are welcome",
@@ -770,7 +770,7 @@
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "(6:30 PM)",
+      "time": "(6:00 PM)",
       "cost": "12",
       "choices": ["Beef", "Salmon"]
     },
