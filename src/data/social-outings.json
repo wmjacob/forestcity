@@ -53,5 +53,27 @@
         "eventImageUrl": "boss_dog_logo.jpg",
         "isRsvp": true,
         "rsvpDesc": "Please RSVP so we can reserve seating ahead of time."
+    },
+    {
+        "name": "Family Fun at the Rollhouse",
+        "date": "2024/04/20 15:00",
+        "location": "Solon Rollhouse",
+        "locationAddress": "33185 Bainbridge Rd, Solon, OH 44139",
+        "locationUrl": "https://maps.app.goo.gl/yZbRCyM5PKdpkA9d7",
+        "description": "The Rollhouse is an entertainment hub, with laser tag, escape rooms, bowling, karaoke, food, drinks, and more. Come join us for a fun time with family and friends!",
+        "eventImageUrl": "rollhouse_solon.webp",
+        "isRsvp": true,
+        "rsvpDesc": "Please RSVP so we can reserve seating ahead of time."
+    },
+    {
+        "name": "Whirly Ball",
+        "date": "2024/05/11 15:00",
+        "location": "Whirlyball Cleveland",
+        "locationAddress": "5055 Richmond Rd, Bedford Heights, OH 44146",
+        "locationUrl": "https://maps.app.goo.gl/s5CNUecyWr1r17Pr8",
+        "description": "The name says it all!",
+        "eventImageUrl": "whirlyball.webp",
+        "isRsvp": true,
+        "rsvpDesc": "Please RSVP so we can reserve seating ahead of time."
     }
 ]
