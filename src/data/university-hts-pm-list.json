@@ -1,0 +1,452 @@
+[
+    {
+        "number": 1,
+        "name": "James C. Scott",
+        "term": "1952 - 1953",
+        "imgUrl": ""
+    },
+    {
+        "number": 2,
+        "name": "Walter A. Sayles",
+        "term": "1953 - 1954",
+        "imgUrl": ""
+    },
+    {
+        "number": 3,
+        "name": "Jacob Garfinkel",
+        "term": "1954 - 1955",
+        "imgUrl": ""
+    },
+    {
+        "number": 4,
+        "name": "Max M. Pomerantz",
+        "term": "1955 - 1956",
+        "imgUrl": ""
+    },
+    {
+        "number": 5,
+        "name": "Edwin A. Strauss, Sr.",
+        "term": "1956 - 1957",
+        "imgUrl": ""
+    },
+    {
+        "number": 6,
+        "name": "Earl W. Aurelius",
+        "term": "1957 - 1958",
+        "imgUrl": ""
+    },
+    {
+        "number": 7,
+        "name": "Ezra I. Silver",
+        "term": "1958 - 1959",
+        "imgUrl": ""
+    },
+    {
+        "number": 8,
+        "name": "H. P. Peterson",
+        "term": "1959 - 1960",
+        "imgUrl": ""
+    },
+    {
+        "number": 9,
+        "name": "Harry H. Cole",
+        "term": "1960 - 1961",
+        "imgUrl": ""
+    },
+    {
+        "number": 10,
+        "name": "John C. Scheel",
+        "term": "1961 - 1962",
+        "imgUrl": ""
+    },
+    {
+        "number": 11,
+        "name": "Froyam Weinberger",
+        "term": "1962 - 1963",
+        "imgUrl": ""
+    },
+    {
+        "number": 12,
+        "name": "Earl C. Priesand",
+        "term": "1963 - 1964",
+        "imgUrl": ""
+    },
+    {
+        "number": 13,
+        "name": "Joseph L. Newman",
+        "term": "1964 - 1965",
+        "imgUrl": ""
+    },
+    {
+        "number": 14,
+        "name": "Alan G. Silver",
+        "term": "1965 - 1966",
+        "imgUrl": ""
+    },
+    {
+        "number": 15,
+        "name": "Robert D. Kates",
+        "term": "1966 - 1967",
+        "imgUrl": ""
+    },
+    {
+        "number": 16,
+        "name": "Edward J. Dworkin",
+        "term": "1967 - 1968",
+        "imgUrl": ""
+    },
+    {
+        "number": 17,
+        "name": "Albert I. Schultz",
+        "term": "1968 - 1969",
+        "imgUrl": ""
+    },
+    {
+        "number": 18,
+        "name": "Richard A. Fromson",
+        "term": "1969 - 1970",
+        "imgUrl": ""
+    },
+    {
+        "number": 19,
+        "name": "Alvin A. Mintz",
+        "term": "1970 - 1971",
+        "imgUrl": ""
+    },
+    {
+        "number": 20,
+        "name": "Ernest Dworkin",
+        "term": "1971 - 1972",
+        "imgUrl": ""
+    },
+    {
+        "number": 21,
+        "name": "Herbert M. Discont",
+        "term": "1972 - 1973",
+        "imgUrl": ""
+    },
+    {
+        "number": 22,
+        "name": "Jerome Ack",
+        "term": "1973 - 1974",
+        "imgUrl": ""
+    },
+    {
+        "number": 23,
+        "name": "Ronald Rubenstein",
+        "term": "1974 - 1975",
+        "imgUrl": ""
+    },
+    {
+        "number": 24,
+        "name": "Stanley Rubinstein",
+        "term": "1975 - 1976",
+        "imgUrl": ""
+    },
+    {
+        "number": 25,
+        "name": "Myron Schultz",
+        "term": "1976 - 1977",
+        "imgUrl": ""
+    },
+    {
+        "number": 26,
+        "name": "Edwin A. Strauss, Jr.",
+        "term": "1977 - 1978",
+        "imgUrl": ""
+    },
+    {
+        "number": 27,
+        "name": "Harvey J. Kumin",
+        "term": "1978 - 1979",
+        "imgUrl": ""
+    },
+    {
+        "number": 28,
+        "name": "Bert S. Eagles",
+        "term": "1979 - 1980",
+        "imgUrl": ""
+    },
+    {
+        "number": 29,
+        "name": "Joel I. Newman",
+        "term": "1980 - 1981",
+        "imgUrl": ""
+    },
+    {
+        "number": 30,
+        "name": "Alan B. Arons",
+        "term": "1981 - 1982",
+        "imgUrl": ""
+    },
+    {
+        "number": 31,
+        "name": "Jeffrey E. Schultz",
+        "term": "1982 - 1983",
+        "imgUrl": ""
+    },
+    {
+        "number": 32,
+        "name": "Kenneth D. Vinocur",
+        "term": "1983 - 1984",
+        "imgUrl": ""
+    },
+    {
+        "number": 33,
+        "name": "Stuart K. Silver",
+        "term": "1984 - 1985",
+        "imgUrl": ""
+    },
+    {
+        "number": 34,
+        "name": "A. Arthur Moss",
+        "term": "1985 - 1986",
+        "imgUrl": ""
+    },
+    {
+        "number": 35,
+        "name": "Robert W. Fried",
+        "term": "1986 - 1987",
+        "imgUrl": ""
+    },
+    {
+        "number": 36,
+        "name": "Dennis A. Linden",
+        "term": "1987 - 1988",
+        "imgUrl": ""
+    },
+    {
+        "number": 37,
+        "name": "Daniel J. Friedman",
+        "term": "1988 - 1989",
+        "imgUrl": ""
+    },
+    {
+        "number": 38,
+        "name": "Michael L. Leichner",
+        "term": "1989 - 1990",
+        "imgUrl": ""
+    },
+    {
+        "number": 39,
+        "name": "Jay A. Ravitz",
+        "term": "1990 - 1991",
+        "imgUrl": ""
+    },
+    {
+        "number": 40,
+        "name": "Roger C. Newberry",
+        "term": "1991 - 1992",
+        "imgUrl": ""
+    },
+    {
+        "number": 41,
+        "name": "Harry S. Marcus",
+        "term": "1992 - 1993",
+        "imgUrl": ""
+    },
+    {
+        "number": 42,
+        "name": "Stuart R. Wittenberg",
+        "term": "1993 - 1994",
+        "imgUrl": ""
+    },
+    {
+        "number": 43,
+        "name": "Alex S. Lev",
+        "term": "1994 - 1995",
+        "imgUrl": ""
+    },
+    {
+        "number": 44,
+        "name": "David B. Greenberg",
+        "term": "1995 - 1996",
+        "imgUrl": ""
+    },
+    {
+        "number": 45,
+        "name": "Alan L. Wittenberg",
+        "term": "1996 - 1997",
+        "imgUrl": ""
+    },
+    {
+        "number": 46,
+        "name": "Howard Lev",
+        "term": "1997 - 1998",
+        "imgUrl": ""
+    },
+    {
+        "number": 47,
+        "name": "Marc F. Reiff",
+        "term": "1998 - 1999",
+        "imgUrl": ""
+    },
+    {
+        "number": 48,
+        "name": "Alan B. Arons",
+        "term": "1999 - 2000",
+        "imgUrl": ""
+    },
+    {
+        "number": 49,
+        "name": "Keevin J. Berman",
+        "term": "2000 - 2001",
+        "imgUrl": ""
+    },
+    {
+        "number": 50,
+        "name": "Abraham Kay",
+        "term": "2001 - 2002",
+        "imgUrl": ""
+    },
+    {
+        "number": 51,
+        "name": "Jeffrey A. Kaplan",
+        "term": "2002 - 2003",
+        "imgUrl": ""
+    },
+    {
+        "number": 52,
+        "name": "Henry G. Mankowski",
+        "term": "2003 - 2004",
+        "imgUrl": ""
+    },
+    {
+        "number": 53,
+        "name": "Duane A. Dukes",
+        "term": "2004 - 2005",
+        "imgUrl": ""
+    },
+    {
+        "number": 54,
+        "name": "Russel H. Van Scyoc",
+        "term": "2005 - 2006",
+        "imgUrl": ""
+    },
+    {
+        "number": 55,
+        "name": "Adam Rutkowski",
+        "term": "2006 - 2007",
+        "imgUrl": ""
+    },
+    {
+        "number": 56,
+        "name": "Jeffrey A. Kaplan",
+        "term": "2007 - 2008",
+        "imgUrl": ""
+    },
+    {
+        "number": 57,
+        "name": "Hugh A. Harris",
+        "term": "2008 - 2009",
+        "imgUrl": ""
+    },
+    {
+        "number": 58,
+        "name": "Keevin J. Berman",
+        "term": "2009 - 2010",
+        "imgUrl": ""
+    },
+    {
+        "number": 59,
+        "name": "Matthew E. Newberry",
+        "term": "2010 - 2011",
+        "imgUrl": ""
+    },
+    {
+        "number": 60,
+        "name": "Aarne Lillo",
+        "term": "2011 - 2012",
+        "imgUrl": ""
+    },
+    {
+        "number": 61,
+        "name": "Howard Lev",
+        "term": "2012 - 2013",
+        "imgUrl": ""
+    },
+    {
+        "number": 62,
+        "name": "Roni Taxer",
+        "term": "2013 - 2014",
+        "imgUrl": ""
+    },
+    {
+        "number": 63,
+        "name": "Leonard Holmes",
+        "term": "2014 - 2015",
+        "imgUrl": ""
+    },
+    {
+        "number": 64,
+        "name": "Adam Rutkowski",
+        "term": "2015 - 2016",
+        "imgUrl": ""
+    },
+    {
+        "number": 65,
+        "name": "Joseph A. Huber",
+        "term": "2016 - 2017",
+        "imgUrl": ""
+    },
+    {
+        "number": 66,
+        "name": "Henry G. Mankowski",
+        "term": "2017 - 2018",
+        "imgUrl": ""
+    },
+    {
+        "number": 67,
+        "name": "Howard Lev",
+        "term": "2018 - 2019",
+        "imgUrl": ""
+    },
+    {
+        "number": 68,
+        "name": "Jeffrey Moss",
+        "term": "2019",
+        "imgUrl": ""
+    },
+    {
+        "number": 69,
+        "name": "Howard Lev",
+        "term": "2020",
+        "imgUrl": ""
+    },
+    {
+        "number": 70,
+        "name": "John Padley",
+        "term": "2020 - 2021",
+        "imgUrl": ""
+    },
+    {
+        "number": 71,
+        "name": "John Padley",
+        "term": "2021 - 2022",
+        "imgUrl": ""
+    },
+    {
+        "number": 72,
+        "name": "Matthew E. Newberry",
+        "term": "2022 - 2023",
+        "imgUrl": ""
+    },
+    {
+        "number": 73,
+        "name": "Joseph H. Silbert",
+        "term": "By Affiliation",
+        "imgUrl": ""
+    },
+    {
+        "number": 74,
+        "name": "Robert Brooks",
+        "term": "By Affiliation",
+        "imgUrl": ""
+    },
+    {
+        "number": 75,
+        "name": "Ray Gieling",
+        "term": "By Affiliation",
+        "imgUrl": ""
+    }
+]
