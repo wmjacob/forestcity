@@ -885,7 +885,7 @@
     "date": "2024/04/17 19:30",
     "name": "Stated Meeting",
     "description": "Inspection - FC Degree",
-    "extraInfo": "",
+    "extraInfo": "Meal Choice: Beef or Salmon",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -898,7 +898,7 @@
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
       "cost": "12",
-      "choices": []
+      "choices": ["Beef", "Salmon"]
     },
     "rsvpLimit": false
   },
