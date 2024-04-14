@@ -75,5 +75,16 @@
         "eventImageUrl": "whirlyball.webp",
         "isRsvp": true,
         "rsvpDesc": "Please RSVP so we can reserve seating ahead of time."
+    },
+    {
+        "name": "Master, Wardens and Wine Celebration",
+        "date": "2024/06/01 15:00",
+        "location": "Debonne Vineyards",
+        "locationAddress": "7840 Doty Rd, Madison, OH 44057",
+        "locationUrl": "https://maps.app.goo.gl/Ye4LDmranBdohvxR9",
+        "description": "",
+        "eventImageUrl": "2024_master_wardens_and_wine.jpg",
+        "isRsvp": false,
+        "rsvpDesc": ""
     }
 ]
