@@ -926,8 +926,8 @@
   {
     "date": "2024/05/15 19:30",
     "name": "Stated Meeting",
-    "description": "",
-    "extraInfo": "",
+    "description": "District Education",
+    "extraInfo": "\"The penalties of our obligations\", presented by WB Brian Iselin, DEO, 22nd District. (Master Masons only)",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -945,10 +945,10 @@
     "rsvpLimit": false
   },
   {
-    "date": "2024/05/29 19:00",
+    "date": "2024/05/29 19:30",
     "name": "Special Meeting",
-    "description": "Sports Night",
-    "extraInfo": "Note: Snacks will be served instead of dinner",
+    "description": "Sports Night - Soccer Education and Watch Party",
+    "extraInfo": "Come watch Bro. Brad Stuver, son of WM Ron Stuver, as starting goalkeeper for Austin FC vs. Portland Timbers. Snacks will be served.",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -959,8 +959,8 @@
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "(6:30 PM)",
-      "cost": "No Charge",
+      "time": "",
+      "cost": "",
       "choices": []
     },
     "rsvpLimit": false
@@ -1008,9 +1008,9 @@
     "rsvpLimit": false
   },
   {
-    "date": "2024/08/14 17:00",
+    "date": "2024/08/21 17:00",
     "name": "Annual Steak Roast",
-    "description": "",
+    "description": "Meal choices: Steak, Chicken, or Ribs",
     "extraInfo": "",
     "location": "TBA",
     "address": "",
@@ -1024,7 +1024,7 @@
     "earlyBirdOptions": {
       "time": "(5:00 PM)",
       "cost": "20",
-      "choices": []
+      "choices": ["Steak", "Chicken", "Ribs"]
     },
     "rsvpLimit": false
   }
