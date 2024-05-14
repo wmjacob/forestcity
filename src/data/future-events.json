@@ -990,7 +990,7 @@
     "date": "2024/06/19 18:30",
     "name": "Table Lodge",
     "description": "",
-    "extraInfo": "",
+    "extraInfo": "Meal Choices: Breaded Chicken Cutlets, Glazed Salmon, or Sliced Roast Beef",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -1003,18 +1003,18 @@
     "earlyBirdOptions": {
       "time": "(6:30 PM)",
       "cost": "12",
-      "choices": []
+      "choices": ["Breaded Chicken Cutlets", "Glazed Salmon", "Sliced Roast Beef"]
     },
     "rsvpLimit": false
   },
   {
     "date": "2024/08/21 17:00",
     "name": "Annual Steak Roast",
-    "description": "Meal choices: Steak, Chicken, or Ribs",
-    "extraInfo": "",
-    "location": "TBA",
-    "address": "",
-    "addressLink": "",
+    "description": "The Shelterhouse Picnic Area is located off Hawthorn Parkway, east of SOM Center Rd",
+    "extraInfo": "Meal choices: Steak, Chicken, or Ribs",
+    "location": "South Chagrin Reservation - Shelterhouse Picnic Area",
+    "address": "Hawthorn Pkwy, Bentleyville, OH 44022",
+    "addressLink": "https://maps.app.goo.gl/n44Lz8Uh3xQ54ggV8",
     "rsvpOptions": true,
     "rsvpExpirationDays": "5",
     "spotlight": false,
