@@ -1005,7 +1005,7 @@
       "cost": "12",
       "choices": ["Breaded Chicken Cutlets", "Glazed Salmon", "Sliced Roast Beef"]
     },
-    "rsvpLimit": false
+    "rsvpLimit": true
   },
   {
     "date": "2024/08/21 17:00",

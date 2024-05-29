@@ -64,7 +64,7 @@ export class FutureEventsComponent implements OnInit {
     }
 
     if(event.rsvpLimit) {
-      if(this.attendeeCount >= 150) {
+      if(this.attendeeCount >= 90) {
         return false;
       }
     }
