@@ -994,7 +994,7 @@
     "location": "Forest City Lodge",
     "address": "Euclid Masonic Temple, 27271 Tungsten Rd, Euclid, OH 44132",
     "addressLink": "https://maps.app.goo.gl/CEWbATBaX6CmFEB29",
-    "rsvpOptions": true,
+    "rsvpOptions": false,
     "rsvpExpirationDays": "3",
     "spotlight": false,
     "spotlightImage": "",
