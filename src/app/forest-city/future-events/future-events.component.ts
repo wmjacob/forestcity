@@ -63,6 +63,7 @@ export class FutureEventsComponent implements OnInit {
       return false;
     }
 
+    // BE SURE TO UPDATE sheets-api.js AS WELL
     if(event.rsvpLimit) {
       if(this.attendeeCount >= 70) {
         return false;
@@ -81,6 +82,7 @@ export class FutureEventsComponent implements OnInit {
     return '';
   }
 
+  // ***UPDATE sheets-api.js with the event as well!!!
   async readSheetForGuestLimit() {
     await this.sheetsService.readFromSheet().then(
       (result) => {
