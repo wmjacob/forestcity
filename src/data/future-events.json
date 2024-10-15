@@ -1143,14 +1143,35 @@
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
     "rsvpOptions": true,
     "rsvpExpirationDays": "3",
-    "spotlight": false,
-    "spotlightImage": "",
+    "spotlight": true,
+    "spotlightImage": "hats.jpeg",
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "TBD",
       "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2024/12/4 19:00",
+    "name": "51st Annual Brotherhood Night",
+    "description": "A Night with the Clergy",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": true,
+    "spotlightImage": "brotherhood-night.jpg",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(6:00)",
+      "cost": "12",
+      "choices": ["Beef Tenderloin with Gravy", "Stuffed Chicken with Chicken Gravy", "Marinara Baked Ziti (Vegan)"]
     },
     "rsvpLimit": false
   }
