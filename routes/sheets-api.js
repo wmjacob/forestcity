@@ -43,7 +43,12 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
 
         let sheet = doc.sheetsByTitle[eventNameDate];
         if(sheet) {
-            if(data.thirdChoice) {
+            if(data.fourthChoice) {
+                await sheet.addRow(
+                    [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.firstChoiceCount, data.secondChoiceCount, data.thirdChoiceCount, data.fourthChoiceCount, data.numberOfAttendees]
+                );
+            }
+            else if(data.thirdChoice) {
                 await sheet.addRow(
                     [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.firstChoiceCount, data.secondChoiceCount, data.thirdChoiceCount, data.numberOfAttendees]
                 );
