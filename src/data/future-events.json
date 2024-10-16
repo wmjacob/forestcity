@@ -1149,8 +1149,8 @@
     "tyled": false,
     "earlyBirdOptions": {
       "time": "(6:30)",
-      "cost": "TBD",
-      "choices": []
+      "cost": "12",
+      "choices": ["Breaded Chicken Cutlets", "Sliced Roast Beef", "Glazed Salmon", "Baked Ziti (Vegan)"]
     },
     "rsvpLimit": false
   },
