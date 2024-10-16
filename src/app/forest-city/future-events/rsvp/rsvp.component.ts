@@ -109,7 +109,7 @@ export class RsvpComponent implements OnInit {
       jsonObj.thirdChoiceCount = this.getNumberOfMealChoice(2);
       if(this.event.earlyBirdOptions.choices.length > 3) {
         jsonObj.fourthChoice = this.getChoiceForIndex(3);
-        jsonObj.fourthChoice = this.getNumberOfMealChoice(3);
+        jsonObj.fourthChoiceCount = this.getNumberOfMealChoice(3);
       }
       request = jsonObj;
     }
