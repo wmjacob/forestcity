@@ -105,8 +105,12 @@ export class RsvpComponent implements OnInit {
 
     if(this.event.earlyBirdOptions.choices.length > 2) {
       let jsonObj = JSON.parse(JSON.stringify(request));
-      jsonObj.thirdChoice = this.getChoiceForIndex(2)
+      jsonObj.thirdChoice = this.getChoiceForIndex(2);
       jsonObj.thirdChoiceCount = this.getNumberOfMealChoice(2);
+      if(this.event.earlyBirdOptions.choices.length > 3) {
+        jsonObj.fourthChoice = this.getChoiceForIndex(3);
+        jsonObj.fourthChoice = this.getNumberOfMealChoice(3);
+      }
       request = jsonObj;
     }
 
@@ -154,7 +158,12 @@ export class RsvpComponent implements OnInit {
         return mealChoices[0] + ": " + countFirstChoice + " " + mealChoices[1] +": " + countSecondChoice;
       }
       else {
+        let numberOfMealChoices = this.event.earlyBirdOptions.choices;
         let countThirdChoice = this.getChoiceCountForIndex(2);
+        if(numberOfMealChoices == 4) {
+          let countFourthChoice = this.getChoiceCountForIndex(3);
+          return mealChoices[0] + ": " + countFirstChoice + " " + mealChoices[1] +": " + countSecondChoice + " " + mealChoices[2] + ": " + countThirdChoice + " " + mealChoices[3] + ": " + countFourthChoice;
+        }
         return mealChoices[0] + ": " + countFirstChoice + " " + mealChoices[1] +": " + countSecondChoice + " " + mealChoices[2] + ": " + countThirdChoice;
       }
     }
