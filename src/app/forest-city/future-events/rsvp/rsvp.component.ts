@@ -18,8 +18,8 @@ export class RsvpComponent implements OnInit {
   mealChoice: boolean = false;
 
   rsvpForm: UntypedFormGroup = new UntypedFormGroup({
-    firstName: new UntypedFormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
-    lastName: new UntypedFormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
+    firstName: new UntypedFormControl('', [Validators.required, Validators.pattern("[-\\w\\s\']*")]),
+    lastName: new UntypedFormControl('', [Validators.required, Validators.pattern("[-\\w\\s\']*")]),
     masonicTitle: new UntypedFormControl('', [Validators.pattern("[-,\\w\\s]*")]),
     email: new UntypedFormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
     earlyBirdDinner: new UntypedFormControl(false),
