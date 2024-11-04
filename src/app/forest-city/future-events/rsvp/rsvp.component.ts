@@ -241,8 +241,20 @@ export class RsvpComponent implements OnInit {
       }
       else {
         let countThirdChoice = this.getChoiceCountForIndex(2);
+        if(mealChoices.length > 3) {
+          let countFourthChoice = this.getChoiceCountForIndex(3);
+          if(numberOfMeals != countFirstChoice + countSecondChoice + countThirdChoice + countFourthChoice) {
+            return true;
+          }
+          else {
+            return false;
+          }
+        }
         if(numberOfMeals != countFirstChoice + countSecondChoice + countThirdChoice) {
           return true;
+        }
+        else {
+          return false;
         }
       }
     }
