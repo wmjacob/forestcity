@@ -420,7 +420,7 @@
     "rsvpLimit": false
   },
   {
-    "date": "2023/05/17 19:00",
+    "date": "2023/05/17 19:30",
     "name": "Awards Night",
     "description": "",
     "extraInfo": "",
@@ -434,7 +434,7 @@
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "(6:00 PM)",
+      "time": "(6:30 PM)",
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
     },
@@ -1239,8 +1239,8 @@
     "rsvpLimit": false
   },
   {
-    "date": "2025/01/29 19:30",
-    "name": "Stated Meeting",
+    "date": "2025/01/29 19:00",
+    "name": "Special Meeting",
     "description": "Awards Night",
     "extraInfo": "Meal Choices TBD",
     "location": "Forest City Lodge",
@@ -1253,7 +1253,7 @@
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "(6:30)",
+      "time": "(6:00)",
       "cost": "12",
       "choices": [""]
     },
