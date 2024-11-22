@@ -420,7 +420,7 @@
     "rsvpLimit": false
   },
   {
-    "date": "2023/05/17 19:30",
+    "date": "2023/05/17 19:00",
     "name": "Awards Night",
     "description": "",
     "extraInfo": "",
@@ -434,7 +434,7 @@
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "(6:30 PM)",
+      "time": "(6:00 PM)",
       "cost": "12",
       "choices": ["Prime Rib", "Salmon"]
     },
