@@ -1,6 +1,6 @@
 <div class="grid-col-12 padding-y-3 bg-primary-lighter">
     <div class="centered">
-        <h2>Past Masters of Forest City Lodge No. 388</h2>
+        <h2>Past Masters of {{ lodge }}</h2>
         <a (click)="toggleListView()" class="button" style="cursor: pointer;">
             View <span *ngIf="!listView">As List</span><span *ngIf="listView">Original</span>
         </a>
@@ -41,7 +41,7 @@
                         </tr>
                         <tbody *ngFor="let master of pastMastersList; index as i">
                             <tr [ngClass]="{'table-info': i%2==0, 'table-light': i%2==1}">
-                                <td>{{master.number}}</td>
+                                <td><span *ngIf="master.number > 0">{{master.number}}</span></td>
                                 <td>{{master.name}}</td>
                                 <td>{{master.term}}</td>
                             </tr>

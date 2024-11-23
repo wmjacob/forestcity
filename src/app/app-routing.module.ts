@@ -14,8 +14,8 @@ import { ImageGalleryComponent } from './forest-city/image-gallery/image-gallery
 import { GalleryCollectionComponent } from './forest-city/image-gallery/gallery-collection/gallery-collection.component';
 import { RecentEventsComponent } from './forest-city/recent-events/recent-events.component';
 import { PastBulletinsComponent } from './forest-city/past-bulletins/past-bulletins.component';
-import { OperationBackpackComponent } from './forest-city/temp-events/operation-backpack/operation-backpack.component';
 import { GoldenSquarePMComponent } from './forest-city/golden-square/past-masters/golden-square-pm.component';
+import { UniversityHeightsPMComponent } from './forest-city/past-masters/uh-past-masters.component';
 import { ForestCityInTheCityComponent } from './forest-city/outings/forest-city-in-the-city/forest-city-in-the-city.component';
 
 const IMAGE_GALLERY_URL = 'image-gallery';
@@ -85,6 +85,10 @@ const routes: Routes = [
       {
         path: 'golden-square-past-masters',
         component: GoldenSquarePMComponent
+      },
+      {
+        path: 'university-heights-past-masters',
+        component: UniversityHeightsPMComponent
       },
       {
         path: 'social-events',

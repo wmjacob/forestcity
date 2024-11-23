@@ -1,0 +1,464 @@
+[
+    {
+        "number": 1,
+        "name": "James C. Scott",
+        "term": "1952-1953",
+        "imgUrl": "../../../assets/images/past_masters/1952-1953_james_c_scott.jpg"
+    },
+    {
+        "number": 2,
+        "name": "James C. Scott",
+        "term": "1952-1953",
+        "imgUrl": "../../../assets/images/past_masters/1952-1953_james_c_scott.jpg"
+    },
+    {
+        "number": 3,
+        "name": "Watler A. Sayles",
+        "term": "1953-1954",
+        "imgUrl": "../../../assets/images/past_masters/1953-1954_watler_a_sayles.jpg"
+    },
+    {
+        "number": 4,
+        "name": "Jacob Garfinkel",
+        "term": "1954-1955",
+        "imgUrl": "../../../assets/images/past_masters/1954-1955_jacob_garfinkel.jpg"
+    },
+    {
+        "number": 5,
+        "name": "Max M. Pomerantz",
+        "term": "1955-1956",
+        "imgUrl": "../../../assets/images/past_masters/1955-1956_max_m_pomerantz.jpg"
+    },
+    {
+        "number": 6,
+        "name": "Edwin A. Stauss, Sr.",
+        "term": "1956-1957",
+        "imgUrl": "../../../assets/images/past_masters/1956-1957_edwin_a_stauss,_sr.jpg"
+    },
+    {
+        "number": 7,
+        "name": "Earl W. Aurelius",
+        "term": "1957-1958",
+        "imgUrl": "../../../assets/images/past_masters/1957-1958_earl_w_aurelius.jpg"
+    },
+    {
+        "number": 8,
+        "name": "Ezra I. Silver",
+        "term": "1958-1959",
+        "imgUrl": "../../../assets/images/past_masters/1958-1959_ezra_i_silver.jpg"
+    },
+    {
+        "number": 9,
+        "name": "H. P. Peterson",
+        "term": "1959-1960",
+        "imgUrl": "../../../assets/images/past_masters/1959-1960_h_p_peterson.jpg"
+    },
+    {
+        "number": 10,
+        "name": "Harry H. Cole",
+        "term": "1960-1961",
+        "imgUrl": "../../../assets/images/past_masters/1960-1961_harry_h_cole.jpg"
+    },
+    {
+        "number": 11,
+        "name": "John C. Scheel",
+        "term": "1961-1962",
+        "imgUrl": "../../../assets/images/past_masters/1961-1962_john_c_scheel.jpg"
+    },
+    {
+        "number": 12,
+        "name": "Froyam Weinberger",
+        "term": "1962-1963",
+        "imgUrl": "../../../assets/images/past_masters/1962-1963_froyam_weinberger.jpg"
+    },
+    {
+        "number": 13,
+        "name": "Earl C. Priesand",
+        "term": "1963-1964",
+        "imgUrl": "../../../assets/images/past_masters/1963-1964_earl_c_priesand.jpg"
+    },
+    {
+        "number": 14,
+        "name": "Joseph L. Newman",
+        "term": "1964-1965",
+        "imgUrl": "../../../assets/images/past_masters/1964-1965_joseph_l_newman.jpg"
+    },
+    {
+        "number": 15,
+        "name": "Alan G. Silver",
+        "term": "1965-1966",
+        "imgUrl": "../../../assets/images/past_masters/1965-1966_alan_g_silver.jpg"
+    },
+    {
+        "number": 16,
+        "name": "Robert D. Kates",
+        "term": "1966-1967",
+        "imgUrl": "../../../assets/images/past_masters/1966-1967_robert_d_kates.jpg"
+    },
+    {
+        "number": 17,
+        "name": "Edward J. Dworkin",
+        "term": "1967-1968",
+        "imgUrl": "../../../assets/images/past_masters/1967-1968_edward_j_dworkin.jpg"
+    },
+    {
+        "number": 18,
+        "name": "Albert I. Schultz",
+        "term": "1968-1969",
+        "imgUrl": "../../../assets/images/past_masters/1968-1969_albert_i_schultz.jpg"
+    },
+    {
+        "number": 19,
+        "name": "Richard A. Fromson",
+        "term": "1969-1970",
+        "imgUrl": "../../../assets/images/past_masters/1969-1970_richard_a_fromson.jpg"
+    },
+    {
+        "number": 20,
+        "name": "Alvin A. Mintz",
+        "term": "1970-1971",
+        "imgUrl": "../../../assets/images/past_masters/1970-1971_alvin_a_mintz.jpg"
+    },
+    {
+        "number": 21,
+        "name": "Ernest Dworkin",
+        "term": "1971-1972",
+        "imgUrl": "../../../assets/images/past_masters/1971-1972_ernest_dworkin.jpg"
+    },
+    {
+        "number": 22,
+        "name": "Herbert M. Discont",
+        "term": "1972-1973",
+        "imgUrl": "../../../assets/images/past_masters/1972-1973_herbert_m_discont.jpg"
+    },
+    {
+        "number": 23,
+        "name": "Jerome Ack",
+        "term": "1973-1974",
+        "imgUrl": "../../../assets/images/past_masters/1973-1974_jerome_ack.jpg"
+    },
+    {
+        "number": 24,
+        "name": "Ronald Rubenstein",
+        "term": "1974-1975",
+        "imgUrl": "../../../assets/images/past_masters/1974-1975_ronald_rubenstein.jpg"
+    },
+    {
+        "number": 25,
+        "name": "Stanley Rubinstein",
+        "term": "1975-1976",
+        "imgUrl": "../../../assets/images/past_masters/1975-1976_stanley_rubinstein.jpg"
+    },
+    {
+        "number": 26,
+        "name": "Myron Schultz",
+        "term": "1976-1977",
+        "imgUrl": "../../../assets/images/past_masters/1976-1977_myron_schultz.jpg"
+    },
+    {
+        "number": 27,
+        "name": "Edwin A. Strauss, Jr.",
+        "term": "1977-1978",
+        "imgUrl": "../../../assets/images/past_masters/1977-1978_edwin_a_strauss,_jr.jpg"
+    },
+    {
+        "number": 28,
+        "name": "Harvey J. Kumin",
+        "term": "1978-1979",
+        "imgUrl": "../../../assets/images/past_masters/1978-1979_harvey_j_kumin.jpg"
+    },
+    {
+        "number": 29,
+        "name": "Bert S. Eagles",
+        "term": "1979-1980",
+        "imgUrl": "../../../assets/images/past_masters/1979-1980_bert_s_eagles.jpg"
+    },
+    {
+        "number": 30,
+        "name": "Joel I. Newman",
+        "term": "1980-1981",
+        "imgUrl": "../../../assets/images/past_masters/1980-1981_joel_i_newman.jpg"
+    },
+    {
+        "number": 31,
+        "name": "Alan B. Arons",
+        "term": "1981-1982",
+        "imgUrl": "../../../assets/images/past_masters/1981-1982_alan_b_arons.jpg"
+    },
+    {
+        "number": 32,
+        "name": "Jeffrey E. Schultz",
+        "term": "1982-1983",
+        "imgUrl": "../../../assets/images/past_masters/1982-1983_jeffrey_e_schultz.jpg"
+    },
+    {
+        "number": 33,
+        "name": "Kenneth D. Vinocur",
+        "term": "1983-1984",
+        "imgUrl": "../../../assets/images/past_masters/1983-1984_kenneth_d_vinocur.jpg"
+    },
+    {
+        "number": 34,
+        "name": "Stuart K. Silver",
+        "term": "1984-1985",
+        "imgUrl": "../../../assets/images/past_masters/1984-1985_stuart_k_silver.jpg"
+    },
+    {
+        "number": 35,
+        "name": "A. Arthur Moss",
+        "term": "1985-1986",
+        "imgUrl": "../../../assets/images/past_masters/1985-1986_a_arthur_moss.jpg"
+    },
+    {
+        "number": 36,
+        "name": "Robert W. Fried",
+        "term": "1986-1987",
+        "imgUrl": "../../../assets/images/past_masters/1986-1987_robert_w_fried.jpg"
+    },
+    {
+        "number": 37,
+        "name": "Dennis A. Linden",
+        "term": "1987-1988",
+        "imgUrl": "../../../assets/images/past_masters/1987-1988_dennis_a_linden.jpg"
+    },
+    {
+        "number": 38,
+        "name": "Daniel J. Friedman",
+        "term": "1988-1989",
+        "imgUrl": "../../../assets/images/past_masters/1988-1989_daniel_j_friedman.jpg"
+    },
+    {
+        "number": 39,
+        "name": "Michael L. Leichner",
+        "term": "1989-1990",
+        "imgUrl": "../../../assets/images/past_masters/1989-1990_michael_l_leichner.jpg"
+    },
+    {
+        "number": 40,
+        "name": "Jay A. Ravitz",
+        "term": "1990-1991",
+        "imgUrl": "../../../assets/images/past_masters/1990-1991_jay_a_ravitz.jpg"
+    },
+    {
+        "number": 41,
+        "name": "Roger C. Newberry",
+        "term": "1991-1992",
+        "imgUrl": "../../../assets/images/past_masters/1991-1992_roger_c_newberry.jpg"
+    },
+    {
+        "number": 42,
+        "name": "Harry S. Marcus",
+        "term": "1992-1993",
+        "imgUrl": "../../../assets/images/past_masters/1992-1993_harry_s_marcus.jpg"
+    },
+    {
+        "number": 43,
+        "name": "Stuart R. Wittenberg",
+        "term": "1993-1994",
+        "imgUrl": "../../../assets/images/past_masters/1993-1994_stuart_r_wittenberg.jpg"
+    },
+    {
+        "number": 44,
+        "name": "Alex S. Lev",
+        "term": "1994-1995",
+        "imgUrl": "../../../assets/images/past_masters/1994-1995_alex_s_lev.jpg"
+    },
+    {
+        "number": 45,
+        "name": "David B. Greenberg",
+        "term": "1995-1996",
+        "imgUrl": "../../../assets/images/past_masters/1995-1996_david_b_greenberg.jpg"
+    },
+    {
+        "number": 46,
+        "name": "Alan L. Wittenberg",
+        "term": "1996-1997",
+        "imgUrl": "../../../assets/images/past_masters/1996-1997_alan_l_wittenberg.jpg"
+    },
+    {
+        "number": 47,
+        "name": "Howard Lev",
+        "term": "1997-1998",
+        "imgUrl": "../../../assets/images/past_masters/1997-1998_howard_lev.jpg"
+    },
+    {
+        "number": 48,
+        "name": "Marc F. Reiff",
+        "term": "1998-1999",
+        "imgUrl": "../../../assets/images/past_masters/1998-1999_marc_f_reiff.jpg"
+    },
+    {
+        "number": 49,
+        "name": "Alan B. Arons",
+        "term": "1999-2000",
+        "imgUrl": "../../../assets/images/past_masters/1999-2000_alan_b_arons.jpg"
+    },
+    {
+        "number": 50,
+        "name": "Keevin J. Berman",
+        "term": "2000-2001",
+        "imgUrl": "../../../assets/images/past_masters/2000-2001_keevin_j_berman.jpg"
+    },
+    {
+        "number": 51,
+        "name": "Abraham Kay",
+        "term": "2001-2002",
+        "imgUrl": "../../../assets/images/past_masters/2001-2002_abraham_kay.jpg"
+    },
+    {
+        "number": 52,
+        "name": "Jeffrey A. Kaplan",
+        "term": "2002-2003",
+        "imgUrl": "../../../assets/images/past_masters/2002-2003_jeffrey_a_kaplan.jpg"
+    },
+    {
+        "number": 53,
+        "name": "Henry G. Mankowski",
+        "term": "2003-2004",
+        "imgUrl": "../../../assets/images/past_masters/2003-2004_henry_g_mankowski.jpg"
+    },
+    {
+        "number": 54,
+        "name": "Duane A. Dukes",
+        "term": "2004-2005",
+        "imgUrl": "../../../assets/images/past_masters/2004-2005_duane_a_dukes.jpg"
+    },
+    {
+        "number": 55,
+        "name": "Russell H. Van Scyoc",
+        "term": "2005-2006",
+        "imgUrl": "../../../assets/images/past_masters/2005-2006_russell_h_van_scyoc.jpg"
+    },
+    {
+        "number": 56,
+        "name": "Adam Rutkowski",
+        "term": "2006-2007",
+        "imgUrl": "../../../assets/images/past_masters/2006-2007_adam_rutkowski.jpg"
+    },
+    {
+        "number": 57,
+        "name": "Jeffrey A. Kaplan",
+        "term": "2007-2008",
+        "imgUrl": "../../../assets/images/past_masters/2007-2008_jeffrey_a_kaplan.jpg"
+    },
+    {
+        "number": 58,
+        "name": "Hugh A. Harris",
+        "term": "2008-2009",
+        "imgUrl": "../../../assets/images/past_masters/2008-2009_hugh_a_harris.jpg"
+    },
+    {
+        "number": 59,
+        "name": "Keevin J. Berman",
+        "term": "2009-2010",
+        "imgUrl": "../../../assets/images/past_masters/2009-2010_keevin_j_berman.jpg"
+    },
+    {
+        "number": 60,
+        "name": "Matthew E. Newberry",
+        "term": "2010-2011",
+        "imgUrl": "../../../assets/images/past_masters/2010-2011_matthew_e_newberry.jpg"
+    },
+    {
+        "number": 61,
+        "name": "Aarne Lillo",
+        "term": "2011-2012",
+        "imgUrl": "../../../assets/images/past_masters/2011-2012_aarne_lillo.jpg"
+    },
+    {
+        "number": 62,
+        "name": "Howard Lev",
+        "term": "2012-2013",
+        "imgUrl": "../../../assets/images/past_masters/2012-2013_howard_lev.jpg"
+    },
+    {
+        "number": 63,
+        "name": "Roni Taxer",
+        "term": "2013-2014",
+        "imgUrl": "../../../assets/images/past_masters/2013-2014_roni_taxer.jpg"
+    },
+    {
+        "number": 64,
+        "name": "Leonard Holmes",
+        "term": "2014-2015",
+        "imgUrl": "../../../assets/images/past_masters/2014-2015_leonard_holmes.jpg"
+    },
+    {
+        "number": 65,
+        "name": "Adam Rutkowski",
+        "term": "2015-2016",
+        "imgUrl": "../../../assets/images/past_masters/2015-2016_adam_rutkowski.jpg"
+    },
+    {
+        "number": 66,
+        "name": "Joseph A. Huber",
+        "term": "2016-2017",
+        "imgUrl": "../../../assets/images/past_masters/2016-2017_joseph_a_huber.jpg"
+    },
+    {
+        "number": 67,
+        "name": "Henry G. Mankowski",
+        "term": "2017-2018",
+        "imgUrl": "../../../assets/images/past_masters/2017-2018_henry_g_mankowski.jpg"
+    },
+    {
+        "number": 68,
+        "name": "Howard Lev",
+        "term": "2018-2019",
+        "imgUrl": "../../../assets/images/past_masters/2018-2019_howard_lev.jpg"
+    },
+    {
+        "number": 69,
+        "name": "Jeffrey Moss",
+        "term": "2019",
+        "imgUrl": "../../../assets/images/past_masters/2019_jeffrey_moss.jpg"
+    },
+    {
+        "number": 70,
+        "name": "Howard Lev",
+        "term": "2020",
+        "imgUrl": "../../../assets/images/past_masters/2020_howard_lev.jpg"
+    },
+    {
+        "number": 71,
+        "name": "John Padley",
+        "term": "2020-2021",
+        "imgUrl": "../../../assets/images/past_masters/2020-2021_john_padley.jpg"
+    },
+    {
+        "number": 72,
+        "name": "John Padley",
+        "term": "2021-2022",
+        "imgUrl": "../../../assets/images/past_masters/2021-2022_john_padley.jpg"
+    },
+    {
+        "number": 73,
+        "name": "Matthew E. Newberry",
+        "term": "2022-2023",
+        "imgUrl": "../../../assets/images/past_masters/2022-2023_matthew_e_newberry.jpg"
+    },
+    {
+        "number": -1,
+        "name": "Joseph H. Silbert",
+        "term": "By Affiliation",
+        "imgUrl": "../../../assets/images/past_masters/by_affiliation_joseph_h_silbert.jpg"
+    },
+    {
+        "number": -1,
+        "name": "Joseph H. Silbert",
+        "term": "By Affiliation",
+        "imgUrl": "../../../assets/images/past_masters/by_affiliation_joseph_h_silbert.jpg"
+    },
+    {
+        "number": -1,
+        "name": "Robert Brooks",
+        "term": "By Affiliation",
+        "imgUrl": "../../../assets/images/past_masters/by_affiliation_robert_brooks.jpg"
+    },
+    {
+        "number": -1,
+        "name": "Ray Gieling",
+        "term": "By Affiliation",
+        "imgUrl": "../../../assets/images/past_masters/by_affiliation_ray_gieling.jpg"
+    }
+]

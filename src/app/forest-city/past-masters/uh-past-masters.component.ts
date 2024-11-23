@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { PastMaster } from './model/get-past-masters-response';
-import pastMastersList from '@data/past-master-list.json';
-import events from '@data/future-events.json';
+import pastMastersList from '@data/uh-past-master-list.json';
 
 @Component({
-  selector: 'fcl-past-masters',
+  selector: 'uh-past-masters',
   templateUrl: './past-masters.component.html',
   styleUrls: ['./past-masters.component.scss']
 })
-export class PastMastersComponent implements OnInit {
+export class UniversityHeightsPMComponent implements OnInit {
   pastMastersList: PastMaster[] = [];
   pageOfItems: Array<any> = [];
   installationOfOfficers: Array<any> = [];
@@ -19,7 +18,7 @@ export class PastMastersComponent implements OnInit {
 
   ngOnInit(): void {
     this.setPastMastersList();
-    this.lodge = "Forest City Lodge no. 388"
+    this.lodge = "University Heights Lodge no. 738"
   }
 
   setPastMastersList() {
@@ -29,23 +28,25 @@ export class PastMastersComponent implements OnInit {
     let currentDate = today.getDate();
     let installationDate: Date = new Date();
 
-    this.installationOfOfficers = events.filter(event => {
-      return event.name === 'Installation of Officers' || event.description === 'Installation of Officers';
-    });
-
-    if(this.installationOfOfficers.length > 0) {
-      installationDate = new Date(this.installationOfOfficers[this.installationOfOfficers.length - 1].date);
-    }
-
     // TODO logic for handling if there is no installation of officers event in the json...shouldn't happen though
 
-    this.pastMastersList = pastMastersList.filter( master => {
+    const uhPastMasters = pastMastersList.filter(master => {
       // get installation date from events.json
       let termEndYear = master.term.slice(-4);
-      return (currentYear > termEndYear) ||
-        (currentYear === termEndYear && currentMonth > installationDate.getMonth()) ||
-        (currentYear === termEndYear && currentMonth === installationDate.getMonth() && currentDate >= installationDate.getDate());
-    }).reverse();
+      if (master.term === "By Affiliation") {
+        return false;
+      } else {
+        return (currentYear > termEndYear) ||
+          (currentYear === termEndYear && currentMonth > installationDate.getMonth()) ||
+          (currentYear === termEndYear && currentMonth === installationDate.getMonth() && currentDate >= installationDate.getDate());
+      }
+    })
+    const byAffiliation = pastMastersList.filter(master => {
+      return master.term === "By Affiliation"
+    })
+    uhPastMasters.reverse()
+    byAffiliation.reverse()
+    this.pastMastersList = [...uhPastMasters, ...byAffiliation]
   }
 
   onChangePage(pageOfItems: Array<any>) {
