@@ -1,12 +1,12 @@
 steps:
 # Build the container image
-- name: 'gar/cloud-builders/docker'
-  args: ['build', '-t', 'gar/forest-city-325620/forest-city:$COMMIT_SHA', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/forest-city-325620/forest-city:$COMMIT_SHA', '.']
 # Push the container image to Container Registry
-- name: 'gar/cloud-builders/docker'
-  args: ['push', 'gar/forest-city-325620/forest-city:$COMMIT_SHA']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/forest-city-325620/forest-city:$COMMIT_SHA']
 # Deploy container image to Cloud Run
-- name: 'gar/google.com/cloudsdktool/cloud-sdk'
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
   args: ['run', 'deploy', 'forest-city', '--image', 'gar/forest-city-325620/forest-city:$COMMIT_SHA', '--region', 'us-east1', '--concurrency', '80', '--max-instances', '5', '--memory', '256Mi', '--service-account', 'cloud-run@forest-city-325620.iam.gserviceaccount.com', '--timeout', '30']
 images:
