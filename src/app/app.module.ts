@@ -14,6 +14,7 @@ import { BulletinComponent } from './forest-city/bulletin/bulletin.component';
 import { FutureEventsComponent } from './forest-city/future-events/future-events.component';
 import { HistoryComponent } from './forest-city/our-history/history.component';
 import { PastMastersComponent } from './forest-city/past-masters/past-masters.component';
+import { UniversityHeightsPMComponent } from './forest-city/past-masters/uh-past-masters.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactUsComponent } from './core/contact-us/contact-us.component';
 import { RsvpComponent } from './forest-city/future-events/rsvp/rsvp.component';
@@ -43,6 +44,7 @@ import { SocialRsvpComponent } from './forest-city/outings/social-rsvp/social-rs
     HistoryComponent,
     JoinComponent,
     PastMastersComponent,
+    UniversityHeightsPMComponent,
     BulletinComponent,
     FutureEventsComponent,
     RsvpComponent,
