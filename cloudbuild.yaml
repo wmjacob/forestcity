@@ -1,7 +1,7 @@
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/forest-city-325620/forest-city:$COMMIT_SHA', '.']
+  args: ['build', '-t', 'gar/forest-city-325620/forest-city:$COMMIT_SHA', '.']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gar/forest-city-325620/forest-city:$COMMIT_SHA']
