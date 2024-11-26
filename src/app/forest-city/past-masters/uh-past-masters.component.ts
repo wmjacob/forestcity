@@ -18,7 +18,7 @@ export class UniversityHeightsPMComponent implements OnInit {
 
   ngOnInit(): void {
     this.setPastMastersList();
-    this.lodge = "University Heights Lodge no. 738"
+    this.lodge = "University Heights Lodge No. 738"
   }
 
   setPastMastersList() {

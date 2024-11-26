@@ -1,50 +1,50 @@
 [
     {
-        "name": "Ronald E. Stuver",
+        "name": "Dylan S. Marsh",
         "office": "Worshipful Master",
-        "image": "past_masters/2023-2024_ronald_e_stuver.jpg",
-        "bio": "Small business owner consulting in the field of Industry 4.0.  An avid long distance runner who also enjoys the game of soccer.  Proud 3rd generation Mason with two sons who are also Masons.",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
         "jewel": "worshipful_master.png"
     },
     {
-        "name": "Dylan S. Marsh",
+        "name": "James D. Paluf",
         "office": "Senior Warden",
-        "image": "current-officers/square_and_compasses.jpg",
+        "image": "current-officers/james_d_paluf.jpg",
         "bio": "",
         "jewel": "senior_warden.png"
     },
     {
-        "name": "James D. Paluf",
+        "name": "John D. Padley, P.M.",
         "office": "Junior Warden",
-        "image": "current-officers/james_d_paluf.jpg",
+        "image": "past_masters/2021-2022_john_padley.jpg",
         "bio": "",
         "jewel": "junior_warden.png"
     },
     {
-        "name": "Jason A. Kiner, P.M.",
+        "name": "David L. Jones",
         "office": "Senior Deacon",
-        "image": "current-officers/square_and_compasses.jpg",
-        "bio": "",
+        "image": "current-officers/david_l_jones.jpg",
+        "bio": "Software developer, home cook level 3, home mixologist level 4, father level 3, husband level 0.",
         "jewel": "senior_deacon.png"
     },
     {
-        "name": "David L. Jones",
+        "name": "Scott H. Honess",
         "office": "Junior Deacon",
-        "image": "current-officers/david_l_jones.jpg",
-        "bio": "Software developer, home cook level 3, home mixologist level 4, father level 3, husband level 0.",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
         "jewel": "junior_deacon.png"
     },
     {
-        "name": "Alan H. Rothman, P.M.",
+        "name": "Ryan E. Stuver, P.M.",
         "office": "Secretary",
-        "image": "current-officers/2007-2008_alan_h_rothman.JPG",
+        "image": "past_masters/2021-2022_ryan_e_stuver.JPG",
         "bio": "",
         "jewel": "secretary.png"
     },
     {
-        "name": "Ryan E. Stuver, P.M.",
+        "name": "Alan H. Rothman, P.M.",
         "office": "Associate Secretary",
-        "image": "past_masters/2021-2022_ryan_e_stuver.JPG",
+        "image": "current-officers/2007-2008_alan_h_rothman.JPG",
         "bio": "",
         "jewel": "associate_secretary.png"
     },
@@ -63,9 +63,9 @@
         "jewel": "treasurer.png"
     },
     {
-        "name": "Ryan E. Stuver, P.M.",
+        "name": "William J. Zeligson, P.M.",
         "office": "Chaplain",
-        "image": "past_masters/2021-2022_ryan_e_stuver.JPG",
+        "image": "past_masters/2019-2020_bill_j_zeligson.jpg",
         "bio": "",
         "jewel": "chaplain.png"
     },
@@ -84,17 +84,17 @@
         "jewel": "steward.png"
     },
     {
-        "name": "Scott H. Honess",
+        "name": "Alex P. Kaufman",
         "office": "Junior Steward",
         "image": "current-officers/square_and_compasses.jpg",
-        "bio": "",
+        "bio": "Software developer, sports fan, third-generation Mason.",
         "jewel": "steward.png"
     },
     {
-        "name": "Alex P. Kaufman",
+        "name": "Tyler M. Tevis",
         "office": "Marshal",
         "image": "current-officers/square_and_compasses.jpg",
-        "bio": "Software developer, sports fan, third-generation Mason.",
+        "bio": "",
         "jewel": "marshal.png"
     },
     {
@@ -105,7 +105,7 @@
         "jewel": "tyler.png"
     },
     {
-        "name": "Mitchell L. Alperin, P.D.D.G.M., P.M.",
+        "name": "Mitchell L. Alperin, P.M., P.D.D.G.M.",
         "office": "Lodge Education Officer",
         "image": "current-officers/square_and_compasses.jpg",
         "bio": "",
@@ -115,6 +115,13 @@
         "name": "Barry J. Siegel, P.M., K.Y.C.H., E.G.S.",
         "office": "Associate Lodge Education Officer",
         "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
+        "jewel": "past_master.png"
+    },
+    {
+        "name": "Henry G. Mankowski, P.M., P.D.D.G.M.",
+        "office": "Associate Lodge Education Officer",
+        "image": "past_masters/2017-2018_henry_g_mankowski.jpg",
         "bio": "",
         "jewel": "past_master.png"
     }

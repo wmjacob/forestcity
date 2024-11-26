@@ -19,7 +19,7 @@ export class PastMastersComponent implements OnInit {
 
   ngOnInit(): void {
     this.setPastMastersList();
-    this.lodge = "Forest City Lodge no. 388"
+    this.lodge = "Forest City Lodge No. 388"
   }
 
   setPastMastersList() {
