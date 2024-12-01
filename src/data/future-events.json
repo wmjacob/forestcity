@@ -1188,11 +1188,11 @@
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
-    "tyled": false,
+    "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1213,7 +1213,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "12",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1234,7 +1234,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1255,7 +1255,7 @@
     "earlyBirdOptions": {
       "time": "(6:00)",
       "cost": "12",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1276,7 +1276,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1297,7 +1297,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "12",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1318,7 +1318,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1339,7 +1339,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1360,7 +1360,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1381,7 +1381,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1402,7 +1402,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "12",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1444,7 +1444,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1465,7 +1465,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1486,7 +1486,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "12",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1507,7 +1507,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "12",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1528,7 +1528,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1549,7 +1549,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "12",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1570,7 +1570,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1591,7 +1591,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "12",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   },
@@ -1612,7 +1612,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "0",
-      "choices": [""]
+      "choices": []
     },
     "rsvpLimit": false
   }
