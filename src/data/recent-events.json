@@ -1,5 +1,78 @@
 [
     {
+        "eventName": "Forest City Lodge and University Heights Lodge Consolidation",
+        "eventId": "consolidation2024",
+        "displayDate": "Wednesday, March 1st, 2024",
+        "description": "",
+        "albumName": "2024_03_01_UH_Consolidation",
+        "imageUrls": [
+            "001.jpg",
+            "002.jpg",
+            "003.jpg",
+            "005.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2024/02/07"
+    },
+    {
+        "eventName": "Valentine's Day Event 2024",
+        "eventId": "valentines2024",
+        "displayDate": "Wednesday, February 7th, 2024",
+        "description": "",
+        "albumName": "2024_02_07_Valentines_Dinner",
+        "imageUrls": [
+            "001.jpg",
+            "002.jpg",
+            "003.jpg",
+            "005.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2024/02/07"
+    },
+    {
+        "eventName": "Awards Night 2024",
+        "eventId": "awardsNight2024",
+        "displayDate": "Wednesday, January 31st, 2024",
+        "description": "",
+        "albumName": "2024_01_31_Awards_Night",
+        "imageUrls": [
+            "007.jpg",
+            "035.jpg",
+            "041.jpg",
+            "050.jpg",
+            "108.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2024/01/31"
+    },
+    {
+        "eventName": "2024 Annual Chili Cookoff",
+        "eventId": "chiliCookoff2024",
+        "displayDate": "Wednesday, January 17th, 2024",
+        "description": "",
+        "albumName": "2024_01_17_Chili_Cookoff",
+        "imageUrls": [
+            "001.jpg",
+            "010.jpg",
+            "018.jpg",
+            "019.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2024/01/17"
+    },
+    {
         "eventName": "50th Annual Brotherhood Night: A Night With The Clergy and Candle Lighting Ceremony",
         "eventId": "brotherHoodNight2023",
         "displayDate": "Wednesday, December 6th, 2023",
