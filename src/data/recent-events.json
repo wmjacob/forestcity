@@ -1,9 +1,140 @@
 [
     {
+        "eventName": "51st Annual Brotherhood Night",
+        "eventId": "brotherHoodNight2024",
+        "displayDate": "Wednesday, December 4th, 2024",
+        "description": "Forest City Lodge No. 388 celebrated our 51st Annual Brotherhood Night: A Night With The Clergy and Candle Lighting Ceremony. We want to extend a very special thank you to our guest speakers:</p> <span class='bullet-list'><ul><li>Most Worshipful Brother William M. Carter, III, Grand Master of the Grand Lodge F&AM of Ohio</li> <li>Right Worshipful Brother Kirk D. Miller, Grand Chaplain of the Grand Lodge F&AM of Ohio</li> <li>Rabbi Moshe Sasonkin of Anshe Safred - Revere Road Synagogue in Akron</li> <li>Pastor Kenneth Sowers, III of Prince of Peace Church in Mentor</li></ul></span> <p>The night was capped off with the presentation of over $12,000 donated to seven worthy charities in our area! Thank you to all who attended, and a very warm thank you to RWB Tim Cline, WB Jay Kaufman and Bro. David Kaufman for their many years of exceptional stewardship of this prestigious event.",
+        "albumName": "2024_12_04_Brotherhood_Night",
+        "imageUrls": [
+            "010.jpg",
+            "012.jpg",
+            "013.jpg",
+            "019.jpg",
+            "020.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2024/12/04"
+    },
+    {
+        "eventName": "2024 - 2025 Officers Installation",
+        "eventId": "lodgeOfficerInstallation2024",
+        "displayDate": "Wednesday, November 20th, 2024",
+        "description": "Congratulations to Worshipful Master Dylan S. Marsh and his officer line on a wonderful installation! Thank you to the installing officer team, and all those in attendance for making this a special night!",
+        "albumName": "2024_11_20_Officers_Installation",
+        "imageUrls": [
+            "006.jpg",
+            "010.jpg",
+            "012.jpg",
+            "013.jpg",
+            "014.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2024/06/19"
+    },
+    {
+        "eventName": "Memorial Night 2024",
+        "eventId": "memorialNight2024",
+        "displayDate": "Wednesday, September 4th, 2024",
+        "description": "Every year on Memorial Night, we solemnly remember our dear Brethren who have passed on to the Celestial Lodge above.",
+        "albumName": "2024_09_04_Memorial_Night",
+        "imageUrls": [
+            "002.jpg",
+            "003.jpg",
+            "004.jpg",
+            "005.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2024/09/04"
+    },
+    {
+        "eventName": "The Great Geauga County Fair",
+        "eventId": "geaugaFair2024",
+        "displayDate": "Friday, August 30th, 2024",
+        "description": "Forest City Lodge No. 388 partnered with Village Lodge No. 274 at the Great Geauga County Fair again this year, volunteering at their booth to help serve up delicious food! Village Lodge graciously donated a portion of the proceeds to our Brotherhood Night Fund. Brotherhood at its finest!",
+        "albumName": "2024_08_30_Geauga_Fair",
+        "imageUrls": [
+            "003.jpg",
+            "011.jpg",
+            "021.jpg",
+            "026.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2024/08/30"
+    },
+    {
+        "eventName": "Annual Steak Roast",
+        "eventId": "steakRoast2024",
+        "displayDate": "Wednesday, August 21st, 2024",
+        "description": "This year, we had our Annual Steak Roast at the Shelterhouse Picnic Area, located in the Cleveland Metroparks. A big, hearty thank you to all who helped organize and execute this event, and a special thanks goes out to our pitmaster, Bro. Scott H. Honess, JS!",
+        "albumName": "2024_08_21_Steak_Roast",
+        "imageUrls": [
+            "012.jpg",
+            "018.jpg",
+            "023.jpg",
+            "028.jpg",
+            "047.jpg",
+            "048.jpg",
+            "049.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2024/08/21"
+    },
+    {
+        "eventName": "45th Annual Table Lodge",
+        "eventId": "tableLodge2024",
+        "displayDate": "Wednesday, June 19th, 2024",
+        "description": "At our 45th Annual Table Lodge, we were honored to have Right Worshipful Brother Maurio D. Powell, Deputy Grand Master of the Most Worshipful Prince Hall Grand Lodge of Ohio, and Most Worshipful Brother Paul A. Weglage, Grand Master of the Grand Lodge F&AM of Ohio be our featured speakers.",
+        "albumName": "2024_06_19_Table_Lodge",
+        "imageUrls": [
+            "001.jpg",
+            "002.jpg",
+            "012.jpg",
+            "014.jpg",
+            "019.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2024/06/19"
+    },
+    {
+        "eventName": "Winners of the Traveling Plaque",
+        "eventId": "travelingPlaque2024",
+        "displayDate": "Wednesday, March 13th, 2024",
+        "description": "North Star Lodge No. 638 created a Traveling Plaque to encourage brethren to travel to other lodges. To win it, and proudly display it in their lodge, a lodge must: </p> <span class='bullet-list'><ul><li>Have at least 4 members present</li><li>The lodge with the most members present (with at least 4) wins</li><li>In the event of a tie, the lodge with the most physical dues cards present shall win</li></ul></span><p>And on this night, Forest City claimed the prize!",
+        "albumName": "2024_03_13_North_Star_Plaque",
+        "imageUrls": [
+            "001.jpg",
+            "002.jpg",
+            "003.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2024/03/13"
+    },
+    {
         "eventName": "Forest City Lodge and University Heights Lodge Consolidation",
         "eventId": "consolidation2024",
         "displayDate": "Wednesday, March 1st, 2024",
-        "description": "",
+        "description": "University Heights Lodge No. 738 has officially consolidated into Forest City Lodge No. 388, making us bigger, better, and stronger than ever. May our future continue to shine bright!",
         "albumName": "2024_03_01_UH_Consolidation",
         "imageUrls": [
             "001.jpg",
@@ -15,13 +146,13 @@
             ""
         ],
         "slideContent": [],
-        "eventDate": "2024/02/07"
+        "eventDate": "2024/03/01"
     },
     {
         "eventName": "Valentine's Day Event 2024",
         "eventId": "valentines2024",
         "displayDate": "Wednesday, February 7th, 2024",
-        "description": "",
+        "description": "As always, special thanks to Kandice Zeligson and her husband W.B. Bill Zeligson for their time and energy in organizing this event!",
         "albumName": "2024_02_07_Valentines_Dinner",
         "imageUrls": [
             "001.jpg",
