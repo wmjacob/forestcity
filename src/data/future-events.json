@@ -1221,11 +1221,11 @@
     "date": "2025/01/29 19:00",
     "name": "Special Meeting",
     "description": "Awards Night",
-    "extraInfo": "Meal Choices TBD",
+    "extraInfo": "Meal Choices: Beef, Glazed Salmon, or Chickpea Piccata (Vegetarian)",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
+    "rsvpOptions": true,
     "rsvpExpirationDays": "3",
     "spotlight": false,
     "spotlightImage": "",
@@ -1234,7 +1234,7 @@
     "earlyBirdOptions": {
       "time": "(6:00)",
       "cost": "12",
-      "choices": []
+      "choices": ["Beef", "Glazed Salmon", "Chickpea Piccata (Vegetarian)"]
     },
     "rsvpLimit": false
   },

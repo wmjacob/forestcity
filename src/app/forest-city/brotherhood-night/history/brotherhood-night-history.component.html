@@ -1,0 +1,27 @@
+<div class="primary-content-container">
+    <div class="bg-secondary-lighter primary-content">
+        <div class="bg-primary-lighter pt-2 pb-2">
+            <div class="grid-col-12 centered">
+                <h2>History of Brotherhood Night: A Night with the Clergy and Candle Lighting Ceremony</h2>
+                <h3>A Forest City Lodge Tradition for more than 50 Years</h3>
+            </div>
+        </div>
+        <div *ngFor="let event of events, let i = index" [ngClass]="{'bg-accent-warm-lighter': i % 2, 'bg-secondary-lighter': !(i % 2)}">
+            <div class="grid-container">
+                <div class="grid-col-12 grid-row">
+                    <div class="col-xs-12 col-sm-12 col-md-10 grid-row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 p-2">
+                            <p class="usa-prose">{{event.content}}</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6 p-2 d-flex align-items-center justify-content-center">
+                            <figure>
+                                <img src={{event.imageSrc}} alt="{{event.altText}}" title="Courtesy {{event.altText}}"/>
+                                <figcaption class="centered">{{event.imageCaption}}</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

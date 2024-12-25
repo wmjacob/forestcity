@@ -17,6 +17,7 @@ import { PastBulletinsComponent } from './forest-city/past-bulletins/past-bullet
 import { GoldenSquarePMComponent } from './forest-city/golden-square/past-masters/golden-square-pm.component';
 import { UniversityHeightsPMComponent } from './forest-city/past-masters/uh-past-masters.component';
 import { ForestCityInTheCityComponent } from './forest-city/outings/forest-city-in-the-city/forest-city-in-the-city.component';
+import { BrotherhoodNightHistoryComponent } from './forest-city/brotherhood-night/history/brotherhood-night-history.component';
 
 const IMAGE_GALLERY_URL = 'image-gallery';
 
@@ -93,6 +94,10 @@ const routes: Routes = [
       {
         path: 'social-events',
         component: ForestCityInTheCityComponent
+      },
+      {
+        path: 'brotherhood-night-history',
+        component: BrotherhoodNightHistoryComponent
       }
       // {
       //   path: 'operation-backpack',
