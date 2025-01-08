@@ -1262,21 +1262,22 @@
   {
     "date": "2025/02/19 19:30",
     "name": "Valentine's Day Dinner",
-    "description": "",
-    "extraInfo": "Meal Choices TBD",
+    "description": "Uncork the mystery this Valentine’s—join us for Murder at the Winery! Enjoy a night of love, intrigue, mocktails, and sparkling grape juice. Guests are welcome to participate in an exciting murder mystery game—put your detective skills to the test and compete for prizes!",
+    "extraInfo": "Heavy apps and refreshments",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": false,
+    "rsvpOptions": true,
     "rsvpExpirationDays": "3",
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
+      "choiceLabel": "Are you interested in an acting role?",
       "time": "(6:30)",
       "cost": "12",
-      "choices": []
+      "choices": ["Yes", "No"]
     },
     "rsvpLimit": false
   },

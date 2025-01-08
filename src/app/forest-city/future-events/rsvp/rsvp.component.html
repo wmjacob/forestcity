@@ -110,7 +110,7 @@
                         </div>
                         <div *ngIf="displayMealChoices()" class="mb-3">
                             <fieldset class="usa-fieldset">
-                                <legend class="usa-legend">Please choose a meal preference:</legend>
+                                <legend class="usa-legend">{{ event.earlyBirdOptions.choiceLabel || "Please choose a meal preference:"}}</legend>
                                 <div *ngIf="!displayMultipleMealChoices()">
                                     <div *ngFor="let choice of event.earlyBirdOptions.choices" class="usa-radio">
                                         <input class="usa-radio__input"
