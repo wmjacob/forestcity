@@ -1387,9 +1387,30 @@
     "rsvpLimit": false
   },
   {
+    "date": "2025/05/03 08:00",
+    "name": "Pancake Breakfast",
+    "description": "Proceeds benefit Greenview PTA",
+    "extraInfo": "Adults $8, Kids $5",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "1",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "8:00-11:00",
+      "cost": "5",
+      "choices": ["Adults ($8)", "Kids ($5)"]
+    },
+    "rsvpLimit": false
+  },
+  {
     "date": "2025/05/07 19:30",
     "name": "Stated Meeting",
-    "description": "Rusty Nail Degree Night - An educational evening for Master Masons. Brethren are encouraged to reach out to those who haven't attended regularly and bring them back to Lodge",
+    "description": "Potluck Dinner - Fellowcraft Degree",
     "extraInfo": "Meal Choices: Roast Beef, Salmon, Lemon Chicken, or Pasta",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -1410,7 +1431,7 @@
   {
     "date": "2025/05/21 19:30",
     "name": "Stated Meeting",
-    "description": "Potluck Dinner",
+    "description": "Rusty Nail Degree Night - An educational evening for Master Masons. Brethren are encouraged to reach out to those who haven't attended regularly and bring them back to Lodge",
     "extraInfo": "Bring your favorite dish to share, come hungry!",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -1432,7 +1453,7 @@
   {
     "date": "2025/06/04 19:30",
     "name": "Stated Meeting",
-    "description": "Birthday Night",
+    "description": "Birthday Night - MM Degree open 5:30",
     "extraInfo": "Buffalo Wild Wings - June, July, and August Birthdays",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
