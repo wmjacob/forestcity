@@ -6,13 +6,24 @@
           <p class="usa-alert__text">
             {{alert.text}}
           </p>
-          <button class="usa-button usa-button--unstyled dismiss-button" (click)="dismiss()">
-            <img src="../../../assets/images/close.svg" role="img" alt="Close">
-          </button>
         </div>
     </div>
+    <div class="p-4 d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <img src="./assets/images/pancake.png" style="width:100px; height:100px; margin-right:20px" alt="Loading"/>
+        <div>
+          <h2 class="text-color-blue">Join Us For A Forest City Pancake Breakfast</h2>
+          <p class="usa-prose mb-0">
+            Saturday, May 3rd | 8-11 AM at the Lyndhurst Masonic Temple
+            <br />
+            All proceeds benefit the Greenview Upper Elementary PTA
+          </p>
+        </div>
+      </div>
+      <a target="_blank" href="./assets/images/pancakes.png" class="usa-button usa-button--primary">Learn more</a>
+    </div>
     <div id="main-content">
-        <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
     </div>
     <join-freemasonry></join-freemasonry>
     <footer-component></footer-component>
