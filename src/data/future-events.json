@@ -1399,19 +1399,20 @@
     "spotlight": false,
     "spotlightImage": "",
     "altText": "",
-    "tyled": true,
+    "tyled": false,
     "earlyBirdOptions": {
       "time": "8:00-11:00",
       "cost": "5",
       "choices": ["Adults ($8)", "Kids ($5)"]
     },
+    
     "rsvpLimit": false
   },
   {
     "date": "2025/05/07 19:30",
     "name": "Stated Meeting",
     "description": "Potluck Dinner - Fellowcraft Degree",
-    "extraInfo": "Meal Choices: Roast Beef, Salmon, Lemon Chicken, or Pasta",
+    "extraInfo": "Bring your favorite dish to share, come hungry!",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -1422,9 +1423,10 @@
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
+      "choiceLabel": "Are you bringing a dish?",
       "time": "(6:30)",
-      "cost": "12",
-      "choices": ["Road Beef", "Salmon", "Lemon Chicken", "Pasta"]
+      "cost": "0",
+      "choices": ["Yes", "No"]
     },
     "rsvpLimit": false
   },
@@ -1432,7 +1434,7 @@
     "date": "2025/05/21 19:30",
     "name": "Stated Meeting",
     "description": "Rusty Nail Degree Night - An educational evening for Master Masons. Brethren are encouraged to reach out to those who haven't attended regularly and bring them back to Lodge",
-    "extraInfo": "Bring your favorite dish to share, come hungry!",
+    "extraInfo": "Meal Choices: Roast Beef, Salmon, Lemon Chicken, or Pasta",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -1443,10 +1445,9 @@
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "choiceLabel": "Are you bringing a dish?",
       "time": "(6:30)",
-      "cost": "0",
-      "choices": ["Yes", "No"]
+      "cost": "12",
+      "choices": ["Roast Beef", "Salmon", "Lemon Chicken", "Pasta"]
     },
     "rsvpLimit": false
   },
