@@ -1411,8 +1411,8 @@
   {
     "date": "2025/05/07 19:30",
     "name": "Stated Meeting",
-    "description": "Potluck Dinner - Fellowcraft Degree",
-    "extraInfo": "Bring your favorite dish to share, come hungry!",
+    "description": "Breakfast for Dinner",
+    "extraInfo": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -1423,7 +1423,7 @@
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "choiceLabel": "Are you bringing a dish?",
+      "choiceLabel": "Early Bird Dinner?",
       "time": "(6:30)",
       "cost": "0",
       "choices": ["Yes", "No"]
@@ -1433,8 +1433,8 @@
   {
     "date": "2025/05/21 19:30",
     "name": "Stated Meeting",
-    "description": "Rusty Nail Degree Night - An educational evening for Master Masons. Brethren are encouraged to reach out to those who haven't attended regularly and bring them back to Lodge",
-    "extraInfo": "Meal Choices: Roast Beef, Salmon, Lemon Chicken, or Pasta",
+    "description": "Chinese Food",
+    "extraInfo": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -1446,8 +1446,8 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30)",
-      "cost": "12",
-      "choices": ["Roast Beef", "Salmon", "Lemon Chicken", "Pasta"]
+      "cost": "0",
+      "choices": ["Yes", "No"]
     },
     "rsvpLimit": false
   },
