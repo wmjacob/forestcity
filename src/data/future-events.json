@@ -1473,9 +1473,9 @@
     "rsvpLimit": false
   },
   {
-    "date": "2025/06/18 19:00",
+    "date": "2025/06/18 18:00",
     "name": "Annual Table Lodge of Instruction",
-    "description": "",
+    "description": "Entered Apprentice Degree at 6:00 PM, Table Lodge at 7:30 PM",
     "extraInfo": "Meal Choices: Stuffed Chicken, Beef Tenderloin, Glazed Salmon, or Pasta",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -1487,7 +1487,7 @@
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "(6:00)",
+      "time": "(7:30)",
       "cost": "12",
       "choices": ["Stuffed Chicken", "Beef Tenderloin", "Glazed Salmon", "Pasta"]
     },
