@@ -1473,7 +1473,7 @@
     "rsvpLimit": false
   },
   {
-    "date": "2025/06/18 19:30",
+    "date": "2025/06/18 19:00",
     "name": "Annual Table Lodge of Instruction",
     "description": "",
     "extraInfo": "Meal Choices: Stuffed Chicken, Beef Tenderloin, Glazed Salmon, or Pasta",
@@ -1487,9 +1487,30 @@
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "(6:30)",
+      "time": "(6:00)",
       "cost": "12",
       "choices": ["Stuffed Chicken", "Beef Tenderloin", "Glazed Salmon", "Pasta"]
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2025/08/20 17:00",
+    "name": "Annual Steak Roast",
+    "description": "The Shelterhouse Picnic Area is located off Hawthorn Parkway, east of SOM Center Rd",
+    "extraInfo": "Meal choices: Steak, Chicken, or Ribs",
+    "location": "South Chagrin Reservation - Shelterhouse Picnic Area",
+    "address": "Hawthorn Pkwy, Bentleyville, OH 44022",
+    "addressLink": "https://maps.app.goo.gl/n44Lz8Uh3xQ54ggV8",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "12",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(5:00 PM)",
+      "cost": "20",
+      "choices": ["Steak", "Chicken"]
     },
     "rsvpLimit": false
   },
