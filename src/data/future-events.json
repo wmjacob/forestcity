@@ -1559,27 +1559,6 @@
   {
     "date": "2025/10/01 19:30",
     "name": "Stated Meeting",
-    "description": "Past Master's Night",
-    "extraInfo": "Meal Choices TBD",
-    "location": "Forest City Lodge",
-    "address": "Lyndhurst Masonic Temple",
-    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
-    "rsvpOptions": true,
-    "rsvpExpirationDays": "3",
-    "spotlight": false,
-    "spotlightImage": "",
-    "altText": "",
-    "tyled": true,
-    "earlyBirdOptions": {
-      "time": "(6:30)",
-      "cost": "12",
-      "choices": ["Beef", "Chicken", "Salmon", "Vegan"]
-    },
-    "rsvpLimit": false
-  },
-  {
-    "date": "2025/10/15 19:30",
-    "name": "Stated Meeting",
     "description": "",
     "extraInfo": "",
     "location": "Forest City Lodge",
@@ -1595,6 +1574,27 @@
       "time": "(6:30)",
       "cost": "0",
       "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2025/10/15 19:30",
+    "name": "Stated Meeting",
+    "description": "Past Master's Night",
+    "extraInfo": "Meal Choices: Beef, Chicken, Salmon, or a Vegan dish",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "12",
+      "choices": ["Beef", "Chicken", "Salmon", "Vegan"]
     },
     "rsvpLimit": false
   },
@@ -1621,6 +1621,69 @@
   },
   {
     "date": "2025/11/19 19:30",
+    "name": "Installation of Officers",
+    "description": "Menu TBD",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "15",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2025/12/03 19:30",
+    "name": "Stated Meeting",
+    "description": "Lodge Education",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2025/12/17 19:30",
+    "name": "52nd Annual Brotherhood Night",
+    "description": "A Night with the Clergy and Candle Lighting Ceremony",
+    "extraInfo": "Menu TBD",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "15",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/01/07 19:30",
     "name": "Stated Meeting",
     "description": "",
     "extraInfo": "",
@@ -1635,7 +1698,385 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30)",
-      "cost": "0",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/01/21 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/02/04 19:30",
+    "name": "Stated Meeting",
+    "description": "Awards and Memorial Night",
+    "extraInfo": "Menu TBD",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "15",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/02/18 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/03/04 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/03/18 19:30",
+    "name": "Stated Meeting",
+    "description": "Annual Chili Cookoff",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/04/01 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/04/15 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/04/29 17:30",
+    "name": "Annual Inspection",
+    "description": "In The Master Mason Degree - Early Start - 5:30PM",
+    "extraInfo": "Menu TBD",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "15",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/05/06 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/05/20 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/06/03 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/06/17 17:30",
+    "name": "Annual Table Lodge of Instruction",
+    "description": "Menu TBD",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "15",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/08/19 17:00",
+    "name": "Annual Steak Roast",
+    "description": "At The Shelterhouse Picnic Area at South Chagrin Reservation",
+    "extraInfo": "",
+    "location": "South Chagrin Reservation - Shelterhouse Picnic Area",
+    "address": "Hawthorn Pkwy, Bentleyville, OH 44022",
+    "addressLink": "https://maps.app.goo.gl/n44Lz8Uh3xQ54ggV8",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "5",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(5:00)",
+      "cost": "20",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/09/02 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/09/16 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/10/07 19:30",
+    "name": "Past Masters Night",
+    "description": "Menu TBD",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "15",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/10/21 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/11/04 19:30",
+    "name": "Annual Meeting",
+    "description": "Election of Officers",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
       "choices": []
     },
     "rsvpLimit": false
