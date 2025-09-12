@@ -1665,7 +1665,7 @@
     "date": "2025/12/17 19:30",
     "name": "52nd Annual Brotherhood Night",
     "description": "A Night with the Clergy and Candle Lighting Ceremony",
-    "extraInfo": "Menu TBD",
+    "extraInfo": "Menu Choices: Roasted Beef Tenderloin w/ Gravy, Glazed Salmon, Stuffed Chicken w/ Chicken Gravy, Vegan Stuffed Pepper",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -1678,7 +1678,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "15",
-      "choices": []
+      "choices": ["Roasted Beef Tenderloin", "Glazed Salmon", "Stuffed Chicken", "Vegan Stuffed Pepper"]
     },
     "rsvpLimit": false
   },
