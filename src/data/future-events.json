@@ -1622,7 +1622,7 @@
   {
     "date": "2025/11/19 19:30",
     "name": "Installation of Officers",
-    "description": "Menu TBD",
+    "description": "Menu Choices: Prime Rib, Atlantic Salmon, Lemon Herb Grilled Chicken, Vegan Roasted Vegetable Pasta",
     "extraInfo": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -1636,7 +1636,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "15",
-      "choices": []
+      "choices": ["Prime Rib", "Atlantic Salmon", "Lemon Herb Grilled Chicken", "Vegan Roasted Vegetable Pasta"]
     },
     "rsvpLimit": false
   },
