@@ -1599,6 +1599,27 @@
     "rsvpLimit": false
   },
   {
+    "date": "2025/10/30 19:00",
+    "name": "Installation of RWB Shawn S. Franks",
+    "description": "Join us for the installation of Right Worshipful Brother Shawn S. Franks",
+    "extraInfo": "As District Deputy Grand Master of the 22nd Masonic District",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(6:00)",
+      "cost": "15",
+      "choices": ["Roasted Beef Tenderloin with Gravy", "Stuffed Chicken Breast with Chicken Gravy", "Vegan Cauliflower Steak"]
+    },
+    "rsvpLimit": false
+  },
+  {
     "date": "2025/11/05 19:30",
     "name": "Annual Meeting",
     "description": "Election of Officers",
