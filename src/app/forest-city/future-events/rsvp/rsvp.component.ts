@@ -160,7 +160,7 @@ export class RsvpComponent implements OnInit {
       else {
         let numberOfMealChoices = this.event.earlyBirdOptions.choices;
         let countThirdChoice = this.getChoiceCountForIndex(2);
-        if(numberOfMealChoices == 4) {
+        if(numberOfMealChoices.length == 4) {
           let countFourthChoice = this.getChoiceCountForIndex(3);
           return mealChoices[0] + ": " + countFirstChoice + " " + mealChoices[1] +": " + countSecondChoice + " " + mealChoices[2] + ": " + countThirdChoice + " " + mealChoices[3] + ": " + countFourthChoice;
         }

@@ -61,7 +61,14 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
 
         }
         else {
-            if(data.thirdChoice) {
+            if(data.fourthChoice) {
+                const HEADER_VALUES = ['Last Name', 'First Name', 'Email', 'Early Bird Dinner', 'Number of Meals', data.firstChoice, data.secondChoice, data.thirdChoice, data.fourthChoice, 'Number of Attendees'];
+                sheet = await doc.addSheet({headerValues: HEADER_VALUES, title: eventNameDate});
+                await sheet.addRow(
+                    [data.lastName, data.firstName, data.email, data.earlyBirdDinner, data.numberOfMeals, data.firstChoiceCount, data.secondChoiceCount, data.thirdChoiceCount, data.fourthChoiceCount, data.numberOfAttendees]
+                );
+            }
+            else if(data.thirdChoice) {
                 const HEADER_VALUES = ['Last Name', 'First Name', 'Email', 'Early Bird Dinner', 'Number of Meals', data.firstChoice, data.secondChoice, data.thirdChoice, 'Number of Attendees'];
                 sheet = await doc.addSheet({headerValues: HEADER_VALUES, title: eventNameDate});
                 await sheet.addRow(
