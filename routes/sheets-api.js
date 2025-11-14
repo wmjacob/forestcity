@@ -2,6 +2,7 @@ const express = require('express');
 const sheetsRouter = express.Router();
 const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
 const { GoogleSpreadsheet } = require('google-spreadsheet');
+const { google } = require('googleapis');
 
 const SHEETS_SECRET = 'sheets-credentials';
 const RSVP_SHEETS_ID_SECRET = 'sheets-id';
@@ -33,7 +34,7 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
         const rsvpSheet = await getAuth(RSVP_SHEETS_ID_SECRET);
         const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
         const sheetsSecret = await getAuth(SHEETS_SECRET);
-
+        
         await doc.useServiceAccountAuth({
             client_email: sheetsSecret.client_email,
             private_key: sheetsSecret.private_key
@@ -83,10 +84,17 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
                 );
             }
         }
+
+        const sheetsClient = await getSheetsClient(sheetsSecret);
+
+        const sheetId = await getSheetId(rsvpSheet, sheetsClient);
+
+        await highlightDuplicates(sheetId, rsvpSheet.sheetId, sheetsClient);
     }
     catch (error) {
         response.status(500).json({error: 'Internal Service Error: ' + error});
     }
+
     response.status(200).json({ status: 'Ok' });
 });
 
@@ -162,5 +170,86 @@ sheetsRouter.get('/read', async function(request, response) {
     }
 
 });
+
+async function highlightDuplicates(sheetId, spreadsheetId, sheetsClient) {
+    const column1Letter = 'A';
+    const column2Letter = 'B';
+    const requests = [{
+        addConditionalFormatRule: {
+            rule: {
+                ranges: [{
+                    sheetId: sheetId,
+                    startRowIndex: 0,
+                    endRowIndex: null,
+                    startColumnIndex: column1Letter.charCodeAt(0) - 'A'.charCodeAt(0), // Convert letter to 0-based index
+                    endColumnIndex: column2Letter.charCodeAt(0) - 'A'.charCodeAt(0) + 1, // End column is exclusive
+                }],
+                booleanRule: {
+                    condition: {
+                        type: 'CUSTOM_FORMULA',
+                        values: [{
+                            userEnteredValue: `=COUNTIFS($${column1Letter}$${startRowIndex + 1}:$${column1Letter}$${endRowIndex}, $${column1Letter}${startRowIndex + 1}, $${column2Letter}$${startRowIndex + 1}:$${column2Letter}$${endRowIndex}, $${column2Letter}${startRowIndex + 1}) > 1`,
+                        }]
+                    },
+                    format: {
+                        backgroundColor: {
+                            red: 1.0,
+                            green: 0.8,
+                            blue: 0.8
+                        }
+                    }
+                }
+            },
+            index: 0
+        }
+    }];
+
+    try {
+        const response = sheetsClient.spreadsheets.batchUpdate({
+            spreadsheetId: spreadsheetId,
+            resource: requests,
+        });
+        console.log('Conditional formatting rule added:', response.data);
+    } catch (err) {
+    console.error('Error adding conditional formatting rule:', err);
+    }
+
+}
+
+async function getSheetsClient(sheetsSecret) {
+    const client = new google.auth.JWT(
+        sheetsSecret.client_email,
+        null,
+        sheetsSecret.private_key,
+        ['https://www.googleapis.com/auth/spreadsheets'],
+        null
+    );
+    return new Promise((resolve, reject) => {
+        client.authorize((err, tokens) => {
+            if (err) {
+                reject(err);
+            } else {
+                google.options({
+                    auth: client
+                });
+                resolve();
+            }
+        });
+    });
+}
+
+async function getSheetId(rsvpSheet, sheetsClient) {
+    const request = {
+        spreadsheetId: rsvpSheet.sheetId,
+        ranges: 'A1:B1',
+        includeGridData: false
+    };
+    let res = await sheetsClient.spreadsheets.get(request);
+    for(i = 0; i < res.sheets.length; i++) {
+        if(res.sheets[i].title === eventNameDate) {
+            return res.sheets[i].sheetId;
+        }
+    }
+}
 
 module.exports = sheetsRouter;
