@@ -36,6 +36,7 @@ import { GoldenSquarePMComponent } from './forest-city/golden-square/past-master
 import { ForestCityInTheCityComponent } from './forest-city/outings/forest-city-in-the-city/forest-city-in-the-city.component';
 import { SocialRsvpComponent } from './forest-city/outings/social-rsvp/social-rsvp.component';
 import { BrotherhoodNightHistoryComponent } from './forest-city/brotherhood-night/history/brotherhood-night-history.component';
+import { ContactSunshineCommitteeComponent } from './core/contact-sunshine-committee/contact-sunshine-committee.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,7 +65,8 @@ import { BrotherhoodNightHistoryComponent } from './forest-city/brotherhood-nigh
     GoldenSquarePMComponent,
     ForestCityInTheCityComponent,
     SocialRsvpComponent,
-    BrotherhoodNightHistoryComponent
+    BrotherhoodNightHistoryComponent,
+    ContactSunshineCommitteeComponent
   ],
   imports: [
     BrowserModule,
