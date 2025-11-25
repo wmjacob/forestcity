@@ -38,6 +38,25 @@
         "eventDate": "2025/08/20"
     },
     {
+        "eventName": "Master, Wardens and Wine 2025",
+        "eventId": "masterWardensWine2025",
+        "displayDate": "Saturday, May 31st, 2025",
+        "description": "Our Master, Wardens and Wine celebration at Debonné Winery has become an annual event! Thank you to all who could attend to share in fellowship, food, and refreshment!",
+        "albumName": "2025_05_31_Master_Wardens_Wine",
+        "imageUrls": [
+            "006.jpg",
+            "010.jpg",
+            "013.jpg",
+            "021.jpg",
+            "031.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2025/08/20"
+    },
+    {
         "eventName": "Awards Night 2025",
         "eventId": "awardsNight2025",
         "displayDate": "Wednesday, January 29th, 2025",
@@ -48,7 +67,7 @@
             "005.jpg",
             "009.jpg",
             "011.jpg",
-            "014.jpg"
+            "003.jpg"
         ],
         "slideLabels": [
             ""
