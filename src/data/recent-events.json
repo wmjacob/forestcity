@@ -1,5 +1,81 @@
 [
     {
+        "eventName": "2025 - 2026 Officers Installation",
+        "eventId": "lodgeOfficerInstallation2025",
+        "displayDate": "Wednesday, November 19th, 2025",
+        "description": "Congratulations to Worshipful Master James D Paluf and his officer line on a wonderful installation! Thank you to the installing officer team, and all those in attendance for making this a special night!",
+        "albumName": "2025_11_19_Officers_Installation",
+        "imageUrls": [
+            "176.jpg",
+            "048.jpg",
+            "156.jpg",
+            "167.jpg",
+            "039.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2025/11/19"
+    },
+    {
+        "eventName": "Annual Steak Roast",
+        "eventId": "annualSteakRoast2025",
+        "displayDate": "Wednesday, August 20th, 2025",
+        "description": "Another summer, another FCL Steak Roast! Special shout out to all the brethren who volunteered their blood, sweat and tears to make this a successful event!",
+        "albumName": "2025_08_20_Steak_Roast",
+        "imageUrls": [
+            "017.jpg",
+            "016.jpg",
+            "032.jpg",
+            "041.jpg",
+            "003.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2025/08/20"
+    },
+    {
+        "eventName": "Master, Wardens and Wine 2025",
+        "eventId": "masterWardensWine2025",
+        "displayDate": "Saturday, May 31st, 2025",
+        "description": "Our Master, Wardens and Wine celebration at Debonné Winery has become an annual event! Thank you to all who could attend to share in fellowship, food, and refreshment!",
+        "albumName": "2025_05_31_Master_Wardens_Wine",
+        "imageUrls": [
+            "006.jpg",
+            "010.jpg",
+            "013.jpg",
+            "021.jpg",
+            "031.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2025/08/20"
+    },
+    {
+        "eventName": "Awards Night 2025",
+        "eventId": "awardsNight2025",
+        "displayDate": "Wednesday, January 29th, 2025",
+        "description": "Congratulations to our award recipients, and thank you for your contributions to our Fraternity!",
+        "albumName": "2025_01_29_Awards_Night",
+        "imageUrls": [
+            "003.jpg",
+            "005.jpg",
+            "009.jpg",
+            "011.jpg",
+            "003.jpg"
+        ],
+        "slideLabels": [
+            ""
+        ],
+        "slideContent": [],
+        "eventDate": "2025/08/20"
+    },
+    {
         "eventName": "51st Annual Brotherhood Night",
         "eventId": "brotherHoodNight2024",
         "displayDate": "Wednesday, December 4th, 2024",
@@ -35,7 +111,7 @@
             ""
         ],
         "slideContent": [],
-        "eventDate": "2024/06/19"
+        "eventDate": "2024/11/20"
     },
     {
         "eventName": "Memorial Night 2024",
