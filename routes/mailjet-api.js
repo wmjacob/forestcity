@@ -8,6 +8,8 @@ const WM_EMAIL_SECRET = 'worshipful-master-email';
 const SECRETARY_EMAIL_SECRET = 'secretary-email';
 const ASSOC_SECRETARY_EMAIL_SECRET = 'associate-secretary-email';
 const FCL_NAME = 'Forest City Lodge #388';
+const SUNSHINE_COMMITTEE_COCHAIR_1 = 'sunshine-committee-cochair-1';
+const SUNSHINE_COMMITTEE_COCHAIR_2 = 'sunshine-committee-cochair-2';
 
 const FCL_SECRETARY_NAME = 'Forest City Lodge Secretary';
 const FCL_CONTACTS_NAME = 'Forest City Lodge Contacts';
@@ -273,6 +275,101 @@ mailjetRouter.post('/contact-us', async function(req, res) {
                     "Reply-To": recipientEmail
                 },
                 "CustomID": "contactUsConfirmationToSecretary"
+            },
+            {
+                "From":
+                {
+                    "Email": FCL_CONTACTS_EMAIL,
+                    "Name": FCL_NAME
+                },
+                "To": [
+                    {
+                        "Email": recipientEmail,
+                        "Name": recipientName
+                    }
+                ],
+                "TemplateID": 3210138,
+				"TemplateLanguage": true,
+                "Subject": "We Have Received Your Message",
+                "Variables": {
+                    "firstName": data.firstName,
+                    "lastName": data.lastName
+                },
+                "CustomID": "contactUsConfirmationToAttendee"
+            }
+        ]
+        });
+
+        request.then((result) => {
+            console.log(result.body)
+        })
+        .catch((err) => {
+            console.log(err.statusCode)
+        })
+        res.status(200).json({ status: 'Ok' });
+    }
+    catch (error) {
+        console.error(err);
+        res.status(500).json({ error: 'Internal Error' });
+    }
+});
+
+mailjetRouter.post('/contact-sunshine-committee', async function(req, res) {
+    try {
+        const mjCreds = await getAuth(GOOGLE_MAILJET_SECRET);
+        const mailjet = require ('node-mailjet').connect(mjCreds.mailjetPublicKey, mjCreds.mailjetPrivateKey);
+
+        const gmailCreds = await getAuth(GOOGLE_EMAIL_SECRET);
+        const FCL_CONTACTS_EMAIL = gmailCreds.user;
+
+        const sunshineCochair1 = await getAuth(SUNSHINE_COMMITTEE_COCHAIR_1);
+        const cochairEmail1 = sunshineCochair1.email;
+        const sunshineCochair2 = await getAuth(SUNSHINE_COMMITTEE_COCHAIR_2);
+        const cochairEmail2 = sunshineCochair2.email;
+
+        const data = req.body;
+        const subject = data.subject;
+        const recipientEmail = data.email;
+        const recipientName = data.firstName + " " + data.lastName;
+
+        const request = mailjet.post("send", {'version': 'v3.1'}).request({
+        "Messages":[
+            {
+                "From":
+                {
+                    "Email": FCL_CONTACTS_EMAIL,
+                    "Name": FCL_NAME
+                },
+                "To": [
+                    {
+                        "Email": cochairEmail1,
+                        "Name": "Sunshine Committe Co-chair"
+                    },
+                    {
+                        "Email": cochairEmail2,
+                        "Name": "Sunshine Committee Co-chair"
+                    }
+                ],
+                "Bcc": [
+                    {
+                        "Email": FCL_CONTACTS_EMAIL,
+                        "Name": FCL_CONTACTS_NAME
+                    }
+                ],
+                "TemplateID": 7521633,
+				"TemplateLanguage": true,
+                "Subject": subject,
+                "Variables": {
+                    "firstName": data.firstName,
+                    "lastName": data.lastName,
+                    "email": data.email,
+                    "phoneNumber": data.phoneNumber,
+                    "message": data.message
+                },
+                "Headers": {
+                    "Reply-To": recipientEmail
+                },
+                "CustomID": "contactSunshineCommittee"
             },
             {
                 "From":

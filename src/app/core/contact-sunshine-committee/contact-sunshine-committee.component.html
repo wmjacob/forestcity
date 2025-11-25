@@ -1,0 +1,58 @@
+<div class="grid-container">
+    <div class="grid-row">
+        <div class="grid-col-12 centered padding-top-1">
+            <h2>Contact the Sunshine Committee</h2>
+            <h3>Of Forest City Lodge</h3>
+        </div>
+        <div class="grid-col-12">
+            <form class="padding-bottom-2" [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
+                <label for="firstName" class="usa-label required-field">First Name:</label>
+                <input id="firstName"
+                    type="text"
+                    class="usa-input form-control"
+                    formControlName="firstName"
+                    [class.is-invalid] = "contactUsForm.get('firstName')?.invalid && contactUsForm.get('firstName')?.dirty"
+                    required>
+                <label for="lastName" class="usa-label required-field">Last Name:</label>
+                <input id="lastName"
+                    type="text"
+                    class="usa-input form-control"
+                    formControlName="lastName"
+                    [class.is-invalid] = "contactUsForm.get('lastName')?.invalid && contactUsForm.get('lastName')?.dirty"
+                    required>
+                <label for="email" class="usa-label required-field">Email Address:</label>
+                <input id="email"
+                    type="email"
+                    class="usa-input form-control"
+                    formControlName="email"
+                    [class.is-invalid] = "contactUsForm.get('email')?.invalid && contactUsForm.get('email')?.dirty"
+                    required>
+                <label for="phoneNumber" class="usa-label">Phone Number (Optional):</label>
+                <input id="phoneNumber"
+                    type="tel"
+                    class="usa-input form-control"
+                    formControlName="phoneNumber"
+                    [class.is-invalid] = "contactUsForm.get('phoneNumber')?.invalid && contactUsForm.get('phoneNumber')?.dirty">
+                <label for="message" class="usa-label required-field">Message For The Sunshine Committee:</label>
+                <textarea id="message"
+                    type="text"
+                    rows="5"
+                    cols="50"
+                    class="form-control usa-textarea"
+                    formControlName="message"
+                    [class.is-invalid] = "contactUsForm.get('message')?.invalid && contactUsForm.get('message')?.dirty"
+                    required
+                >
+                </textarea>
+                <br>
+                <button type="submit" class="usa-button usa-button--primary" [disabled]="!contactUsForm.valid || disableButton">
+                    <span *ngIf="!disableButton">Submit</span>
+                    <span *ngIf="disableButton">
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Sending...
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
