@@ -1,34 +1,34 @@
 [
     {
-        "name": "Dylan S. Marsh",
+        "name": "James D. Paluf",
         "office": "Worshipful Master",
-        "image": "current-officers/square_and_compasses.jpg",
+        "image": "past_masters/2025-2026_james_d_paluf.jpg",
         "bio": "",
         "jewel": "worshipful_master.png"
     },
     {
-        "name": "James D. Paluf",
+        "name": "John D. Padley, P.M.",
         "office": "Senior Warden",
-        "image": "current-officers/james_d_paluf.jpg",
+        "image": "past_masters/2021-2022_john_padley.jpg",
         "bio": "",
         "jewel": "senior_warden.png"
     },
     {
-        "name": "John D. Padley, P.M.",
+        "name": "David L. Jones",
         "office": "Junior Warden",
-        "image": "past_masters/2021-2022_john_padley.jpg",
-        "bio": "",
+        "image": "current-officers/david_l_jones.jpg",
+        "bio": "Software developer, home cook level 3, home mixologist level 4, father level 3, husband level 0.",
         "jewel": "junior_warden.png"
     },
     {
-        "name": "David L. Jones",
+        "name": "Scott H. Honess",
         "office": "Senior Deacon",
-        "image": "current-officers/david_l_jones.jpg",
-        "bio": "Software developer, home cook level 3, home mixologist level 4, father level 3, husband level 0.",
+        "image": "current-officers/square_and_compasses.jpg",
+        "bio": "",
         "jewel": "senior_deacon.png"
     },
     {
-        "name": "Scott H. Honess",
+        "name": "Nam Do",
         "office": "Junior Deacon",
         "image": "current-officers/square_and_compasses.jpg",
         "bio": "",
@@ -63,39 +63,32 @@
         "jewel": "treasurer.png"
     },
     {
-        "name": "William J. Zeligson, P.M.",
-        "office": "Chaplain",
-        "image": "past_masters/2019-2020_bill_j_zeligson.jpg",
-        "bio": "",
-        "jewel": "chaplain.png"
-    },
-    {
         "name": "Daniel N. Cohen, P.M.",
-        "office": "Associate Chaplain",
+        "office": "Chaplain",
         "image": "past_masters/2015-2016_daniel_n_cohen.jpg",
         "bio": "",
         "jewel": "chaplain.png"
     },
     {
-        "name": "Nam Do",
-        "office": "Senior Steward",
-        "image": "current-officers/square_and_compasses.jpg",
+        "name": "William J. Zeligson, P.M.",
+        "office": "Associate Chaplain",
+        "image": "past_masters/2019-2020_bill_j_zeligson.jpg",
         "bio": "",
-        "jewel": "steward.png"
+        "jewel": "chaplain.png"
     },
     {
         "name": "Alex P. Kaufman",
-        "office": "Junior Steward",
+        "office": "Senior Steward",
         "image": "current-officers/square_and_compasses.jpg",
         "bio": "Software developer, sports fan, third-generation Mason.",
         "jewel": "steward.png"
     },
     {
         "name": "Tyler M. Tevis",
-        "office": "Marshal",
+        "office": "Junior Steward",
         "image": "current-officers/square_and_compasses.jpg",
         "bio": "",
-        "jewel": "marshal.png"
+        "jewel": "steward.png"
     },
     {
         "name": "Bruce A. Koval",
@@ -111,17 +104,18 @@
         "bio": "",
         "jewel": "past_master.png"
     },
-    {
-        "name": "Barry J. Siegel, P.M., K.Y.C.H., E.G.S.",
-        "office": "Associate Lodge Education Officer",
-        "image": "current-officers/square_and_compasses.jpg",
-        "bio": "",
-        "jewel": "past_master.png"
-    },
+    
     {
         "name": "Henry G. Mankowski, P.M., P.D.D.G.M.",
         "office": "Associate Lodge Education Officer",
         "image": "past_masters/2017-2018_henry_g_mankowski.jpg",
+        "bio": "",
+        "jewel": "past_master.png"
+    },
+    {
+        "name": "Barry J. Siegel, P.M., K.Y.C.H., E.G.S.",
+        "office": "Associate Lodge Education Officer",
+        "image": "current-officers/square_and_compasses.jpg",
         "bio": "",
         "jewel": "past_master.png"
     }
