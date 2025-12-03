@@ -21,7 +21,7 @@ export class FutureEventsComponent implements OnInit {
   attendeeCount: number = 0;
 
   constructor(private sheetsService: SheetsService) {
-    this.readSheetForGuestLimit();
+    // this.readSheetForGuestLimit();
   }
 
   ngOnInit(): void {
@@ -66,11 +66,11 @@ export class FutureEventsComponent implements OnInit {
     }
 
     // BE SURE TO UPDATE sheets-api.js AS WELL
-    if(event.rsvpLimit) {
-      if(this.attendeeCount >= 70) {
-        return false;
-      }
-    }
+    // if(event.rsvpLimit) {
+    //   if(this.attendeeCount >= 70) {
+    //     return false;
+    //   }
+    // }
 
     return event.rsvpOptions;
   }
@@ -85,6 +85,8 @@ export class FutureEventsComponent implements OnInit {
   }
 
   // ***UPDATE sheets-api.js with the event as well!!!
+  // uncomment the call in the constructor to use this method when needed
+  // also uncomment the logic that uses attendeeCount
   async readSheetForGuestLimit() {
     await this.sheetsService.readFromSheet().then(
       (result) => {
