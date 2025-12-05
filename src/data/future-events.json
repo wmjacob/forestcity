@@ -616,7 +616,7 @@
       "cost": "15",
       "choices": ["Roasted Beef Tenderloin", "Glazed Salmon", "Stuffed Chicken", "Vegan Stuffed Pepper"]
     },
-    "rsvpLimit": false
+    "rsvpLimit": true
   },
   {
     "date": "2026/01/07 19:30",

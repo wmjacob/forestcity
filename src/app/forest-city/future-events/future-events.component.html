@@ -39,7 +39,7 @@
                                 <div class="rsvpButton">
                                     <button aria-controls="rsvpModal"
                                     class="usa-button usa-button--outline centered mb-2"
-                                    [ngClass]="attendeeCount >= 70 ? 'disabled' : ''"
+                                    [ngClass]="attendeeCount >= 170 ? 'disabled' : ''"
                                     (click)="setEventForRsvp(event)"
                                     data-bs-toggle="modal"
                                     data-bs-target="#rsvpModal">
@@ -49,6 +49,9 @@
                                         <p>Closes {{ rsvpExpDate }} at {{ rsvpExpTime }}</p>
                                     </div>
                                 </div>
+                            </div>
+                            <div *ngIf="getRsvpLimitReached()">
+                                <p>{{ rsvpLimitMsg }}</p>
                             </div>
                         </div>
                     </div>

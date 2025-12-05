@@ -138,7 +138,7 @@ sheetsRouter.post('/append-social-rsvp', async function(request, response) {
 sheetsRouter.get('/read', async function(request, response) {
     try {
         // update this with required sheet name
-        const eventNameDate = '50th Annual Brotherhood Night Wed, Dec 6, 2023';
+        const eventNameDate = '52nd Annual Brotherhood Night Wed, Dec 17, 2025';
 
         const rsvpSheet = await getAuth(RSVP_SHEETS_ID_SECRET);
         const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
@@ -157,8 +157,8 @@ sheetsRouter.get('/read', async function(request, response) {
 
         let count = 0;
         for(let i = 2; i <= sheet.rowCount; i++) {
-            // cell E for meals, I for attendees
-            let cell = sheet.getCellByA1('E' + i);
+            // cell E for meals, I for attendees, or sometimes J if four meal choices
+            let cell = sheet.getCellByA1('J' + i);
             count = count + cell.value;
         }
 
