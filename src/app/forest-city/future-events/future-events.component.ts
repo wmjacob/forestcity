@@ -19,9 +19,11 @@ export class FutureEventsComponent implements OnInit {
   rsvpExpDate: string = '';
   rsvpExpTime: string = '';
   attendeeCount: number = 0;
+  rsvpLimitMsg: string = '';
+  rsvpLimitReached: boolean = false;
 
   constructor(private sheetsService: SheetsService) {
-    // this.readSheetForGuestLimit();
+    this.readSheetForGuestLimit();
   }
 
   ngOnInit(): void {
@@ -66,13 +68,19 @@ export class FutureEventsComponent implements OnInit {
     }
 
     // BE SURE TO UPDATE sheets-api.js AS WELL
-    // if(event.rsvpLimit) {
-    //   if(this.attendeeCount >= 70) {
-    //     return false;
-    //   }
-    // }
+    if(event.rsvpLimit) {
+      if(this.attendeeCount >= 170) {
+        this.rsvpLimitReached = true;
+        this.rsvpLimitMsg = 'We have reached capacity for this event. Please contact Timothy S. Cline at tcline05@gmail.com to request being added to the waitlist.';
+        return false;
+      }
+    }
 
     return event.rsvpOptions;
+  }
+
+  getRsvpLimitReached() {
+    return this.rsvpLimitReached;
   }
 
   getEarlyBirdOptions(options: any) {
@@ -101,4 +109,5 @@ export class FutureEventsComponent implements OnInit {
   private getNumberOfAttendees(response: any) {
     return response.data;
   }
+
 }
