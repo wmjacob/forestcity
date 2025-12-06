@@ -71,7 +71,7 @@ export class FutureEventsComponent implements OnInit {
     if(event.rsvpLimit) {
       if(this.attendeeCount >= 170) {
         this.rsvpLimitReached = true;
-        this.rsvpLimitMsg = 'We have reached capacity for this event. Please contact Timothy S. Cline at tcline05@gmail.com to request being added to the waitlist.';
+        this.rsvpLimitMsg = 'We have reached capacity for dinner for this event. Please contact Timothy S. Cline at tcline05@gmail.com to request being added to the waitlist.';
         return false;
       }
     }
