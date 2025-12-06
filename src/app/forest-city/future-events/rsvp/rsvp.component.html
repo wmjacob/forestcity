@@ -53,7 +53,7 @@
                                 [class.is-invalid] = "rsvpForm.get('email')?.invalid && rsvpForm.get('email')?.dirty"
                                 required>
                         </div>
-                        <div *ngIf="!event.rsvpLimit" class="mb-3">
+                        <div class="mb-3">
                             <label for="numberOfAttendees" class="usa-label required-field">Number Of Attendees (including yourself):</label>
                             <select class="usa-select" formControlName="numberOfAttendees" id="numberOfAttendees">
                                 <option value=1 selected>1</option>
@@ -66,12 +66,6 @@
                                 <option value=8>8</option>
                                 <option value=9>9</option>
                                 <option value=10>10</option>
-                            </select>
-                        </div>
-                        <div *ngIf="event.rsvpLimit" class="mb-3">
-                            <label for="numberOfAttendees" class="usa-label required-field">Number Of Attendees (including yourself):</label>
-                            <select class="form-control" formControlName="numberOfAttendees" id="numberOfAttendees">
-                                <option value=1 selected>1</option>
                             </select>
                         </div>
                         <div *ngIf="displayEarlyBirdCheckbox()" class="mb-3">
@@ -87,7 +81,7 @@
                             </div>
                             <div *ngIf="earlyBirdChecked">
                                 <label class="usa-label" for="numberOfMeals">Number of Meals:</label>
-                                <div *ngIf="!event.rsvpLimit">
+                                <div>
                                     <select class="usa-select" formControlName="numberOfMeals" id="numberOfMeals">
                                         <option value=1 selected>1</option>
                                         <option value=2>2</option>
@@ -99,11 +93,6 @@
                                         <option value=8>8</option>
                                         <option value=9>9</option>
                                         <option value=10>10</option>
-                                    </select>
-                                </div>
-                                <div *ngIf="event.rsvpLimit">
-                                    <select class="form-control" formControlName="numberOfMeals" id="numberOfMeals">
-                                        <option value=1 selected>1</option>
                                     </select>
                                 </div>
                             </div>
