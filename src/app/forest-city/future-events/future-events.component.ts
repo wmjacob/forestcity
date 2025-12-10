@@ -79,8 +79,8 @@ export class FutureEventsComponent implements OnInit {
     return event.rsvpOptions;
   }
 
-  getRsvpLimitReached() {
-    return this.rsvpLimitReached;
+  getRsvpLimitReached(event: EventOptions) {
+    return this.rsvpLimitReached && event.rsvpLimit;
   }
 
   getEarlyBirdOptions(options: any) {
