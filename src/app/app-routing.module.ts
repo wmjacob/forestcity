@@ -16,7 +16,7 @@ import { RecentEventsComponent } from './forest-city/recent-events/recent-events
 import { PastBulletinsComponent } from './forest-city/past-bulletins/past-bulletins.component';
 import { GoldenSquarePMComponent } from './forest-city/golden-square/past-masters/golden-square-pm.component';
 import { UniversityHeightsPMComponent } from './forest-city/past-masters/uh-past-masters.component';
-import { ForestCityInTheCityComponent } from './forest-city/outings/forest-city-in-the-city/forest-city-in-the-city.component';
+import { MitzvahCommitteeEventsComponent } from './forest-city/mitzvah-committee/mitzvah-committee-events.component';
 import { BrotherhoodNightHistoryComponent } from './forest-city/brotherhood-night/history/brotherhood-night-history.component';
 import { ContactSunshineCommitteeComponent } from './core/contact-sunshine-committee/contact-sunshine-committee.component';
 
@@ -93,8 +93,8 @@ const routes: Routes = [
         component: UniversityHeightsPMComponent
       },
       {
-        path: 'social-events',
-        component: ForestCityInTheCityComponent
+        path: 'mitzvah-events',
+        component: MitzvahCommitteeEventsComponent
       },
       {
         path: 'brotherhood-night-history',

@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { SocialOuting } from "@data/interfaces";
 import { SheetsService } from "@services/sheets";
-import events from '@data/social-outings.json';
+import events from '@data/mitzvah-events.json';
 import { formatDate } from "@angular/common";
 import { DomSanitizer } from "@angular/platform-browser";
 
@@ -10,11 +10,11 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'long', month:
 const timeFormatter = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: 'numeric' });
 
 @Component({
-    selector: 'forest-city-in-the-city',
-    templateUrl: './forest-city-in-the-city.component.html',
-    styleUrls: [ './forest-city-in-the-city.component.scss']
+    selector: 'mitzvah-committee-events',
+    templateUrl: './mitzvah-committee-events.component.html',
+    styleUrls: [ './mitzvah-committee-events.component.scss']
 })
-export class ForestCityInTheCityComponent implements OnInit {
+export class MitzvahCommitteeEventsComponent implements OnInit {
     event: any = ''; // for rsvp
     events: SocialOuting[] = []; // for display
     rsvpExpDate: string = '';

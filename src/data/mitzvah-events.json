@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Lunch Serving Event",
+        "date": "2025/12/25 15:00",
+        "location": "Some House",
+        "locationAddress": "",
+        "locationUrl": "https://maps.app.goo.gl/Ye4LDmranBdohvxR9",
+        "description": "",
+        "eventImageUrl": "",
+        "isRsvp": true,
+        "rsvpDesc": ""
+    },
+    {
+        "name": "Forest City Lodge Repack Event",
+        "date": "2026/01/17 9:00",
+        "location": "Greater Cleveland Food Bank",
+        "locationAddress": "13815 Coit Road, Cleveland, OH 44110",
+        "locationUrl": "https://share.google/AYAQ1ZGVRBDfCGZ7k",
+        "description": "Please consider volunteering for our very own Forest City Lodge repack event. We have reserved a group time for Saturday, January 17th from 9am to noon. In the past, members of University Heights Lodge No. 738 had a blast volunteering for these events. We repacked thousands of pounds of food for distribution, made some new friends and helped to make our lodge more visible and active in the local community. This also helped to strengthen our own brotherhood through mutual service to the community, with brethren and their families participating (yes, family members are welcome and encouraged to attend so long as they are at least 14 years of age). You must register online for this event at the link below.",
+        "eventImageUrl": "greater-cleveland-food-bank-logo.png",
+        "isRsvp": true,
+        "rsvpDesc": "You must register with the Food Bank to attend this event. There is a limit of 15 for registrations. After you RSVP here, please copy the following URL and paste in your browser to register with the Food Bank: https://cerv.is/0136gHyJaj5 \nPlease also see our current bulletin (can be found here: forestcitylodge.com/bulletin) for detailed instructions."
+    }
+]

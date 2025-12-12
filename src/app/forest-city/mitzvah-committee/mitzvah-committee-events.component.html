@@ -1,45 +1,45 @@
 <div class="social-events">
     <div class="social-events-title bg-white pt-4 pb-3 centered">
-        <h2>Forest City In The City</h2>
+        <h2>Mitzvah Committee Events</h2>
     </div>
 
     <div class="social-events-content bg-primary-lighter py-3">
         <div class="container">
             <div class="row centered">
-                <div class="fs-4 text-align-center pb-4">Forest City Lodge No. 388's Informal Social Gathering Events</div>
+                <div class="fs-4 text-align-center pb-4">Forest City Lodge No. 388's Volunteer and Charity Opportunities</div>
             </div>
 
             <div class="row row-cols-1 row-cols-md-3 g-4 pb-3 centered">
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-header bg-primary-vivid text-white">
-                            <h5 >Building Brotherhood</h5>
+                            <h5 >Brotherly Love</h5>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Come join us for fun, fellowship, and refreshments.</p>
-                            <p class="card-text">Come as you are, and get to know the Brethren of Forest City Lodge outside of the Lodge!</p>
+                            <p class="card-text">Caring for each other and our communities.</p>
+                            <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-header bg-primary-vivid text-white">
-                            <h5>All Are Welcome!</h5>
+                            <h5>Relief</h5>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">These events are open to the general public, not only Freemasons.</p>
-                            <p class="card-text">Feel free to bring your friends, family, children, significant others...anyone!</p>
+                            <p class="card-text">Help and assist those in distress.</p>
+                            <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-header bg-primary-vivid text-white">
-                            <h5 class="card-title">All Events Are Pay-your-own-way</h5>
+                            <h5 class="card-title">Truth</h5>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">These events are informal and not sponsored by the Lodge.</p>
-                            <p class="card-text">Please RSVP so we can have an estimate of the number of attendees.</p>
+                            <p class="card-text">Using knowledge and understanding to improve ourselves, our families and our communities.</p>
+                            <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                 <div class="col-md-12 col-lg-12 mb-2">
                     <div class="grid-col-12 bg-primary-lighter pb-2">
                         <div class="centered">
-                            <h3>Upcoming Social Outings</h3>
+                            <h3>Upcoming Mitzvah Committee Opportunities</h3>
                         </div>
                     </div>
 
@@ -61,22 +61,22 @@
                                   <div class="fw-bold fs-4">{{event.name}}</div>
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title">{{event.description}}</h5>
+                                  <p class="card-text">{{event.description}}</p>
                                   <div *ngIf="isRsvp(event)">
-                                    <h5><i>{{event.rsvpDesc}}</i></h5>
+                                    <p>{{event.rsvpDesc}}</p>
                                   </div>
-                                  <h5>{{getDate(event.date)}}</h5>
+                                  <h6>{{getDate(event.date)}}</h6>
                                   <p class="card-text"><span class="fw-bold">Location: </span>{{event.location}}, <a class="link-offset-2" [href]="event.locationUrl" target="_blank">{{ event.locationAddress }}</a></p>
                                   <div *ngIf="hasEventImageUrl(event)">
-                                    <img src="https://storage.cloud.google.com/forest-city-website-images/Social Events/{{event.eventImageUrl}}" class="event-image"/>
+                                    <img src="https://storage.cloud.google.com/forest-city-website-images/Mitzvah-Events/{{event.eventImageUrl}}" class="event-image"/>
                                   </div>
                                   <div *ngIf="isRsvp(event)">
                                     <div class="mt-2">
-                                        <button aria-controls="socialRsvpModal"
+                                        <button aria-controls="mitzvahRsvpModal"
                                                 class="btn btn-primary"
                                                 (click)="setEventForRsvp(event)"
                                                 data-bs-toggle="modal"
-                                                data-bs-target="#socialRsvpModal">
+                                                data-bs-target="#mitzvahRsvpModal">
                                                 RSVP
                                         </button>
                                     </div>
@@ -93,4 +93,4 @@
         </div>
     </div>
 </div>
-<fcl-social-rsvp [event]="event"></fcl-social-rsvp>
+<mitzvah-rsvp [event]="event"></mitzvah-rsvp>
