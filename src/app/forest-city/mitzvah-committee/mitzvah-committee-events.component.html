@@ -61,9 +61,9 @@
                                   <div class="fw-bold fs-4">{{event.name}}</div>
                                 </div>
                                 <div class="card-body">
-                                  <p class="card-text">{{event.description}}</p>
+                                  <p class="card-text multiline-text">{{event.description}}</p>
                                   <div *ngIf="isRsvp(event)">
-                                    <p>{{event.rsvpDesc}}</p>
+                                    <p class="multiline-text">{{event.rsvpDesc}}</p>
                                   </div>
                                   <h6>{{getDate(event.date)}}</h6>
                                   <p class="card-text"><span class="fw-bold">Location: </span>{{event.location}}, <a class="link-offset-2" [href]="event.locationUrl" target="_blank">{{ event.locationAddress }}</a></p>
