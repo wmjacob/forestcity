@@ -6,11 +6,11 @@ import { EmailService } from "@services/email";
 import { SheetsService } from "@services/sheets";
 
 @Component({
-    selector: 'fcl-social-rsvp',
-    templateUrl: './social-rsvp.component.html',
-    styleUrls: ['./social-rsvp.component.scss']
+    selector: 'mitzvah-rsvp',
+    templateUrl: './mitzvah-rsvp.component.html',
+    styleUrls: ['./mitzvah-rsvp.component.scss']
 })
-export class SocialRsvpComponent implements OnInit {
+export class MitzvahRsvpComponent implements OnInit {
     @Input() event: any;
 
     isSending: boolean = false;
@@ -22,7 +22,7 @@ export class SocialRsvpComponent implements OnInit {
     ngOnInit() {
     }
 
-    socialRsvpForm: UntypedFormGroup = new UntypedFormGroup({
+    mitzvahRsvpForm: UntypedFormGroup = new UntypedFormGroup({
         firstName: new UntypedFormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
         lastName: new UntypedFormControl('', [Validators.required, Validators.pattern("[-\\w\\s]*")]),
         email: new UntypedFormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
@@ -65,7 +65,7 @@ export class SocialRsvpComponent implements OnInit {
     }
 
     buildRequest() {
-        const formValues = this.socialRsvpForm.value;
+        const formValues = this.mitzvahRsvpForm.value;
 
         return {
             firstName: formValues.firstName,
@@ -79,16 +79,16 @@ export class SocialRsvpComponent implements OnInit {
     }
 
     disableSubmit() {
-        if(this.socialRsvpForm.invalid || this.isSending) {
+        if(this.mitzvahRsvpForm.invalid || this.isSending) {
             return true;
         }
         return false;
     }
 
     clearForm() {
-        this.socialRsvpForm.reset();
+        this.mitzvahRsvpForm.reset();
         this.isSending = false;
-        this.socialRsvpForm.get('numberOfAttendees')?.setValue(1);
+        this.mitzvahRsvpForm.get('numberOfAttendees')?.setValue(1);
     }
 
     formatEventDate() {
