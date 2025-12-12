@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { SocialOuting } from "@data/interfaces";
+import { MitzvahEvent } from "@data/interfaces";
 import { SheetsService } from "@services/sheets";
 import events from '@data/mitzvah-events.json';
 import { formatDate } from "@angular/common";
@@ -16,8 +16,9 @@ const timeFormatter = new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute
 })
 export class MitzvahCommitteeEventsComponent implements OnInit {
     event: any = ''; // for rsvp
-    events: SocialOuting[] = []; // for display
+    events: MitzvahEvent[] = []; // for display
     rsvpExpDate: string = '';
+    paramRsvpDesc: string = '';
 
     constructor(private sheetsService: SheetsService,
                 private domSanitizer: DomSanitizer) {
@@ -38,11 +39,11 @@ export class MitzvahCommitteeEventsComponent implements OnInit {
         return today > eventDate ? true : false;
     }
 
-    setEventForRsvp(event: SocialOuting) {
+    setEventForRsvp(event: MitzvahEvent) {
         this.event = event;
     }
 
-    isRsvp(event: SocialOuting) {
+    isRsvp(event: MitzvahEvent) {
         if(!event.isRsvp) {
             return false;
         }
@@ -60,7 +61,7 @@ export class MitzvahCommitteeEventsComponent implements OnInit {
         return true;
     }
 
-    hasEventImageUrl(event: SocialOuting) {
+    hasEventImageUrl(event: MitzvahEvent) {
         if(event.eventImageUrl) {
             return true;
         }

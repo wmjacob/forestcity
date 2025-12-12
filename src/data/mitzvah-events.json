@@ -1,14 +1,14 @@
 [
     {
-        "name": "Lunch Serving Event",
-        "date": "2025/12/25 15:00",
-        "location": "Some House",
-        "locationAddress": "",
-        "locationUrl": "https://maps.app.goo.gl/Ye4LDmranBdohvxR9",
-        "description": "",
+        "name": "Brunch Serving Event",
+        "date": "2025/12/25 10:00",
+        "location": "R.H. Myers Apartments",
+        "locationAddress": "27200 Cedar Rd, Beachwood, Ohio 44122",
+        "locationUrl": "https://maps.app.goo.gl/HkWPxwJTLtXb3zQH6",
+        "description": "Help serve brunch to the residents of R.H. Myers Apartments",
         "eventImageUrl": "",
         "isRsvp": true,
-        "rsvpDesc": ""
+        "rsvpDesc": "Schedule (Times are approximate): \n\n10:00 - Crew assembles (we may not be the only crew of volunteers) \n10:00-11:30 - Set up the room (set tables, water glasses, coffee, tea, etc.) \n11:30 - Residents admitted (pre-plated food, pour beverages) \n12:15-1:00 - Clean up \n\nLunch is included \n\nSpouses, significant others, and responsible children are welcome!"
     },
     {
         "name": "Forest City Lodge Repack Event",
@@ -16,9 +16,9 @@
         "location": "Greater Cleveland Food Bank",
         "locationAddress": "13815 Coit Road, Cleveland, OH 44110",
         "locationUrl": "https://share.google/AYAQ1ZGVRBDfCGZ7k",
-        "description": "Please consider volunteering for our very own Forest City Lodge repack event. We have reserved a group time for Saturday, January 17th from 9am to noon. In the past, members of University Heights Lodge No. 738 had a blast volunteering for these events. We repacked thousands of pounds of food for distribution, made some new friends and helped to make our lodge more visible and active in the local community. This also helped to strengthen our own brotherhood through mutual service to the community, with brethren and their families participating (yes, family members are welcome and encouraged to attend so long as they are at least 14 years of age). You must register online for this event at the link below.",
+        "description": "Please consider volunteering for our very own Forest City Lodge repack event. \nWe have reserved a group time for Saturday, January 17th from 9am to noon. \nIn the past, members of University Heights Lodge No. 738 had a blast volunteering for these events. \nWe repacked thousands of pounds of food for distribution, made some new friends and helped to make our lodge more visible and active in the local community. \nThis also helped to strengthen our own brotherhood through mutual service to the community, with brethren and their families participating (yes, family members are welcome and encouraged to attend so long as they are at least 14 years of age). \nYou must register online for this event at the link below.",
         "eventImageUrl": "greater-cleveland-food-bank-logo.png",
         "isRsvp": true,
-        "rsvpDesc": "You must register with the Food Bank to attend this event. There is a limit of 15 for registrations. After you RSVP here, please copy the following URL and paste in your browser to register with the Food Bank: https://cerv.is/0136gHyJaj5 \nPlease also see our current bulletin (can be found here: forestcitylodge.com/bulletin) for detailed instructions."
+        "rsvpDesc": "You must register with the Food Bank to attend this event. \nThere is a limit of 15 for registrations. \nAfter you RSVP here, please copy the following URL and paste in your browser to register with the Food Bank: \n\nhttps://cerv.is/0136gHyJaj5 \n\nPlease also see our current bulletin (can be found here: forestcitylodge.com/bulletin) for detailed instructions."
     }
 ]

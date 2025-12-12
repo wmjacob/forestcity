@@ -6,7 +6,7 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 const SHEETS_SECRET = 'sheets-credentials';
 const RSVP_SHEETS_ID_SECRET = 'sheets-id';
-const SOCIAL_RSVP_SHEETS_ID_SECRET = 'social-rsvp-sheet-id';
+const MITZVAH_RSVP_SHEETS_ID_SECRET = 'mitzvah-rsvp-sheet-id';
 
 sheetsRouter.get('/status', function (_req, res) {
     res.status(200).json({ status: 'UP' });
@@ -98,13 +98,13 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
     response.status(200).json({ status: 'Ok' });
 });
 
-sheetsRouter.post('/append-social-rsvp', async function(request, response) {
+sheetsRouter.post('/append-mitzvah-rsvp', async function(request, response) {
     try {
         const data = request.body;
 
         // event name and date for sheet titles
         const eventNameDate = data.event.name + ' ' + data.date;
-        const rsvpSheet = await getAuth(SOCIAL_RSVP_SHEETS_ID_SECRET);
+        const rsvpSheet = await getAuth(MITZVAH_RSVP_SHEETS_ID_SECRET);
         const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
         const sheetsSecret = await getAuth(SHEETS_SECRET);
 

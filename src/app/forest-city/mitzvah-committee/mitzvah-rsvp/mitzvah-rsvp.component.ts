@@ -33,7 +33,7 @@ export class MitzvahRsvpComponent implements OnInit {
         let emailSuccessful: boolean = false;
         this.isSending = true;
         const request = this.buildRequest();
-        const response = await this.emailService.sendEmail(request, '/mj/api/social-rsvp');
+        const response = await this.emailService.sendEmail(request, '/mj/api/mitzvah-rsvp');
 
         if(response) {
             emailSuccessful = true;
@@ -57,7 +57,7 @@ export class MitzvahRsvpComponent implements OnInit {
 
         if(emailSuccessful) {
             request.date = this.formatSheetsDate();
-            await this.sheetsService.writeToSocialSheet(request);
+            await this.sheetsService.writeToMitzvahSheet(request);
         }
 
         this.isSending = false;

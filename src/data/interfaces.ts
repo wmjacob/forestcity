@@ -48,7 +48,7 @@ export interface PhotoAlbum {
     description: string
 }
 
-export interface SocialOuting {
+export interface MitzvahEvent {
     name: string,
     date: string,
     location: string,

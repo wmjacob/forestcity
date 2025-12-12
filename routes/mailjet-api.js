@@ -128,7 +128,7 @@ mailjetRouter.post('/rsvp', async function(req, res) {
     }
 });
 
-mailjetRouter.post('/social-rsvp', async function(req, res) {
+mailjetRouter.post('/mitzvah-rsvp', async function(req, res) {
     try {
         const mjCreds = await getAuth(GOOGLE_MAILJET_SECRET);
         const mailjet = require ('node-mailjet').connect(mjCreds.mailjetPublicKey, mjCreds.mailjetPrivateKey);
@@ -166,7 +166,7 @@ mailjetRouter.post('/social-rsvp', async function(req, res) {
                     "date": data.date,
                     "numberOfAttendees": data.numberOfAttendees
                 },
-                "CustomID": "socialRsvpConfirmationToSiteAdmin"
+                "CustomID": "mitzvahRsvpConfirmationToSiteAdmin"
             },
             {
                 "From":
@@ -192,7 +192,7 @@ mailjetRouter.post('/social-rsvp', async function(req, res) {
                     "location": data.event.location,
                     "address": data.event.locationAddress
                 },
-                "CustomID": "socialRsvpConfirmationToAttendee"
+                "CustomID": "mitzvahRsvpConfirmationToAttendee"
             }
         ]
         });
