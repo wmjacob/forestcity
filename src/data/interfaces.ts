@@ -60,3 +60,14 @@ export interface MitzvahEvent {
     isRsvpDesc: boolean,
     rsvpDesc: string
 }
+
+export interface SocialEvent {
+    name: string,
+    date: string,
+    location: string,
+    locationAddress: string,
+    locationUrl: string,
+    description: string
+    eventImageUrl: string,
+    isRsvpBtn: boolean,
+}
