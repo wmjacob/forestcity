@@ -1,0 +1,19 @@
+.event-image {
+    height: 1024px;
+    
+    @media screen and (max-width: 768px) {
+        height: 685px;
+    }
+
+    @media screen and (max-width: 425px) {
+        height: 550px;
+    }
+
+    @media screen and (max-width: 375px) {
+        height: 475px;
+    }
+
+    @media screen and (max-width: 320px) {
+        height: 394px;
+    }
+}

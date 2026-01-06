@@ -20,8 +20,7 @@
                                 <div class="fw-bold fs-4">
                                     {{event.name}}
                                 </div>
-                                <div *ngIf="event.description" class="fs-6">
-                                    {{event.description}}
+                                <div *ngIf="event.description" class="fs-6" innerHtml="{{event.description}}">
                                 </div>
                                 <div *ngIf="event.extraInfo" class="fs-6">
                                     <i>{{event.extraInfo}}</i>

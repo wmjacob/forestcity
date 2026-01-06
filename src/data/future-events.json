@@ -751,6 +751,28 @@
     "rsvpLimit": false
   },
   {
+    "date": "2026/03/21 13:00",
+    "name": "FCL Bowling and Bocce Event",
+    "description": "Join us at Pinstripes in Beachwood for Fellowship and family fun! Please <a href='https://www.forestcitylodge.com/social-events' target='_blank'>click here</a> for more information.",
+    "extraInfo": "",
+    "location": "Pinstripes",
+    "address": "111 Park Ave. Suite 105, Beachwood, OH 44122",
+    "addressLink": "https://maps.app.goo.gl/QuoRnfbNmhcEo8jK7",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "5",
+    "rsvpExpirationTime": "23:59",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(1:00)",
+      "cost": "",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
     "date": "2026/04/01 19:30",
     "name": "Stated Meeting",
     "description": "",

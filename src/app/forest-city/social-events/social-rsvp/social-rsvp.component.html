@@ -1,5 +1,5 @@
 <div class="modal fade"
-    id="mitzvahRsvpModal"
+    id="socialRsvpModal"
     tabindex="-1"
     aria-labelledby="rsvpHeading"
     aria-hidden="true">
@@ -7,7 +7,7 @@
         <div class="modal-content">
             <div class="modal-header text-center">
                 <h3 class="modal-title" id="rsvpHeading">
-                    RSVP for a Mitzvah Committee Event
+                    RSVP for a Social Event
                 </h3>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -16,14 +16,14 @@
                     <p id="rsvpDesc" class="text-center">RSVP for {{ event.name }}</p>
                     <p *ngIf="event.description" class="text-center">{{ event.description }}</p>
                     <p class="text-center">{{ cleanDate(event.date || '') | date:'fullDate' }}</p>
-                    <form [formGroup]="mitzvahRsvpForm" (ngSubmit)="submitRsvp()">
+                    <form [formGroup]="socialRsvpForm" (ngSubmit)="submitRsvp()">
                         <div class="mb-3">
                             <label for="first-name" class="usa-label required-field">First Name:</label>
                             <input id="first-name"
                                 type="text"
                                 class="form-control"
                                 formControlName="firstName"
-                                [class.is-invalid] = "mitzvahRsvpForm.get('firstName')?.invalid && mitzvahRsvpForm.get('firstName')?.dirty"
+                                [class.is-invalid] = "socialRsvpForm.get('firstName')?.invalid && socialRsvpForm.get('firstName')?.dirty"
                                 required>
                         </div>
                         <div class="mb-3">
@@ -32,7 +32,7 @@
                                 type="text"
                                 class="form-control"
                                 formControlName="lastName"
-                                [class.is-invalid] = "mitzvahRsvpForm.get('lastName')?.invalid && mitzvahRsvpForm.get('lastName')?.dirty"
+                                [class.is-invalid] = "socialRsvpForm.get('lastName')?.invalid && socialRsvpForm.get('lastName')?.dirty"
                                 required>
                         </div>
                         <div class="mb-3">
@@ -41,7 +41,7 @@
                                 type="email"
                                 class="form-control"
                                 formControlName="email"
-                                [class.is-invalid] = "mitzvahRsvpForm.get('email')?.invalid && mitzvahRsvpForm.get('email')?.dirty"
+                                [class.is-invalid] = "socialRsvpForm.get('email')?.invalid && socialRsvpForm.get('email')?.dirty"
                                 required>
                         </div>
                         <div class="mb-3">

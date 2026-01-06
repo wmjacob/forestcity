@@ -19,6 +19,7 @@ import { UniversityHeightsPMComponent } from './forest-city/past-masters/uh-past
 import { MitzvahCommitteeEventsComponent } from './forest-city/mitzvah-committee/mitzvah-committee-events.component';
 import { BrotherhoodNightHistoryComponent } from './forest-city/brotherhood-night/history/brotherhood-night-history.component';
 import { ContactSunshineCommitteeComponent } from './core/contact-sunshine-committee/contact-sunshine-committee.component';
+import { SocialEventsComponent } from './forest-city/social-events/social-events.component';
 
 const IMAGE_GALLERY_URL = 'image-gallery';
 
@@ -103,11 +104,11 @@ const routes: Routes = [
       {
         path: 'contact-sunshine-committee',
         component: ContactSunshineCommitteeComponent
+      },
+      {
+        path: 'social-events',
+        component: SocialEventsComponent
       }
-      // {
-      //   path: 'operation-backpack',
-      //   component: OperationBackpackComponent
-      // }
     ]
   },
   // routes without header or footer

@@ -37,6 +37,8 @@ import { MitzvahCommitteeEventsComponent } from './forest-city/mitzvah-committee
 import { MitzvahRsvpComponent } from './forest-city/mitzvah-committee/mitzvah-rsvp/mitzvah-rsvp.component';
 import { BrotherhoodNightHistoryComponent } from './forest-city/brotherhood-night/history/brotherhood-night-history.component';
 import { ContactSunshineCommitteeComponent } from './core/contact-sunshine-committee/contact-sunshine-committee.component';
+import { SocialEventsComponent } from './forest-city/social-events/social-events.component';
+import { SocialRsvpComponent } from './forest-city/social-events/social-rsvp/social-rsvp.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +68,9 @@ import { ContactSunshineCommitteeComponent } from './core/contact-sunshine-commi
     MitzvahCommitteeEventsComponent,
     MitzvahRsvpComponent,
     BrotherhoodNightHistoryComponent,
-    ContactSunshineCommitteeComponent
+    ContactSunshineCommitteeComponent,
+    SocialEventsComponent,
+    SocialRsvpComponent
   ],
   imports: [
     BrowserModule,

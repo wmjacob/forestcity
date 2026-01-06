@@ -1,0 +1,54 @@
+<div class="social-events">
+    <div class="social-events-title bg-white pt-4 pb-3 centered">
+        <h2>Social Events</h2>
+    </div>
+
+    <div class="social-events-content bg-primary-lighter py-3">
+        <div class="container">
+            <div class="row centered">
+                <div class="fs-4 text-align-center pb-4">Forest City Lodge No. 388</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12 mb-2">
+                    <div class="grid-col-12 bg-primary-lighter pb-2">
+                        <div class="centered">
+                            <h3>Upcoming Social Events</h3>
+                        </div>
+                    </div>
+
+                    <div *ngFor="let event of events, let i = index" class="border-rounded mb-2">
+
+                        <div *ngIf="!hasEventPassed(event.date)">
+                            <div class="card text-center" [ngClass]="{'bg-light': i % 2 === 0, 'bg-info-lighter': i % 2 === 1}">
+                                <div class="card-header">
+                                  <div class="fw-bold fs-4">{{event.name}}</div>
+                                </div>
+                                <div class="card-body">
+                                  <p class="card-text multiline-text" innerHtml="{{event.description}}"></p>
+                                  <h6>{{getDate(event.date)}}</h6>
+                                  <p class="card-text"><span class="fw-bold">Location: </span>{{event.location}}, <a class="link-offset-2" [href]="event.locationUrl" target="_blank">{{ event.locationAddress }}</a></p>
+                                  <div *ngIf="hasEventImageUrl(event)">
+                                    <img src="https://storage.cloud.google.com/forest-city-website-images/Social_Events/{{event.eventImageUrl}}" class="event-image"/>
+                                  </div>
+                                  <div *ngIf="isRsvpBtn(event)">
+                                    <div class="mt-2">
+                                        <button aria-controls="socialRsvpModal"
+                                                class="btn btn-primary"
+                                                (click)="setEventForRsvp(event)"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#socialRsvpModal">
+                                                RSVP
+                                        </button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<social-rsvp [event]="event"></social-rsvp>
