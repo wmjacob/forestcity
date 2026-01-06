@@ -61,16 +61,16 @@
                                   <div class="fw-bold fs-4">{{event.name}}</div>
                                 </div>
                                 <div class="card-body">
-                                  <p class="card-text multiline-text">{{event.description}}</p>
-                                  <div *ngIf="isRsvp(event)">
-                                    <p class="multiline-text">{{event.rsvpDesc}}</p>
+                                  <p class="card-text multiline-text" innerHtml="{{event.description}}"></p>
+                                  <div *ngIf="isRsvpDesc(event)">
+                                    <p class="card-text multiline-text" innerHtml="{{event.rsvpDesc}}"></p>
                                   </div>
                                   <h6>{{getDate(event.date)}}</h6>
                                   <p class="card-text"><span class="fw-bold">Location: </span>{{event.location}}, <a class="link-offset-2" [href]="event.locationUrl" target="_blank">{{ event.locationAddress }}</a></p>
                                   <div *ngIf="hasEventImageUrl(event)">
                                     <img src="https://storage.cloud.google.com/forest-city-website-images/Mitzvah-Events/{{event.eventImageUrl}}" class="event-image"/>
                                   </div>
-                                  <div *ngIf="isRsvp(event)">
+                                  <div *ngIf="isRsvpBtn(event)">
                                     <div class="mt-2">
                                         <button aria-controls="mitzvahRsvpModal"
                                                 class="btn btn-primary"

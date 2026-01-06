@@ -43,8 +43,8 @@ export class MitzvahCommitteeEventsComponent implements OnInit {
         this.event = event;
     }
 
-    isRsvp(event: MitzvahEvent) {
-        if(!event.isRsvp) {
+    isRsvpBtn(event: MitzvahEvent) {
+        if(!event.isRsvpBtn) {
             return false;
         }
         
@@ -59,6 +59,10 @@ export class MitzvahCommitteeEventsComponent implements OnInit {
         }
 
         return true;
+    }
+
+    isRsvpDesc(event: MitzvahEvent) {
+        return event.isRsvpDesc;
     }
 
     hasEventImageUrl(event: MitzvahEvent) {

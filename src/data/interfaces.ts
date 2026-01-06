@@ -56,6 +56,7 @@ export interface MitzvahEvent {
     locationUrl: string,
     description: string,
     eventImageUrl: string,
-    isRsvp: boolean,
+    isRsvpBtn: boolean,
+    isRsvpDesc: boolean,
     rsvpDesc: string
 }
