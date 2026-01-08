@@ -29,7 +29,7 @@
                                   <h6>{{getDate(event.date)}}</h6>
                                   <p class="card-text"><span class="fw-bold">Location: </span>{{event.location}}, <a class="link-offset-2" [href]="event.locationUrl" target="_blank">{{ event.locationAddress }}</a></p>
                                   <div *ngIf="hasEventImageUrl(event)">
-                                    <img src="https://storage.cloud.google.com/forest-city-website-images/Social_Events/{{event.eventImageUrl}}" class="event-image"/>
+                                    <img src="https://storage.googleapis.com/forest-city-website-images/Social_Events/{{event.eventImageUrl}}" class="event-image"/>
                                   </div>
                                   <div *ngIf="isRsvpBtn(event)">
                                     <div class="mt-2">
