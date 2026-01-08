@@ -767,7 +767,7 @@
     "tyled": false,
     "earlyBirdOptions": {
       "time": "(1:00)",
-      "cost": "",
+      "cost": "25",
       "choices": []
     },
     "rsvpLimit": false
