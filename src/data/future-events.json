@@ -666,7 +666,7 @@
     "date": "2026/02/04 19:30",
     "name": "Stated Meeting",
     "description": "Awards and Memorial Night",
-    "extraInfo": "Menu TBD",
+    "extraInfo": "Meal Choices: Roast Beef, Salmon, and a Vegetarian Option",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -680,7 +680,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "15",
-      "choices": []
+      "choices": ["Roast Beef", "Salmon", "Vegetarian"]
     },
     "rsvpLimit": false
   },
