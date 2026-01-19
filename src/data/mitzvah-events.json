@@ -22,5 +22,17 @@
         "isRsvpBtn": false,
         "isRsvpDesc": true,
         "rsvpDesc": "You must register with the Food Bank to attend this event. \nThere is a limit of 15 for registrations. \nPlease click on the following link to register: <a href='https://cerv.is/0136gHyJaj5' target='_blank'>Food Bank Registration </a> \n\nPlease also see our <a href='https://www.forestcitylodge.com/bulletin' target='_blank'>current bulletin</a> for detailed instructions."
+    },
+    {
+        "name": "Peanut Butter and Jelly Sandwiches",
+        "date": "2026/02/06 20:30",
+        "location": "Temple Israel Ner Tamid",
+        "locationAddress": "1732 Lander Road, Mayfield Hts, OH 44124",
+        "locationUrl": "https://maps.app.goo.gl/96e1i1HzQqLi6Vzf6",
+        "description": "Come join us on the first Friday of every other month to help make PB&J sandwiches for the unhoused in Cleveland. \nWe will meet at Temple Israel Ner Tamid at 8:30 PM.",
+        "eventImageUrl": "",
+        "isRsvpBtn": false,
+        "isRsvpDesc": false,
+        "rsvpDesc": ""
     }
 ]
