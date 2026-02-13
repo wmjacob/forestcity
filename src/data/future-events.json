@@ -687,7 +687,7 @@
   {
     "date": "2026/02/18 19:30",
     "name": "Stated Meeting",
-    "description": "",
+    "description": "Annual Chili Cookoff",
     "extraInfo": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -701,7 +701,7 @@
     "tyled": true,
     "earlyBirdOptions": {
       "time": "(6:30)",
-      "cost": "10",
+      "cost": "0",
       "choices": []
     },
     "rsvpLimit": false
@@ -731,7 +731,7 @@
   {
     "date": "2026/03/18 19:30",
     "name": "Stated Meeting",
-    "description": "Annual Chili Cookoff",
+    "description": "",
     "extraInfo": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
