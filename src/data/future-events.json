@@ -820,7 +820,7 @@
     "date": "2026/04/29 17:30",
     "name": "Annual Inspection",
     "description": "In The Master Mason Degree - Early Start - 5:30PM",
-    "extraInfo": "Menu TBD",
+    "extraInfo": "Meal Choices: Prime Rib of Beef, Lemon Herb Grilled Chicken, or Atlantic Salmon",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -834,7 +834,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "15",
-      "choices": []
+      "choices": ["Prime Rib of Beef", "Lemon Herb Grilled Chicken", "Atlantic Salmon"]
     },
     "rsvpLimit": false
   },
