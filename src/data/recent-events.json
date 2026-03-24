@@ -1,5 +1,22 @@
 [
     {
+        "eventName": "Bowling, Bocce and Brotherhood",
+        "eventId": "bowlingBocce2026",
+        "displayDate": "Saturday, March 21st, 2026",
+        "description": "A great time was had by all at Pinstripes in Beachwood! There was bowling, bocce, good food, and even better people! Special thanks to our Senior Steward Bro. Alex Kaufman and Junior Steward Bro. Tyler Tevis for organizing this wonderful event.",
+        "albumName": "2026_03_21_Pinstripes_Bowling_Bocce",
+        "imageUrls": [
+            "043.jpg",
+            "040.jpg",
+            "031.jpg",
+            "022.jpg",
+            "006.jpg"
+        ],
+        "slideLabels": [],
+        "slideContent": [],
+        "eventDate": "2026/03/21"
+    },
+    {
         "eventName": "52nd Annual Brotherhood Night",
         "eventId": "2025BrotherhoodNight",
         "displayDate": "Wednesday, December 17th, 2025",
