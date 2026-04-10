@@ -883,6 +883,28 @@
     "rsvpLimit": false
   },
   {
+    "date": "2026/05/30 15:00",
+    "name": "Master, Wardens and Wine",
+    "description": "Join us at Debonne Vineyards for our annual Master, Wardens and Wine Celebration!",
+    "extraInfo": "Please <a href='https://www.forestcitylodge.com/social-events' target='_blank'>click here</a> for more information.",
+    "location": "Debonne Vineyards",
+    "address": "7840 Doty Rd, Madison, OH 44057",
+    "addressLink": "https://maps.app.goo.gl/z9oqButZNat58T65A",
+    "rsvpOptions": false,
+    "rsvpExpirationDays": "5",
+    "rsvpExpirationTime": "23:59",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(1:00)",
+      "cost": "30",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
     "date": "2026/06/03 19:30",
     "name": "Stated Meeting",
     "description": "",

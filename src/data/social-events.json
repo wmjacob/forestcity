@@ -7,6 +7,18 @@
         "locationUrl": "https://maps.app.goo.gl/MQCEh7FdWKghQ6cw8",
         "description": "",
         "eventImageUrl": "2026_03_21_bowling_event.png",
+        "eventPdfUrl": "",
+        "isRsvpBtn": false
+    },
+    {
+        "name": "2026 Master, Wardens and Wine Celebration",
+        "date": "2026/05/30 15:00",
+        "location": "Debonne Vineyards",
+        "locationAddress": "7840 Doty Rd, Madison, OH 44057",
+        "locationUrl": "https://maps.app.goo.gl/z9oqButZNat58T65A",
+        "description": "",
+        "eventImageUrl": "2026_master_and_wardens_flyer.jpg",
+        "eventPdfUrl": "",
         "isRsvpBtn": false
     }
 ]
