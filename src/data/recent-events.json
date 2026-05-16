@@ -1,5 +1,21 @@
 [
     {
+        "eventName": "2026 Lodge Appreciation Brunch",
+        "eventId": "2026LodgeAppreciation",
+        "displayDate": "Sunday, May 3rd, 2026",
+        "description": "Forest City Lodge No. 388 held a brunch to thank our brethren for all that they do for our Lodge, and our Fraternity at large. A special honor was presented to WB Alan H. Rothman: Secretary Emeritus - congratulations! Special thanks to WM Jim Paluf, WB Ryan Stuver and RWB Mitch Alperin for organizing this wonderful event!",
+        "albumName": "2026_05_03_Appreciation_Brunch",
+        "imageUrls": [
+            "048.jpg",
+            "003.jpg",
+            "012.jpg",
+            "039.jpg"
+        ],
+        "slideLabels": [],
+        "slideContent": [],
+        "eventDate": "2026/05/03"
+    },
+    {
         "eventName": "Bowling, Bocce and Brotherhood",
         "eventId": "bowlingBocce2026",
         "displayDate": "Saturday, March 21st, 2026",
