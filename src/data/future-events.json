@@ -952,12 +952,12 @@
     "date": "2026/08/19 17:00",
     "name": "Annual Steak Roast",
     "description": "At The Shelterhouse Picnic Area at South Chagrin Reservation",
-    "extraInfo": "",
+    "extraInfo": "Meal choices: Steak meal - $20 each, Chicken, Hot Dog, or Veggie Dog Meals - $15 each",
     "location": "South Chagrin Reservation - Shelterhouse Picnic Area",
     "address": "Hawthorn Pkwy, Bentleyville, OH 44022",
     "addressLink": "https://maps.app.goo.gl/n44Lz8Uh3xQ54ggV8",
     "rsvpOptions": true,
-    "rsvpExpirationDays": "5",
+    "rsvpExpirationDays": "10",
     "rsvpExpirationTime": "23:59",
     "spotlight": false,
     "spotlightImage": "",
@@ -966,7 +966,7 @@
     "earlyBirdOptions": {
       "time": "(5:00)",
       "cost": "20",
-      "choices": []
+      "choices": ["Steak", "Chicken", "Hot Dog", "Veggie Dog"]
     },
     "rsvpLimit": false
   },
