@@ -16,6 +16,7 @@ COPY --from=builder /usr/src/app/dist ./dist
 COPY --from=builder /usr/src/app/sitemap.xml ./sitemap.xml
 COPY app.js robots.txt ./
 COPY bin ./bin
+COPY lib ./lib
 COPY routes ./routes
 EXPOSE 3000
 CMD ["bin/www"]
