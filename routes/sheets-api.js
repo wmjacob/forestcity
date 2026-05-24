@@ -1,29 +1,12 @@
 const express = require('express');
 const sheetsRouter = express.Router();
-const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
 const { GoogleSpreadsheet } = require('google-spreadsheet');
+const { getSecret, KEYS } = require('../lib/global-secrets');
 // const { google } = require('googleapis');
-
-const SHEETS_SECRET = 'sheets-credentials';
-const RSVP_SHEETS_ID_SECRET = 'sheets-id';
-const MITZVAH_RSVP_SHEETS_ID_SECRET = 'mitzvah-rsvp-sheet-id';
 
 sheetsRouter.get('/status', function (_req, res) {
     res.status(200).json({ status: 'UP' });
 });
-
-const getAuth = async (secretCredentials) => {
-    if (process.env.NODE_ENV !== 'development') {
-        const client = new SecretManagerServiceClient();
-        const name = `projects/forest-city-325620/secrets/${secretCredentials}/versions/latest`;
-        const [version] = await client.accessSecretVersion({ name });
-        if (!version.payload || !version.payload.data || !version.payload.data.toString) {
-          res.status(500).json({ error: 'Internal Error' });
-          return;
-        }
-        return JSON.parse(Buffer.from(version.payload.data.toString(), 'base64'));
-    }
-}
 
 sheetsRouter.post('/append-rsvp', async function(request, response) {
     try {
@@ -31,9 +14,9 @@ sheetsRouter.post('/append-rsvp', async function(request, response) {
 
         // event name and date for sheet titles
         const eventNameDate = data.event.name + ' ' + data.date;
-        const rsvpSheet = await getAuth(RSVP_SHEETS_ID_SECRET);
+        const rsvpSheet = await getSecret(KEYS.RSVP_SHEET_ID);
         const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
-        const sheetsSecret = await getAuth(SHEETS_SECRET);
+        const sheetsSecret = await getSecret(KEYS.SHEETS);
         
         await doc.useServiceAccountAuth({
             client_email: sheetsSecret.client_email,
@@ -104,9 +87,9 @@ sheetsRouter.post('/append-mitzvah-rsvp', async function(request, response) {
 
         // event name and date for sheet titles
         const eventNameDate = data.event.name + ' ' + data.date;
-        const rsvpSheet = await getAuth(MITZVAH_RSVP_SHEETS_ID_SECRET);
+        const rsvpSheet = await getSecret(KEYS.MITZVAH_RSVP_SHEET_ID);
         const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
-        const sheetsSecret = await getAuth(SHEETS_SECRET);
+        const sheetsSecret = await getSecret(KEYS.SHEETS);
 
         await doc.useServiceAccountAuth({
             client_email: sheetsSecret.client_email,
@@ -140,9 +123,9 @@ sheetsRouter.get('/read', async function(request, response) {
         // update this with required sheet name
         const eventNameDate = '52nd Annual Brotherhood Night Wed, Dec 17, 2025';
 
-        const rsvpSheet = await getAuth(RSVP_SHEETS_ID_SECRET);
+        const rsvpSheet = await getSecret(KEYS.RSVP_SHEET_ID);
         const doc = new GoogleSpreadsheet(rsvpSheet.sheetId);
-        const sheetsSecret = await getAuth(SHEETS_SECRET);
+        const sheetsSecret = await getSecret(KEYS.SHEETS);
 
         await doc.useServiceAccountAuth({
             client_email: sheetsSecret.client_email,
