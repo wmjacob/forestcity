@@ -1,37 +1,13 @@
 const express = require('express');
 const mailjetRouter = express.Router();
-const { SecretManagerServiceClient } = require('@google-cloud/secret-manager');
+const { getSecret, KEYS } = require('../lib/global-secrets');
 
-const GOOGLE_EMAIL_SECRET = 'email-credentials'
-const GOOGLE_MAILJET_SECRET = 'mailjet-credentials';
-const WM_EMAIL_SECRET = 'worshipful-master-email';
-const SECRETARY_EMAIL_SECRET = 'secretary-email';
-const ASSOC_SECRETARY_EMAIL_SECRET = 'associate-secretary-email';
 const FCL_NAME = 'Forest City Lodge #388';
-const SUNSHINE_COMMITTEE_COCHAIR_1 = 'sunshine-committee-cochair-1';
-const SUNSHINE_COMMITTEE_COCHAIR_2 = 'sunshine-committee-cochair-2';
 
 const FCL_SECRETARY_NAME = 'Forest City Lodge Secretary';
 const FCL_CONTACTS_NAME = 'Forest City Lodge Contacts';
 const FCL_WM_NAME = 'Forest City Lodge Worshipful Master';
 const FCL_ASSC_SEC_NAME = 'Forest City Lodge Assc. Secretary';
-
-const getAuth = async (secretCredentials) => {
-    if (process.env.NODE_ENV !== 'development') {
-      const client = new SecretManagerServiceClient();
-      const name = `projects/forest-city-325620/secrets/${secretCredentials}/versions/latest`;
-      const [version] = await client.accessSecretVersion({ name });
-      if (!version.payload || !version.payload.data || !version.payload.data.toString) {
-        res.status(500).json({ error: 'Internal Error' });
-        return;
-      }
-      return JSON.parse(Buffer.from(version.payload.data.toString(), 'base64'));
-    }
-    return {
-      mailjetPublicKey: process.env.GMAIL_USER,
-      mailjetPrivateKey: process.env.GMAIL_PASS
-    };
-}
 
 mailjetRouter.get('/status', function (_req, res) {
     res.status(200).json({ status: 'UP' });
@@ -39,10 +15,10 @@ mailjetRouter.get('/status', function (_req, res) {
 
 mailjetRouter.post('/rsvp', async function(req, res) {
     try {
-        const mjCreds = await getAuth(GOOGLE_MAILJET_SECRET);
+        const mjCreds = await getSecret(KEYS.MAILJET);
         const mailjet = require ('node-mailjet').connect(mjCreds.mailjetPublicKey, mjCreds.mailjetPrivateKey);
 
-        const gmailCreds = await getAuth(GOOGLE_EMAIL_SECRET);
+        const gmailCreds = await getSecret(KEYS.EMAIL);
         const FCL_CONTACTS_EMAIL = gmailCreds.user;
 
         const data = req.body;
@@ -123,17 +99,17 @@ mailjetRouter.post('/rsvp', async function(req, res) {
         res.status(200).json({ status: 'Ok' });
     }
     catch (error) {
-        console.error(err);
+        console.error(error);
         res.status(500).json({ error: 'Internal Error' });
     }
 });
 
 mailjetRouter.post('/mitzvah-rsvp', async function(req, res) {
     try {
-        const mjCreds = await getAuth(GOOGLE_MAILJET_SECRET);
+        const mjCreds = await getSecret(KEYS.MAILJET);
         const mailjet = require ('node-mailjet').connect(mjCreds.mailjetPublicKey, mjCreds.mailjetPrivateKey);
 
-        const gmailCreds = await getAuth(GOOGLE_EMAIL_SECRET);
+        const gmailCreds = await getSecret(KEYS.EMAIL);
         const FCL_CONTACTS_EMAIL = gmailCreds.user;
 
         const data = req.body;
@@ -206,26 +182,26 @@ mailjetRouter.post('/mitzvah-rsvp', async function(req, res) {
         res.status(200).json({ status: 'Ok' });
     }
     catch (error) {
-        console.error(err);
+        console.error(error);
         res.status(500).json({ error: 'Internal Error' });
     }
 });
 
 mailjetRouter.post('/contact-us', async function(req, res) {
     try {
-        const mjCreds = await getAuth(GOOGLE_MAILJET_SECRET);
+        const mjCreds = await getSecret(KEYS.MAILJET);
         const mailjet = require ('node-mailjet').connect(mjCreds.mailjetPublicKey, mjCreds.mailjetPrivateKey);
 
-        const gmailCreds = await getAuth(GOOGLE_EMAIL_SECRET);
+        const gmailCreds = await getSecret(KEYS.EMAIL);
         const FCL_CONTACTS_EMAIL = gmailCreds.user;
 
-        const wmCreds = await getAuth(WM_EMAIL_SECRET);
+        const wmCreds = await getSecret(KEYS.WM_EMAIL);
         const FCL_WM_EMAIL = wmCreds.email;
 
-        const secretaryCreds = await getAuth(SECRETARY_EMAIL_SECRET);
+        const secretaryCreds = await getSecret(KEYS.SECRETARY_EMAIL);
         const FCL_SECRETARY_EMAIL = secretaryCreds.email;
 
-        const assocSecretaryCreds = await getAuth(ASSOC_SECRETARY_EMAIL_SECRET);
+        const assocSecretaryCreds = await getSecret(KEYS.ASSOC_SECRETARY_EMAIL);
         const FCL_ASSC_SEC_EMAIL = assocSecretaryCreds.email;
 
         const data = req.body;
@@ -309,22 +285,22 @@ mailjetRouter.post('/contact-us', async function(req, res) {
         res.status(200).json({ status: 'Ok' });
     }
     catch (error) {
-        console.error(err);
+        console.error(error);
         res.status(500).json({ error: 'Internal Error' });
     }
 });
 
 mailjetRouter.post('/contact-sunshine-committee', async function(req, res) {
     try {
-        const mjCreds = await getAuth(GOOGLE_MAILJET_SECRET);
+        const mjCreds = await getSecret(KEYS.MAILJET);
         const mailjet = require ('node-mailjet').connect(mjCreds.mailjetPublicKey, mjCreds.mailjetPrivateKey);
 
-        const gmailCreds = await getAuth(GOOGLE_EMAIL_SECRET);
+        const gmailCreds = await getSecret(KEYS.EMAIL);
         const FCL_CONTACTS_EMAIL = gmailCreds.user;
 
-        const sunshineCochair1 = await getAuth(SUNSHINE_COMMITTEE_COCHAIR_1);
+        const sunshineCochair1 = await getSecret(KEYS.SUNSHINE_COCHAIR_1);
         const cochairEmail1 = sunshineCochair1.email;
-        const sunshineCochair2 = await getAuth(SUNSHINE_COMMITTEE_COCHAIR_2);
+        const sunshineCochair2 = await getSecret(KEYS.SUNSHINE_COCHAIR_2);
         const cochairEmail2 = sunshineCochair2.email;
 
         const data = req.body;
@@ -404,7 +380,7 @@ mailjetRouter.post('/contact-sunshine-committee', async function(req, res) {
         res.status(200).json({ status: 'Ok' });
     }
     catch (error) {
-        console.error(err);
+        console.error(error);
         res.status(500).json({ error: 'Internal Error' });
     }
 });

@@ -1,2 +1,15 @@
-Dockerfile
-README.md
+node_modules
+dist
+.git
+.gitignore
+.env
+.env.*
+*.md
+LICENSE
+docker-compose.yml
+Makefile
+coverage
+.angular
+.editorconfig
+karma.conf.js
+scripts
