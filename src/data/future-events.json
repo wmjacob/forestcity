@@ -930,7 +930,7 @@
     "date": "2026/06/17 17:30",
     "name": "Annual Table Lodge of Instruction",
     "description": "Menu - Entrees: Chicken Piccata or Glazed Salmon. Sides: Mashed Potates, Asparagus",
-    "extraInfo": "",
+    "extraInfo": "EA Degree: 5:30PM - Dinner: 7:00PM - Table Lodge: 7:30PM",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
     "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
@@ -942,7 +942,7 @@
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "(6:30)",
+      "time": "(7:00)",
       "cost": "15",
       "choices": ["Chicken Piccata", "Glazed Salmon"]
     },
