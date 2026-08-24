@@ -1017,7 +1017,7 @@
   {
     "date": "2026/10/07 19:30",
     "name": "Past Masters Night",
-    "description": "Menu TBD",
+    "description": "Menu - Entrees: Chicken Piccata or Glazed Salmon. Sides: Mashed Potates, Asparagus",
     "extraInfo": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -1032,7 +1032,7 @@
     "earlyBirdOptions": {
       "time": "(6:30)",
       "cost": "15",
-      "choices": []
+      "choices": ["Chicken Piccata", "Glazed Salmon"]
     },
     "rsvpLimit": false
   },
