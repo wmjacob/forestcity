@@ -1,6 +1,11 @@
 [
     {
         "year": "2026",
+        "displayName": "August - November",
+        "filename": "FCL-Bulletin-2026-08-11.pdf"
+    },
+    {
+        "year": "2026",
         "displayName": "May - July",
         "filename": "FCL-Bulletin-2026-05-07.pdf"
     },
