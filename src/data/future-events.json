@@ -1079,5 +1079,71 @@
       "choices": []
     },
     "rsvpLimit": false
+  },
+  {
+    "date": "2026/11/18 19:30",
+    "name": "Installation of Officers",
+    "description": "",
+    "extraInfo": "Menu: Beef Tenderloin, Stuffed Chicken with Chicken Gravy, Glazed Salmon, or Vegan Stuffed Pepper. Sides: Rosemary Roasted Potatoes, Seasoned Green Beans, Roll, and Salad",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "rsvpExpirationTime": "23:59",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "15",
+      "choices": ["Beef Tenderloin", "Stuffed Chicken with Chicken Gravy", "Glazed Salmon", "Vegan Stuffed Pepper"]
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/12/02 19:30",
+    "name": "Stated Meeting",
+    "description": "",
+    "extraInfo": "",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "2",
+    "rsvpExpirationTime": "23:59",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": true,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "10",
+      "choices": []
+    },
+    "rsvpLimit": false
+  },
+  {
+    "date": "2026/12/16 19:30",
+    "name": "53rd Annual Brotherhood Night",
+    "description": "A Night with the Clergy and Candle Lighting Ceremony",
+    "extraInfo": "Menu: Prime Rib with Au Jus and Horseradish sauce, Stuffed Chicken with Chicken Gravy, Glazed Salmon, or Vegan Stuffed Pepper. Sides: Rice Pilaf, Vegetable Medley, Roll, and Salad",
+    "location": "Forest City Lodge",
+    "address": "Lyndhurst Masonic Temple",
+    "addressLink": "https://goo.gl/maps/YLCvNWBDL1XQMRyg6",
+    "rsvpOptions": true,
+    "rsvpExpirationDays": "3",
+    "rsvpExpirationTime": "23:59",
+    "spotlight": false,
+    "spotlightImage": "",
+    "altText": "",
+    "tyled": false,
+    "earlyBirdOptions": {
+      "time": "(6:30)",
+      "cost": "15",
+      "choices": ["Prime Rib", "Stuffed Chicken with Chicken Gravy", "Glazed Salmon", "Vegan Stuffed Pepper"]
+    },
+    "rsvpLimit": false
   }
 ]
