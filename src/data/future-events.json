@@ -1125,7 +1125,7 @@
     "rsvpLimit": false
   },
   {
-    "date": "2026/12/16 19:30",
+    "date": "2026/12/16 19:00",
     "name": "53rd Annual Brotherhood Night",
     "description": "A Night with the Clergy and Candle Lighting Ceremony",
     "extraInfo": "Menu: Prime Rib with Au Jus and Horseradish sauce, Stuffed Chicken with Chicken Gravy, Glazed Salmon, or Vegan Stuffed Pepper. Sides: Rice Pilaf, Vegetable Medley, Roll, and Salad",
@@ -1140,7 +1140,7 @@
     "altText": "",
     "tyled": false,
     "earlyBirdOptions": {
-      "time": "(6:30)",
+      "time": "(6:00)",
       "cost": "15",
       "choices": ["Prime Rib", "Stuffed Chicken with Chicken Gravy", "Glazed Salmon", "Vegan Stuffed Pepper"]
     },
