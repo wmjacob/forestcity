@@ -1,5 +1,22 @@
 [
     {
+        "eventName": "2026 Annual Steak Roast",
+        "eventId": "2026SteakRoast",
+        "displayDate": "Wednesday, August 19th, 2026",
+        "description": "Forest City Lodge No. 388 held our annual Steak Roast at South Chagrin Reservation and we had a wonderful turnout! Special shout out to the grill masters, Bros. Scott Honness, Tyler Tevis and Gino Chiudioni, and everyone else who helped to make this a success! Great food, great conversations, and a great time was had by all!",
+        "albumName": "2026_08_19_Steak_Roast",
+        "imageUrls": [
+            "015.jpg",
+            "036.jpg",
+            "043.jpg",
+            "061.jpg",
+            "064.jpg"
+        ],
+        "slideLabels": [],
+        "slideContent": [],
+        "eventDate": "2026/05/03"
+    },
+    {
         "eventName": "2026 Lodge Appreciation Brunch",
         "eventId": "2026LodgeAppreciation",
         "displayDate": "Sunday, May 3rd, 2026",
