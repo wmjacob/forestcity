@@ -942,15 +942,21 @@
         "imgUrl": "../../../assets/images/past_masters/2022-2023_jason_a_kiner.jpg"
     },
     {
-        "number": 156,
+        "number": 157,
         "name": "Ronald E. Stuver",
         "term": "2023-2024",
         "imgUrl": "../../../assets/images/past_masters/2023-2024_ronald_e_stuver.jpg"
     },
     {
-        "number": 157,
+        "number": 158,
         "name": "Dylan S. Marsh",
         "term": "2024-2025",
+        "imgUrl": "../../../assets/images/past_masters/square_and_compasses.jpg"
+    },
+    {
+        "number": 159,
+        "name": "James D. Paluf",
+        "term": "2025-2026",
         "imgUrl": "../../../assets/images/past_masters/square_and_compasses.jpg"
     }
 ]
