@@ -1411,9 +1411,9 @@
     "rsvpLimit": false
   },
   {
-    "date": "2027/06/16 18:00",
+    "date": "2027/06/16 17:45",
     "name": "Annual Table Lodge of Instruction",
-    "description": "Entered Apprentice Degree at 6:00 PM, Table Lodge at 7:30 PM",
+    "description": "Entered Apprentice Degree at 5:45 PM, Dinner at 7:00 PM, Table Lodge of Instruction at 7:45 PM",
     "extraInfo": "",
     "location": "Forest City Lodge",
     "address": "Lyndhurst Masonic Temple",
@@ -1426,7 +1426,7 @@
     "altText": "",
     "tyled": true,
     "earlyBirdOptions": {
-      "time": "(6:30)",
+      "time": "(7:00)",
       "cost": "15",
       "choices": []
     },
